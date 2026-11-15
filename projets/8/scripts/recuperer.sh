@@ -16,3 +16,4 @@ BX="(46.596,-1.8545,46.608,-1.842)"
 ov() { curl -sf -m 80 -H "User-Agent: maquette-camping/1.0" -H "Accept: */*" --data-urlencode "data=$1" https://overpass-api.de/api/interpreter -o "$2"; }
 ov "[out:json][timeout:40];(nwr[\"tourism\"~\"camp_site|camp_pitch\"]$BX;nwr[\"natural\"=\"tree\"]$BX;nwr[\"leisure\"=\"swimming_pool\"]$BX;nwr[\"amenity\"~\"toilets|waste_basket|waste_disposal|bar|restaurant\"]$BX;);out geom;" donnees/brut_osm.json
 ov "[out:json][timeout:40];way[\"highway\"]$BX;out geom;" donnees/brut_osm_voies.json
+ov "[out:json][timeout:40];way[\"barrier\"~\"fence|wall|gate|hedge|retaining_wall\"]$BX;out geom;" donnees/brut_osm_barrieres.json
