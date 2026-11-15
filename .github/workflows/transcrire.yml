@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Installer la transcription
-        run: pip install faster-whisper==1.1.1
+        run: pip install faster-whisper requests
       - name: Transcrire (mots + temps)
         env:
           DOSSIER: ${{ inputs.dossier }}
