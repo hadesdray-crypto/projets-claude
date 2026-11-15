@@ -12,6 +12,22 @@ const att = (ms) => new Promise(r => setTimeout(r, ms));
   await p.goto('file://' + P + '/index.html'); await att(2500);
   await shot('1-vue-ensemble.png');
   await p.click('#bCamping'); await att(1200); await shot('2-gros-plan-camping.png');
+  // toits, couleurs, numéros (gros plan sur l'accueil et la piscine)
+  await M(() => window.__maquette.vueSur(120, 450, 90, 0.55)); await att(900); await shot('7-toits-et-numeros.png');
+  console.log('toits :', await M(() => { const t = {}; window.__maquette.blocs.forEach(b => t[b.toit] = (t[b.toit] || 0) + 1); return JSON.stringify(t); }));
+  // obstacles (clôtures, murets, portails) à l'ouest du camping
+  await M(() => window.__maquette.vueSur(-64, 405, 60, 0.6)); await att(800); await shot('8-obstacles.png');
+  // légende
+  await M(() => window.__maquette.vueCamping()); await p.click('#bLegende'); await att(500); await shot('9-legende.png'); await p.click('#bLegende');
+  // liste numérotée : on touche la ligne 1 (piscine) puis un bloc au toucher (fiche des mesures)
+  await p.click('#bListe'); await att(300); await shot('10-liste-numerotee.png');
+  await p.click('#listeCorps .cliquable'); await att(900); await p.click('#bListe');
+  console.log('fiche après la liste :', await p.$eval('#ficheTxt', e => e.textContent));
+  await M(() => window.__maquette.vueSur(118, 434, 80, 0.7)); await att(700);
+  const acc = await M(() => { const b = window.__maquette.blocs.find(b => b.type === 'accueil'); return window.__maquette.versEcran(b.x, b.y, b.h * 0.5); });
+  await p.mouse.click(acc[0], acc[1]); await att(400);
+  console.log('fiche au toucher sur l\'accueil :', await p.$eval('#ficheTxt', e => e.textContent));
+  await shot('11-fiche-mesures.png'); await p.click('#bFermerFiche');
   // trajet : gros plan puis vue large avec le pion
   await p.click('#bTrajet'); await att(1500);
   await M(() => window.__maquette.setTPion(60)); await att(600); await shot('3a-trajet-gros-plan.png');

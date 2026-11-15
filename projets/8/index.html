@@ -18,6 +18,11 @@ button:disabled{opacity:.4}
 #editPanneau{right:8px;top:8px;display:flex;flex-direction:column;gap:6px;max-width:300px;max-height:calc(100% - 90px);overflow:auto}
 #editPanneau .ligne{display:flex;gap:6px;flex-wrap:wrap}
 #editPanneau .ligne button{flex:1;padding:10px 6px}
+#legende,#liste{right:8px;top:8px;max-width:min(360px,calc(100% - 16px));max-height:calc(100% - 90px);overflow:auto;line-height:1.35}
+.lg{display:flex;align-items:center;gap:8px;padding:3px 0}.lg i{width:18px;height:18px;border-radius:4px;border:1px solid #1d3f9e66;flex:none}
+.cliquable{cursor:pointer;padding:7px 2px;border-bottom:1px solid #1d3f9e22}
+#fiche{left:8px;bottom:140px;max-width:min(440px,calc(100% - 16px));line-height:1.5;display:flex;gap:8px;align-items:flex-start}
+#fiche button{min-height:34px;padding:4px 10px}
 #mesureTxt{position:fixed;transform:translateX(-50%);background:#FE8D4F;color:#fff;font-weight:700;padding:6px 10px;border-radius:10px;pointer-events:none}
 #regle{position:fixed;left:10px;bottom:84px;color:#1d3f9e;font-weight:700;font-size:14px}
 #regleBarre{height:8px;border:3px solid #1d3f9e;border-top:0;margin-top:3px}
@@ -29,6 +34,9 @@ button:disabled{opacity:.4}
 <div id="mesureTxt" hidden></div>
 <div class="panneau" id="aideMesure" hidden style="left:8px;top:48px">Touchez deux points au sol : la distance s'affiche.</div>
 <div class="panneau" id="calques" hidden></div>
+<div class="panneau" id="legende" hidden></div>
+<div class="panneau" id="liste" hidden><b>Liste numérotée</b><small> (touchez une ligne)</small><div id="listeCorps"></div></div>
+<div class="panneau" id="fiche" hidden><div id="ficheTxt"></div><button id="bFermerFiche">✕</button></div>
 <div class="panneau" id="trajetPanneau" hidden><div id="trajetInfo"></div></div>
 <div class="panneau" id="editPanneau" hidden>
   <div class="ligne"><button id="bAnnuler">↶ Annuler</button><button id="bRetablir">↷ Rétablir</button></div>
@@ -39,6 +47,7 @@ button:disabled{opacity:.4}
   <div class="ligne"><button id="bLarg1">Plus large</button><button id="bLarg0">Moins large</button></div>
   <div class="ligne"><button id="bLong1">Plus long</button><button id="bLong0">Moins long</button></div>
   <div class="ligne"><button id="bHaut1">Plus haut</button><button id="bHaut0">Moins haut</button></div>
+  <div class="ligne"><button id="bToit">Changer le toit</button></div>
   <div class="ligne"><button id="bAjout">+ Ajouter</button><button id="bSuppr">Supprimer</button></div>
   <div class="ligne"><button id="bExport">Exporter</button><button onclick="document.getElementById('fImport').click()">Importer</button></div>
   <input type="file" id="fImport" accept="application/json" hidden>
@@ -47,8 +56,9 @@ button:disabled{opacity:.4}
 <div id="barre">
   <button id="bEnsemble">Ensemble</button><button id="bCamping">Camping</button>
   <button id="bTrajet">Trajet</button><button id="bVitesse" title="Vitesse du pion">×10</button>
-  <button id="bMesure">Mesurer</button><button id="bModifier">Modifier</button><button id="bCalques">Calques</button>
+  <button id="bMesure">Mesurer</button><button id="bModifier">Modifier</button><button id="bListe">Liste</button><button id="bLegende">Légende</button><button id="bCalques">Calques</button>
 </div>
 <script src="donnees/donnees.js"></script>
+<script src="donnees/obstacles.js"></script>
 <script src="app.js"></script>
 </body></html>

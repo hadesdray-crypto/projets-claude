@@ -4,6 +4,35 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 const D = window.DONNEES;
 const BLEU = 0x789CF2, ORANGE = 0xFE8D4F, JAUNE = 0xE6DB55, VERT = 0x4FB86A;
 const TYPES = ['mobil-home', 'sanitaires', 'douches', 'accueil', 'bar', 'piscine', 'poubelles', 'local technique', 'emplacement', 'bâtiment'];
+const TOITS = ['deux pans', 'quatre pans', 'plat'];
+// couleurs par usage (légende)
+const CATS = {
+  residentiel: { nom: 'Bâtiments résidentiels', c: 0x6f8fe8 },
+  commerce: { nom: 'Commerces et services (accueil, bar, sanitaires)', c: 0xf2c230 },
+  sport: { nom: 'Sport (terrains, salles)', c: 0xe86fb0 },
+  eau: { nom: 'Eau (piscines)', c: 0x2f6fe0 },
+  annexe: { nom: 'Annexes (garages, locaux techniques)', c: 0x8d8d9d },
+  hebergement: { nom: 'Hébergements (mobil-homes)', c: 0xa879e6 },
+  autre: { nom: 'Autres bâtiments (usage non précisé)', c: 0xc9b99a },
+};
+const COULEURS_AUTRES = [
+  ['Zones boisées', 0x2f9e55], ['Arbres', 0x4FB86A], ['Routes', 0xfff3c4], ['Chemins et sentiers', 0xf0dca0],
+  ['Clôtures, murets, portails', 0x8a5a3c], ['Haies', 0x3b7d3b], ['Limite du camping', 0xFE8D4F], ['Élément sélectionné', 0xFE8D4F],
+];
+function categorie(b) {
+  const t = b.type;
+  if (t === 'mobil-home' || t === 'emplacement') return 'hebergement';
+  if (t === 'accueil' || t === 'bar' || t === 'sanitaires' || t === 'douches') return 'commerce';
+  if (t === 'piscine') return 'eau';
+  if (t === 'local technique' || t === 'poubelles') return 'annexe';
+  const u = b.usage;
+  if (u === 'Résidentiel') return 'residentiel';
+  if (u === 'Commercial et services') return 'commerce';
+  if (u === 'Sportif') return 'sport';
+  if (u === 'Annexe') return 'annexe';
+  return 'autre';
+}
+const nomBloc = (b) => b.type !== 'bâtiment' ? b.type : (b.usage && b.usage !== 'Indifférencié' && b.usage !== 'ajouté' ? 'bâtiment (' + b.usage.toLowerCase() + ')' : 'bâtiment');
 const VITESSE_MARCHE = 1.3;          // m/s
 const $ = (s) => document.querySelector(s);
 const fmt = (v) => v.toFixed(1).replace('.', ',');
@@ -31,10 +60,10 @@ const sol = new THREE.Mesh(new THREE.PlaneGeometry(12000, 12000),
 sol.rotation.x = -Math.PI / 2; sol.position.set(cx, 0, -cy); scene.add(sol);
 
 // ---------- calques
-const calques = { batiments: new THREE.Group(), arbres: new THREE.Group(), routes: new THREE.Group(), zones: new THREE.Group(), etiquettes: new THREE.Group(), photo: new THREE.Group() };
+const calques = { batiments: new THREE.Group(), arbres: new THREE.Group(), routes: new THREE.Group(), obstacles: new THREE.Group(), zones: new THREE.Group(), etiquettes: new THREE.Group(), photo: new THREE.Group() };
 for (const g of Object.values(calques)) scene.add(g);
 calques.photo.visible = false;
-const NOMS = { batiments: 'Bâtiments', arbres: 'Arbres', routes: 'Routes et chemins', zones: 'Zones', etiquettes: 'Étiquettes', photo: 'Photo aérienne (vérification)' };
+const NOMS = { batiments: 'Bâtiments', arbres: 'Arbres', routes: 'Routes et chemins', obstacles: 'Clôtures et murets', zones: 'Zones (eau, sport, bois)', etiquettes: 'Numéros', photo: 'Photo aérienne (vérification)' };
 
 function ruban(paires, largeur, couleur, y, opacite = 1, ordre = 0) {
   // paires : [[x1,y1,x2,y2],...] -> bandes plates au sol
@@ -51,21 +80,33 @@ function ruban(paires, largeur, couleur, y, opacite = 1, ordre = 0) {
   m.renderOrder = ordre; return m;
 }
 
-// routes et chemins (traits clairs)
+// routes et chemins : largeur forfaitaire par catégorie (la largeur réelle n'est pas dans les données), couleur claire
+const LARGEURS = { 'primary': 7, 'Route à 1 chaussée': 5.5, 'Rond-point': 6, 'residential': 5, 'unclassified': 4.5, 'service': 3.5, 'Route empierrée': 3.5, 'track': 3, 'cycleway': 2.5, 'Sentier': 1.2, 'footway': 1.2, 'path': 1.2 };
+const SENTIERS = ['Sentier', 'footway', 'path', 'cycleway', 'track'];
 {
-  const N = D.chemins.noeuds, parLarg = { large: [], moyen: [], fin: [] };
+  const N = D.chemins.noeuds, parLarg = new Map();
   for (const [a, b, d, nat] of D.chemins.aretes) {
-    const s = [N[a][0], N[a][1], N[b][0], N[b][1]];
-    (nat === 'Route à 1 chaussée' || nat === 'Rond-point' || nat === 'primary' ? parLarg.large : (nat === 'Sentier' || nat === 'footway' || nat === 'path' || nat === 'cycleway' ? parLarg.fin : parLarg.moyen)).push(s);
+    const l = LARGEURS[nat] || 3.5, k = (SENTIERS.includes(nat) ? 'c' : 'r') + l;
+    if (!parLarg.has(k)) parLarg.set(k, []);
+    parLarg.get(k).push([N[a][0], N[a][1], N[b][0], N[b][1]]);
   }
-  calques.routes.add(ruban(parLarg.large, 4, 0xf8faff, 0.05, 0.95, 1), ruban(parLarg.moyen, 2.5, 0xf8faff, 0.05, 0.95, 1), ruban(parLarg.fin, 1.2, 0xf8faff, 0.05, 0.95, 1));
+  for (const [k, seg] of parLarg) {
+    const l = +k.slice(1), coul = k[0] === 'c' ? 0xf0dca0 : 0xfff3c4, ordre = k[0] === 'c' ? 1 : 2;
+    calques.routes.add(ruban(seg, l, coul, 0.05, 0.97, ordre));
+    // disques aux jonctions : évitent les crans entre tronçons (ronds-points, virages)
+    const pts = []; for (const [x1, y1, x2, y2] of seg) pts.push([x1, y1], [x2, y2]);
+    const g = new THREE.CircleGeometry(l / 2, 10); g.rotateX(-Math.PI / 2);
+    const im = new THREE.InstancedMesh(g, new THREE.MeshBasicMaterial({ color: coul, transparent: true, opacity: 0.97, polygonOffset: true, polygonOffsetFactor: -ordre, polygonOffsetUnits: -ordre }), pts.length);
+    const mat = new THREE.Matrix4(); pts.forEach(([x, y], i) => im.setMatrixAt(i, mat.makeTranslation(x, 0.05, -y))); im.renderOrder = ordre;
+    calques.routes.add(im);
+  }
   const lim = D.camping, boucle = [];
   lim.forEach((p, i) => { const q = lim[(i + 1) % lim.length]; boucle.push([p[0], p[1], q[0], q[1]]); });
-  calques.zones.add(ruban(boucle, 1.4, ORANGE, 0.12, 1, 2));
+  calques.zones.add(ruban(boucle, 1.4, ORANGE, 0.12, 1, 3));
 }
 
 // zones : piscines (blocs bleus translucides), sport, végétation
-const matBloc = new THREE.MeshLambertMaterial({ color: BLEU, transparent: true, opacity: 0.5, depthWrite: false, side: THREE.DoubleSide });
+const matBloc = new THREE.MeshLambertMaterial({ color: 0xffffff, vertexColors: true, transparent: true, opacity: 0.5, depthWrite: false, side: THREE.DoubleSide });
 function formeExtrudee(pts, h) {
   const s = new THREE.Shape(pts.map(([x, y]) => new THREE.Vector2(x, y)));
   const g = new THREE.ExtrudeGeometry(s, { depth: h, bevelEnabled: false }); g.rotateX(-Math.PI / 2); return g;
@@ -80,29 +121,49 @@ function contour(pts, h, couleur) {
   const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(v, 3));
   return new THREE.LineSegments(g, new THREE.LineBasicMaterial({ color: couleur }));
 }
+const pickables = [];     // mailles touchables (piscines, terrains de sport)
+const ELEMENTS = [];     // éléments numérotés qui ne sont pas des blocs : { num, nom, cat, pts, h, lieu }
 for (const z of D.zones) {
   if (z.type === 'piscine') {
-    const m = new THREE.Mesh(formeExtrudee(z.pts, z.h), new THREE.MeshLambertMaterial({ color: 0x4f7cf0, transparent: true, opacity: 0.6, depthWrite: false, side: THREE.DoubleSide }));
+    const m = new THREE.Mesh(formeExtrudee(z.pts, z.h), new THREE.MeshLambertMaterial({ color: CATS.eau.c, transparent: true, opacity: 0.6, depthWrite: false, side: THREE.DoubleSide }));
     calques.zones.add(m, contour(z.pts, z.h, 0x1d3f9e), contour(z.pts, 0.02, 0x1d3f9e));
+    z.maille = m; pickables.push(m);
   } else if (z.type === 'vegetation') {
-    calques.zones.add(aplat(z.pts, VERT, 0.18, 0.03));
+    calques.zones.add(aplat(z.pts, 0x2f9e55, 0.3, 0.03), contour(z.pts, 0.04, 0x2f9e55));
   } else if (z.type === 'sport') {
-    calques.zones.add(aplat(z.pts, JAUNE, 0.45, 0.04));
+    const m = aplat(z.pts, CATS.sport.c, 0.5, 0.04); calques.zones.add(m, contour(z.pts, 0.05, 0xb43c80)); z.maille = m; pickables.push(m);
   }
 }
 
-// ---------- arbres : formes vertes translucides posées au sol (maxima de canopée LiDAR HD)
+// ---------- arbres : tronc brun + houppier vert translucides (maxima de canopée LiDAR HD), posés au sol
 {
-  const g = new THREE.SphereGeometry(1, 7, 5);
-  const m = new THREE.MeshLambertMaterial({ color: VERT, transparent: true, opacity: 0.5, depthWrite: false });
-  const inst = new THREE.InstancedMesh(g, m, D.arbres.length);
   const mat = new THREE.Matrix4(), q = new THREE.Quaternion(), p = new THREE.Vector3(), s = new THREE.Vector3();
+  const cime = new THREE.InstancedMesh(new THREE.SphereGeometry(1, 7, 5), new THREE.MeshLambertMaterial({ color: 0x4FB86A, transparent: true, opacity: 0.5, depthWrite: false }), D.arbres.length);
+  const tronc = new THREE.InstancedMesh(new THREE.CylinderGeometry(1, 1, 1, 6), new THREE.MeshLambertMaterial({ color: 0x8a5a3c, transparent: true, opacity: 0.6, depthWrite: false }), D.arbres.length);
   D.arbres.forEach(([x, y, h], i) => {
-    const r = Math.min(Math.max(h * 0.22, 1), 3.2);
-    p.set(x, h / 2, -y); s.set(r, h / 2, r);                    // de 0 à h : jamais en l'air
-    inst.setMatrixAt(i, mat.compose(p, q, s));
+    const r = Math.min(Math.max(h * 0.22, 1), 3.2), ht = h * 0.3;
+    p.set(x, ht / 2, -y); s.set(Math.min(0.3, r / 4), ht / 2, Math.min(0.3, r / 4)); tronc.setMatrixAt(i, mat.compose(p, q, s));
+    p.set(x, ht + (h - ht) / 2, -y); s.set(r, (h - ht) / 2, r); cime.setMatrixAt(i, mat.compose(p, q, s));   // de 0,3 h à h : jamais en l'air
   });
-  calques.arbres.add(inst);
+  calques.arbres.add(tronc, cime);
+}
+
+// ---------- obstacles : clôtures, murets, portails (brun), haies (vert foncé) ; hauteurs forfaitaires
+{
+  const O = window.OBSTACLES || [], segs = [];
+  for (const o of O) for (let i = 1; i < o.pts.length; i++) segs.push([o.pts[i - 1], o.pts[i], o]);
+  const boite = (couleur, liste) => {
+    if (!liste.length) return;
+    const im = new THREE.InstancedMesh(new THREE.BoxGeometry(1, 1, 1), new THREE.MeshLambertMaterial({ color: couleur, transparent: true, opacity: 0.7, depthWrite: false }), liste.length);
+    const mat = new THREE.Matrix4(), q = new THREE.Quaternion(), p = new THREE.Vector3(), sc = new THREE.Vector3();
+    liste.forEach(([a, b, o], i) => {
+      const L = Math.hypot(b[0] - a[0], b[1] - a[1]) + 0.01;
+      q.setFromAxisAngle(new THREE.Vector3(0, 1, 0), Math.atan2(b[1] - a[1], b[0] - a[0]));
+      p.set((a[0] + b[0]) / 2, o.h / 2, -(a[1] + b[1]) / 2); sc.set(L, o.h, o.e); im.setMatrixAt(i, mat.compose(p, q, sc));
+    });
+    calques.obstacles.add(im);
+  };
+  boite(0x8a5a3c, segs.filter(s => s[2].type !== 'hedge')); boite(0x3b7d3b, segs.filter(s => s[2].type === 'hedge'));
 }
 
 // ---------- blocs (bâtiments) : un seul maillage fusionné, reconstruit à chaque modification
@@ -119,23 +180,57 @@ function anneau(b) {
   const c = Math.cos(b.rot * Math.PI / 180), s = Math.sin(b.rot * Math.PI / 180);
   return b.pts.map(([px, py]) => { const X = px * b.sx, Y = py * b.sy; return [b.x + X * c - Y * s, b.y + X * s + Y * c]; });
 }
-function geomBloc(b, pos, idx, lignes, tris, i) {
-  const r = anneau(b), h = b.h, n = r.length, base = pos.length / 3;
-  r.forEach(([x, y]) => pos.push(x, h, -y));
-  r.forEach(([x, y]) => pos.push(x, 0, -y));
-  const tri = THREE.ShapeUtils.triangulateShape(r.map(([x, y]) => new THREE.Vector2(x, y)), []);
-  for (const [a, bb, c] of tri) { idx.push(base + a, base + c, base + bb); tris && tris.push(i); }
+// rectangle orienté englobant (plus petite aire) : centre, axe long (ux,uy), longueur L, largeur l, taux de remplissage
+function rectOriente(r) {
+  let aire = 0; r.forEach((p, i) => { const q = r[(i + 1) % r.length]; aire += p[0] * q[1] - q[0] * p[1]; }); aire = Math.abs(aire) / 2;
+  let best = null;
+  r.forEach((p, i) => {
+    const q = r[(i + 1) % r.length], L0 = Math.hypot(q[0] - p[0], q[1] - p[1]); if (L0 < 0.05) return;
+    const ux = (q[0] - p[0]) / L0, uy = (q[1] - p[1]) / L0; let a0 = 1e9, a1 = -1e9, b0 = 1e9, b1 = -1e9;
+    for (const [x, y] of r) { const u = x * ux + y * uy, v = -x * uy + y * ux; a0 = Math.min(a0, u); a1 = Math.max(a1, u); b0 = Math.min(b0, v); b1 = Math.max(b1, v); }
+    const A = (a1 - a0) * (b1 - b0); if (!best || A < best.A) best = { A, ux, uy, a0, a1, b0, b1 };
+  });
+  const { ux, uy, a0, a1, b0, b1 } = best, ca = (a0 + a1) / 2, cb = (b0 + b1) / 2;
+  let L = a1 - a0, l = b1 - b0, px = ux, py = uy;
+  if (l > L) { [L, l] = [l, L]; px = -uy; py = ux; }
+  return { cx: ca * ux + cb * -uy, cy: ca * uy + cb * ux, ux: px, uy: py, vx: -py, vy: px, L, l, fill: aire / best.A };
+}
+function toitAuto(b, ob) {
+  if (b.type === 'poubelles' || b.type === 'local technique' || b.usage === 'Annexe' || ob.L * ob.l < 25 || ob.fill < 0.8) return 'plat';
+  return ob.L / ob.l > 1.4 ? 'deux pans' : 'quatre pans';
+}
+const hautToit = (b, ob) => (b.toit === 'plat' ? 0 : Math.min(0.3 * ob.l, 4.5));   // pente ≈ 30° (faîte = 0,3 × largeur, au plus 4,5 m)
+function geomBloc(b, pos, idx, lignes, tris, i, col) {
+  const r = anneau(b), h = b.h, n = r.length, base = pos.length / 3, ob = rectOriente(r);
+  if (!b.toit) b.toit = toitAuto(b, ob);
+  const rise = hautToit(b, ob), cc = new THREE.Color(CATS[categorie(b)].c), cr = cc.clone().multiplyScalar(0.8);
+  const poser = (x, y, z, c) => { pos.push(x, y, z); col.push(c.r, c.g, c.b); };
+  r.forEach(([x, y]) => poser(x, h, -y, cc));
+  r.forEach(([x, y]) => poser(x, 0, -y, cc));
+  if (rise === 0) {
+    const tri = THREE.ShapeUtils.triangulateShape(r.map(([x, y]) => new THREE.Vector2(x, y)), []);
+    for (const [a, bb, c] of tri) { idx.push(base + a, base + c, base + bb); tris && tris.push(i); }
+  }
   for (let k = 0; k < n; k++) {
     const k2 = (k + 1) % n;
     idx.push(base + k, base + n + k, base + k2, base + k2, base + n + k, base + n + k2); tris && tris.push(i, i);
     lignes.push(r[k][0], h, -r[k][1], r[k2][0], h, -r[k2][1], r[k][0], 0, -r[k][1], r[k2][0], 0, -r[k2][1], r[k][0], 0, -r[k][1], r[k][0], h, -r[k][1]);
   }
+  if (rise > 0) {                                       // toit : 4 coins de l'égout + 2 points de faîtage
+    const hip = b.toit === 'quatre pans', rl = hip ? Math.max(ob.L - ob.l, 0.02) / 2 : ob.L / 2;
+    const P = (a, v, y) => [ob.cx + a * ob.ux + v * ob.vx, y, -(ob.cy + a * ob.uy + v * ob.vy)];
+    const pts = [P(-ob.L / 2, -ob.l / 2, h), P(ob.L / 2, -ob.l / 2, h), P(ob.L / 2, ob.l / 2, h), P(-ob.L / 2, ob.l / 2, h), P(-rl, 0, h + rise), P(rl, 0, h + rise)];
+    const b0 = pos.length / 3; pts.forEach(p => poser(p[0], p[1], p[2], cr));
+    const faces = [[0, 1, 5], [0, 5, 4], [2, 3, 4], [2, 4, 5], [1, 2, 5], [3, 0, 4]];   // 2 pans + 2 pignons ou croupes
+    for (const f of faces) { idx.push(b0 + f[0], b0 + f[1], b0 + f[2]); tris && tris.push(i); }
+    for (const [a, c] of [[4, 5], [0, 4], [3, 4], [1, 5], [2, 5]]) lignes.push(...pts[a], ...pts[c]);
+  }
 }
 function remplir(maille, aretes, liste, tris) {
-  const pos = [], idx = [], lig = [];
-  liste.forEach(([b, i]) => geomBloc(b, pos, idx, lig, tris, i));
+  const pos = [], idx = [], lig = [], col = [];
+  liste.forEach(([b, i]) => geomBloc(b, pos, idx, lig, tris, i, col));
   maille.geometry.dispose(); aretes.geometry.dispose();
-  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3)); g.setIndex(idx); g.computeVertexNormals();
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3)); g.setAttribute('color', new THREE.Float32BufferAttribute(col, 3)); g.setIndex(idx); g.computeVertexNormals();
   maille.geometry = g;
   const l = new THREE.BufferGeometry(); l.setAttribute('position', new THREE.Float32BufferAttribute(lig, 3)); aretes.geometry = l;
 }
@@ -161,21 +256,46 @@ function sprite(texte, couleur = '#1d3f9e') {
 }
 const groupeEtiq = new THREE.Group(); calques.etiquettes.add(groupeEtiq);
 const labelFixes = [];
+// ---------- numérotation : éléments importants = pièces du camping, piscines, commerces et sport proches, plage
+const dansPoly = ([x, y], P) => { let d = false; for (let i = 0, j = P.length - 1; i < P.length; j = i++) if ((P[i][1] > y) !== (P[j][1] > y) && x < (P[j][0] - P[i][0]) * (y - P[i][1]) / (P[j][1] - P[i][1]) + P[i][0]) d = !d; return d; };
+const distCamping = (p) => { const P = D.camping; let m = 1e9; P.forEach((a, i) => { m = Math.min(m, projSeg(p, a, P[(i + 1) % P.length])[2]); }); return dansPoly(p, P) ? 0 : m; };
+const NUM = {}, NUMEROTES = [];      // NUM : id de bloc -> numéro ; NUMEROTES : { num, nom, cat, x, y, haut, ref }
+{
+  const cand = [];
+  for (const z of D.zones) {
+    const c = z.pts.reduce((a, p) => [a[0] + p[0] / z.pts.length, a[1] + p[1] / z.pts.length], [0, 0]);
+    if (z.type === 'piscine' && z.dans_camping) cand.push([0, c[0], z, 'zone', 'piscine', 'eau', c]);
+    if (z.type === 'sport' && distCamping(c) < 300) cand.push([7, c[0], z, 'zone', z.nom || 'terrain de sport', 'sport', c]);
+  }
+  for (const b of D.blocs) {
+    const d = distCamping([b.x, b.y]), t = b.type;
+    const pr = t === 'accueil' ? 1 : (t === 'sanitaires' || t === 'douches' || t === 'bar') ? 2 : (t === 'local technique' || t === 'poubelles') ? 3 : t === 'mobil-home' ? 4 : d === 0 ? 5 : (b.usage === 'Commercial et services' || b.usage === 'Sportif') && d < 300 ? 6 : 99;
+    if (pr < 99) cand.push([pr, b.x, b, 'bloc']);
+  }
+  cand.push([8, 0, null, 'lieu', 'Plage des Dunes', null, D.lieux['Plage des Dunes']]);
+  cand.sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+  cand.forEach((c, k) => {
+    const num = k + 1;
+    if (c[3] === 'bloc') { NUM[c[2].id] = num; }
+    else { const e = { num, nom: c[4], cat: c[5], x: c[6][0], y: c[6][1], haut: c[3] === 'zone' ? 4 : 4, ref: c[2], genre: c[3] }; NUMEROTES.push(e); if (c[2]) c[2].num = num; }
+  });
+}
 {
   const c = D.camping, mx = c.reduce((a, p) => a + p[0], 0) / c.length, my = c.reduce((a, p) => a + p[1], 0) / c.length;
   const s = sprite('Camping Amitié & Nature', '#c25a12'); s.position.copy(W3(mx, my, 25)); labelFixes.push(s);
-  const z = D.zones.filter(z => z.type === 'piscine' && z.dans_camping).sort((a, b) => b.pts.length - a.pts.length)[0];
-  if (z) { const px = z.pts.reduce((a, p) => a + p[0], 0) / z.pts.length, py = z.pts.reduce((a, p) => a + p[1], 0) / z.pts.length; const s2 = sprite('Piscine'); s2.position.copy(W3(px, py, 6)); labelFixes.push(s2); }
-  const s3 = sprite('Plage des Dunes', '#c25a12'); s3.position.copy(W3(...D.lieux['Plage des Dunes'], 4)); labelFixes.push(s3);
+  for (const e of NUMEROTES) { const s2 = sprite(String(e.num), e.genre === 'lieu' ? '#c25a12' : '#1d3f9e'); s2.scale.multiplyScalar(1.3); s2.position.copy(W3(e.x, e.y, e.haut)); labelFixes.push(s2); }
 }
 labelFixes.forEach(s => groupeEtiq.add(s));
+const numBloc = (b) => b.num ?? NUM[b.id];
 let etiqBlocs = [];
 function majEtiquettes() {
   etiqBlocs.forEach(s => { groupeEtiq.remove(s); s.material.map.dispose(); s.material.dispose(); }); etiqBlocs = [];
   blocs.forEach(b => {
-    if (b.type === 'bâtiment') return;
-    const s = sprite(b.type); s.position.copy(W3(b.x, b.y, b.h + 2)); groupeEtiq.add(s); etiqBlocs.push(s);
+    const n = numBloc(b); if (!n) return;
+    const ob = rectOriente(anneau(b)); if (!b.toit) b.toit = toitAuto(b, ob);
+    const s = sprite(String(n)); s.scale.multiplyScalar(1.3); s.position.copy(W3(b.x, b.y, b.h + hautToit(b, ob) + 2)); groupeEtiq.add(s); etiqBlocs.push(s);
   });
+  majListe();
 }
 
 // ---------- photo aérienne IGN (chargée à la demande ; incorporée en base64 pour fonctionner hors ligne)
@@ -348,14 +468,26 @@ function annuler() { if (!historique.length) return; futur.push(instantane()); r
 function retablir() { if (!futur.length) return; historique.push(instantane()); restaurer(futur.pop()); majBoutonsHisto(); }
 function modif(fn) { if (selection < 0) return; pousserHistorique(); fn(blocs[selection]); reconstruireBlocs(); sauver(); if (trajetActif) calculerTrajet(); }
 const dimsPts = (b) => { const xs = b.pts.map(p => p[0]), ys = b.pts.map(p => p[1]); return [Math.max(...xs) - Math.min(...xs), Math.max(...ys) - Math.min(...ys)]; };
+const airePoly = (r) => { let a = 0; r.forEach((p, i) => { const q = r[(i + 1) % r.length]; a += p[0] * q[1] - q[0] * p[1]; }); return Math.abs(a) / 2; };
+function texteBloc(b) {
+  const r = anneau(b), ob = rectOriente(r), rise = hautToit(b, ob), n = numBloc(b);
+  return `${n ? 'n° ' + n + ' · ' : ''}${nomBloc(b)}<br>longueur ${fmt(ob.L)} m × largeur ${fmt(ob.l)} m (rectangle englobant) · emprise ${Math.round(airePoly(r))} m²<br>hauteur des murs ${fmt(b.h)} m${b.h_defaut ? ' (valeur par défaut)' : ''} · ` +
+    (rise ? `faîte ${fmt(b.h + rise)} m (toit à ${b.toit})` : 'toit plat');
+}
+function texteElement(e) {
+  if (e.genre === 'lieu') return `n° ${e.num} · ${e.nom}<br>lieu repère (position seulement, pas de mesure)`;
+  const ob = rectOriente(e.ref.pts);
+  return `n° ${e.num} · ${e.nom}<br>longueur ${fmt(ob.L)} m × largeur ${fmt(ob.l)} m (rectangle englobant) · surface ${Math.round(airePoly(e.ref.pts))} m²` + (e.ref.type === 'piscine' ? `<br>bloc de ${fmt(e.ref.h)} m de haut (représentation ; profondeur inconnue)` : '');
+}
+function montrerFiche(html) { $('#ficheTxt').innerHTML = html; $('#fiche').hidden = false; }
 function majPanneauSelection() {
   const b = blocs[selection]; $('#selInfo').hidden = !b; $('#selVide').hidden = !!b;
   if (!b) return;
-  const [w, l] = dimsPts(b); $('#selTxt').textContent = `${b.type} · ${fmt(w * b.sx)} × ${fmt(l * b.sy)} m · haut. ${fmt(b.h)} m${b.h_defaut ? ' (valeur par défaut)' : ''}`;
+  $('#selTxt').innerHTML = texteBloc(b);
   $('#selType').value = b.type;
 }
 function basculerEdition(on) {
-  modeEdition = on; $('#editPanneau').hidden = !on; $('#bModifier').classList.toggle('actif', on);
+  modeEdition = on; $('#editPanneau').hidden = !on; if (on) { fermerDroite(); $('#fiche').hidden = true; } $('#bModifier').classList.toggle('actif', on);
   if (on) { modeMesure = false; $('#bMesure').classList.remove('actif'); } else { selection = -1; reconstruireBlocs(); }
 }
 function pickBloc(ev) {
@@ -366,6 +498,15 @@ function pickBloc(ev) {
   const h = hits[0];
   if (h.object === maillageSel) return selection;
   return indexSansSel[triVersBloc[h.faceIndex]] ?? -1;
+}
+function toucher(ev) {
+  const r = canvas.getBoundingClientRect(); ptr.set(((ev.clientX - r.left) / r.width) * 2 - 1, -((ev.clientY - r.top) / r.height) * 2 + 1);
+  ray.setFromCamera(ptr, camera);
+  const cibles = [maillageBlocs, ...pickables.filter(m => m.visible && m.parent && m.parent.visible)];
+  const h = ray.intersectObjects(cibles, false)[0];
+  if (!h) { $('#fiche').hidden = true; return; }
+  if (h.object === maillageBlocs) { const b = blocs[indexSansSel[triVersBloc[h.faceIndex]]]; if (b) montrerFiche(texteBloc(b)); }
+  else { const z = D.zones.find(z => z.maille === h.object), e = NUMEROTES.find(e => e.ref === z); if (e) montrerFiche(texteElement(e)); else montrerFiche(`${z.type}<br>surface ${Math.round(airePoly(z.pts))} m²`); }
 }
 canvas.addEventListener('pointerdown', (ev) => {
   if (modeEdition) {
@@ -388,6 +529,8 @@ addEventListener('pointerup', (ev) => {
   if (glisse) {
     if (glisse.bouge) { historique.push(glisse.avant); futur = []; majBoutonsHisto(); sauver(); reconstruireBlocs(); if (trajetActif) calculerTrajet(); }
     glisse = null; controls.enabled = true;
+  } else if (!modeMesure && !modeEdition && pointeurDebut && ev.target === canvas && Math.hypot(ev.clientX - pointeurDebut.x, ev.clientY - pointeurDebut.y) < 6) {
+    toucher(ev);
   } else if (modeMesure && pointeurDebut && ev.target === canvas && Math.hypot(ev.clientX - pointeurDebut.x, ev.clientY - pointeurDebut.y) < 6) {
     const p = pointSol(ev); if (p) ajouterMesure(p);
   }
@@ -395,6 +538,29 @@ addEventListener('pointerup', (ev) => {
 });
 
 // ---------- interface
+function fermerDroite() { ['#calques', '#legende', '#liste'].forEach(i => $(i).hidden = true); ['#bCalques', '#bLegende', '#bListe'].forEach(i => $(i).classList.remove('actif')); }
+function ouvrirDroite(p, bt) { const etait = !$(p).hidden; fermerDroite(); if (modeEdition) basculerEdition(false); if (!etait) { $(p).hidden = false; $(bt).classList.add('actif'); if (p === '#liste') majListe(); } }
+const hex = (c) => '#' + c.toString(16).padStart(6, '0');
+{
+  let h = '<b>Légende</b>';
+  for (const k of Object.keys(CATS)) h += `<div class="lg"><i style="background:${hex(CATS[k].c)}"></i>${CATS[k].nom}</div>`;
+  for (const [n, c] of COULEURS_AUTRES) h += `<div class="lg"><i style="background:${hex(c)}"></i>${n}</div>`;
+  h += '<small>Toits : deux ou quatre pans (pente ≈ 30°), plats pour les petites annexes. Les chiffres renvoient à la liste.</small>';
+  $('#legende').innerHTML = h;
+}
+function majListe() {
+  if ($('#liste').hidden) return;
+  const l = [];
+  for (const b of blocs) { const n = numBloc(b); if (n) l.push({ n, nom: nomBloc(b), c: CATS[categorie(b)].c, x: b.x, y: b.y, html: () => texteBloc(b) }); }
+  for (const e of NUMEROTES) l.push({ n: e.num, nom: e.nom, c: e.cat ? CATS[e.cat].c : ORANGE, x: e.x, y: e.y, html: () => texteElement(e) });
+  l.sort((a, b) => a.n - b.n);
+  const z = $('#listeCorps'); z.innerHTML = '';
+  for (const e of l) {
+    const d = document.createElement('div'); d.className = 'lg cliquable'; d.innerHTML = `<i style="background:${hex(e.c)}"></i><b>${e.n}</b>&nbsp;${e.nom}`;
+    d.onclick = () => { vueSur(e.x, e.y, 70, 0.9); montrerFiche(e.html()); };
+    z.append(d);
+  }
+}
 function creerCalques() {
   const z = $('#calques'); z.innerHTML = '';
   for (const [k, nom] of Object.entries(NOMS)) {
@@ -406,7 +572,8 @@ function creerCalques() {
 creerCalques();
 TYPES.forEach(t => { const o = document.createElement('option'); o.value = o.textContent = t; $('#selType').append(o); });
 $('#bEnsemble').onclick = vueEnsemble; $('#bCamping').onclick = vueCamping;
-$('#bCalques').onclick = () => { $('#calques').hidden = !$('#calques').hidden; };
+$('#bCalques').onclick = () => ouvrirDroite('#calques', '#bCalques'); $('#bLegende').onclick = () => ouvrirDroite('#legende', '#bLegende'); $('#bListe').onclick = () => ouvrirDroite('#liste', '#bListe'); $('#bFermerFiche').onclick = () => { $('#fiche').hidden = true; };
+$('#bToit').onclick = () => modif(b => { b.toit = TOITS[(TOITS.indexOf(b.toit) + 1) % TOITS.length]; });
 $('#bTrajet').onclick = () => { basculerTrajet(!trajetActif); $('#bTrajet').classList.toggle('actif', trajetActif); };
 $('#bVitesse').onclick = () => { vit = vit === 1 ? 10 : vit === 10 ? 30 : 1; $('#bVitesse').textContent = '×' + vit; };
 $('#bMesure').onclick = () => { modeMesure = !modeMesure; $('#bMesure').classList.toggle('actif', modeMesure); if (modeMesure) basculerEdition(false); if (!modeMesure) { mesurePts = []; groupeMesure.clear(); $('#mesureTxt').hidden = true; } $('#aideMesure').hidden = !modeMesure; };
@@ -422,7 +589,7 @@ $('#selType').onchange = (e) => modif(b => { b.type = e.target.value; b.confianc
 $('#bSuppr').onclick = () => { if (selection < 0) return; pousserHistorique(); blocs.splice(selection, 1); selection = -1; reconstruireBlocs(); sauver(); if (trajetActif) calculerTrajet(); };
 $('#bAjout').onclick = () => {
   pousserHistorique(); const t = controls.target;
-  blocs.push({ id: 'ajout-' + Date.now(), type: $('#selType').value || 'mobil-home', x: Math.round(t.x * 2) / 2, y: Math.round(-t.z * 2) / 2, rot: 0, sx: 1, sy: 1, h: 3, h_defaut: false, pts: [[-2, -4], [2, -4], [2, 4], [-2, 4]], usage: 'ajouté', aire: 32, confiance: 1 });
+  blocs.push({ id: 'ajout-' + Date.now(), type: $('#selType').value || 'mobil-home', x: Math.round(t.x * 2) / 2, y: Math.round(-t.z * 2) / 2, rot: 0, sx: 1, sy: 1, h: 3, h_defaut: false, pts: [[-2, -4], [2, -4], [2, 4], [-2, 4]], usage: 'ajouté', aire: 32, confiance: 1, toit: 'plat', num: Math.max(0, ...NUMEROTES.map(e => e.num), ...blocs.map(numBloc).filter(Boolean)) + 1 });
   selection = blocs.length - 1; reconstruireBlocs(); sauver();
 };
 $('#bExport').onclick = () => {
@@ -452,4 +619,4 @@ renderer.setAnimationLoop((t) => {
 });
 
 // accès pour les contrôles automatiques (captures)
-window.__maquette = { versEcran: (x, y, h = 0) => { const v = W3(x, y, h).project(camera); return [(v.x + 1) / 2 * canvas.clientWidth, (1 - v.y) / 2 * canvas.clientHeight]; }, vueSur, vueEnsemble, vueCamping, basculerTrajet, calques, chargerPhoto, camera, controls, get blocs() { return blocs; }, setTPion: (t) => { tPion = t; }, get parcours() { return parcours; }, pion, blocsInfo: () => ({ n: blocs.length, sel: selection }) };
+window.__maquette = { versEcran: (x, y, h = 0) => { const v = W3(x, y, h).project(camera); return [(v.x + 1) / 2 * canvas.clientWidth, (1 - v.y) / 2 * canvas.clientHeight]; }, vueSur, vueEnsemble, vueCamping, basculerTrajet, calques, chargerPhoto, camera, controls, get blocs() { return blocs; }, setTPion: (t) => { tPion = t; }, get parcours() { return parcours; }, pion, NUMEROTES, texteBloc, categorie, rectOriente, anneau, blocsInfo: () => ({ n: blocs.length, sel: selection }) };
