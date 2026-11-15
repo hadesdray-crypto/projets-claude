@@ -1,0 +1,656 @@
+{
+ "nom": "s7_mange",
+ "description": "Un gant de laboratoire apporte un morceau de chair crue ; Thomas le saisit, en mange trois bouchées (le morceau entre dans la bouche et rapetisse à chaque morsure), avale, soupire et revient au repos. 16 s, boucle continue.",
+ "duree": 16.0,
+ "boucle": true,
+ "recettes": {
+  "thomas": [
+   "vie"
+  ]
+ },
+ "pistes": {
+  "thomas": [
+   {
+    "pose": "n7_repos",
+    "tenir": 1.1
+   },
+   {
+    "pose": "n7_regard_gant",
+    "duree": 0.45,
+    "courbe": "doux",
+    "tenir": 0.95
+   },
+   {
+    "pose": "n7_regard_morceau",
+    "duree": 0.5,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_anticipation",
+    "duree": 0.42,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_bras_part",
+    "duree": 0.33,
+    "courbe": "spline"
+   },
+   {
+    "pose": "n7_bras_mi_chemin",
+    "duree": 0.3,
+    "courbe": "spline"
+   },
+   {
+    "pose": "n7_main_saisit",
+    "duree": 0.32,
+    "courbe": "spline"
+   },
+   {
+    "pose": "n7_main_fermee",
+    "duree": 0.22,
+    "courbe": "doux",
+    "tenir": 0.1
+   },
+   {
+    "pose": "n7_bras_leve",
+    "duree": 0.42,
+    "courbe": "spline"
+   },
+   {
+    "pose": "n7_bras_presque_bouche",
+    "duree": 0.38,
+    "courbe": "spline"
+   },
+   {
+    "pose": "n7_main_bouche_1",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 0.0
+     }
+    },
+    "duree": 0.3,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_bouche_ouverte_1",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 0.0
+     }
+    },
+    "duree": 0.24,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_dans_la_bouche_1",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 0.0
+     }
+    },
+    "duree": 0.2,
+    "courbe": "doux",
+    "tenir": 0.06
+   },
+   {
+    "pose": "n7_morsure_1",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 0.0
+     }
+    },
+    "duree": 0.13,
+    "courbe": "entree",
+    "tenir": 0.12
+   },
+   {
+    "pose": "n7_retire_1",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 0.0
+     }
+    },
+    "duree": 0.3,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_mastication_1",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 0.0
+     }
+    },
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_mastication_2",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 0.0
+     }
+    },
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_mastication_3",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 0.0
+     }
+    },
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_mastication_2",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 0.0
+     }
+    },
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_avale_prepare",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 0.0
+     }
+    },
+    "duree": 0.2,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_avalement",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 1.0
+     }
+    },
+    "duree": 0.55,
+    "courbe": "doux",
+    "tenir": 0.08
+   },
+   {
+    "pose": "n7_main_bouche_2",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 1.0
+     }
+    },
+    "duree": 0.3,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_bouche_ouverte_2",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 1.0
+     }
+    },
+    "duree": 0.24,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_dans_la_bouche_2",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 1.0
+     }
+    },
+    "duree": 0.2,
+    "courbe": "doux",
+    "tenir": 0.06
+   },
+   {
+    "pose": "n7_morsure_2",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 1.0
+     }
+    },
+    "duree": 0.13,
+    "courbe": "entree",
+    "tenir": 0.12
+   },
+   {
+    "pose": "n7_retire_2",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 1.0
+     }
+    },
+    "duree": 0.3,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_mastication_1",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 1.0
+     }
+    },
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_mastication_2",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 1.0
+     }
+    },
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_mastication_3",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 1.0
+     }
+    },
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_mastication_2",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 1.0
+     }
+    },
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_avale_prepare",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 1.0
+     }
+    },
+    "duree": 0.2,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_avalement",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 2.0
+     }
+    },
+    "duree": 0.55,
+    "courbe": "doux",
+    "tenir": 0.08
+   },
+   {
+    "pose": "n7_main_bouche_3",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 2.0
+     }
+    },
+    "duree": 0.3,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_bouche_ouverte_3",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 2.0
+     }
+    },
+    "duree": 0.24,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_dans_la_bouche_3",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 2.0
+     }
+    },
+    "duree": 0.2,
+    "courbe": "doux",
+    "tenir": 0.06
+   },
+   {
+    "pose": "n7_morsure_3",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 2.0
+     }
+    },
+    "duree": 0.13,
+    "courbe": "entree",
+    "tenir": 0.12
+   },
+   {
+    "pose": "n7_menton",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 2.0
+     }
+    },
+    "duree": 0.36,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_mastication_1",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 2.0
+     }
+    },
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_mastication_2",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 2.0
+     }
+    },
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_mastication_3",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 2.0
+     }
+    },
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_mastication_2",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 2.0
+     }
+    },
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_avale_prepare",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 2.0
+     }
+    },
+    "duree": 0.2,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_avalement",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 3.0
+     }
+    },
+    "duree": 0.55,
+    "courbe": "doux",
+    "tenir": 0.08
+   },
+   {
+    "pose": "n7_soulagement_inspire",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 3.0
+     }
+    },
+    "duree": 0.7,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_soulagement",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 3.0
+     }
+    },
+    "duree": 0.75,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_repos",
+    "valeurs": {
+     "zones": {
+      "cou_deglutition": 3.0
+     }
+    },
+    "duree": 0.54,
+    "courbe": "doux"
+   }
+  ],
+  "gant": [
+   {
+    "valeurs": {
+     "x": 380.0,
+     "y": -110.0,
+     "angle": 9.0,
+     "ouverture": 0.0,
+     "paume": 0.0
+    },
+    "tenir": 0.85
+   },
+   {
+    "valeurs": {
+     "x": 322.0,
+     "y": 258.0,
+     "angle": 0.0,
+     "ouverture": 0.0
+    },
+    "duree": 1.7,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {},
+    "duree": 0.08,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "ouverture": 1.0
+    },
+    "duree": 0.18,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {},
+    "duree": 0.24,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "x": 380.0,
+     "y": -110.0,
+     "angle": 9.0,
+     "ouverture": 0.3,
+     "paume": 0.0
+    },
+    "duree": 1.7,
+    "courbe": "doux"
+   }
+  ],
+  "morceau": [
+   {
+    "valeurs": {
+     "visible": 1,
+     "attache": "gant",
+     "decalage": [
+      0.0,
+      9.0
+     ],
+     "x": 322.0,
+     "y": 267.0,
+     "angle": 0.0,
+     "angle_main": -48.0,
+     "tenue": [
+      0.0,
+      0.0
+     ],
+     "ecrasement": 0.0,
+     "bouchees": 0.0
+    },
+    "tenir": 2.71
+   },
+   {
+    "valeurs": {
+     "attache": "libre"
+    },
+    "duree": 0.0,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "x": 303.0,
+     "y": 317.0,
+     "angle": 8.0
+    },
+    "duree": 0.27,
+    "courbe": "chute"
+   },
+   {
+    "valeurs": {
+     "ecrasement": 0.3
+    },
+    "duree": 0.04,
+    "courbe": "sortie"
+   },
+   {
+    "valeurs": {
+     "ecrasement": 0.0
+    },
+    "duree": 0.25,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {},
+    "duree": 1.32,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "attache": "main"
+    },
+    "duree": 0.0,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "angle_main": 120.0,
+     "tenue": [
+      -9.0,
+      0.0
+     ]
+    },
+    "duree": 1.2,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {},
+    "duree": 0.5,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "bouchees": 1.0
+    },
+    "duree": 0.15,
+    "courbe": "entree"
+   },
+   {
+    "valeurs": {},
+    "duree": 2.67,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "bouchees": 2.0
+    },
+    "duree": 0.15,
+    "courbe": "entree"
+   },
+   {
+    "valeurs": {},
+    "duree": 2.67,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "bouchees": 3.0
+    },
+    "duree": 0.15,
+    "courbe": "entree"
+   },
+   {
+    "valeurs": {
+     "visible": 0
+    },
+    "duree": 0.0,
+    "courbe": "doux"
+   }
+  ],
+  "mouches": [
+   {
+    "valeurs": {
+     "agitation": 0.0,
+     "attraction": 0.0
+    },
+    "tenir": 1.35
+   },
+   {
+    "valeurs": {
+     "agitation": 0.7
+    },
+    "duree": 0.8,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "agitation": 1.0,
+     "attraction": 0.0
+    },
+    "duree": 0.8,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "agitation": 0.35,
+     "attraction": 0.85
+    },
+    "duree": 1.4,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {},
+    "duree": 7.71,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "agitation": 0.8,
+     "attraction": 0.0
+    },
+    "duree": 1.5,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "agitation": 0.0
+    },
+    "duree": 2.04,
+    "courbe": "doux"
+   }
+  ]
+ }
+}

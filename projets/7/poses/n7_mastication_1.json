@@ -1,0 +1,10 @@
+{
+ "nom": "n7_mastication_1",
+ "description": "Mâchoire mi-ouverte, joues gonflées, tête qui plonge un peu.",
+ "zones": {
+  "machoire": 0.6,
+  "joues": 1.0,
+  "tete_rotation": 7.5,
+  "tete_y": 0.8
+ }
+}

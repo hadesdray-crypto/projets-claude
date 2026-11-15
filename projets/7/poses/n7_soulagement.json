@@ -1,0 +1,56 @@
+{
+ "nom": "n7_soulagement",
+ "description": "Long soupir : la poitrine se vide, les épaules retombent, les genoux mollissent, la tête s'affaisse, la main pend.",
+ "squelette": {
+  "racine": 0.0,
+  "racine_x": 0.5,
+  "racine_y": 2.0,
+  "tronc": 1.0,
+  "cou": 0.0,
+  "epaule": -6.05,
+  "coude": -96.34,
+  "poignet": 29.39,
+  "main_fermeture": 0.45,
+  "epaule2": -6.92,
+  "coude2": 29.81,
+  "pied_g_x": 0.0,
+  "pied_g_y": 0.0,
+  "pied_g": 0.0,
+  "pied_d_x": 0.0,
+  "pied_d_y": 0.0,
+  "pied_d": 0.0,
+  "poignet2": 0.0
+ },
+ "corps": {
+  "inclinaison": 0.8,
+  "x": 0.5,
+  "y": 0.0,
+  "epaules": 2.6,
+  "poitrine": -1.3
+ },
+ "zones": {
+  "tete_rotation": 3.0,
+  "tete_x": 0.0,
+  "tete_y": 1.2,
+  "machoire": 0.25,
+  "joues": 0.0,
+  "sourire": 0.8,
+  "paupieres": 0.5,
+  "cou_deglutition": 0.0,
+  "oeil_pendant_regard": 0.0
+ },
+ "vie": {
+  "eveil": 1.0,
+  "sommeil": 0.0,
+  "frisson": 0.0
+ },
+ "physique": {
+  "sol_oeil": 2000.0
+ },
+ "attaches": {
+  "prise_main": [
+   15.0,
+   2.0
+  ]
+ }
+}

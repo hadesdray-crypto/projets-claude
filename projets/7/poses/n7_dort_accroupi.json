@@ -1,0 +1,56 @@
+{
+ "nom": "n7_dort_accroupi",
+ "description": "Il plie les genoux et s'accroupit, le dos rond, les bras pendants.",
+ "squelette": {
+  "racine": 8.0,
+  "racine_x": -8.0,
+  "racine_y": 48.0,
+  "tronc": 10.0,
+  "cou": 0.0,
+  "epaule": -30.06,
+  "coude": -67.9,
+  "poignet": 15.95,
+  "main_fermeture": 0.5,
+  "epaule2": 4.96,
+  "coude2": 33.85,
+  "pied_g_x": 0.0,
+  "pied_g_y": 0.0,
+  "pied_g": 0.0,
+  "pied_d_x": 0.0,
+  "pied_d_y": 0.0,
+  "pied_d": 0.0,
+  "poignet2": 0.0
+ },
+ "corps": {
+  "inclinaison": 0.0,
+  "x": 0.0,
+  "y": 0.0,
+  "epaules": 2.4,
+  "poitrine": -0.6
+ },
+ "zones": {
+  "tete_rotation": 8.0,
+  "tete_x": 0.0,
+  "tete_y": 3.0,
+  "machoire": 0.18,
+  "joues": 0.0,
+  "sourire": 0.0,
+  "paupieres": 0.62,
+  "cou_deglutition": 0.0,
+  "oeil_pendant_regard": -8.0
+ },
+ "vie": {
+  "eveil": 0.6,
+  "sommeil": 0.0,
+  "frisson": 0.0
+ },
+ "physique": {
+  "sol_oeil": 2000.0
+ },
+ "attaches": {
+  "prise_main": [
+   15.0,
+   2.0
+  ]
+ }
+}

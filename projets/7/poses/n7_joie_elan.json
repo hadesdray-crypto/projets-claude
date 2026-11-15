@@ -1,0 +1,56 @@
+{
+ "nom": "n7_joie_elan",
+ "description": "Il se ramasse avant de sauter : genoux fléchis, bras qui reculent, bouche qui s'ouvre déjà.",
+ "squelette": {
+  "racine": 0.0,
+  "racine_x": -1.0,
+  "racine_y": 10.0,
+  "tronc": 3.0,
+  "cou": 0.0,
+  "epaule": -64.45,
+  "coude": -58.44,
+  "poignet": 9.88,
+  "main_fermeture": 0.2,
+  "epaule2": 81.24,
+  "coude2": 8.61,
+  "pied_g_x": 0.0,
+  "pied_g_y": 0.0,
+  "pied_g": 0.0,
+  "pied_d_x": 0.0,
+  "pied_d_y": 0.0,
+  "pied_d": 0.0,
+  "poignet2": 0.0
+ },
+ "corps": {
+  "inclinaison": 0.0,
+  "x": 0.0,
+  "y": 0.0,
+  "epaules": 1.5,
+  "poitrine": 0.0
+ },
+ "zones": {
+  "tete_rotation": 3.0,
+  "tete_x": 0.0,
+  "tete_y": 2.0,
+  "machoire": 0.3,
+  "joues": 0.3,
+  "sourire": 0.5,
+  "paupieres": 0.0,
+  "cou_deglutition": 0.0,
+  "oeil_pendant_regard": 0.0
+ },
+ "vie": {
+  "eveil": 1.0,
+  "sommeil": 0.0,
+  "frisson": 0.0
+ },
+ "physique": {
+  "sol_oeil": 2000.0
+ },
+ "attaches": {
+  "prise_main": [
+   15.0,
+   2.0
+  ]
+ }
+}

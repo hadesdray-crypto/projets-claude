@@ -1,0 +1,173 @@
+{
+ "note": "Réglages des bras de la demande 7 (pixels de la scène 640x480). Les longueurs d'os sont dans scene7.json.",
+ "texel": 2,
+ "peau": {
+  "clair": [
+   160,
+   178,
+   126
+  ],
+  "moyen": [
+   116,
+   132,
+   86
+  ],
+  "sombre": [
+   72,
+   86,
+   52
+  ]
+ },
+ "manche": {
+  "clair": [
+   176,
+   171,
+   148
+  ],
+  "moyen": [
+   132,
+   125,
+   102
+  ],
+  "sombre": [
+   88,
+   82,
+   64
+  ]
+ },
+ "trait": [
+  8,
+  9,
+  2
+ ],
+ "bras": {
+  "avant": {
+   "os": [
+    "bras",
+    "avant_bras",
+    "main"
+   ],
+   "fermeture": "squelette.main_fermeture",
+   "defaut_fermeture": 0.45,
+   "coude_pli": 1
+  },
+  "arriere": {
+   "os": [
+    "bras2",
+    "avant_bras2",
+    "main2"
+   ],
+   "fermeture": "squelette.main_fermeture2",
+   "defaut_fermeture": 0.4,
+   "coude_pli": 1
+  }
+ },
+ "rayons": {
+  "epaule": 14.0,
+  "coude": 12.0,
+  "poignet": 10.0
+ },
+ "manche_longueur": 0.5,
+ "manche_surplus": 2.4,
+ "main": {
+  "taille": 1.15,
+  "formes": {
+   "ouverte": {
+    "f": 0.0,
+    "doigts": [
+     [
+      -12,
+      6,
+      8
+     ],
+     [
+      0,
+      5,
+      8
+     ],
+     [
+      12,
+      6,
+      8
+     ]
+    ],
+    "pouce": [
+     -52,
+     10
+    ]
+   },
+   "relachee": {
+    "f": 0.4,
+    "doigts": [
+     [
+      -8,
+      30,
+      38
+     ],
+     [
+      0,
+      34,
+      42
+     ],
+     [
+      7,
+      38,
+      44
+     ]
+    ],
+    "pouce": [
+     -24,
+     24
+    ]
+   },
+   "saisissante": {
+    "f": 0.72,
+    "doigts": [
+     [
+      -8,
+      52,
+      56
+     ],
+     [
+      0,
+      58,
+      60
+     ],
+     [
+      6,
+      62,
+      62
+     ]
+    ],
+    "pouce": [
+     -34,
+     38
+    ]
+   },
+   "fermee": {
+    "f": 1.0,
+    "doigts": [
+     [
+      -4,
+      84,
+      92
+     ],
+     [
+      0,
+      88,
+      94
+     ],
+     [
+      4,
+      90,
+      96
+     ]
+    ],
+    "pouce": [
+     -12,
+     62
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "nom": "n7_regard_morceau",
+ "description": "La tête suit le morceau qui tombe et se baisse vers lui ; le buste se penche un peu.",
+ "squelette": {
+  "racine": 0.0,
+  "racine_x": 1.0,
+  "racine_y": 0.0,
+  "tronc": 0.0,
+  "cou": 0.0,
+  "epaule": -8.65,
+  "coude": -99.25,
+  "poignet": 17.89,
+  "main_fermeture": 0.55,
+  "epaule2": -9.1,
+  "coude2": 30.02,
+  "pied_g_x": 0.0,
+  "pied_g_y": 0.0,
+  "pied_g": 0.0,
+  "pied_d_x": 0.0,
+  "pied_d_y": 0.0,
+  "pied_d": 0.0,
+  "poignet2": 0.0
+ },
+ "corps": {
+  "inclinaison": 1.5,
+  "x": 0.0,
+  "y": 0.0,
+  "epaules": 0.0,
+  "poitrine": 0.0
+ },
+ "zones": {
+  "tete_rotation": 7.0,
+  "tete_x": 2.5,
+  "tete_y": 1.0,
+  "machoire": 0.3,
+  "joues": 0.0,
+  "sourire": 0.0,
+  "paupieres": 0.0,
+  "cou_deglutition": 0.0,
+  "oeil_pendant_regard": -20.0
+ },
+ "vie": {
+  "eveil": 1.0,
+  "sommeil": 0.0,
+  "frisson": 0.0
+ },
+ "physique": {
+  "sol_oeil": 2000.0
+ },
+ "attaches": {
+  "prise_main": [
+   15.0,
+   2.0
+  ]
+ }
+}

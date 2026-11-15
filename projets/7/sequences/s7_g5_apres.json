@@ -1,0 +1,141 @@
+{
+ "nom": "s7_g5_apres",
+ "duree": 3.0,
+ "boucle": true,
+ "description": "Caresse avec frisson à ressort : appui du gant (la tête s'écrase), puis frisson qui dépasse et dont la tête, les épaules et le bras suivent avec un retard (recette frisson_ressort).",
+ "recettes": {
+  "thomas": [
+   "micro_vie",
+   "squash_stretch",
+   "frisson_ressort"
+  ]
+ },
+ "pistes": {
+  "thomas": [
+   {
+    "pose": "n7_repos",
+    "tenir": 0.1,
+    "valeurs": {
+     "anim": {
+      "ecrasement": 0.0
+     }
+    }
+   },
+   {
+    "pose": "n7_caresse_arrivee",
+    "duree": 0.6,
+    "courbe": "sortie"
+   },
+   {
+    "pose": "n7_caresse_arrivee",
+    "duree": 0.1,
+    "courbe": "entree",
+    "valeurs": {
+     "anim": {
+      "ecrasement": 0.7
+     }
+    }
+   },
+   {
+    "pose": "n7_caresse_arrivee",
+    "duree": 0.2,
+    "courbe": "doux",
+    "valeurs": {
+     "anim": {
+      "ecrasement": 0.0
+     }
+    }
+   },
+   {
+    "pose": "n7_caresse_g",
+    "duree": 0.4,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_caresse_d",
+    "duree": 0.5,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_caresse_detendu",
+    "duree": 0.5,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_repos",
+    "duree": 0.6,
+    "courbe": "doux"
+   }
+  ],
+  "gant": [
+   {
+    "valeurs": {
+     "x": 330.0,
+     "y": -110.0,
+     "angle": 6.0,
+     "ouverture": 0.4,
+     "paume": 1.0
+    },
+    "tenir": 0.1
+   },
+   {
+    "valeurs": {
+     "x": 246.0,
+     "y": 94.0,
+     "angle": 0.0
+    },
+    "duree": 0.6,
+    "courbe": "sortie"
+   },
+   {
+    "valeurs": {
+     "y": 106.0
+    },
+    "duree": 0.1,
+    "courbe": "entree"
+   },
+   {
+    "valeurs": {
+     "y": 96.0
+    },
+    "duree": 0.2,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "x": 230.0,
+     "y": 98.0
+    },
+    "duree": 0.4,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "x": 262.0,
+     "y": 98.0
+    },
+    "duree": 0.5,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "x": 230.0,
+     "y": 98.0
+    },
+    "duree": 0.5,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "x": 330.0,
+     "y": -110.0,
+     "angle": 6.0,
+     "ouverture": 0.4,
+     "paume": 1.0
+    },
+    "duree": 0.6,
+    "courbe": "entree"
+   }
+  ]
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "nom": "n7_dort_baille",
+ "description": "Plein bâillement : bouche grande ouverte, yeux presque fermés, bras étirés, poitrine très gonflée.",
+ "squelette": {
+  "racine": 0.0,
+  "racine_x": -2.0,
+  "racine_y": -1.5,
+  "tronc": -5.0,
+  "cou": 0.0,
+  "epaule": -76.37,
+  "coude": -36.27,
+  "poignet": 5.64,
+  "main_fermeture": 0.0,
+  "epaule2": 65.11,
+  "coude2": 16.96,
+  "pied_g_x": 0.0,
+  "pied_g_y": 0.0,
+  "pied_g": 0.0,
+  "pied_d_x": 0.0,
+  "pied_d_y": 0.0,
+  "pied_d": 0.0,
+  "poignet2": 0.0
+ },
+ "corps": {
+  "inclinaison": 0.0,
+  "x": 0.0,
+  "y": 0.0,
+  "epaules": -2.4,
+  "poitrine": 2.4
+ },
+ "zones": {
+  "tete_rotation": -13.0,
+  "tete_x": 0.0,
+  "tete_y": -3.0,
+  "machoire": 1.0,
+  "joues": 0.6,
+  "sourire": 0.0,
+  "paupieres": 0.75,
+  "cou_deglutition": 0.0,
+  "oeil_pendant_regard": 16.0
+ },
+ "vie": {
+  "eveil": 1.0,
+  "sommeil": 0.0,
+  "frisson": 0.0
+ },
+ "physique": {
+  "sol_oeil": 2000.0
+ },
+ "attaches": {
+  "prise_main": [
+   15.0,
+   2.0
+  ]
+ }
+}

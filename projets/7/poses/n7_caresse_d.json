@@ -1,0 +1,56 @@
+{
+ "nom": "n7_caresse_d",
+ "description": "Le gant frotte la tête : elle s'incline, les yeux se plissent, léger sourire, épaules détendues.",
+ "squelette": {
+  "racine": 0.0,
+  "racine_x": 0.5,
+  "racine_y": 0.8,
+  "tronc": 1.7,
+  "cou": 0.0,
+  "epaule": -4.38,
+  "coude": -95.84,
+  "poignet": 27.22,
+  "main_fermeture": 0.4,
+  "epaule2": -5.24,
+  "coude2": 30.11,
+  "pied_g_x": 0.0,
+  "pied_g_y": 0.0,
+  "pied_g": 0.0,
+  "pied_d_x": 0.0,
+  "pied_d_y": 0.0,
+  "pied_d": 0.0,
+  "poignet2": 0.0
+ },
+ "corps": {
+  "inclinaison": 0.4,
+  "x": 0.0,
+  "y": 0.0,
+  "epaules": 2.2,
+  "poitrine": 0.0
+ },
+ "zones": {
+  "tete_rotation": 2.5,
+  "tete_x": 2.5,
+  "tete_y": 3.2,
+  "machoire": 0.12,
+  "joues": 0.55,
+  "sourire": 0.55,
+  "paupieres": 0.5,
+  "cou_deglutition": 0.0,
+  "oeil_pendant_regard": -4.0
+ },
+ "vie": {
+  "eveil": 1.0,
+  "sommeil": 0.0,
+  "frisson": 0.0
+ },
+ "physique": {
+  "sol_oeil": 2000.0
+ },
+ "attaches": {
+  "prise_main": [
+   15.0,
+   2.0
+  ]
+ }
+}

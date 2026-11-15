@@ -1,0 +1,56 @@
+{
+ "nom": "n7_dort_baille_fin",
+ "description": "La bouche se referme, les bras retombent, la tête revient en avant, lourde.",
+ "squelette": {
+  "racine": 0.0,
+  "racine_x": 0.0,
+  "racine_y": 1.0,
+  "tronc": 3.0,
+  "cou": 0.0,
+  "epaule": -19.91,
+  "coude": -89.22,
+  "poignet": 17.13,
+  "main_fermeture": 0.4,
+  "epaule2": 5.23,
+  "coude2": 29.35,
+  "pied_g_x": 0.0,
+  "pied_g_y": 0.0,
+  "pied_g": 0.0,
+  "pied_d_x": 0.0,
+  "pied_d_y": 0.0,
+  "pied_d": 0.0,
+  "poignet2": 0.0
+ },
+ "corps": {
+  "inclinaison": 0.0,
+  "x": 0.0,
+  "y": 0.0,
+  "epaules": 2.6,
+  "poitrine": -0.8
+ },
+ "zones": {
+  "tete_rotation": 7.0,
+  "tete_x": 0.0,
+  "tete_y": 3.0,
+  "machoire": 0.15,
+  "joues": 0.0,
+  "sourire": 0.0,
+  "paupieres": 0.55,
+  "cou_deglutition": 0.0,
+  "oeil_pendant_regard": -6.0
+ },
+ "vie": {
+  "eveil": 1.0,
+  "sommeil": 0.0,
+  "frisson": 0.0
+ },
+ "physique": {
+  "sol_oeil": 2000.0
+ },
+ "attaches": {
+  "prise_main": [
+   15.0,
+   2.0
+  ]
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "nom": "n7_mastication_3",
+ "description": "Mâchoire mi-ouverte décalée, joues pleines, tête un peu en avant.",
+ "zones": {
+  "machoire": 0.5,
+  "joues": 1.0,
+  "tete_rotation": 6.5,
+  "tete_x": 3.5,
+  "tete_y": 0.5
+ }
+}

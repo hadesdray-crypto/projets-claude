@@ -1,0 +1,74 @@
+{
+ "nom": "s7_dort",
+ "duree": 12.0,
+ "boucle": false,
+ "description": "Thomas bâille, s'accroupit, s'assoit puis s'allonge au sol ; il s'endort, respiration lente, bulle Zzz. 12 s, sans boucle : il finit couché (le début de « reveil »).",
+ "recettes": {
+  "thomas": [
+   "vie"
+  ]
+ },
+ "pistes": {
+  "thomas": [
+   {
+    "pose": "n7_repos",
+    "tenir": 0.5
+   },
+   {
+    "pose": "n7_dort_baille_debut",
+    "duree": 1.0,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_dort_baille",
+    "duree": 0.9,
+    "courbe": "doux",
+    "tenir": 0.5
+   },
+   {
+    "pose": "n7_dort_baille_fin",
+    "duree": 0.7,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_dort_accroupi",
+    "duree": 1.1,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_dort_assis",
+    "duree": 1.0,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_dort_allonge",
+    "duree": 0.9,
+    "courbe": "doux"
+   },
+   {
+    "pose": "n7_dort_couche",
+    "duree": 1.1,
+    "courbe": "doux",
+    "tenir": 4.3
+   }
+  ],
+  "bulle": [
+   {
+    "valeurs": {
+     "taille": 0.0,
+     "dx": 24.0,
+     "dy": -22.0
+    },
+    "tenir": 7.7
+   },
+   {
+    "valeurs": {
+     "taille": 1.0
+    },
+    "duree": 1.6,
+    "courbe": "doux",
+    "tenir": 2.7
+   }
+  ]
+ }
+}

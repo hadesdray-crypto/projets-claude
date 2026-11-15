@@ -1,0 +1,56 @@
+{
+ "nom": "n7_main_saisit",
+ "description": "La main ouverte arrive sur le morceau posé sur le bord du cercueil ; buste penché, genoux fléchis, bras presque tendu.",
+ "squelette": {
+  "racine": 0.0,
+  "racine_x": 5.0,
+  "racine_y": 4.0,
+  "tronc": 0.0,
+  "cou": 0.0,
+  "epaule": -5.26,
+  "coude": -85.71,
+  "poignet": 50.5,
+  "main_fermeture": 0.0,
+  "epaule2": 27.6,
+  "coude2": -28.16,
+  "pied_g_x": 0.0,
+  "pied_g_y": 0.0,
+  "pied_g": 0.0,
+  "pied_d_x": 0.0,
+  "pied_d_y": 0.0,
+  "pied_d": 0.0,
+  "poignet2": 0.0
+ },
+ "corps": {
+  "inclinaison": 8.5,
+  "x": 3.0,
+  "y": 1.5,
+  "epaules": 0.5,
+  "poitrine": 0.0
+ },
+ "zones": {
+  "tete_rotation": 9.0,
+  "tete_x": 3.0,
+  "tete_y": 1.0,
+  "machoire": 0.15,
+  "joues": 0.0,
+  "sourire": 0.0,
+  "paupieres": 0.0,
+  "cou_deglutition": 0.0,
+  "oeil_pendant_regard": -25.0
+ },
+ "vie": {
+  "eveil": 1.0,
+  "sommeil": 0.0,
+  "frisson": 0.0
+ },
+ "physique": {
+  "sol_oeil": 2000.0
+ },
+ "attaches": {
+  "prise_main": [
+   15.0,
+   2.0
+  ]
+ }
+}
