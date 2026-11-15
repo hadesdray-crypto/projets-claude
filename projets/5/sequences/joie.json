@@ -1,0 +1,114 @@
+{
+ "nom": "joie",
+ "duree": 8.0,
+ "boucle": true,
+ "description": "Bras levés en V, grand sourire bouche ouverte, un grand saut puis des petits rebonds, retour doux au repos. 8 s, boucle continue.",
+ "recettes": {
+  "thomas": [
+   "vie"
+  ]
+ },
+ "pistes": {
+  "thomas": [
+   {
+    "pose": "repos",
+    "tenir": 0.3,
+    "valeurs": {
+     "physique": {
+      "tige_devant": 1.0
+     }
+    }
+   },
+   {
+    "pose": "joie_elan",
+    "duree": 0.55,
+    "courbe": "doux"
+   },
+   {
+    "pose": "joie_saut",
+    "duree": 0.5,
+    "courbe": "spline"
+   },
+   {
+    "pose": "joie_bras_hauts",
+    "duree": 0.3,
+    "courbe": "spline"
+   },
+   {
+    "pose": "joie_creux",
+    "duree": 0.3,
+    "courbe": "spline"
+   },
+   {
+    "pose": "joie_petit_saut",
+    "duree": 0.3,
+    "courbe": "spline"
+   },
+   {
+    "pose": "joie_bras_hauts",
+    "duree": 0.3,
+    "courbe": "spline"
+   },
+   {
+    "pose": "joie_creux",
+    "duree": 0.3,
+    "courbe": "spline"
+   },
+   {
+    "pose": "joie_petit_saut",
+    "duree": 0.3,
+    "courbe": "spline"
+   },
+   {
+    "pose": "joie_bras_hauts",
+    "duree": 0.3,
+    "courbe": "spline"
+   },
+   {
+    "pose": "joie_creux",
+    "duree": 0.35,
+    "courbe": "spline"
+   },
+   {
+    "pose": "joie_saut",
+    "duree": 0.45,
+    "courbe": "spline"
+   },
+   {
+    "pose": "joie_bras_hauts",
+    "duree": 0.3,
+    "courbe": "spline"
+   },
+   {
+    "pose": "joie_creux",
+    "duree": 0.35,
+    "courbe": "spline"
+   },
+   {
+    "pose": "joie_petit_saut",
+    "duree": 0.3,
+    "courbe": "spline"
+   },
+   {
+    "pose": "joie_bras_hauts",
+    "duree": 0.4,
+    "courbe": "doux"
+   },
+   {
+    "pose": "joie_bras_milieu",
+    "duree": 0.8,
+    "courbe": "doux"
+   },
+   {
+    "pose": "joie_calme",
+    "duree": 0.8,
+    "courbe": "doux"
+   },
+   {
+    "pose": "repos",
+    "duree": 0.8,
+    "courbe": "doux"
+   }
+  ]
+ }
+}

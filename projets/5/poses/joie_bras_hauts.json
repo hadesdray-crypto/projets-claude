@@ -1,0 +1,55 @@
+{
+ "nom": "joie_bras_hauts",
+ "description": "Les pieds au sol, bras toujours levés, bouche ouverte, poitrine gonflée.",
+ "squelette": {
+  "racine": 0.0,
+  "racine_x": 0.0,
+  "racine_y": 1.0,
+  "tronc": -2.0,
+  "cou": 0.0,
+  "epaule": -96.0,
+  "coude": 44.0,
+  "poignet": -8.0,
+  "main_fermeture": 0.0,
+  "epaule2": 150.0,
+  "coude2": 8.0,
+  "pied_g_x": 0.0,
+  "pied_g_y": 0.0,
+  "pied_g": 0.0,
+  "pied_d_x": 0.0,
+  "pied_d_y": 0.0,
+  "pied_d": 0.0
+ },
+ "corps": {
+  "inclinaison": 0.0,
+  "x": 0.0,
+  "y": 0.0,
+  "epaules": -1.0,
+  "poitrine": 1.4
+ },
+ "zones": {
+  "tete_rotation": -3.0,
+  "tete_x": 0.0,
+  "tete_y": -0.8,
+  "machoire": 0.75,
+  "joues": 0.8,
+  "sourire": 1.0,
+  "paupieres": 0.0,
+  "cou_deglutition": 0.0,
+  "oeil_pendant_regard": 0.0
+ },
+ "vie": {
+  "eveil": 1.0,
+  "sommeil": 0.0,
+  "frisson": 0.0
+ },
+ "physique": {
+  "sol_oeil": 2000.0
+ },
+ "attaches": {
+  "prise_main": [
+   15.0,
+   2.0
+  ]
+ }
+}

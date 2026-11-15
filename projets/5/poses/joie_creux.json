@@ -1,0 +1,55 @@
+{
+ "nom": "joie_creux",
+ "description": "Petit fléchissement entre deux rebonds, bras levés, la bouche reste ouverte.",
+ "squelette": {
+  "racine": 0.0,
+  "racine_x": 0.0,
+  "racine_y": 5.0,
+  "tronc": 1.0,
+  "cou": 0.0,
+  "epaule": -104.0,
+  "coude": 50.0,
+  "poignet": -8.0,
+  "main_fermeture": 0.0,
+  "epaule2": 154.0,
+  "coude2": 6.0,
+  "pied_g_x": 0.0,
+  "pied_g_y": 0.0,
+  "pied_g": 0.0,
+  "pied_d_x": 0.0,
+  "pied_d_y": 0.0,
+  "pied_d": 0.0
+ },
+ "corps": {
+  "inclinaison": 0.0,
+  "x": 0.0,
+  "y": 0.0,
+  "epaules": 1.2,
+  "poitrine": 0.2
+ },
+ "zones": {
+  "tete_rotation": 1.0,
+  "tete_x": 0.0,
+  "tete_y": 1.0,
+  "machoire": 0.7,
+  "joues": 0.9,
+  "sourire": 1.0,
+  "paupieres": 0.0,
+  "cou_deglutition": 0.0,
+  "oeil_pendant_regard": 0.0
+ },
+ "vie": {
+  "eveil": 1.0,
+  "sommeil": 0.0,
+  "frisson": 0.0
+ },
+ "physique": {
+  "sol_oeil": 2000.0
+ },
+ "attaches": {
+  "prise_main": [
+   15.0,
+   2.0
+  ]
+ }
+}

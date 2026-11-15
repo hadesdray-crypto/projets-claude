@@ -72,6 +72,44 @@ def caresse():
         'description': "Le gant blanc frotte doucement la tête de Thomas : frisson, paupières mi-closes, léger sourire, œil pendant qui oscille, épaules détendues. 8 s, boucle continue.",
         'recettes': {'thomas': ['vie']}, 'pistes': {'thomas': T, 'gant': g}})
 
+
+BRAS_HAUT = {'epaule': -100.0, 'coude': 46.0, 'poignet': -8.0, 'epaule2': 158.0, 'coude2': 3.0, 'main_fermeture': 0.0}
+
+def joie():
+    pose('joie_elan', "Il se ramasse avant de sauter : genoux fléchis, bras qui reculent, bouche qui s'ouvre déjà.",
+         sq={'racine_y': 10.0, 'racine_x': -1.0, 'tronc': 3.0, 'epaule': -45.0, 'coude': 22.0, 'epaule2': 75.0, 'coude2': 10.0, 'main_fermeture': 0.2},
+         corps={'epaules': 1.5}, zones={'sourire': 0.5, 'machoire': 0.3, 'joues': 0.3, 'tete_y': 2.0, 'tete_rotation': 3.0})
+    pose('joie_saut', "Au sommet du saut : bras levés en V, grande bouche joyeuse, tête en arrière, pieds décollés.",
+         sq={**BRAS_HAUT, 'racine_y': -14.0, 'racine_x': 0.5, 'tronc': -3.0, 'pied_g_y': -9.0, 'pied_d_y': -11.0, 'pied_g': -12.0, 'pied_d': -8.0},
+         corps={'epaules': -1.2, 'poitrine': 1.2}, zones={'sourire': 1.0, 'machoire': 0.85, 'joues': 0.9, 'tete_y': -1.5, 'tete_rotation': -5.0, OEIL: 8.0})
+    pose('joie_bras_hauts', "Les pieds au sol, bras toujours levés, bouche ouverte, poitrine gonflée.",
+         sq={**BRAS_HAUT, 'racine_y': 1.0, 'tronc': -2.0, 'epaule': -96.0, 'epaule2': 150.0, 'coude': 44.0, 'coude2': 8.0},
+         corps={'epaules': -1.0, 'poitrine': 1.4}, zones={'sourire': 1.0, 'machoire': 0.75, 'joues': 0.8, 'tete_y': -0.8, 'tete_rotation': -3.0})
+    pose('joie_creux', "Petit fléchissement entre deux rebonds, bras levés, la bouche reste ouverte.",
+         sq={**BRAS_HAUT, 'racine_y': 5.0, 'tronc': 1.0, 'epaule': -104.0, 'epaule2': 154.0, 'coude': 50.0, 'coude2': 6.0},
+         corps={'epaules': 1.2, 'poitrine': 0.2}, zones={'sourire': 1.0, 'machoire': 0.7, 'joues': 0.9, 'tete_y': 1.0, 'tete_rotation': 1.0})
+    pose('joie_petit_saut', "Petit rebond : pieds qui quittent à peine le sol, bras en V.",
+         sq={**BRAS_HAUT, 'racine_y': -7.0, 'tronc': -2.0, 'pied_g_y': -4.0, 'pied_d_y': -5.0, 'epaule': -98.0, 'epaule2': 152.0, 'coude': 46.0, 'coude2': 6.0},
+         corps={'epaules': -1.0, 'poitrine': 1.0}, zones={'sourire': 1.0, 'machoire': 0.8, 'joues': 0.9, 'tete_y': -1.0, 'tete_rotation': -4.0})
+    pose('joie_bras_milieu', "Les bras redescendent à mi-hauteur, le sourire reste.",
+         sq={'epaule': -55.0, 'coude': 25.0, 'epaule2': 75.0, 'coude2': 15.0, 'main_fermeture': 0.2, 'racine_y': 2.0, 'tronc': 0.0},
+         corps={'epaules': 0.8, 'poitrine': 0.5}, zones={'sourire': 0.8, 'machoire': 0.4, 'joues': 0.6, 'tete_y': 0.0})
+    pose('joie_calme', "Retour au calme : bras presque le long du corps, souffle, léger sourire.",
+         sq={'epaule': 6.0, 'coude': 6.0, 'epaule2': 4.0, 'coude2': 2.0, 'main_fermeture': 0.45, 'racine_y': 1.5, 'tronc': 1.0},
+         corps={'epaules': 2.0, 'poitrine': 0.8}, zones={'sourire': 0.5, 'machoire': 0.2, 'joues': 0.3, 'tete_y': 1.0, 'paupieres': 0.3})
+
+    plan = [('repos', 0.0, None), ('joie_elan', 0.55, 'doux'), ('joie_saut', 0.50, 'spline'), ('joie_bras_hauts', 0.30, 'spline'),
+            ('joie_creux', 0.30, 'spline'), ('joie_petit_saut', 0.30, 'spline'), ('joie_bras_hauts', 0.30, 'spline'),
+            ('joie_creux', 0.30, 'spline'), ('joie_petit_saut', 0.30, 'spline'), ('joie_bras_hauts', 0.30, 'spline'),
+            ('joie_creux', 0.35, 'spline'), ('joie_saut', 0.45, 'spline'), ('joie_bras_hauts', 0.30, 'spline'),
+            ('joie_creux', 0.35, 'spline'), ('joie_petit_saut', 0.30, 'spline'), ('joie_bras_hauts', 0.40, 'doux'),
+            ('joie_bras_milieu', 0.80, 'doux'), ('joie_calme', 0.80, 'doux'), ('repos', 0.80, 'doux')]
+    T = [{'pose': 'repos', 'tenir': 0.3, 'valeurs': {'physique': {'tige_devant': 1.0}}}] + [{'pose': p, 'duree': d, 'courbe': c} for p, d, c in plan[1:]]
+    sequence('joie', {'nom': 'joie', 'duree': 8.0, 'boucle': True,
+        'description': "Bras levés en V, grand sourire bouche ouverte, un grand saut puis des petits rebonds, retour doux au repos. 8 s, boucle continue.",
+        'recettes': {'thomas': ['vie']}, 'pistes': {'thomas': T}})
+
+
 if __name__ == '__main__':
-    for n in (sys.argv[1:] or ['caresse']):
+    for n in (sys.argv[1:] or ['caresse', 'joie', 'dort', 'reveil']):
         globals()[n]()

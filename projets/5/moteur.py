@@ -940,7 +940,8 @@ class Thomas:
                 else:
                     rects.append((X0, Y0, X1, Y1))
             elif nom == 'tige':
-                rects.append(self._tige(cadre, ressorts, p))
+                if p.get('physique.tige_devant', 0.0) < 0.5:     # (ajout demande 5) œil pendant devant le bras si demandé
+                    rects.append(self._tige(cadre, ressorts, p))
             elif nom == 'main':
                 dos, devant = self._main(etat, p.get('squelette.main_fermeture', 0.5))
                 P = etat['J']['main']
@@ -949,6 +950,8 @@ class Thomas:
                 if morceau is not None:
                     rects.append(morceau(cadre, 1.0 - info['levres']))
                 rects.append(devant.poser(cadre, P[0], P[1], ang)[0])
+        if p.get('physique.tige_devant', 0.0) >= 0.5:
+            rects.append(self._tige(cadre, ressorts, p))
         return union(rects), info
 
     def _main(self, etat, fermeture):

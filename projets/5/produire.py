@@ -25,7 +25,7 @@ FPS = 30
 JOURNEE = ['caresse', 'joie', 'dort', 'reveil']
 CLES = {   # instants (s) des 3 images clés de chaque séquence
     'caresse': [(1.9, 'le gant arrive sur la tête'), (3.7, 'frisson, yeux mi-clos, sourire'), (7.0, 'le gant repart')],
-    'joie': [(1.0, 'élan'), (2.4, 'bras levés, bouche ouverte'), (5.6, 'retour doux au repos')],
+    'joie': [(0.85, 'élan, genoux fléchis'), (1.25, 'sommet du saut, bras levés'), (6.6, 'retour doux au repos')],
     'dort': [(2.0, 'bâillement'), (5.0, 'accroupi'), (11.0, 'couché, endormi, Zzz')],
     'reveil': [(1.0, 'endormi'), (3.5, 'il se redresse'), (6.0, 'étirement')],
 }
