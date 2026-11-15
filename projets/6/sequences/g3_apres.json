@@ -1,0 +1,141 @@
+{
+ "nom": "g3_apres",
+ "duree": 2.9,
+ "boucle": true,
+ "description": "Morsure avec tenue (0,22 s de tension, tête en arrière), mâchoire écrasée, impact net ; arrêt sur impact, éclair, secousse et miettes viennent de recettes/effets_morsure.json.",
+ "recettes": {
+  "thomas": [
+   "micro_vie",
+   "squash_stretch"
+  ]
+ },
+ "pistes": {
+  "thomas": [
+   {
+    "pose": "main_bouche_1",
+    "tenir": 0.15,
+    "valeurs": {
+     "anim": {
+      "ecrasement": 0.0
+     }
+    }
+   },
+   {
+    "pose": "bouche_ouverte_1",
+    "duree": 0.3,
+    "courbe": "doux"
+   },
+   {
+    "pose": "dans_la_bouche_1",
+    "duree": 0.25,
+    "courbe": "doux",
+    "tenir": 0.22,
+    "valeurs": {
+     "zones": {
+      "tete_rotation": -5.0
+     },
+     "anim": {
+      "ecrasement": -0.5
+     }
+    }
+   },
+   {
+    "pose": "morsure_1",
+    "duree": 0.08,
+    "courbe": "entree",
+    "tenir": 0.06,
+    "valeurs": {
+     "zones": {
+      "machoire": -0.32,
+      "tete_rotation": 4.0
+     },
+     "anim": {
+      "ecrasement": 1.0
+     }
+    }
+   },
+   {
+    "pose": "retire_1",
+    "duree": 0.28,
+    "courbe": "doux",
+    "valeurs": {
+     "zones": {
+      "tete_rotation": 0.0
+     },
+     "anim": {
+      "ecrasement": 0.0
+     }
+    }
+   },
+   {
+    "pose": "mastication_1",
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "mastication_2",
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "mastication_3",
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "mastication_2",
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "main_bouche_1",
+    "duree": 0.57,
+    "courbe": "doux",
+    "tenir": 0.35
+   }
+  ],
+  "morceau": [
+   {
+    "valeurs": {
+     "visible": 1,
+     "attache": "main",
+     "angle_main": 120.0,
+     "tenue": [
+      -9.0,
+      0.0
+     ],
+     "ecrasement": 0.0,
+     "bouchees": 0.0,
+     "x": 0.0,
+     "y": 0.0,
+     "angle": 0.0
+    },
+    "tenir": 0.92
+   },
+   {
+    "valeurs": {
+     "bouchees": 1.0
+    },
+    "duree": 0.08,
+    "courbe": "entree"
+   },
+   {
+    "valeurs": {},
+    "duree": 1.55,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "visible": 0
+    },
+    "duree": 0.0
+   },
+   {
+    "valeurs": {
+     "visible": 0
+    },
+    "duree": 0.35
+   }
+  ]
+ }
+}

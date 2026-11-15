@@ -28,5 +28,31 @@
    "avant": "avant",
    "apres": "après"
   }
+ },
+ {
+  "numero": 3,
+  "fichier": "3-morsure.gif",
+  "duree": 3.0,
+  "avant": {
+   "sequence": "g3_avant"
+  },
+  "apres": {
+   "sequence": "g3_apres",
+   "effets": "effets_morsure"
+  },
+  "etiquettes": {
+   "avant": "avant",
+   "apres": "après"
+  },
+  "apercu": [
+   28,
+   30,
+   31,
+   33,
+   34,
+   36,
+   38,
+   42
+  ]
  }
 ]

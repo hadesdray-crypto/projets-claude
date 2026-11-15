@@ -79,7 +79,7 @@ def main(num):
     images = paires[:n]
     jonction = float(np.abs(np.asarray(paires[n]).astype(int) - np.asarray(paires[0]).astype(int)).mean())
     os.makedirs(os.path.join(ICI, 'apercu'), exist_ok=True)
-    for k in (0, n // 8, n // 4, 3 * n // 8, n // 2, 5 * n // 8, 3 * n // 4, 7 * n // 8):
+    for k in sorted({0, n // 8, n // 4, 3 * n // 8, n // 2, 5 * n // 8, 3 * n // 4, 7 * n // 8} | set(cfg.get('apercu', []))):
         images[k].save(os.path.join(ICI, 'apercu', '%d-%03d.png' % (num, k)))
     sortie = os.path.join(ICI, cfg['fichier'])
     info = ecrire_gif(images, sortie)

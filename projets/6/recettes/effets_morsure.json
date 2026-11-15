@@ -1,0 +1,49 @@
+{
+ "nom": "effets_morsure",
+ "description": "Effets globaux de la morsure (instants en secondes de la vidéo de sortie). hit_stop : gel du temps (images). flash : éclair de couleur sur l'image entière (images, opacité). secousse : décalage de l'image entière qui s'éteint (images, amplitudes en px). miettes : petits morceaux projetés depuis (x, y) en pixels de la scène.",
+ "effets": [
+  {
+   "type": "hit_stop",
+   "a": 1.0,
+   "images": 3
+  },
+  {
+   "type": "flash",
+   "a": 1.0,
+   "images": 2,
+   "opacite": 0.7,
+   "couleur": [
+    255,
+    255,
+    255
+   ]
+  },
+  {
+   "type": "secousse",
+   "a": 1.0,
+   "images": 9,
+   "amplitude_x": 6,
+   "amplitude_y": 5,
+   "rythme": 2.2
+  },
+  {
+   "type": "miettes",
+   "a": 1.0,
+   "duree_images": 16,
+   "x": 232,
+   "y": 172,
+   "nombre": 9,
+   "angle": -100,
+   "ouverture": 80,
+   "vitesse_min": 4,
+   "vitesse_max": 10,
+   "gravite": 1.0,
+   "graine": 4,
+   "tailles": [
+    6,
+    6,
+    8
+   ]
+  }
+ ]
+}

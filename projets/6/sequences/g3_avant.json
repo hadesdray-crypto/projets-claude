@@ -1,0 +1,110 @@
+{
+ "nom": "g3_avant",
+ "duree": 3.0,
+ "boucle": true,
+ "description": "Morsure actuelle (poses de projets/5 : tenue brève, mâchoire qui se ferme, aucun arrêt ni éclair). Le morceau réapparaît à la jonction de la boucle (seule coupure).",
+ "recettes": {
+  "thomas": [
+   "vie_avant_3s"
+  ]
+ },
+ "pistes": {
+  "thomas": [
+   {
+    "pose": "main_bouche_1",
+    "tenir": 0.15
+   },
+   {
+    "pose": "bouche_ouverte_1",
+    "duree": 0.3,
+    "courbe": "doux"
+   },
+   {
+    "pose": "dans_la_bouche_1",
+    "duree": 0.25,
+    "courbe": "doux",
+    "tenir": 0.06
+   },
+   {
+    "pose": "morsure_1",
+    "duree": 0.13,
+    "courbe": "entree",
+    "tenir": 0.12
+   },
+   {
+    "pose": "retire_1",
+    "duree": 0.3,
+    "courbe": "doux"
+   },
+   {
+    "pose": "mastication_1",
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "mastication_2",
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "mastication_3",
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "mastication_2",
+    "duree": 0.16,
+    "courbe": "doux"
+   },
+   {
+    "pose": "main_bouche_1",
+    "duree": 0.65,
+    "courbe": "doux",
+    "tenir": 0.35
+   }
+  ],
+  "morceau": [
+   {
+    "valeurs": {
+     "visible": 1,
+     "attache": "main",
+     "angle_main": 120.0,
+     "tenue": [
+      -9.0,
+      0.0
+     ],
+     "ecrasement": 0.0,
+     "bouchees": 0.0,
+     "x": 0.0,
+     "y": 0.0,
+     "angle": 0.0
+    },
+    "tenir": 0.76
+   },
+   {
+    "valeurs": {
+     "bouchees": 1.0
+    },
+    "duree": 0.13,
+    "courbe": "entree"
+   },
+   {
+    "valeurs": {},
+    "duree": 1.71,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "visible": 0
+    },
+    "duree": 0.0
+   },
+   {
+    "valeurs": {
+     "visible": 0
+    },
+    "duree": 0.4
+   }
+  ]
+ }
+}
