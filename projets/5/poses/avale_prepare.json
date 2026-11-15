@@ -1,0 +1,6 @@
+{
+  "nom": "avale_prepare",
+  "description": "Avant d'avaler : bouche fermée, menton rentré, tête qui remonte, épaules qui montent.",
+  "zones": {"machoire": -0.1, "joues": 0.5, "tete_rotation": 3.0, "tete_y": -1.0},
+  "corps": {"epaules": -1.0}
+}

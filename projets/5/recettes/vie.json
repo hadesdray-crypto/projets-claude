@@ -1,0 +1,22 @@
+{
+  "nom": "vie",
+  "description": "Vie ajoutée par-dessus les poses. Éveillé (réglé par vie.eveil) : respiration qui gonfle la poitrine et soulève les épaules, poids du corps qui passe d'un pied sur l'autre (bassin, pieds fixes), tête qui suit, clignements irréguliers, mâchoire molle. Endormi (vie.sommeil) : respiration lente. Frisson (vie.frisson). Toutes les périodes divisent 8 s.",
+  "couches": [
+    {"parametre": "corps.poitrine", "amplitude": 0.9, "duree": 2.6667, "courbe": "souffle", "inspire": 0.42, "module": "vie.eveil"},
+    {"parametre": "corps.epaules", "amplitude": -0.7, "duree": 2.6667, "courbe": "souffle", "inspire": 0.42, "phase": -0.04, "module": "vie.eveil"},
+    {"parametre": "zones.tete_y", "amplitude": -0.5, "duree": 2.6667, "courbe": "souffle", "inspire": 0.42, "phase": -0.09, "module": "vie.eveil"},
+    {"parametre": "squelette.racine_x", "amplitude": 1.6, "duree": 8.0, "courbe": "sinus", "module": "vie.eveil"},
+    {"parametre": "squelette.racine_y", "amplitude": 0.7, "duree": 4.0, "courbe": "sinus_positif", "phase": 0.25, "module": "vie.eveil"},
+    {"parametre": "squelette.tronc", "amplitude": -0.7, "duree": 8.0, "courbe": "sinus", "phase": 0.06, "module": "vie.eveil"},
+    {"parametre": "zones.tete_rotation", "amplitude": 1.2, "duree": 8.0, "courbe": "sinus", "phase": 0.17, "module": "vie.eveil"},
+    {"parametre": "squelette.epaule2", "amplitude": 1.4, "duree": 8.0, "courbe": "sinus", "phase": 0.12, "module": "vie.eveil"},
+    {"parametre": "squelette.coude2", "amplitude": 1.2, "duree": 4.0, "courbe": "sinus", "phase": 0.3, "module": "vie.eveil"},
+    {"parametre": "zones.machoire", "amplitude": 0.06, "duree": 2.6667, "courbe": "sinus_positif", "phase": 0.1, "module": "vie.eveil"},
+    {"zone": "oeil_gauche", "effet": "paupiere", "amplitude": 1.0, "duree": 8.0, "courbe": "clignement", "largeur": 0.2, "instants": [0.9, 3.55, 3.95, 6.7], "module": "vie.eveil"},
+    {"parametre": "corps.souffle_couche", "amplitude": 1.0, "duree": 4.0, "courbe": "souffle", "inspire": 0.45, "module": "vie.sommeil", "module_defaut": 0.0},
+    {"parametre": "zones.machoire", "amplitude": 0.12, "duree": 4.0, "courbe": "souffle", "inspire": 0.45, "module": "vie.sommeil", "module_defaut": 0.0},
+    {"parametre": "corps.x", "amplitude": 0.9, "duree": 0.1333, "courbe": "sinus", "module": "vie.frisson", "module_defaut": 0.0},
+    {"parametre": "zones.tete_x", "amplitude": 0.7, "duree": 0.1, "courbe": "sinus", "phase": 0.3, "module": "vie.frisson", "module_defaut": 0.0},
+    {"parametre": "squelette.epaule2", "amplitude": 1.5, "duree": 0.1333, "courbe": "sinus", "phase": 0.5, "module": "vie.frisson", "module_defaut": 0.0}
+  ]
+}

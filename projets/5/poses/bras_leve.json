@@ -1,0 +1,10 @@
+{
+  "nom": "bras_leve",
+  "description": "Le morceau remonte : le buste se redresse, le coude se plie, le poignet tourne.",
+  "squelette": {"racine": 0.0, "racine_x": 2.5, "racine_y": 1.5, "tronc": 0.0, "cou": 0.0, "epaule": 21.23, "coude": -22.75, "poignet": -17.48, "main_fermeture": 1.0, "epaule2": 6.0, "coude2": -4.0, "pied_g_x": 0.0, "pied_g_y": 0.0, "pied_g": 0.0, "pied_d_x": 0.0, "pied_d_y": 0.0, "pied_d": 0.0},
+  "corps": {"inclinaison": 4.0, "x": 1.5, "y": 0.0, "epaules": -0.5, "poitrine": 0.0},
+  "zones": {"tete_rotation": 6.0, "tete_x": 2.0, "tete_y": 0.0, "machoire": 0.3, "joues": 0.0, "sourire": 0.0, "paupieres": 0.0, "cou_deglutition": 0.0, "oeil_pendant_regard": -10.0},
+  "vie": {"eveil": 1.0, "sommeil": 0.0, "frisson": 0.0},
+  "physique": {"sol_oeil": 2000.0},
+  "attaches": {"prise_main": [15.0, 2.0]}
+}

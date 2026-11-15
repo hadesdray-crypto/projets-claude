@@ -1,0 +1,5 @@
+{
+  "nom": "mastication_2",
+  "description": "Mâchoire fermée, joues qui se vident, tête qui remonte.",
+  "zones": {"machoire": -0.1, "joues": 0.3, "tete_rotation": 5.5, "tete_y": -0.2}
+}

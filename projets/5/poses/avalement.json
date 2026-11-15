@@ -1,0 +1,6 @@
+{
+  "nom": "avalement",
+  "description": "Il avale : la tête plonge, le renflement descend dans le cou (une unité de cou_deglutition par gorgée).",
+  "zones": {"machoire": -0.1, "joues": 0.0, "tete_rotation": 9.0, "tete_y": 1.4},
+  "corps": {"epaules": 0.6}
+}

@@ -1,0 +1,880 @@
+{
+ "fond": "decor/fond.png",
+ "palette": "palette.json",
+ "couleurs": {
+  "trait_rouge": [
+   44,
+   12,
+   12
+  ],
+  "gant_moyen": [
+   204,
+   198,
+   176
+  ],
+  "gant_sombre": [
+   150,
+   146,
+   128
+  ],
+  "viande_clair": [
+   214,
+   128,
+   122
+  ],
+  "viande_moyen": [
+   176,
+   72,
+   74
+  ],
+  "viande_sombre": [
+   122,
+   40,
+   46
+  ],
+  "viande_vif": [
+   226,
+   152,
+   140
+  ],
+  "gras": [
+   240,
+   226,
+   200
+  ],
+  "bras_clair": [
+   150,
+   167,
+   121
+  ],
+  "bras_moyen": [
+   127,
+   142,
+   98
+  ],
+  "bras_sombre": [
+   94,
+   108,
+   70
+  ]
+ },
+ "objets": [
+  {
+   "nom": "thomas",
+   "rect": [
+    95,
+    35,
+    270,
+    310
+   ],
+   "animable": {
+    "calques": {
+     "corps": "calques/corps.png",
+     "oeil_pendant": "calques/oeil_pendant.png"
+    },
+    "masques": {
+     "bouche": "zones/bouche.png",
+     "levres": "zones/levres.png"
+    },
+    "zones": {
+     "haut_du_corps": {
+      "carte": "zones/haut_du_corps.png",
+      "pivot": [
+       185,
+       305
+      ]
+     },
+     "poitrine": {
+      "carte": "zones/poitrine.png",
+      "pivot": [
+       195,
+       252
+      ]
+     },
+     "tete": {
+      "carte": "zones/tete.png",
+      "pivot": [
+       215,
+       200
+      ]
+     },
+     "cheveux": {
+      "carte": "zones/cheveux.png",
+      "pivot": [
+       250,
+       118
+      ]
+     },
+     "machoire": {
+      "carte": "zones/machoire.png",
+      "pivot": [
+       203,
+       175
+      ]
+     },
+     "joue_gauche": {
+      "carte": "zones/joue_gauche.png",
+      "pivot": [
+       212,
+       170
+      ]
+     },
+     "joue_droite": {
+      "carte": "zones/joue_droite.png",
+      "pivot": [
+       258,
+       170
+      ]
+     },
+     "cou": {
+      "carte": "zones/cou.png",
+      "de": [
+       202,
+       192
+      ],
+      "a": [
+       199,
+       234
+      ],
+      "rayon": 7.5,
+      "direction": [
+       -0.2,
+       0.0
+      ],
+      "amplitude": 2.0,
+      "loupe": 0.28
+     },
+     "oeil_gauche": {
+      "type": "cercle",
+      "centre": [
+       246.5,
+       124
+      ],
+      "rayon": 12,
+      "couleur": [
+       121,
+       137,
+       99
+      ]
+     },
+     "coin_g": {
+      "carte": "zones/coin_g.png",
+      "pivot": [
+       207,
+       174
+      ]
+     },
+     "coin_d": {
+      "carte": "zones/coin_d.png",
+      "pivot": [
+       250,
+       173
+      ]
+     }
+    },
+    "parametres": {
+     "corps.inclinaison": [
+      [
+       "haut_du_corps",
+       "rotation",
+       1.0
+      ]
+     ],
+     "corps.x": [
+      [
+       "haut_du_corps",
+       "deplacement_x",
+       1.0
+      ]
+     ],
+     "corps.y": [
+      [
+       "haut_du_corps",
+       "deplacement_y",
+       1.0
+      ]
+     ],
+     "corps.epaules": [
+      [
+       "haut_du_corps",
+       "deplacement_y",
+       1.0
+      ],
+      [
+       "tete",
+       "deplacement_y",
+       -0.35
+      ]
+     ],
+     "corps.poitrine": [
+      [
+       "poitrine",
+       "echelle",
+       0.035
+      ],
+      [
+       "haut_du_corps",
+       "deplacement_y",
+       -1.3
+      ]
+     ],
+     "zones.tete_rotation": [
+      [
+       "tete",
+       "rotation",
+       1.0
+      ]
+     ],
+     "zones.tete_x": [
+      [
+       "tete",
+       "deplacement_x",
+       1.0
+      ]
+     ],
+     "zones.tete_y": [
+      [
+       "tete",
+       "deplacement_y",
+       1.0
+      ]
+     ],
+     "zones.machoire": [
+      [
+       "machoire",
+       "rotation",
+       13.0
+      ],
+      [
+       "machoire",
+       "deplacement_y",
+       1.2
+      ]
+     ],
+     "zones.joues": [
+      [
+       "joue_gauche",
+       "echelle",
+       0.16
+      ],
+      [
+       "joue_droite",
+       "echelle",
+       0.2
+      ]
+     ],
+     "zones.cou_deglutition": [
+      [
+       "cou",
+       "renflement",
+       1.0
+      ]
+     ],
+     "zones.paupieres": [
+      [
+       "oeil_gauche",
+       "paupiere",
+       1.0
+      ]
+     ],
+     "zones.sourire": [
+      [
+       "coin_g",
+       "deplacement_y",
+       -2.4
+      ],
+      [
+       "coin_g",
+       "deplacement_x",
+       -1.2
+      ],
+      [
+       "coin_d",
+       "deplacement_y",
+       -2.8
+      ],
+      [
+       "coin_d",
+       "deplacement_x",
+       1.4
+      ]
+     ],
+     "corps.souffle_couche": [
+      [
+       "poitrine",
+       "echelle",
+       0.05
+      ],
+      [
+       "haut_du_corps",
+       "deplacement_x",
+       -1.5
+      ]
+     ],
+     "zones.tete_echelle": [
+      [
+       "tete",
+       "echelle",
+       0.01
+      ]
+     ]
+    },
+    "squelette": {
+     "os": [
+      {
+       "nom": "bassin",
+       "parent": null,
+       "pivot": [
+        187,
+        300
+       ]
+      },
+      {
+       "nom": "tronc",
+       "parent": "bassin",
+       "pivot": [
+        188,
+        292
+       ],
+       "vers": [
+        196,
+        210
+       ],
+       "fondu": 12,
+       "angle": "tronc"
+      },
+      {
+       "nom": "cou",
+       "parent": "tronc",
+       "pivot": [
+        215,
+        200
+       ],
+       "angle": "cou"
+      },
+      {
+       "nom": "cuisse_g",
+       "parent": "bassin",
+       "pivot": [
+        167,
+        302
+       ],
+       "vers": [
+        168,
+        352
+       ],
+       "fondu": 7
+      },
+      {
+       "nom": "tibia_g",
+       "parent": "cuisse_g",
+       "pivot": [
+        168,
+        352
+       ],
+       "vers": [
+        160,
+        394
+       ],
+       "fondu": 7
+      },
+      {
+       "nom": "pied_g",
+       "parent": "tibia_g",
+       "pivot": [
+        160,
+        394
+       ],
+       "vers": [
+        160,
+        420
+       ],
+       "fondu": 4
+      },
+      {
+       "nom": "cuisse_d",
+       "parent": "bassin",
+       "pivot": [
+        208,
+        302
+       ],
+       "vers": [
+        211,
+        350
+       ],
+       "fondu": 7
+      },
+      {
+       "nom": "tibia_d",
+       "parent": "cuisse_d",
+       "pivot": [
+        211,
+        350
+       ],
+       "vers": [
+        210,
+        392
+       ],
+       "fondu": 7
+      },
+      {
+       "nom": "pied_d",
+       "parent": "tibia_d",
+       "pivot": [
+        210,
+        392
+       ],
+       "vers": [
+        210,
+        418
+       ],
+       "fondu": 4
+      },
+      {
+       "nom": "bras",
+       "parent": "tronc",
+       "pivot": [
+        223,
+        202
+       ],
+       "vers": [
+        228,
+        262
+       ],
+       "angle": "epaule",
+       "suit_champ": true
+      },
+      {
+       "nom": "avant_bras",
+       "parent": "bras",
+       "pivot": [
+        228,
+        262
+       ],
+       "vers": [
+        284,
+        262
+       ],
+       "fondu": 8,
+       "angle": "coude"
+      },
+      {
+       "nom": "main",
+       "parent": "avant_bras",
+       "pivot": [
+        284,
+        262
+       ],
+       "angle": "poignet"
+      },
+      {
+       "nom": "bras2",
+       "parent": "tronc",
+       "pivot": [
+        139,
+        216
+       ],
+       "vers": [
+        137,
+        282
+       ],
+       "angle": "epaule2",
+       "suit_champ": true
+      },
+      {
+       "nom": "avant_bras2",
+       "parent": "bras2",
+       "pivot": [
+        137,
+        282
+       ],
+       "vers": [
+        131,
+        322
+       ],
+       "fondu": 8,
+       "angle": "coude2"
+      }
+     ],
+     "jambes": [
+      {
+       "cuisse": "cuisse_g",
+       "tibia": "tibia_g",
+       "pied": "pied_g"
+      },
+      {
+       "cuisse": "cuisse_d",
+       "tibia": "tibia_d",
+       "pied": "pied_d"
+      }
+     ],
+     "zones_porteuses": [
+      "haut_du_corps",
+      "poitrine"
+     ]
+    },
+    "dessin": [
+     {
+      "nom": "jambe_d",
+      "image": "calques/jambe_d.png",
+      "chaine": [
+       "bassin",
+       "cuisse_d",
+       "tibia_d",
+       "pied_d"
+      ],
+      "pas": 3
+     },
+     {
+      "nom": "jambe_g",
+      "image": "calques/jambe_g.png",
+      "chaine": [
+       "bassin",
+       "cuisse_g",
+       "tibia_g",
+       "pied_g"
+      ],
+      "pas": 3
+     },
+     {
+      "nom": "bras_arriere",
+      "image": "calques/bras_arriere.png",
+      "chaine": [
+       "bassin",
+       "tronc",
+       "bras2",
+       "avant_bras2"
+      ],
+      "poids": {
+       "tronc": 1,
+       "bras2": 1
+      },
+      "pas": 3
+     },
+     {
+      "nom": "corps",
+      "chaine": [
+       "bassin",
+       "tronc",
+       "cou"
+      ],
+      "poids": {
+       "cou": "zones/tete.png"
+      },
+      "pas": 5
+     },
+     {
+      "nom": "tige"
+     },
+     {
+      "nom": "manche",
+      "image": "calques/manche.png",
+      "chaine": [
+       "bassin",
+       "tronc",
+       "bras"
+      ],
+      "poids": {
+       "tronc": 1,
+       "bras": 1
+      },
+      "pas": 3
+     },
+     {
+      "nom": "avant_bras",
+      "image": "calques/avant_bras.png",
+      "chaine": [
+       "bassin",
+       "tronc",
+       "bras",
+       "avant_bras"
+      ],
+      "poids": {
+       "tronc": 1,
+       "bras": 1
+      },
+      "pas": 3
+     },
+     {
+      "nom": "main"
+     }
+    ],
+    "main": {
+     "taille": 1.4
+    },
+    "tige": {
+     "ancre": [
+      277,
+      162
+     ],
+     "oeil_repos": [
+      280.5,
+      212.5
+     ],
+     "longueur": 50.6,
+     "rayon_oeil": 10,
+     "gravite": 1500,
+     "raideur": 2600,
+     "amortissement": 2.4,
+     "epaisseur": 2.4,
+     "courbure": [
+      -3.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "nom": "gant",
+   "animable": {
+    "dessin": {}
+   }
+  },
+  {
+   "nom": "morceau",
+   "animable": {
+    "dessin": {
+     "rayons": [
+      15.0,
+      9.5
+     ],
+     "bouchees": [
+      [
+       -5.0,
+       10.0
+      ],
+      [
+       5.0,
+       10.0
+      ],
+      [
+       17.0,
+       12.0
+      ]
+     ],
+     "filaments": [
+      [
+       -9.0,
+       5.0
+      ],
+      [
+       1.0,
+       7.0
+      ],
+      [
+       9.0,
+       4.0
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "nom": "mouches",
+   "animable": {
+    "duree": 8.0,
+    "vols": [
+     [
+      168,
+      72,
+      14,
+      8,
+      2,
+      3,
+      0.0,
+      5,
+      7,
+      0.5
+     ],
+     [
+      315,
+      50,
+      11,
+      7,
+      3,
+      2,
+      0.3,
+      0,
+      0,
+      0.9
+     ],
+     [
+      420,
+      133,
+      16,
+      10,
+      2,
+      1,
+      0.6,
+      6,
+      5,
+      0.3
+     ],
+     [
+      368,
+      182,
+      12,
+      9,
+      1,
+      2,
+      0.2,
+      4,
+      9,
+      0.7
+     ],
+     [
+      73,
+      200,
+      13,
+      7,
+      2,
+      3,
+      0.8,
+      0,
+      0,
+      0.6
+     ]
+    ],
+    "attirees": [
+     0.0,
+     0.55,
+     0.7,
+     0.85,
+     0.0
+    ]
+   }
+  },
+  {
+   "nom": "bulle",
+   "animable": {
+    "attache": [
+     262,
+     84
+    ]
+   }
+  },
+  {
+   "nom": "poussieres",
+   "animable": {
+    "duree": 16.0,
+    "opacite": 0.5,
+    "grains": [
+     [
+      70,
+      120,
+      22,
+      30,
+      1,
+      2,
+      0.0
+     ],
+     [
+      150,
+      60,
+      30,
+      18,
+      2,
+      1,
+      0.21
+     ],
+     [
+      330,
+      90,
+      26,
+      34,
+      1,
+      1,
+      0.43
+     ],
+     [
+      450,
+      220,
+      20,
+      26,
+      2,
+      3,
+      0.62
+     ],
+     [
+      250,
+      30,
+      34,
+      12,
+      1,
+      2,
+      0.8
+     ],
+     [
+      520,
+      90,
+      14,
+      30,
+      1,
+      1,
+      0.33
+     ],
+     [
+      40,
+      260,
+      16,
+      22,
+      2,
+      1,
+      0.55
+     ]
+    ]
+   }
+  },
+  {
+   "nom": "reflet",
+   "animable": {
+    "duree": 8.0,
+    "phase": 0.55,
+    "passage": 0.3,
+    "x": [
+     20,
+     330
+    ],
+    "y": [
+     24,
+     150
+    ],
+    "pente": 0.6,
+    "largeurs": [
+     8,
+     4
+    ],
+    "opacite": 0.13,
+    "couleur": [
+     232,
+     244,
+     246
+    ],
+    "bornes": [
+     22,
+     500
+    ]
+   }
+  },
+  {
+   "nom": "cercueil",
+   "rect": [
+    290,
+    140,
+    230,
+    160
+   ],
+   "animable": null
+  },
+  {
+   "nom": "tombe",
+   "rect": [
+    505,
+    285,
+    100,
+    130
+   ],
+   "animable": null
+  }
+ ]
+}
