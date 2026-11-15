@@ -1,0 +1,10 @@
+{
+  "nom": "macher",
+  "description": "La mâchoire mâche, la main serre l'os en rythme, la bave luit plus fort.",
+  "couches": [
+    {"zone": "machoire", "effet": "deplacement_y", "amplitude": 2.8, "duree": 0.48, "courbe": "sinus_positif", "debut": 1.0, "attaque": 0.3, "relache": 0.3},
+    {"zone": "main", "effet": "deplacement_y", "amplitude": 1.0, "duree": 0.48, "courbe": "sinus_positif", "phase": 0.5, "debut": 1.0, "attaque": 0.3, "relache": 0.3},
+    {"zone": "bave", "effet": "lueur", "amplitude": 0.2, "duree": 0.48, "courbe": "sinus_positif", "debut": 1.0, "attaque": 0.3, "relache": 0.3},
+    {"zone": "oeil_gauche", "effet": "paupiere", "amplitude": 0.25, "courbe": "constante", "debut": 1.0, "attaque": 0.5, "relache": 0.5}
+  ]
+}

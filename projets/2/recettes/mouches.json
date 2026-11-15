@@ -1,0 +1,9 @@
+{
+  "nom": "mouches",
+  "description": "Mouches qui tournent dans la cage ; ailes allumées / éteintes.",
+  "couches": [
+    {"zone": "cage", "effet": "mouches", "duree": 8.0,
+     "vols": [[168, 72, 14, 8, 2, 3, 0.0], [315, 50, 11, 7, 3, 2, 0.3], [420, 133, 16, 10, 2, 1, 0.6],
+              [368, 182, 12, 9, 1, 2, 0.2], [73, 200, 13, 7, 2, 3, 0.8]]}
+  ]
+}

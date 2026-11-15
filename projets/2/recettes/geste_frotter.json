@@ -1,0 +1,7 @@
+{
+  "nom": "geste_frotter",
+  "description": "Repère visuel du geste du joueur (anneau qui va et vient sur la tête).",
+  "couches": [
+    {"zone": "tete", "effet": "curseur", "de": [234, 90], "a": [272, 94], "duree": 0.9, "attaque": 0.25, "relache": 0.25}
+  ]
+}

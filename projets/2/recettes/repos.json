@@ -1,0 +1,16 @@
+{
+  "nom": "repos",
+  "description": "Thomas vivant au repos : respiration, balancement, clignement, œil pendant, bave qui luit.",
+  "couches": [
+    {"zone": "haut_du_corps", "effet": "deplacement_y", "amplitude": -1.1, "duree": 4.0, "courbe": "sinus", "phase": 0.0},
+    {"zone": "ventre", "effet": "echelle", "amplitude": 0.03, "duree": 4.0, "courbe": "sinus", "phase": 0.0},
+    {"zone": "haut_du_corps", "effet": "rotation", "amplitude": 0.7, "duree": 8.0, "courbe": "sinus", "phase": 0.0},
+    {"zone": "tete", "effet": "rotation", "amplitude": 1.6, "duree": 8.0, "courbe": "sinus", "phase": 0.12},
+    {"zone": "tete", "effet": "deplacement_y", "amplitude": 0.5, "duree": 4.0, "courbe": "sinus", "phase": 0.25},
+    {"zone": "oeil_gauche", "effet": "paupiere", "amplitude": 1.0, "duree": 4.0, "courbe": "clignement", "phase": 0.75},
+    {"zone": "oeil_exorbite", "effet": "paupiere", "amplitude": 1.0, "duree": 4.0, "courbe": "clignement", "phase": 0.745},
+    {"zone": "oeil_pendant", "effet": "rotation", "amplitude": 9.0, "duree": 2.0, "courbe": "sinus", "phase": 0.0},
+    {"zone": "machoire", "effet": "deplacement_y", "amplitude": 0.9, "duree": 4.0, "courbe": "sinus_positif", "phase": 0.1},
+    {"zone": "bave", "effet": "lueur", "amplitude": 0.16, "duree": 2.0, "courbe": "sinus_positif", "phase": 0.0}
+  ]
+}

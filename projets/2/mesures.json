@@ -1,0 +1,67 @@
+{
+  "machine": "x86_64 (4 cœurs), Python 3.14.4",
+  "ips": 12.5,
+  "images_par_gif": 100,
+  "gifs": {
+    "01-repos-vivant.gif": {
+      "images": 100,
+      "duree_s": 8.0,
+      "taille": [
+        640,
+        480
+      ],
+      "taille_fichier_Mo": 6.12,
+      "ms_par_image_moyenne": 32.92,
+      "ms_par_image_max": 34.98,
+      "ms_par_image_min": 30.9,
+      "pixels_recalcules_moyenne": 85485,
+      "part_image_recalculee": 0.278,
+      "pixels_hors_zones_animees_differents_du_decor": 0
+    },
+    "02-frotter-la-tete.gif": {
+      "images": 100,
+      "duree_s": 8.0,
+      "taille": [
+        640,
+        480
+      ],
+      "taille_fichier_Mo": 6.12,
+      "ms_par_image_moyenne": 32.58,
+      "ms_par_image_max": 35.25,
+      "ms_par_image_min": 31.25,
+      "pixels_recalcules_moyenne": 85658,
+      "part_image_recalculee": 0.279,
+      "pixels_hors_zones_animees_differents_du_decor": 0
+    },
+    "03-donner-un-os.gif": {
+      "images": 100,
+      "duree_s": 8.0,
+      "taille": [
+        640,
+        480
+      ],
+      "taille_fichier_Mo": 5.87,
+      "ms_par_image_moyenne": 37.69,
+      "ms_par_image_max": 43.47,
+      "ms_par_image_min": 31.41,
+      "pixels_recalcules_moyenne": 85485,
+      "part_image_recalculee": 0.278,
+      "pixels_hors_zones_animees_differents_du_decor": 0
+    },
+    "04-transition-sommeil.gif": {
+      "images": 100,
+      "duree_s": 8.0,
+      "taille": [
+        640,
+        480
+      ],
+      "taille_fichier_Mo": 6.34,
+      "ms_par_image_moyenne": 34.41,
+      "ms_par_image_max": 37.32,
+      "ms_par_image_min": 31.3,
+      "pixels_recalcules_moyenne": 85870,
+      "part_image_recalculee": 0.28,
+      "pixels_hors_zones_animees_differents_du_decor": 0
+    }
+  }
+}

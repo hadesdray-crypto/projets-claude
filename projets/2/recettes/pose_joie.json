@@ -1,0 +1,11 @@
+{
+  "nom": "pose_joie",
+  "description": "Passage progressif repos → joie : grand sourire, petits sautillements, bras qui se lève.",
+  "couches": [
+    {"zone": "coin_bouche_gauche", "effet": "deplacement_y", "amplitude": -2.5, "courbe": "constante", "attaque": 0.8, "relache": 0.8},
+    {"zone": "coin_bouche_droit", "effet": "deplacement_y", "amplitude": -2.5, "courbe": "constante", "attaque": 0.8, "relache": 0.8},
+    {"zone": "machoire", "effet": "deplacement_y", "amplitude": 2.0, "courbe": "constante", "attaque": 0.8, "relache": 0.8},
+    {"zone": "haut_du_corps", "effet": "deplacement_y", "amplitude": -2.5, "duree": 0.5, "courbe": "sinus_positif", "attaque": 0.8, "relache": 0.8},
+    {"zone": "bras_droit", "effet": "rotation", "amplitude": -25.0, "courbe": "constante", "attaque": 0.8, "relache": 0.8}
+  ]
+}

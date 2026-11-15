@@ -1,0 +1,11 @@
+{
+  "nom": "rire",
+  "description": "Rire : mâchoire rapide, yeux plissés, coins de bouche relevés.",
+  "couches": [
+    {"zone": "machoire", "effet": "deplacement_y", "amplitude": 2.5, "duree": 0.3, "courbe": "sinus_positif", "attaque": 0.3, "relache": 0.4},
+    {"zone": "coin_bouche_gauche", "effet": "deplacement_y", "amplitude": -2.0, "courbe": "constante", "attaque": 0.3, "relache": 0.4},
+    {"zone": "coin_bouche_droit", "effet": "deplacement_y", "amplitude": -2.0, "courbe": "constante", "attaque": 0.3, "relache": 0.4},
+    {"zone": "oeil_gauche", "effet": "paupiere", "amplitude": 0.6, "courbe": "constante", "attaque": 0.3, "relache": 0.4},
+    {"zone": "oeil_exorbite", "effet": "paupiere", "amplitude": 0.55, "courbe": "constante", "attaque": 0.3, "relache": 0.4}
+  ]
+}

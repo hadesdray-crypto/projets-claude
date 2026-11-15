@@ -1,0 +1,8 @@
+{
+  "nom": "secousses",
+  "description": "Secousses du corps et du ventre pendant le rire.",
+  "couches": [
+    {"zone": "haut_du_corps", "effet": "deplacement_x", "amplitude": 1.2, "duree": 0.4, "courbe": "bruit", "attaque": 0.3, "relache": 0.4},
+    {"zone": "ventre", "effet": "echelle", "amplitude": 0.05, "duree": 0.3, "courbe": "bruit", "attaque": 0.3, "relache": 0.4}
+  ]
+}

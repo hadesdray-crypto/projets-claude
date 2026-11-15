@@ -1,0 +1,9 @@
+{
+  "nom": "petit_sourire",
+  "description": "Coins de la bouche qui remontent, bouche un peu moins ouverte.",
+  "couches": [
+    {"zone": "coin_bouche_gauche", "effet": "deplacement_y", "amplitude": -2.5, "courbe": "constante", "attaque": 0.6, "relache": 0.6},
+    {"zone": "coin_bouche_droit", "effet": "deplacement_y", "amplitude": -2.5, "courbe": "constante", "attaque": 0.6, "relache": 0.6},
+    {"zone": "machoire", "effet": "deplacement_y", "amplitude": -1.0, "courbe": "constante", "attaque": 0.6, "relache": 0.6}
+  ]
+}

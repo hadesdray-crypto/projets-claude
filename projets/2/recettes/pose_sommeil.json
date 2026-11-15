@@ -1,0 +1,17 @@
+{
+  "nom": "pose_sommeil",
+  "description": "Passage progressif repos → sommeil : yeux qui se ferment, tête et bras qui tombent, respiration lente.",
+  "couches": [
+    {"zone": "oeil_gauche", "effet": "paupiere", "amplitude": 1.0, "courbe": "constante", "attaque": 2.0, "relache": 1.0},
+    {"zone": "oeil_exorbite", "effet": "paupiere", "amplitude": 1.0, "courbe": "constante", "attaque": 2.3, "relache": 1.0},
+    {"zone": "tete", "effet": "rotation", "amplitude": -9.0, "courbe": "constante", "attaque": 2.5, "relache": 1.2},
+    {"zone": "tete", "effet": "deplacement_y", "amplitude": 2.0, "courbe": "constante", "attaque": 2.5, "relache": 1.2},
+    {"zone": "haut_du_corps", "effet": "deplacement_y", "amplitude": 2.0, "courbe": "constante", "attaque": 2.5, "relache": 1.2},
+    {"zone": "haut_du_corps", "effet": "rotation", "amplitude": -1.2, "courbe": "constante", "attaque": 2.5, "relache": 1.2},
+    {"zone": "bras_droit", "effet": "rotation", "amplitude": 12.0, "courbe": "constante", "attaque": 2.5, "relache": 1.2},
+    {"zone": "machoire", "effet": "deplacement_y", "amplitude": 1.5, "courbe": "constante", "attaque": 2.5, "relache": 1.2},
+    {"zone": "haut_du_corps", "effet": "deplacement_y", "amplitude": -1.0, "duree": 4.0, "courbe": "sinus", "attaque": 2.0, "relache": 1.2},
+    {"zone": "oeil_pendant", "effet": "rotation", "amplitude": -6.0, "duree": 2.0, "courbe": "sinus", "attaque": 2.5, "relache": 1.2},
+    {"zone": "tete", "effet": "zzz", "origine": [300, 80], "hauteur": 50, "nombre": 3, "duree": 2.4, "debut": 2.0, "attaque": 0.6, "relache": 0.5}
+  ]
+}

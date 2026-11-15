@@ -1,0 +1,8 @@
+{
+  "nom": "paupieres_mi_closes",
+  "description": "Paupières qui descendent à moitié (contentement).",
+  "couches": [
+    {"zone": "oeil_gauche", "effet": "paupiere", "amplitude": 0.5, "courbe": "constante", "attaque": 0.6, "relache": 0.6},
+    {"zone": "oeil_exorbite", "effet": "paupiere", "amplitude": 0.45, "courbe": "constante", "attaque": 0.6, "relache": 0.6}
+  ]
+}

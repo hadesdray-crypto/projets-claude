@@ -1,0 +1,14 @@
+{
+  "frotter_la_tete": {
+    "objet": "thomas", "zone_touchee": "tete", "duree": 3.6,
+    "recettes": ["frisson", "paupieres_mi_closes", "petit_sourire", "geste_frotter"]
+  },
+  "donner_un_os": {
+    "objet": "thomas", "zone_touchee": "main", "duree": 5.0,
+    "recettes": ["pose_repas", "macher"]
+  },
+  "chatouiller_le_ventre": {
+    "objet": "thomas", "zone_touchee": "ventre", "duree": 3.0,
+    "recettes": ["rire", "secousses"]
+  }
+}

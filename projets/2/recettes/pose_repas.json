@@ -1,0 +1,10 @@
+{
+  "nom": "pose_repas",
+  "description": "Passage progressif repos → repas : le bras monte l'os, la tête se penche vers lui.",
+  "couches": [
+    {"zone": "bras_droit", "effet": "rotation", "amplitude": -20.0, "courbe": "constante", "attaque": 1.0, "relache": 1.0},
+    {"zone": "bras_droit", "effet": "deplacement_y", "amplitude": -3.0, "courbe": "constante", "attaque": 1.0, "relache": 1.0},
+    {"zone": "tete", "effet": "rotation", "amplitude": 5.0, "courbe": "constante", "attaque": 1.2, "relache": 1.0},
+    {"zone": "haut_du_corps", "effet": "deplacement_x", "amplitude": 1.5, "courbe": "constante", "attaque": 1.2, "relache": 1.0}
+  ]
+}

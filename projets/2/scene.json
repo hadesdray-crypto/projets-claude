@@ -1,0 +1,34 @@
+{
+  "fond": "decor/fond.png",
+  "objets": [
+    {
+      "nom": "thomas",
+      "rect": [95, 35, 270, 310],
+      "animable": {
+        "derriere": "objets/thomas_derriere.png",
+        "calques": [
+          {"nom": "corps", "image": "calques/corps.png", "ordre": 0},
+          {"nom": "oeil_pendant", "image": "calques/oeil_pendant.png", "ordre": 1, "parent": "corps"},
+          {"nom": "bras_droit", "image": "calques/bras_droit.png", "ordre": 2, "parent": "corps"}
+        ],
+        "zones": {
+          "tete": {"carte": "zones/tete.png", "pivot": [232, 205]},
+          "haut_du_corps": {"carte": "zones/haut_du_corps.png", "pivot": [180, 305]},
+          "ventre": {"carte": "zones/ventre.png", "pivot": [178, 298]},
+          "machoire": {"carte": "zones/machoire.png"},
+          "coin_bouche_gauche": {"carte": "zones/coin_bouche_gauche.png"},
+          "coin_bouche_droit": {"carte": "zones/coin_bouche_droit.png"},
+          "bave": {"carte": "zones/bave.png"},
+          "main": {"carte": "zones/main.png", "calque": "bras_droit"},
+          "oeil_gauche": {"type": "cercle", "centre": [246.5, 124], "rayon": 12, "couleur": [121, 137, 99]},
+          "oeil_exorbite": {"type": "cercle", "centre": [286, 156.5], "rayon": 12.5, "couleur": [133, 140, 105]},
+          "bras_droit": {"type": "calque", "pivot": [218, 255]},
+          "oeil_pendant": {"type": "calque", "pivot": [276, 168]}
+        }
+      }
+    },
+    {"nom": "mouches", "animable": {}},
+    {"nom": "cercueil", "rect": [290, 140, 230, 160], "animable": null},
+    {"nom": "tombe", "rect": [505, 285, 100, 130], "animable": null}
+  ]
+}

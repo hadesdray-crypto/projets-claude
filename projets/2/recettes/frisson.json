@@ -1,0 +1,9 @@
+{
+  "nom": "frisson",
+  "description": "Petit frisson de plaisir de la tête et des épaules.",
+  "couches": [
+    {"zone": "tete", "effet": "deplacement_x", "amplitude": 0.7, "duree": 0.48, "courbe": "bruit", "attaque": 0.4, "relache": 0.5},
+    {"zone": "haut_du_corps", "effet": "deplacement_x", "amplitude": 0.35, "duree": 0.48, "courbe": "bruit", "phase": 0.4, "attaque": 0.4, "relache": 0.5},
+    {"zone": "tete", "effet": "rotation", "amplitude": -3.0, "courbe": "constante", "attaque": 0.8, "relache": 0.8}
+  ]
+}
