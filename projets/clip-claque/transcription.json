@@ -1,0 +1,3087 @@
+[
+ {
+  "debut": 5.28,
+  "fin": 6.68,
+  "texte": "**musique**",
+  "mots": [
+   {
+    "mot": "**musique**",
+    "debut": 5.28,
+    "fin": 6.68,
+    "proba": 0.466
+   }
+  ]
+ },
+ {
+  "debut": 9.44,
+  "fin": 10.2,
+  "texte": "écoute",
+  "mots": [
+   {
+    "mot": "écoute",
+    "debut": 9.44,
+    "fin": 10.2,
+    "proba": 0.528
+   }
+  ]
+ },
+ {
+  "debut": 10.2,
+  "fin": 12.44,
+  "texte": "**musique**",
+  "mots": [
+   {
+    "mot": "**musique**",
+    "debut": 10.2,
+    "fin": 12.44,
+    "proba": 0.747
+   }
+  ]
+ },
+ {
+  "debut": 13.04,
+  "fin": 13.7,
+  "texte": "le matin",
+  "mots": [
+   {
+    "mot": "le",
+    "debut": 12.54,
+    "fin": 13.24,
+    "proba": 0.793
+   },
+   {
+    "mot": "matin",
+    "debut": 13.24,
+    "fin": 13.7,
+    "proba": 0.981
+   }
+  ]
+ },
+ {
+  "debut": 13.7,
+  "fin": 15.26,
+  "texte": "**musique**",
+  "mots": [
+   {
+    "mot": "**musique**",
+    "debut": 13.7,
+    "fin": 15.26,
+    "proba": 0.95
+   }
+  ]
+ },
+ {
+  "debut": 18.84,
+  "fin": 20.54,
+  "texte": "une masse de chair c'est neuf",
+  "mots": [
+   {
+    "mot": "une",
+    "debut": 18.44,
+    "fin": 19.14,
+    "proba": 0.887
+   },
+   {
+    "mot": "masse",
+    "debut": 19.14,
+    "fin": 19.46,
+    "proba": 0.97
+   },
+   {
+    "mot": "de",
+    "debut": 19.46,
+    "fin": 19.72,
+    "proba": 0.996
+   },
+   {
+    "mot": "chair",
+    "debut": 19.72,
+    "fin": 20.0,
+    "proba": 0.941
+   },
+   {
+    "mot": "c",
+    "debut": 20.0,
+    "fin": 20.18,
+    "proba": 0.818
+   },
+   {
+    "mot": "'est",
+    "debut": 20.18,
+    "fin": 20.32,
+    "proba": 0.992
+   },
+   {
+    "mot": "neuf",
+    "debut": 20.32,
+    "fin": 20.54,
+    "proba": 0.974
+   }
+  ]
+ },
+ {
+  "debut": 20.54,
+  "fin": 22.18,
+  "texte": "**musique**",
+  "mots": [
+   {
+    "mot": "**musique**",
+    "debut": 20.54,
+    "fin": 22.18,
+    "proba": 0.974
+   }
+  ]
+ },
+ {
+  "debut": 23.44,
+  "fin": 24.14,
+  "texte": "écoute",
+  "mots": [
+   {
+    "mot": "écoute",
+    "debut": 23.44,
+    "fin": 24.14,
+    "proba": 0.986
+   }
+  ]
+ },
+ {
+  "debut": 24.14,
+  "fin": 25.44,
+  "texte": "**musique**",
+  "mots": [
+   {
+    "mot": "**musique**",
+    "debut": 24.14,
+    "fin": 25.44,
+    "proba": 0.986
+   }
+  ]
+ },
+ {
+  "debut": 28.22,
+  "fin": 30.8,
+  "texte": "Le matin, une masse de chair se lève",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 28.22,
+    "fin": 28.74,
+    "proba": 0.698
+   },
+   {
+    "mot": "matin,",
+    "debut": 28.74,
+    "fin": 29.14,
+    "proba": 0.989
+   },
+   {
+    "mot": "une",
+    "debut": 29.28,
+    "fin": 29.6,
+    "proba": 0.994
+   },
+   {
+    "mot": "masse",
+    "debut": 29.6,
+    "fin": 29.9,
+    "proba": 0.999
+   },
+   {
+    "mot": "de",
+    "debut": 29.9,
+    "fin": 30.04,
+    "proba": 0.999
+   },
+   {
+    "mot": "chair",
+    "debut": 30.04,
+    "fin": 30.3,
+    "proba": 0.988
+   },
+   {
+    "mot": "se",
+    "debut": 30.3,
+    "fin": 30.46,
+    "proba": 0.988
+   },
+   {
+    "mot": "lève",
+    "debut": 30.46,
+    "fin": 30.8,
+    "proba": 0.997
+   }
+  ]
+ },
+ {
+  "debut": 31.7,
+  "fin": 34.32,
+  "texte": "Deux millions d'êtres associés, jamais de trêve",
+  "mots": [
+   {
+    "mot": "Deux",
+    "debut": 31.7,
+    "fin": 32.22,
+    "proba": 0.788
+   },
+   {
+    "mot": "millions",
+    "debut": 32.22,
+    "fin": 32.38,
+    "proba": 0.983
+   },
+   {
+    "mot": "d",
+    "debut": 32.38,
+    "fin": 32.6,
+    "proba": 0.983
+   },
+   {
+    "mot": "'êtres",
+    "debut": 32.6,
+    "fin": 32.72,
+    "proba": 0.985
+   },
+   {
+    "mot": "associés,",
+    "debut": 32.72,
+    "fin": 33.4,
+    "proba": 0.992
+   },
+   {
+    "mot": "jamais",
+    "debut": 33.42,
+    "fin": 33.78,
+    "proba": 0.983
+   },
+   {
+    "mot": "de",
+    "debut": 33.78,
+    "fin": 33.96,
+    "proba": 0.986
+   },
+   {
+    "mot": "trêve",
+    "debut": 33.96,
+    "fin": 34.32,
+    "proba": 0.989
+   }
+  ]
+ },
+ {
+  "debut": 34.32,
+  "fin": 37.82,
+  "texte": "Ils combattent la gravité, personne fait grève",
+  "mots": [
+   {
+    "mot": "Ils",
+    "debut": 34.32,
+    "fin": 34.76,
+    "proba": 0.985
+   },
+   {
+    "mot": "combattent",
+    "debut": 34.76,
+    "fin": 35.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 35.98,
+    "fin": 36.12,
+    "proba": 0.999
+   },
+   {
+    "mot": "gravité,",
+    "debut": 36.12,
+    "fin": 36.72,
+    "proba": 1.0
+   },
+   {
+    "mot": "personne",
+    "debut": 36.78,
+    "fin": 37.08,
+    "proba": 0.996
+   },
+   {
+    "mot": "fait",
+    "debut": 37.08,
+    "fin": 37.4,
+    "proba": 0.772
+   },
+   {
+    "mot": "grève",
+    "debut": 37.4,
+    "fin": 37.82,
+    "proba": 0.961
+   }
+  ]
+ },
+ {
+  "debut": 38.92,
+  "fin": 41.4,
+  "texte": "Pendant que toi tu traînes encore dans tes rêves",
+  "mots": [
+   {
+    "mot": "Pendant",
+    "debut": 38.92,
+    "fin": 39.44,
+    "proba": 0.999
+   },
+   {
+    "mot": "que",
+    "debut": 39.44,
+    "fin": 39.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "toi",
+    "debut": 39.54,
+    "fin": 39.82,
+    "proba": 0.999
+   },
+   {
+    "mot": "tu",
+    "debut": 39.82,
+    "fin": 40.0,
+    "proba": 0.76
+   },
+   {
+    "mot": "traînes",
+    "debut": 40.0,
+    "fin": 40.36,
+    "proba": 0.996
+   },
+   {
+    "mot": "encore",
+    "debut": 40.36,
+    "fin": 40.62,
+    "proba": 0.991
+   },
+   {
+    "mot": "dans",
+    "debut": 40.62,
+    "fin": 40.86,
+    "proba": 0.998
+   },
+   {
+    "mot": "tes",
+    "debut": 40.86,
+    "fin": 41.0,
+    "proba": 0.999
+   },
+   {
+    "mot": "rêves",
+    "debut": 41.0,
+    "fin": 41.4,
+    "proba": 0.999
+   }
+  ]
+ },
+ {
+  "debut": 42.08,
+  "fin": 45.16,
+  "texte": "Mais il faut bien poser les mots, peser le poids",
+  "mots": [
+   {
+    "mot": "Mais",
+    "debut": 42.08,
+    "fin": 42.6,
+    "proba": 0.997
+   },
+   {
+    "mot": "il",
+    "debut": 42.6,
+    "fin": 42.72,
+    "proba": 0.997
+   },
+   {
+    "mot": "faut",
+    "debut": 42.72,
+    "fin": 42.84,
+    "proba": 1.0
+   },
+   {
+    "mot": "bien",
+    "debut": 42.84,
+    "fin": 42.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "poser",
+    "debut": 42.98,
+    "fin": 43.24,
+    "proba": 0.998
+   },
+   {
+    "mot": "les",
+    "debut": 43.24,
+    "fin": 43.5,
+    "proba": 0.988
+   },
+   {
+    "mot": "mots,",
+    "debut": 43.5,
+    "fin": 43.74,
+    "proba": 0.998
+   },
+   {
+    "mot": "peser",
+    "debut": 43.86,
+    "fin": 44.68,
+    "proba": 0.995
+   },
+   {
+    "mot": "le",
+    "debut": 44.68,
+    "fin": 44.74,
+    "proba": 0.999
+   },
+   {
+    "mot": "poids",
+    "debut": 44.74,
+    "fin": 45.16,
+    "proba": 0.998
+   }
+  ]
+ },
+ {
+  "debut": 45.16,
+  "fin": 48.52,
+  "texte": "La gravité de cet instant, la gravité c'est toi",
+  "mots": [
+   {
+    "mot": "La",
+    "debut": 45.16,
+    "fin": 46.12,
+    "proba": 0.998
+   },
+   {
+    "mot": "gravité",
+    "debut": 46.12,
+    "fin": 46.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "de",
+    "debut": 46.52,
+    "fin": 46.64,
+    "proba": 0.986
+   },
+   {
+    "mot": "cet",
+    "debut": 46.64,
+    "fin": 46.8,
+    "proba": 0.709
+   },
+   {
+    "mot": "instant,",
+    "debut": 46.8,
+    "fin": 47.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 47.52,
+    "fin": 47.72,
+    "proba": 0.999
+   },
+   {
+    "mot": "gravité",
+    "debut": 47.72,
+    "fin": 48.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "c",
+    "debut": 48.04,
+    "fin": 48.24,
+    "proba": 0.996
+   },
+   {
+    "mot": "'est",
+    "debut": 48.24,
+    "fin": 48.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "toi",
+    "debut": 48.36,
+    "fin": 48.52,
+    "proba": 0.991
+   }
+  ]
+ },
+ {
+  "debut": 48.52,
+  "fin": 51.98,
+  "texte": "L'horloge du temps te rappellera, crois-moi",
+  "mots": [
+   {
+    "mot": "L",
+    "debut": 48.52,
+    "fin": 49.52,
+    "proba": 0.942
+   },
+   {
+    "mot": "'horloge",
+    "debut": 49.52,
+    "fin": 49.94,
+    "proba": 0.999
+   },
+   {
+    "mot": "du",
+    "debut": 49.94,
+    "fin": 50.02,
+    "proba": 0.999
+   },
+   {
+    "mot": "temps",
+    "debut": 50.02,
+    "fin": 50.28,
+    "proba": 1.0
+   },
+   {
+    "mot": "te",
+    "debut": 50.28,
+    "fin": 50.4,
+    "proba": 0.999
+   },
+   {
+    "mot": "rappellera,",
+    "debut": 50.4,
+    "fin": 51.18,
+    "proba": 0.997
+   },
+   {
+    "mot": "crois",
+    "debut": 51.18,
+    "fin": 51.6,
+    "proba": 0.996
+   },
+   {
+    "mot": "-moi",
+    "debut": 51.6,
+    "fin": 51.98,
+    "proba": 0.956
+   }
+  ]
+ },
+ {
+  "debut": 51.98,
+  "fin": 58.82,
+  "texte": "Au moment voulu cet instant ne prévient pas Dans un but commun il semblerait",
+  "mots": [
+   {
+    "mot": "Au",
+    "debut": 51.98,
+    "fin": 53.0,
+    "proba": 0.779
+   },
+   {
+    "mot": "moment",
+    "debut": 53.0,
+    "fin": 53.38,
+    "proba": 0.992
+   },
+   {
+    "mot": "voulu",
+    "debut": 53.38,
+    "fin": 53.94,
+    "proba": 0.991
+   },
+   {
+    "mot": "cet",
+    "debut": 53.94,
+    "fin": 54.18,
+    "proba": 0.723
+   },
+   {
+    "mot": "instant",
+    "debut": 54.18,
+    "fin": 54.52,
+    "proba": 0.997
+   },
+   {
+    "mot": "ne",
+    "debut": 54.52,
+    "fin": 54.76,
+    "proba": 0.966
+   },
+   {
+    "mot": "prévient",
+    "debut": 54.76,
+    "fin": 55.26,
+    "proba": 0.978
+   },
+   {
+    "mot": "pas",
+    "debut": 55.26,
+    "fin": 55.5,
+    "proba": 0.998
+   },
+   {
+    "mot": "Dans",
+    "debut": 55.5,
+    "fin": 56.76,
+    "proba": 0.885
+   },
+   {
+    "mot": "un",
+    "debut": 56.76,
+    "fin": 56.98,
+    "proba": 0.999
+   },
+   {
+    "mot": "but",
+    "debut": 56.98,
+    "fin": 57.26,
+    "proba": 0.998
+   },
+   {
+    "mot": "commun",
+    "debut": 57.26,
+    "fin": 57.7,
+    "proba": 0.987
+   },
+   {
+    "mot": "il",
+    "debut": 57.7,
+    "fin": 58.12,
+    "proba": 0.946
+   },
+   {
+    "mot": "semblerait",
+    "debut": 58.12,
+    "fin": 58.82,
+    "proba": 0.984
+   }
+  ]
+ },
+ {
+  "debut": 58.82,
+  "fin": 65.82,
+  "texte": "Que l'intention les ait guidés c'est vrai Comme une symphonie ils se sont associés",
+  "mots": [
+   {
+    "mot": "Que",
+    "debut": 58.82,
+    "fin": 60.18,
+    "proba": 0.942
+   },
+   {
+    "mot": "l",
+    "debut": 60.18,
+    "fin": 60.4,
+    "proba": 0.999
+   },
+   {
+    "mot": "'intention",
+    "debut": 60.4,
+    "fin": 60.92,
+    "proba": 0.999
+   },
+   {
+    "mot": "les",
+    "debut": 60.92,
+    "fin": 61.14,
+    "proba": 0.998
+   },
+   {
+    "mot": "ait",
+    "debut": 61.14,
+    "fin": 61.36,
+    "proba": 0.63
+   },
+   {
+    "mot": "guidés",
+    "debut": 61.36,
+    "fin": 61.76,
+    "proba": 0.881
+   },
+   {
+    "mot": "c",
+    "debut": 61.76,
+    "fin": 61.9,
+    "proba": 0.827
+   },
+   {
+    "mot": "'est",
+    "debut": 61.9,
+    "fin": 62.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "vrai",
+    "debut": 62.06,
+    "fin": 62.24,
+    "proba": 0.998
+   },
+   {
+    "mot": "Comme",
+    "debut": 62.24,
+    "fin": 63.38,
+    "proba": 0.989
+   },
+   {
+    "mot": "une",
+    "debut": 63.38,
+    "fin": 63.56,
+    "proba": 0.999
+   },
+   {
+    "mot": "symphonie",
+    "debut": 63.56,
+    "fin": 64.3,
+    "proba": 0.999
+   },
+   {
+    "mot": "ils",
+    "debut": 64.3,
+    "fin": 64.66,
+    "proba": 0.83
+   },
+   {
+    "mot": "se",
+    "debut": 64.66,
+    "fin": 64.8,
+    "proba": 0.997
+   },
+   {
+    "mot": "sont",
+    "debut": 64.8,
+    "fin": 65.04,
+    "proba": 0.999
+   },
+   {
+    "mot": "associés",
+    "debut": 65.04,
+    "fin": 65.82,
+    "proba": 0.997
+   }
+  ]
+ },
+ {
+  "debut": 65.82,
+  "fin": 72.98,
+  "texte": "Pour un miracle que t'as jamais remercié Tous les matins prends toi une claque",
+  "mots": [
+   {
+    "mot": "Pour",
+    "debut": 65.82,
+    "fin": 66.98,
+    "proba": 0.993
+   },
+   {
+    "mot": "un",
+    "debut": 66.98,
+    "fin": 67.22,
+    "proba": 0.999
+   },
+   {
+    "mot": "miracle",
+    "debut": 67.22,
+    "fin": 67.66,
+    "proba": 0.995
+   },
+   {
+    "mot": "que",
+    "debut": 67.66,
+    "fin": 67.88,
+    "proba": 0.871
+   },
+   {
+    "mot": "t",
+    "debut": 67.88,
+    "fin": 67.98,
+    "proba": 0.98
+   },
+   {
+    "mot": "'as",
+    "debut": 67.98,
+    "fin": 68.08,
+    "proba": 0.992
+   },
+   {
+    "mot": "jamais",
+    "debut": 68.08,
+    "fin": 68.54,
+    "proba": 0.999
+   },
+   {
+    "mot": "remercié",
+    "debut": 68.54,
+    "fin": 69.22,
+    "proba": 0.978
+   },
+   {
+    "mot": "Tous",
+    "debut": 69.22,
+    "fin": 70.62,
+    "proba": 0.98
+   },
+   {
+    "mot": "les",
+    "debut": 70.62,
+    "fin": 70.76,
+    "proba": 0.999
+   },
+   {
+    "mot": "matins",
+    "debut": 70.76,
+    "fin": 71.18,
+    "proba": 0.994
+   },
+   {
+    "mot": "prends",
+    "debut": 71.18,
+    "fin": 71.98,
+    "proba": 0.31
+   },
+   {
+    "mot": "toi",
+    "debut": 71.98,
+    "fin": 72.18,
+    "proba": 0.496
+   },
+   {
+    "mot": "une",
+    "debut": 72.18,
+    "fin": 72.52,
+    "proba": 0.992
+   },
+   {
+    "mot": "claque",
+    "debut": 72.52,
+    "fin": 72.98,
+    "proba": 0.842
+   }
+  ]
+ },
+ {
+  "debut": 72.98,
+  "fin": 79.82,
+  "texte": "Le cadeau qu'on me fait c'est pas une arnaque Prends ta place dans l'espace",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 72.98,
+    "fin": 73.76,
+    "proba": 0.982
+   },
+   {
+    "mot": "cadeau",
+    "debut": 73.76,
+    "fin": 74.22,
+    "proba": 0.998
+   },
+   {
+    "mot": "qu",
+    "debut": 74.22,
+    "fin": 74.28,
+    "proba": 0.987
+   },
+   {
+    "mot": "'on",
+    "debut": 74.28,
+    "fin": 74.42,
+    "proba": 0.998
+   },
+   {
+    "mot": "me",
+    "debut": 74.42,
+    "fin": 74.44,
+    "proba": 0.478
+   },
+   {
+    "mot": "fait",
+    "debut": 74.44,
+    "fin": 74.68,
+    "proba": 0.988
+   },
+   {
+    "mot": "c",
+    "debut": 74.68,
+    "fin": 75.22,
+    "proba": 0.919
+   },
+   {
+    "mot": "'est",
+    "debut": 75.22,
+    "fin": 75.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "pas",
+    "debut": 75.52,
+    "fin": 75.68,
+    "proba": 0.999
+   },
+   {
+    "mot": "une",
+    "debut": 75.68,
+    "fin": 75.98,
+    "proba": 0.997
+   },
+   {
+    "mot": "arnaque",
+    "debut": 75.98,
+    "fin": 76.46,
+    "proba": 0.999
+   },
+   {
+    "mot": "Prends",
+    "debut": 76.46,
+    "fin": 77.76,
+    "proba": 0.932
+   },
+   {
+    "mot": "ta",
+    "debut": 77.76,
+    "fin": 77.82,
+    "proba": 0.998
+   },
+   {
+    "mot": "place",
+    "debut": 77.82,
+    "fin": 78.24,
+    "proba": 1.0
+   },
+   {
+    "mot": "dans",
+    "debut": 78.24,
+    "fin": 79.4,
+    "proba": 0.928
+   },
+   {
+    "mot": "l",
+    "debut": 79.4,
+    "fin": 79.5,
+    "proba": 0.999
+   },
+   {
+    "mot": "'espace",
+    "debut": 79.5,
+    "fin": 79.82,
+    "proba": 0.998
+   }
+  ]
+ },
+ {
+  "debut": 79.82,
+  "fin": 83.34,
+  "texte": "Dans l'espace, oh manette, c'est toi qui est dans la tête",
+  "mots": [
+   {
+    "mot": "Dans",
+    "debut": 79.82,
+    "fin": 80.26,
+    "proba": 0.387
+   },
+   {
+    "mot": "l",
+    "debut": 80.26,
+    "fin": 80.4,
+    "proba": 0.992
+   },
+   {
+    "mot": "'espace,",
+    "debut": 80.4,
+    "fin": 80.6,
+    "proba": 0.985
+   },
+   {
+    "mot": "oh",
+    "debut": 80.8,
+    "fin": 81.1,
+    "proba": 0.358
+   },
+   {
+    "mot": "manette,",
+    "debut": 81.1,
+    "fin": 81.68,
+    "proba": 0.945
+   },
+   {
+    "mot": "c",
+    "debut": 81.68,
+    "fin": 81.94,
+    "proba": 0.988
+   },
+   {
+    "mot": "'est",
+    "debut": 81.94,
+    "fin": 82.12,
+    "proba": 0.999
+   },
+   {
+    "mot": "toi",
+    "debut": 82.12,
+    "fin": 82.2,
+    "proba": 0.999
+   },
+   {
+    "mot": "qui",
+    "debut": 82.2,
+    "fin": 82.44,
+    "proba": 0.999
+   },
+   {
+    "mot": "est",
+    "debut": 82.44,
+    "fin": 82.64,
+    "proba": 0.494
+   },
+   {
+    "mot": "dans",
+    "debut": 82.64,
+    "fin": 82.86,
+    "proba": 0.998
+   },
+   {
+    "mot": "la",
+    "debut": 82.86,
+    "fin": 83.06,
+    "proba": 0.999
+   },
+   {
+    "mot": "tête",
+    "debut": 83.06,
+    "fin": 83.34,
+    "proba": 0.995
+   }
+  ]
+ },
+ {
+  "debut": 84.08,
+  "fin": 86.9,
+  "texte": "Tous les matins, prends-toi une claque",
+  "mots": [
+   {
+    "mot": "Tous",
+    "debut": 84.08,
+    "fin": 84.52,
+    "proba": 0.873
+   },
+   {
+    "mot": "les",
+    "debut": 84.52,
+    "fin": 84.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "matins,",
+    "debut": 84.68,
+    "fin": 85.2,
+    "proba": 0.998
+   },
+   {
+    "mot": "prends",
+    "debut": 85.26,
+    "fin": 85.94,
+    "proba": 0.975
+   },
+   {
+    "mot": "-toi",
+    "debut": 85.94,
+    "fin": 86.18,
+    "proba": 0.98
+   },
+   {
+    "mot": "une",
+    "debut": 86.18,
+    "fin": 86.46,
+    "proba": 0.999
+   },
+   {
+    "mot": "claque",
+    "debut": 86.46,
+    "fin": 86.9,
+    "proba": 0.992
+   }
+  ]
+ },
+ {
+  "debut": 86.9,
+  "fin": 90.36,
+  "texte": "Le cadeau qu'on te fait, c'est pas une arnaque",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 86.9,
+    "fin": 87.68,
+    "proba": 0.972
+   },
+   {
+    "mot": "cadeau",
+    "debut": 87.68,
+    "fin": 88.14,
+    "proba": 1.0
+   },
+   {
+    "mot": "qu",
+    "debut": 88.14,
+    "fin": 88.2,
+    "proba": 0.999
+   },
+   {
+    "mot": "'on",
+    "debut": 88.2,
+    "fin": 88.32,
+    "proba": 0.999
+   },
+   {
+    "mot": "te",
+    "debut": 88.32,
+    "fin": 88.36,
+    "proba": 0.655
+   },
+   {
+    "mot": "fait,",
+    "debut": 88.36,
+    "fin": 88.6,
+    "proba": 1.0
+   },
+   {
+    "mot": "c",
+    "debut": 88.76,
+    "fin": 89.3,
+    "proba": 0.999
+   },
+   {
+    "mot": "'est",
+    "debut": 89.3,
+    "fin": 89.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "pas",
+    "debut": 89.42,
+    "fin": 89.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "une",
+    "debut": 89.54,
+    "fin": 89.9,
+    "proba": 0.994
+   },
+   {
+    "mot": "arnaque",
+    "debut": 89.9,
+    "fin": 90.36,
+    "proba": 0.954
+   }
+  ]
+ },
+ {
+  "debut": 91.22,
+  "fin": 93.74,
+  "texte": "Prends ta place, dans l'espace",
+  "mots": [
+   {
+    "mot": "Prends",
+    "debut": 91.22,
+    "fin": 91.66,
+    "proba": 0.997
+   },
+   {
+    "mot": "ta",
+    "debut": 91.66,
+    "fin": 91.74,
+    "proba": 0.997
+   },
+   {
+    "mot": "place,",
+    "debut": 91.74,
+    "fin": 92.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "dans",
+    "debut": 92.38,
+    "fin": 93.24,
+    "proba": 0.999
+   },
+   {
+    "mot": "l",
+    "debut": 93.24,
+    "fin": 93.46,
+    "proba": 1.0
+   },
+   {
+    "mot": "'espace",
+    "debut": 93.46,
+    "fin": 93.74,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 94.76,
+  "fin": 97.26,
+  "texte": "Oh manette, c'est toi qui est dans la tête",
+  "mots": [
+   {
+    "mot": "Oh",
+    "debut": 94.76,
+    "fin": 95.2,
+    "proba": 0.717
+   },
+   {
+    "mot": "manette,",
+    "debut": 95.2,
+    "fin": 95.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "c",
+    "debut": 95.64,
+    "fin": 95.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 95.86,
+    "fin": 95.96,
+    "proba": 1.0
+   },
+   {
+    "mot": "toi",
+    "debut": 95.96,
+    "fin": 96.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 96.12,
+    "fin": 96.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "est",
+    "debut": 96.34,
+    "fin": 96.54,
+    "proba": 0.987
+   },
+   {
+    "mot": "dans",
+    "debut": 96.54,
+    "fin": 96.8,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 96.8,
+    "fin": 97.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "tête",
+    "debut": 97.0,
+    "fin": 97.26,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 97.84,
+  "fin": 100.36,
+  "texte": "Tu sais pas pourquoi t'es là, mais t'es là quand même",
+  "mots": [
+   {
+    "mot": "Tu",
+    "debut": 97.84,
+    "fin": 98.28,
+    "proba": 0.96
+   },
+   {
+    "mot": "sais",
+    "debut": 98.28,
+    "fin": 98.32,
+    "proba": 0.999
+   },
+   {
+    "mot": "pas",
+    "debut": 98.32,
+    "fin": 98.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "pourquoi",
+    "debut": 98.52,
+    "fin": 98.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "t",
+    "debut": 98.86,
+    "fin": 99.1,
+    "proba": 1.0
+   },
+   {
+    "mot": "'es",
+    "debut": 99.1,
+    "fin": 99.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "là,",
+    "debut": 99.18,
+    "fin": 99.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "mais",
+    "debut": 99.46,
+    "fin": 99.56,
+    "proba": 0.998
+   },
+   {
+    "mot": "t",
+    "debut": 99.56,
+    "fin": 99.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "'es",
+    "debut": 99.66,
+    "fin": 99.74,
+    "proba": 1.0
+   },
+   {
+    "mot": "là",
+    "debut": 99.74,
+    "fin": 99.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "quand",
+    "debut": 99.82,
+    "fin": 100.02,
+    "proba": 0.999
+   },
+   {
+    "mot": "même",
+    "debut": 100.02,
+    "fin": 100.36,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 102.12,
+  "fin": 103.84,
+  "texte": "Responsabilise-toi, c'est toi le capitaine",
+  "mots": [
+   {
+    "mot": "Responsabilise",
+    "debut": 102.12,
+    "fin": 102.56,
+    "proba": 0.994
+   },
+   {
+    "mot": "-toi,",
+    "debut": 102.56,
+    "fin": 102.7,
+    "proba": 0.999
+   },
+   {
+    "mot": "c",
+    "debut": 102.8,
+    "fin": 102.9,
+    "proba": 0.876
+   },
+   {
+    "mot": "'est",
+    "debut": 102.9,
+    "fin": 102.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "toi",
+    "debut": 102.98,
+    "fin": 103.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "le",
+    "debut": 103.08,
+    "fin": 103.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "capitaine",
+    "debut": 103.18,
+    "fin": 103.84,
+    "proba": 0.999
+   }
+  ]
+ },
+ {
+  "debut": 104.54,
+  "fin": 107.42,
+  "texte": "L'univers t'a donné le vaisseau, les clés gênent",
+  "mots": [
+   {
+    "mot": "L",
+    "debut": 104.54,
+    "fin": 104.98,
+    "proba": 0.999
+   },
+   {
+    "mot": "'univers",
+    "debut": 104.98,
+    "fin": 105.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "t",
+    "debut": 105.42,
+    "fin": 105.64,
+    "proba": 0.992
+   },
+   {
+    "mot": "'a",
+    "debut": 105.64,
+    "fin": 105.72,
+    "proba": 0.992
+   },
+   {
+    "mot": "donné",
+    "debut": 105.72,
+    "fin": 106.02,
+    "proba": 0.999
+   },
+   {
+    "mot": "le",
+    "debut": 106.02,
+    "fin": 106.16,
+    "proba": 0.997
+   },
+   {
+    "mot": "vaisseau,",
+    "debut": 106.16,
+    "fin": 106.62,
+    "proba": 0.987
+   },
+   {
+    "mot": "les",
+    "debut": 106.64,
+    "fin": 106.76,
+    "proba": 0.898
+   },
+   {
+    "mot": "clés",
+    "debut": 106.76,
+    "fin": 107.02,
+    "proba": 0.972
+   },
+   {
+    "mot": "gênent",
+    "debut": 107.02,
+    "fin": 107.42,
+    "proba": 0.857
+   }
+  ]
+ },
+ {
+  "debut": 108.06,
+  "fin": 110.94,
+  "texte": "Est-ce que t'es capable de diriger sa centaine ?",
+  "mots": [
+   {
+    "mot": "Est",
+    "debut": 108.06,
+    "fin": 108.62,
+    "proba": 0.933
+   },
+   {
+    "mot": "-ce",
+    "debut": 108.62,
+    "fin": 108.76,
+    "proba": 0.988
+   },
+   {
+    "mot": "que",
+    "debut": 108.76,
+    "fin": 108.76,
+    "proba": 0.998
+   },
+   {
+    "mot": "t",
+    "debut": 108.76,
+    "fin": 108.86,
+    "proba": 0.977
+   },
+   {
+    "mot": "'es",
+    "debut": 108.86,
+    "fin": 108.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "capable",
+    "debut": 108.94,
+    "fin": 109.3,
+    "proba": 0.999
+   },
+   {
+    "mot": "de",
+    "debut": 109.3,
+    "fin": 109.58,
+    "proba": 0.987
+   },
+   {
+    "mot": "diriger",
+    "debut": 109.58,
+    "fin": 110.0,
+    "proba": 0.999
+   },
+   {
+    "mot": "sa",
+    "debut": 110.0,
+    "fin": 110.2,
+    "proba": 0.508
+   },
+   {
+    "mot": "centaine",
+    "debut": 110.2,
+    "fin": 110.82,
+    "proba": 0.991
+   },
+   {
+    "mot": "?",
+    "debut": 110.82,
+    "fin": 110.94,
+    "proba": 0.734
+   }
+  ]
+ },
+ {
+  "debut": 111.92,
+  "fin": 114.66,
+  "texte": "Des atomes inertes qui se mettent à corps",
+  "mots": [
+   {
+    "mot": "Des",
+    "debut": 111.66,
+    "fin": 111.94,
+    "proba": 0.983
+   },
+   {
+    "mot": "atomes",
+    "debut": 111.94,
+    "fin": 112.58,
+    "proba": 0.998
+   },
+   {
+    "mot": "inertes",
+    "debut": 112.58,
+    "fin": 113.12,
+    "proba": 0.997
+   },
+   {
+    "mot": "qui",
+    "debut": 113.12,
+    "fin": 113.48,
+    "proba": 0.926
+   },
+   {
+    "mot": "se",
+    "debut": 113.48,
+    "fin": 113.58,
+    "proba": 0.931
+   },
+   {
+    "mot": "mettent",
+    "debut": 113.58,
+    "fin": 114.1,
+    "proba": 0.999
+   },
+   {
+    "mot": "à",
+    "debut": 114.1,
+    "fin": 114.16,
+    "proba": 0.569
+   },
+   {
+    "mot": "corps",
+    "debut": 114.16,
+    "fin": 114.66,
+    "proba": 0.979
+   }
+  ]
+ },
+ {
+  "debut": 114.66,
+  "fin": 118.22,
+  "texte": "Chaque cellule au travail pendant que tu dors",
+  "mots": [
+   {
+    "mot": "Chaque",
+    "debut": 114.66,
+    "fin": 115.54,
+    "proba": 0.995
+   },
+   {
+    "mot": "cellule",
+    "debut": 115.54,
+    "fin": 116.0,
+    "proba": 1.0
+   },
+   {
+    "mot": "au",
+    "debut": 116.0,
+    "fin": 116.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "travail",
+    "debut": 116.12,
+    "fin": 116.62,
+    "proba": 1.0
+   },
+   {
+    "mot": "pendant",
+    "debut": 116.62,
+    "fin": 117.3,
+    "proba": 0.913
+   },
+   {
+    "mot": "que",
+    "debut": 117.3,
+    "fin": 117.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "tu",
+    "debut": 117.56,
+    "fin": 117.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "dors",
+    "debut": 117.82,
+    "fin": 118.22,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 118.92,
+  "fin": 121.62,
+  "texte": "Poussière d'étoiles, c'est écrit dans ton corps",
+  "mots": [
+   {
+    "mot": "Poussière",
+    "debut": 118.92,
+    "fin": 119.48,
+    "proba": 0.962
+   },
+   {
+    "mot": "d",
+    "debut": 119.48,
+    "fin": 119.54,
+    "proba": 0.992
+   },
+   {
+    "mot": "'étoiles,",
+    "debut": 119.54,
+    "fin": 120.02,
+    "proba": 0.888
+   },
+   {
+    "mot": "c",
+    "debut": 120.02,
+    "fin": 120.18,
+    "proba": 0.999
+   },
+   {
+    "mot": "'est",
+    "debut": 120.18,
+    "fin": 120.32,
+    "proba": 1.0
+   },
+   {
+    "mot": "écrit",
+    "debut": 120.32,
+    "fin": 120.5,
+    "proba": 0.997
+   },
+   {
+    "mot": "dans",
+    "debut": 120.5,
+    "fin": 121.14,
+    "proba": 0.997
+   },
+   {
+    "mot": "ton",
+    "debut": 121.14,
+    "fin": 121.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "corps",
+    "debut": 121.34,
+    "fin": 121.62,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 121.62,
+  "fin": 125.1,
+  "texte": "Un vaisseau extraordinaire et toi t'es à port",
+  "mots": [
+   {
+    "mot": "Un",
+    "debut": 121.62,
+    "fin": 122.38,
+    "proba": 0.999
+   },
+   {
+    "mot": "vaisseau",
+    "debut": 122.38,
+    "fin": 122.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "extraordinaire",
+    "debut": 122.86,
+    "fin": 123.72,
+    "proba": 1.0
+   },
+   {
+    "mot": "et",
+    "debut": 123.72,
+    "fin": 123.96,
+    "proba": 0.988
+   },
+   {
+    "mot": "toi",
+    "debut": 123.96,
+    "fin": 124.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "t",
+    "debut": 124.16,
+    "fin": 124.4,
+    "proba": 0.938
+   },
+   {
+    "mot": "'es",
+    "debut": 124.4,
+    "fin": 124.64,
+    "proba": 1.0
+   },
+   {
+    "mot": "à",
+    "debut": 124.64,
+    "fin": 124.8,
+    "proba": 0.99
+   },
+   {
+    "mot": "port",
+    "debut": 124.8,
+    "fin": 125.1,
+    "proba": 0.419
+   }
+  ]
+ },
+ {
+  "debut": 125.72,
+  "fin": 128.62,
+  "texte": "Tous les matins, prends-toi une claque",
+  "mots": [
+   {
+    "mot": "Tous",
+    "debut": 125.72,
+    "fin": 126.28,
+    "proba": 0.993
+   },
+   {
+    "mot": "les",
+    "debut": 126.28,
+    "fin": 126.42,
+    "proba": 1.0
+   },
+   {
+    "mot": "matins,",
+    "debut": 126.42,
+    "fin": 126.92,
+    "proba": 0.999
+   },
+   {
+    "mot": "prends",
+    "debut": 126.98,
+    "fin": 127.66,
+    "proba": 0.99
+   },
+   {
+    "mot": "-toi",
+    "debut": 127.66,
+    "fin": 127.94,
+    "proba": 0.998
+   },
+   {
+    "mot": "une",
+    "debut": 127.94,
+    "fin": 128.2,
+    "proba": 1.0
+   },
+   {
+    "mot": "claque",
+    "debut": 128.2,
+    "fin": 128.62,
+    "proba": 0.963
+   }
+  ]
+ },
+ {
+  "debut": 128.62,
+  "fin": 132.08,
+  "texte": "Le cadeau qu'on te fait, c'est pas une arnaque",
+  "mots": [
+   {
+    "mot": "Le",
+    "debut": 128.62,
+    "fin": 129.46,
+    "proba": 0.999
+   },
+   {
+    "mot": "cadeau",
+    "debut": 129.46,
+    "fin": 129.86,
+    "proba": 1.0
+   },
+   {
+    "mot": "qu",
+    "debut": 129.86,
+    "fin": 129.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "'on",
+    "debut": 129.94,
+    "fin": 130.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "te",
+    "debut": 130.06,
+    "fin": 130.1,
+    "proba": 0.703
+   },
+   {
+    "mot": "fait,",
+    "debut": 130.1,
+    "fin": 130.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "c",
+    "debut": 130.48,
+    "fin": 131.04,
+    "proba": 0.999
+   },
+   {
+    "mot": "'est",
+    "debut": 131.04,
+    "fin": 131.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "pas",
+    "debut": 131.18,
+    "fin": 131.32,
+    "proba": 1.0
+   },
+   {
+    "mot": "une",
+    "debut": 131.32,
+    "fin": 131.64,
+    "proba": 0.999
+   },
+   {
+    "mot": "arnaque",
+    "debut": 131.64,
+    "fin": 132.08,
+    "proba": 0.996
+   }
+  ]
+ },
+ {
+  "debut": 132.84,
+  "fin": 135.44,
+  "texte": "Prends ta place dans l'espace",
+  "mots": [
+   {
+    "mot": "Prends",
+    "debut": 132.84,
+    "fin": 133.4,
+    "proba": 0.998
+   },
+   {
+    "mot": "ta",
+    "debut": 133.4,
+    "fin": 133.48,
+    "proba": 0.999
+   },
+   {
+    "mot": "place",
+    "debut": 133.48,
+    "fin": 133.88,
+    "proba": 1.0
+   },
+   {
+    "mot": "dans",
+    "debut": 133.88,
+    "fin": 135.04,
+    "proba": 0.553
+   },
+   {
+    "mot": "l",
+    "debut": 135.04,
+    "fin": 135.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "'espace",
+    "debut": 135.16,
+    "fin": 135.44,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 135.44,
+  "fin": 138.98,
+  "texte": "Passe, oh manette, c'est toi qui est dans la tête",
+  "mots": [
+   {
+    "mot": "Passe,",
+    "debut": 135.44,
+    "fin": 135.8,
+    "proba": 0.551
+   },
+   {
+    "mot": "oh",
+    "debut": 135.82,
+    "fin": 136.74,
+    "proba": 0.464
+   },
+   {
+    "mot": "manette,",
+    "debut": 136.74,
+    "fin": 137.18,
+    "proba": 0.577
+   },
+   {
+    "mot": "c",
+    "debut": 137.36,
+    "fin": 137.56,
+    "proba": 0.99
+   },
+   {
+    "mot": "'est",
+    "debut": 137.56,
+    "fin": 137.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "toi",
+    "debut": 137.68,
+    "fin": 137.84,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 137.84,
+    "fin": 138.08,
+    "proba": 0.999
+   },
+   {
+    "mot": "est",
+    "debut": 138.08,
+    "fin": 138.3,
+    "proba": 0.615
+   },
+   {
+    "mot": "dans",
+    "debut": 138.3,
+    "fin": 138.52,
+    "proba": 0.999
+   },
+   {
+    "mot": "la",
+    "debut": 138.52,
+    "fin": 138.7,
+    "proba": 0.996
+   },
+   {
+    "mot": "tête",
+    "debut": 138.7,
+    "fin": 138.98,
+    "proba": 0.928
+   }
+  ]
+ },
+ {
+  "debut": 139.72,
+  "fin": 142.5,
+  "texte": "Alors demain, quand tu te lèveras",
+  "mots": [
+   {
+    "mot": "Alors",
+    "debut": 139.72,
+    "fin": 140.2,
+    "proba": 0.552
+   },
+   {
+    "mot": "demain,",
+    "debut": 140.2,
+    "fin": 140.64,
+    "proba": 0.997
+   },
+   {
+    "mot": "quand",
+    "debut": 140.84,
+    "fin": 141.56,
+    "proba": 1.0
+   },
+   {
+    "mot": "tu",
+    "debut": 141.56,
+    "fin": 141.76,
+    "proba": 1.0
+   },
+   {
+    "mot": "te",
+    "debut": 141.76,
+    "fin": 141.9,
+    "proba": 0.999
+   },
+   {
+    "mot": "lèveras",
+    "debut": 141.9,
+    "fin": 142.5,
+    "proba": 0.999
+   }
+  ]
+ },
+ {
+  "debut": 143.32,
+  "fin": 145.94,
+  "texte": "Pense à moi, petite cellule qui sert à ça",
+  "mots": [
+   {
+    "mot": "Pense",
+    "debut": 143.32,
+    "fin": 143.8,
+    "proba": 0.983
+   },
+   {
+    "mot": "à",
+    "debut": 143.8,
+    "fin": 143.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "moi,",
+    "debut": 143.94,
+    "fin": 144.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "petite",
+    "debut": 144.2,
+    "fin": 144.5,
+    "proba": 0.999
+   },
+   {
+    "mot": "cellule",
+    "debut": 144.5,
+    "fin": 145.08,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 145.08,
+    "fin": 145.2,
+    "proba": 0.987
+   },
+   {
+    "mot": "sert",
+    "debut": 145.2,
+    "fin": 145.5,
+    "proba": 0.997
+   },
+   {
+    "mot": "à",
+    "debut": 145.5,
+    "fin": 145.7,
+    "proba": 1.0
+   },
+   {
+    "mot": "ça",
+    "debut": 145.7,
+    "fin": 145.94,
+    "proba": 0.997
+   }
+  ]
+ },
+ {
+  "debut": 146.76,
+  "fin": 149.38,
+  "texte": "Et à nous, pense à nous, on est des milliards",
+  "mots": [
+   {
+    "mot": "Et",
+    "debut": 146.76,
+    "fin": 147.24,
+    "proba": 0.994
+   },
+   {
+    "mot": "à",
+    "debut": 147.24,
+    "fin": 147.4,
+    "proba": 1.0
+   },
+   {
+    "mot": "nous,",
+    "debut": 147.4,
+    "fin": 147.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "pense",
+    "debut": 147.84,
+    "fin": 148.16,
+    "proba": 0.998
+   },
+   {
+    "mot": "à",
+    "debut": 148.16,
+    "fin": 148.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "nous,",
+    "debut": 148.3,
+    "fin": 148.54,
+    "proba": 1.0
+   },
+   {
+    "mot": "on",
+    "debut": 148.62,
+    "fin": 148.78,
+    "proba": 1.0
+   },
+   {
+    "mot": "est",
+    "debut": 148.78,
+    "fin": 148.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "des",
+    "debut": 148.94,
+    "fin": 149.04,
+    "proba": 1.0
+   },
+   {
+    "mot": "milliards",
+    "debut": 149.04,
+    "fin": 149.38,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 149.38,
+  "fin": 153.0,
+  "texte": "Tous ces atomages, j'en sais comme ça, pas par hasard",
+  "mots": [
+   {
+    "mot": "Tous",
+    "debut": 149.38,
+    "fin": 150.22,
+    "proba": 0.991
+   },
+   {
+    "mot": "ces",
+    "debut": 150.22,
+    "fin": 150.48,
+    "proba": 0.998
+   },
+   {
+    "mot": "atomages,",
+    "debut": 150.48,
+    "fin": 151.22,
+    "proba": 0.803
+   },
+   {
+    "mot": "j",
+    "debut": 151.34,
+    "fin": 151.34,
+    "proba": 0.575
+   },
+   {
+    "mot": "'en",
+    "debut": 151.34,
+    "fin": 151.38,
+    "proba": 1.0
+   },
+   {
+    "mot": "sais",
+    "debut": 151.38,
+    "fin": 151.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "comme",
+    "debut": 151.52,
+    "fin": 151.78,
+    "proba": 0.998
+   },
+   {
+    "mot": "ça,",
+    "debut": 151.78,
+    "fin": 152.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "pas",
+    "debut": 152.04,
+    "fin": 152.22,
+    "proba": 0.994
+   },
+   {
+    "mot": "par",
+    "debut": 152.22,
+    "fin": 152.44,
+    "proba": 1.0
+   },
+   {
+    "mot": "hasard",
+    "debut": 152.44,
+    "fin": 153.0,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 154.44,
+  "fin": 156.44,
+  "texte": "Essaie seulement de calculer",
+  "mots": [
+   {
+    "mot": "Essaie",
+    "debut": 154.44,
+    "fin": 154.92,
+    "proba": 0.892
+   },
+   {
+    "mot": "seulement",
+    "debut": 154.92,
+    "fin": 155.34,
+    "proba": 0.999
+   },
+   {
+    "mot": "de",
+    "debut": 155.34,
+    "fin": 155.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "calculer",
+    "debut": 155.66,
+    "fin": 156.44,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 156.44,
+  "fin": 159.58,
+  "texte": "Les probabilités que ça puisse arriver",
+  "mots": [
+   {
+    "mot": "Les",
+    "debut": 156.44,
+    "fin": 157.18,
+    "proba": 0.944
+   },
+   {
+    "mot": "probabilités",
+    "debut": 157.18,
+    "fin": 158.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "que",
+    "debut": 158.3,
+    "fin": 158.7,
+    "proba": 0.961
+   },
+   {
+    "mot": "ça",
+    "debut": 158.7,
+    "fin": 158.9,
+    "proba": 1.0
+   },
+   {
+    "mot": "puisse",
+    "debut": 158.9,
+    "fin": 159.18,
+    "proba": 1.0
+   },
+   {
+    "mot": "arriver",
+    "debut": 159.18,
+    "fin": 159.58,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 160.46,
+  "fin": 163.26,
+  "texte": "Dans l'univers, une chance sur l'infini",
+  "mots": [
+   {
+    "mot": "Dans",
+    "debut": 160.46,
+    "fin": 160.94,
+    "proba": 0.999
+   },
+   {
+    "mot": "l",
+    "debut": 160.94,
+    "fin": 161.02,
+    "proba": 1.0
+   },
+   {
+    "mot": "'univers,",
+    "debut": 161.02,
+    "fin": 161.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "une",
+    "debut": 161.82,
+    "fin": 162.22,
+    "proba": 0.999
+   },
+   {
+    "mot": "chance",
+    "debut": 162.22,
+    "fin": 162.44,
+    "proba": 0.996
+   },
+   {
+    "mot": "sur",
+    "debut": 162.44,
+    "fin": 162.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "l",
+    "debut": 162.68,
+    "fin": 162.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "'infini",
+    "debut": 162.82,
+    "fin": 163.26,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 163.26,
+  "fin": 166.82,
+  "texte": "Et c'est tombé sur toi, alors respecte la vie",
+  "mots": [
+   {
+    "mot": "Et",
+    "debut": 163.26,
+    "fin": 164.18,
+    "proba": 0.396
+   },
+   {
+    "mot": "c",
+    "debut": 164.18,
+    "fin": 164.28,
+    "proba": 0.773
+   },
+   {
+    "mot": "'est",
+    "debut": 164.28,
+    "fin": 164.38,
+    "proba": 0.995
+   },
+   {
+    "mot": "tombé",
+    "debut": 164.38,
+    "fin": 164.62,
+    "proba": 0.882
+   },
+   {
+    "mot": "sur",
+    "debut": 164.62,
+    "fin": 164.78,
+    "proba": 0.999
+   },
+   {
+    "mot": "toi,",
+    "debut": 164.78,
+    "fin": 165.08,
+    "proba": 0.994
+   },
+   {
+    "mot": "alors",
+    "debut": 165.18,
+    "fin": 165.84,
+    "proba": 0.965
+   },
+   {
+    "mot": "respecte",
+    "debut": 165.84,
+    "fin": 166.5,
+    "proba": 0.985
+   },
+   {
+    "mot": "la",
+    "debut": 166.5,
+    "fin": 166.54,
+    "proba": 0.978
+   },
+   {
+    "mot": "vie",
+    "debut": 166.54,
+    "fin": 166.82,
+    "proba": 0.999
+   }
+  ]
+ },
+ {
+  "debut": 167.52,
+  "fin": 173.84,
+  "texte": "Tous les matins, prends-toi une claque Le cadeau qu'on te fait, c'est pas une arnaque",
+  "mots": [
+   {
+    "mot": "Tous",
+    "debut": 167.52,
+    "fin": 168.0,
+    "proba": 0.841
+   },
+   {
+    "mot": "les",
+    "debut": 168.0,
+    "fin": 168.14,
+    "proba": 0.999
+   },
+   {
+    "mot": "matins,",
+    "debut": 168.14,
+    "fin": 168.68,
+    "proba": 0.984
+   },
+   {
+    "mot": "prends",
+    "debut": 168.7,
+    "fin": 169.42,
+    "proba": 0.958
+   },
+   {
+    "mot": "-toi",
+    "debut": 169.42,
+    "fin": 169.68,
+    "proba": 0.914
+   },
+   {
+    "mot": "une",
+    "debut": 169.68,
+    "fin": 169.92,
+    "proba": 0.997
+   },
+   {
+    "mot": "claque",
+    "debut": 169.92,
+    "fin": 170.36,
+    "proba": 0.981
+   },
+   {
+    "mot": "Le",
+    "debut": 170.36,
+    "fin": 171.2,
+    "proba": 0.977
+   },
+   {
+    "mot": "cadeau",
+    "debut": 171.2,
+    "fin": 171.6,
+    "proba": 0.999
+   },
+   {
+    "mot": "qu",
+    "debut": 171.6,
+    "fin": 171.74,
+    "proba": 0.997
+   },
+   {
+    "mot": "'on",
+    "debut": 171.74,
+    "fin": 171.82,
+    "proba": 0.999
+   },
+   {
+    "mot": "te",
+    "debut": 171.82,
+    "fin": 171.86,
+    "proba": 0.298
+   },
+   {
+    "mot": "fait,",
+    "debut": 171.86,
+    "fin": 172.08,
+    "proba": 0.994
+   },
+   {
+    "mot": "c",
+    "debut": 172.2,
+    "fin": 172.76,
+    "proba": 0.99
+   },
+   {
+    "mot": "'est",
+    "debut": 172.76,
+    "fin": 172.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "pas",
+    "debut": 172.94,
+    "fin": 173.06,
+    "proba": 0.999
+   },
+   {
+    "mot": "une",
+    "debut": 173.06,
+    "fin": 173.38,
+    "proba": 0.996
+   },
+   {
+    "mot": "arnaque",
+    "debut": 173.38,
+    "fin": 173.84,
+    "proba": 0.955
+   }
+  ]
+ },
+ {
+  "debut": 174.66,
+  "fin": 180.74,
+  "texte": "Prends ta place, dans l'espace Aux manettes, c'est toi qui es dans la tête",
+  "mots": [
+   {
+    "mot": "Prends",
+    "debut": 174.66,
+    "fin": 175.14,
+    "proba": 0.992
+   },
+   {
+    "mot": "ta",
+    "debut": 175.14,
+    "fin": 175.22,
+    "proba": 0.995
+   },
+   {
+    "mot": "place,",
+    "debut": 175.22,
+    "fin": 175.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "dans",
+    "debut": 175.86,
+    "fin": 176.78,
+    "proba": 0.989
+   },
+   {
+    "mot": "l",
+    "debut": 176.78,
+    "fin": 176.94,
+    "proba": 1.0
+   },
+   {
+    "mot": "'espace",
+    "debut": 176.94,
+    "fin": 177.24,
+    "proba": 0.999
+   },
+   {
+    "mot": "Aux",
+    "debut": 177.24,
+    "fin": 178.62,
+    "proba": 0.672
+   },
+   {
+    "mot": "manettes,",
+    "debut": 178.62,
+    "fin": 179.08,
+    "proba": 0.991
+   },
+   {
+    "mot": "c",
+    "debut": 179.1,
+    "fin": 179.34,
+    "proba": 0.998
+   },
+   {
+    "mot": "'est",
+    "debut": 179.34,
+    "fin": 179.44,
+    "proba": 0.998
+   },
+   {
+    "mot": "toi",
+    "debut": 179.44,
+    "fin": 179.6,
+    "proba": 0.999
+   },
+   {
+    "mot": "qui",
+    "debut": 179.6,
+    "fin": 179.82,
+    "proba": 0.999
+   },
+   {
+    "mot": "es",
+    "debut": 179.82,
+    "fin": 180.04,
+    "proba": 0.77
+   },
+   {
+    "mot": "dans",
+    "debut": 180.04,
+    "fin": 180.22,
+    "proba": 0.997
+   },
+   {
+    "mot": "la",
+    "debut": 180.22,
+    "fin": 180.42,
+    "proba": 0.999
+   },
+   {
+    "mot": "tête",
+    "debut": 180.42,
+    "fin": 180.74,
+    "proba": 0.998
+   }
+  ]
+ },
+ {
+  "debut": 181.44,
+  "fin": 187.74,
+  "texte": "Tous les matins, prends-toi une claque Le cadeau qu'on te fait, c'est pas une arnaque",
+  "mots": [
+   {
+    "mot": "Tous",
+    "debut": 181.44,
+    "fin": 181.92,
+    "proba": 0.989
+   },
+   {
+    "mot": "les",
+    "debut": 181.92,
+    "fin": 182.06,
+    "proba": 1.0
+   },
+   {
+    "mot": "matins,",
+    "debut": 182.06,
+    "fin": 182.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "prends",
+    "debut": 182.62,
+    "fin": 183.32,
+    "proba": 0.999
+   },
+   {
+    "mot": "-toi",
+    "debut": 183.32,
+    "fin": 183.58,
+    "proba": 1.0
+   },
+   {
+    "mot": "une",
+    "debut": 183.58,
+    "fin": 183.84,
+    "proba": 1.0
+   },
+   {
+    "mot": "claque",
+    "debut": 183.84,
+    "fin": 184.32,
+    "proba": 0.999
+   },
+   {
+    "mot": "Le",
+    "debut": 184.32,
+    "fin": 185.12,
+    "proba": 1.0
+   },
+   {
+    "mot": "cadeau",
+    "debut": 185.12,
+    "fin": 185.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "qu",
+    "debut": 185.48,
+    "fin": 185.66,
+    "proba": 1.0
+   },
+   {
+    "mot": "'on",
+    "debut": 185.66,
+    "fin": 185.72,
+    "proba": 1.0
+   },
+   {
+    "mot": "te",
+    "debut": 185.72,
+    "fin": 185.78,
+    "proba": 0.993
+   },
+   {
+    "mot": "fait,",
+    "debut": 185.78,
+    "fin": 185.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "c",
+    "debut": 186.42,
+    "fin": 186.68,
+    "proba": 1.0
+   },
+   {
+    "mot": "'est",
+    "debut": 186.68,
+    "fin": 186.82,
+    "proba": 1.0
+   },
+   {
+    "mot": "pas",
+    "debut": 186.82,
+    "fin": 186.98,
+    "proba": 1.0
+   },
+   {
+    "mot": "une",
+    "debut": 186.98,
+    "fin": 187.26,
+    "proba": 1.0
+   },
+   {
+    "mot": "arnaque",
+    "debut": 187.26,
+    "fin": 187.74,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 188.56,
+  "fin": 191.12,
+  "texte": "Prends ta place, dans l'espace",
+  "mots": [
+   {
+    "mot": "Prends",
+    "debut": 188.56,
+    "fin": 189.02,
+    "proba": 0.948
+   },
+   {
+    "mot": "ta",
+    "debut": 189.02,
+    "fin": 189.16,
+    "proba": 0.631
+   },
+   {
+    "mot": "place,",
+    "debut": 189.16,
+    "fin": 189.38,
+    "proba": 0.951
+   },
+   {
+    "mot": "dans",
+    "debut": 189.74,
+    "fin": 190.64,
+    "proba": 0.991
+   },
+   {
+    "mot": "l",
+    "debut": 190.64,
+    "fin": 190.82,
+    "proba": 0.999
+   },
+   {
+    "mot": "'espace",
+    "debut": 190.82,
+    "fin": 191.12,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 192.08,
+  "fin": 194.7,
+  "texte": "Aux manettes, c'est toi qui es dans la tête",
+  "mots": [
+   {
+    "mot": "Aux",
+    "debut": 192.08,
+    "fin": 192.54,
+    "proba": 0.814
+   },
+   {
+    "mot": "manettes,",
+    "debut": 192.54,
+    "fin": 193.0,
+    "proba": 0.999
+   },
+   {
+    "mot": "c",
+    "debut": 193.0,
+    "fin": 193.24,
+    "proba": 0.999
+   },
+   {
+    "mot": "'est",
+    "debut": 193.24,
+    "fin": 193.34,
+    "proba": 1.0
+   },
+   {
+    "mot": "toi",
+    "debut": 193.34,
+    "fin": 193.52,
+    "proba": 1.0
+   },
+   {
+    "mot": "qui",
+    "debut": 193.52,
+    "fin": 193.72,
+    "proba": 1.0
+   },
+   {
+    "mot": "es",
+    "debut": 193.72,
+    "fin": 193.94,
+    "proba": 0.51
+   },
+   {
+    "mot": "dans",
+    "debut": 193.94,
+    "fin": 194.16,
+    "proba": 1.0
+   },
+   {
+    "mot": "la",
+    "debut": 194.16,
+    "fin": 194.34,
+    "proba": 0.998
+   },
+   {
+    "mot": "tête",
+    "debut": 194.34,
+    "fin": 194.7,
+    "proba": 0.999
+   }
+  ]
+ },
+ {
+  "debut": 195.96,
+  "fin": 197.42,
+  "texte": "Bon, va te coucher",
+  "mots": [
+   {
+    "mot": "Bon,",
+    "debut": 195.96,
+    "fin": 196.42,
+    "proba": 0.983
+   },
+   {
+    "mot": "va",
+    "debut": 196.42,
+    "fin": 196.88,
+    "proba": 0.985
+   },
+   {
+    "mot": "te",
+    "debut": 196.88,
+    "fin": 196.98,
+    "proba": 0.997
+   },
+   {
+    "mot": "coucher",
+    "debut": 196.98,
+    "fin": 197.42,
+    "proba": 0.998
+   }
+  ]
+ },
+ {
+  "debut": 200.24,
+  "fin": 201.6,
+  "texte": "Mais ne gâche pas ça",
+  "mots": [
+   {
+    "mot": "Mais",
+    "debut": 200.24,
+    "fin": 200.7,
+    "proba": 0.985
+   },
+   {
+    "mot": "ne",
+    "debut": 200.7,
+    "fin": 200.8,
+    "proba": 0.995
+   },
+   {
+    "mot": "gâche",
+    "debut": 200.8,
+    "fin": 201.16,
+    "proba": 0.967
+   },
+   {
+    "mot": "pas",
+    "debut": 201.16,
+    "fin": 201.36,
+    "proba": 1.0
+   },
+   {
+    "mot": "ça",
+    "debut": 201.36,
+    "fin": 201.6,
+    "proba": 0.999
+   }
+  ]
+ },
+ {
+  "debut": 203.66,
+  "fin": 205.1,
+  "texte": "Sur la chance que t'as",
+  "mots": [
+   {
+    "mot": "Sur",
+    "debut": 203.66,
+    "fin": 204.12,
+    "proba": 0.97
+   },
+   {
+    "mot": "la",
+    "debut": 204.12,
+    "fin": 204.3,
+    "proba": 1.0
+   },
+   {
+    "mot": "chance",
+    "debut": 204.3,
+    "fin": 204.58,
+    "proba": 0.998
+   },
+   {
+    "mot": "que",
+    "debut": 204.58,
+    "fin": 204.8,
+    "proba": 0.999
+   },
+   {
+    "mot": "t",
+    "debut": 204.8,
+    "fin": 204.9,
+    "proba": 0.996
+   },
+   {
+    "mot": "'as",
+    "debut": 204.9,
+    "fin": 205.1,
+    "proba": 1.0
+   }
+  ]
+ },
+ {
+  "debut": 213.54,
+  "fin": 215.32,
+  "texte": "La plus belle chance que t'as",
+  "mots": [
+   {
+    "mot": "La",
+    "debut": 213.54,
+    "fin": 214.0,
+    "proba": 0.968
+   },
+   {
+    "mot": "plus",
+    "debut": 214.0,
+    "fin": 214.2,
+    "proba": 0.998
+   },
+   {
+    "mot": "belle",
+    "debut": 214.2,
+    "fin": 214.48,
+    "proba": 1.0
+   },
+   {
+    "mot": "chance",
+    "debut": 214.48,
+    "fin": 214.78,
+    "proba": 0.765
+   },
+   {
+    "mot": "que",
+    "debut": 214.78,
+    "fin": 215.04,
+    "proba": 0.831
+   },
+   {
+    "mot": "t",
+    "debut": 215.04,
+    "fin": 215.18,
+    "proba": 0.999
+   },
+   {
+    "mot": "'as",
+    "debut": 215.18,
+    "fin": 215.32,
+    "proba": 0.998
+   }
+  ]
+ },
+ {
+  "debut": 223.46,
+  "fin": 224.86,
+  "texte": "Générique",
+  "mots": [
+   {
+    "mot": "Générique",
+    "debut": 223.46,
+    "fin": 224.86,
+    "proba": 0.642
+   }
+  ]
+ }
+]
