@@ -256,5 +256,146 @@
    "decor_modifie_hors_zones_px_max": 0,
    "images_sans_effet_global_comptees": 74
   }
+ },
+ "4": {
+  "fichier": "4-saisie.gif",
+  "images": 90,
+  "images_par_seconde": 30,
+  "duree_s": 3.0,
+  "dimensions": [
+   644,
+   370
+  ],
+  "octets": 2210636,
+  "couleurs": 48,
+  "methode": "pixels inchangés transparents",
+  "jonction_fin_debut_ecart_moyen_niveau": 0.612,
+  "effets_globaux": {
+   "gel": [],
+   "flash": [],
+   "secousse": [],
+   "miettes": []
+  },
+  "avant": {
+   "yeux_images_a_2": 83,
+   "yeux_images_pas_2": [
+    16,
+    44,
+    45,
+    46,
+    61,
+    62,
+    63
+   ],
+   "decor_modifie_hors_zones_px_max": 0,
+   "images_sans_effet_global_comptees": 90
+  },
+  "apres": {
+   "yeux_images_a_2": 79,
+   "yeux_images_pas_2": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    55,
+    56,
+    59,
+    60,
+    66,
+    67
+   ],
+   "decor_modifie_hors_zones_px_max": 0,
+   "images_sans_effet_global_comptees": 90
+  }
+ },
+ "5": {
+  "fichier": "5-caresse.gif",
+  "images": 90,
+  "images_par_seconde": 30,
+  "duree_s": 3.0,
+  "dimensions": [
+   644,
+   370
+  ],
+  "octets": 2284733,
+  "couleurs": 64,
+  "methode": "pixels inchangés transparents",
+  "jonction_fin_debut_ecart_moyen_niveau": 0.503,
+  "effets_globaux": {
+   "gel": [],
+   "flash": [],
+   "secousse": [],
+   "miettes": []
+  },
+  "avant": {
+   "yeux_images_a_2": 87,
+   "yeux_images_pas_2": [
+    44,
+    45,
+    46
+   ],
+   "decor_modifie_hors_zones_px_max": 0,
+   "images_sans_effet_global_comptees": 90
+  },
+  "apres": {
+   "yeux_images_a_2": 84,
+   "yeux_images_pas_2": [
+    14,
+    15,
+    59,
+    60,
+    66,
+    67
+   ],
+   "decor_modifie_hors_zones_px_max": 0,
+   "images_sans_effet_global_comptees": 90
+  }
+ },
+ "6": {
+  "fichier": "6-lisse-contre-sur2.gif",
+  "images": 90,
+  "images_par_seconde": 30,
+  "duree_s": 3.0,
+  "dimensions": [
+   644,
+   370
+  ],
+  "octets": 2350663,
+  "couleurs": 96,
+  "methode": "pixels inchangés transparents",
+  "jonction_fin_debut_ecart_moyen_niveau": 0.644,
+  "effets_globaux": {
+   "gel": [],
+   "flash": [],
+   "secousse": [],
+   "miettes": []
+  },
+  "avant": {
+   "yeux_images_a_2": 84,
+   "yeux_images_pas_2": [
+    14,
+    15,
+    59,
+    60,
+    66,
+    67
+   ],
+   "decor_modifie_hors_zones_px_max": 0,
+   "images_sans_effet_global_comptees": 90
+  },
+  "apres": {
+   "yeux_images_a_2": 84,
+   "yeux_images_pas_2": [
+    14,
+    15,
+    60,
+    61,
+    66,
+    67
+   ],
+   "decor_modifie_hors_zones_px_max": 0,
+   "images_sans_effet_global_comptees": 90
+  }
  }
 }

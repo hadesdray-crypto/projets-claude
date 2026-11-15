@@ -1,0 +1,128 @@
+{
+ "nom": "g4_avant",
+ "duree": 3.0,
+ "boucle": true,
+ "description": "Saisie actuelle (poses de projets/5) : anticipation légère, la main s'arrête exactement sur le morceau.",
+ "recettes": {
+  "thomas": [
+   "vie_avant_3s"
+  ]
+ },
+ "pistes": {
+  "thomas": [
+   {
+    "pose": "regard_morceau",
+    "tenir": 0.2
+   },
+   {
+    "pose": "anticipation",
+    "duree": 0.35,
+    "courbe": "doux"
+   },
+   {
+    "pose": "bras_part",
+    "duree": 0.3,
+    "courbe": "spline"
+   },
+   {
+    "pose": "bras_mi_chemin",
+    "duree": 0.25,
+    "courbe": "spline"
+   },
+   {
+    "pose": "main_saisit",
+    "duree": 0.28,
+    "courbe": "spline"
+   },
+   {
+    "pose": "main_fermee",
+    "duree": 0.2,
+    "courbe": "doux",
+    "tenir": 0.08
+   },
+   {
+    "pose": "bras_leve",
+    "duree": 0.34,
+    "courbe": "spline"
+   },
+   {
+    "pose": "regard_morceau",
+    "duree": 1.0,
+    "courbe": "doux"
+   }
+  ],
+  "morceau": [
+   {
+    "valeurs": {
+     "visible": 1,
+     "attache": "libre",
+     "x": 303.0,
+     "y": 317.0,
+     "angle": 8.0,
+     "angle_main": -48.0,
+     "tenue": [
+      0.0,
+      0.0
+     ],
+     "ecrasement": 0.0,
+     "bouchees": 0.0
+    },
+    "tenir": 1.58
+   },
+   {
+    "valeurs": {
+     "attache": "main"
+    },
+    "duree": 0.0
+   },
+   {
+    "valeurs": {
+     "angle_main": 120.0,
+     "tenue": [
+      -9.0,
+      0.0
+     ]
+    },
+    "duree": 0.41999999999999993,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {},
+    "duree": 0.1499999999999999,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "attache": "libre"
+    },
+    "duree": 0.0
+   },
+   {
+    "valeurs": {
+     "ecrasement": 0.0
+    },
+    "duree": 0.3,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "ecrasement": 0.3
+    },
+    "duree": 0.04,
+    "courbe": "sortie"
+   },
+   {
+    "valeurs": {
+     "ecrasement": 0.0
+    },
+    "duree": 0.25,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {},
+    "duree": 0.26000000000000023,
+    "courbe": "doux"
+   }
+  ]
+ }
+}

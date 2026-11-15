@@ -1,0 +1,163 @@
+{
+ "nom": "g4_apres",
+ "duree": 3.0,
+ "boucle": true,
+ "description": "Saisie avec anticipation marquée (bras et tronc en arrière, 0,4 s), départ vif, main qui dépasse le morceau puis revient (recette overshoot_main), fermeture sèche.",
+ "recettes": {
+  "thomas": [
+   "micro_vie",
+   "squash_stretch",
+   "overshoot_main"
+  ]
+ },
+ "pistes": {
+  "thomas": [
+   {
+    "pose": "regard_morceau",
+    "tenir": 0.2,
+    "valeurs": {
+     "anim": {
+      "ecrasement": 0.0
+     }
+    }
+   },
+   {
+    "pose": "anticipation",
+    "duree": 0.3,
+    "courbe": "doux",
+    "tenir": 0.1,
+    "valeurs": {
+     "squelette": {
+      "epaule": -24.0,
+      "coude": -20.0,
+      "poignet": -18.0,
+      "tronc": -2.5,
+      "racine_x": -4.0
+     },
+     "anim": {
+      "ecrasement": 0.8
+     }
+    }
+   },
+   {
+    "pose": "bras_part",
+    "duree": 0.2,
+    "courbe": "sortie",
+    "valeurs": {
+     "anim": {
+      "ecrasement": -0.4
+     }
+    }
+   },
+   {
+    "pose": "bras_mi_chemin",
+    "duree": 0.2,
+    "courbe": "spline"
+   },
+   {
+    "pose": "main_saisit",
+    "duree": 0.2,
+    "courbe": "sortie",
+    "valeurs": {
+     "anim": {
+      "ecrasement": 0.3
+     }
+    }
+   },
+   {
+    "pose": "main_fermee",
+    "duree": 0.1,
+    "courbe": "entree",
+    "tenir": 0.1,
+    "valeurs": {
+     "anim": {
+      "ecrasement": 0.0
+     }
+    }
+   },
+   {
+    "pose": "bras_leve",
+    "duree": 0.4,
+    "courbe": "spline"
+   },
+   {
+    "pose": "regard_morceau",
+    "duree": 1.16,
+    "courbe": "doux"
+   }
+  ],
+  "morceau": [
+   {
+    "valeurs": {
+     "visible": 1,
+     "attache": "libre",
+     "x": 303.0,
+     "y": 317.0,
+     "angle": 8.0,
+     "angle_main": -48.0,
+     "tenue": [
+      0.0,
+      0.0
+     ],
+     "ecrasement": 0.0,
+     "bouchees": 0.0
+    },
+    "tenir": 1.34
+   },
+   {
+    "valeurs": {
+     "attache": "main"
+    },
+    "duree": 0.0
+   },
+   {
+    "valeurs": {
+     "angle_main": 120.0,
+     "tenue": [
+      -9.0,
+      0.0
+     ]
+    },
+    "duree": 0.5,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {},
+    "duree": 0.15999999999999992,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "attache": "libre"
+    },
+    "duree": 0.0
+   },
+   {
+    "valeurs": {
+     "ecrasement": 0.0
+    },
+    "duree": 0.3,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "ecrasement": 0.3
+    },
+    "duree": 0.04,
+    "courbe": "sortie"
+   },
+   {
+    "valeurs": {
+     "ecrasement": 0.0
+    },
+    "duree": 0.25,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {},
+    "duree": 0.41000000000000014,
+    "courbe": "doux"
+   }
+  ]
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "nom": "overshoot_main",
+ "description": "Dépassement de la main sur le morceau : à l'instant de la prise, épaule/coude/poignet dépassent leur pose puis reviennent (ressort amorti). Paramètres : instants (s), frequence (Hz), amortissement (1/s), amplitude (degrés, le signe donne le sens du dépassement).",
+ "couches": [
+  {
+   "parametre": "squelette.epaule",
+   "amplitude": -7.0,
+   "duree": 3.0,
+   "courbe": "ressort",
+   "frequence": 3.0,
+   "amortissement": 6.0,
+   "instants": [
+    1.14
+   ]
+  },
+  {
+   "parametre": "squelette.coude",
+   "amplitude": 14.0,
+   "duree": 3.0,
+   "courbe": "ressort",
+   "frequence": 3.0,
+   "amortissement": 6.0,
+   "instants": [
+    1.14
+   ]
+  },
+  {
+   "parametre": "squelette.poignet",
+   "amplitude": 22.0,
+   "duree": 3.0,
+   "courbe": "ressort",
+   "frequence": 3.0,
+   "amortissement": 6.0,
+   "instants": [
+    1.14
+   ]
+  }
+ ]
+}

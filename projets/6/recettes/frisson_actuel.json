@@ -1,0 +1,32 @@
+{
+ "nom": "frisson_actuel",
+ "description": "Frisson de la recette « vie » actuelle (projets/5), commandé par le paramètre de pose vie.frisson.",
+ "couches": [
+  {
+   "parametre": "corps.x",
+   "amplitude": 0.9,
+   "duree": 0.1333,
+   "courbe": "sinus",
+   "module": "vie.frisson",
+   "module_defaut": 0.0
+  },
+  {
+   "parametre": "zones.tete_x",
+   "amplitude": 0.7,
+   "duree": 0.1,
+   "courbe": "sinus",
+   "phase": 0.3,
+   "module": "vie.frisson",
+   "module_defaut": 0.0
+  },
+  {
+   "parametre": "squelette.epaule2",
+   "amplitude": 1.5,
+   "duree": 0.1333,
+   "courbe": "sinus",
+   "phase": 0.5,
+   "module": "vie.frisson",
+   "module_defaut": 0.0
+  }
+ ]
+}

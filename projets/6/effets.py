@@ -114,6 +114,8 @@ class Rendu:
     def _post(self, img, i):
         glob = []
         for e in self.effets:
+            if 'a' not in e:
+                continue
             d = int(round(e['a'] * self.fps))
             k = i - d
             if e['type'] == 'flash' and 0 <= k < e['images']:

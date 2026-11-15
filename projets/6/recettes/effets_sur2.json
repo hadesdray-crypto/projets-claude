@@ -1,0 +1,10 @@
+{
+ "nom": "effets_sur2",
+ "description": "Rendu « sur 2 » : une pose calculée toutes les 2 images (15 poses par seconde), chaque pose tenue 2 images. Mettre images_par_pose à 3 pour « sur 3 » (10 poses par seconde).",
+ "effets": [
+  {
+   "type": "pas_de_temps",
+   "images_par_pose": 2
+  }
+ ]
+}

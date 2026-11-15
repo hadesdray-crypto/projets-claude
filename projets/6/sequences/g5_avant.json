@@ -1,0 +1,106 @@
+{
+ "nom": "g5_avant",
+ "duree": 3.0,
+ "boucle": true,
+ "description": "Caresse actuelle : gant qui va-et-vient, pose « frisson » (tremblement fin du moteur), ressorts de l'œil et des cheveux.",
+ "recettes": {
+  "thomas": [
+   "vie_avant_3s",
+   "frisson_actuel"
+  ]
+ },
+ "pistes": {
+  "thomas": [
+   {
+    "pose": "repos",
+    "tenir": 0.1
+   },
+   {
+    "pose": "caresse_arrivee",
+    "duree": 0.7,
+    "courbe": "doux"
+   },
+   {
+    "pose": "caresse_g",
+    "duree": 0.5,
+    "courbe": "doux"
+   },
+   {
+    "pose": "caresse_frisson",
+    "duree": 0.5,
+    "courbe": "doux"
+   },
+   {
+    "pose": "caresse_d",
+    "duree": 0.5,
+    "courbe": "doux"
+   },
+   {
+    "pose": "caresse_detendu",
+    "duree": 0.4,
+    "courbe": "doux"
+   },
+   {
+    "pose": "repos",
+    "duree": 0.3,
+    "courbe": "doux"
+   }
+  ],
+  "gant": [
+   {
+    "valeurs": {
+     "x": 330.0,
+     "y": -110.0,
+     "angle": 6.0,
+     "ouverture": 0.4,
+     "paume": 1.0
+    },
+    "tenir": 0.1
+   },
+   {
+    "valeurs": {
+     "x": 246.0,
+     "y": 94.0,
+     "angle": 0.0
+    },
+    "duree": 0.7,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "x": 230.0,
+     "y": 98.0
+    },
+    "duree": 0.5,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "x": 262.0,
+     "y": 98.0
+    },
+    "duree": 0.5,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "x": 230.0,
+     "y": 98.0
+    },
+    "duree": 0.5,
+    "courbe": "doux"
+   },
+   {
+    "valeurs": {
+     "x": 330.0,
+     "y": -110.0,
+     "angle": 6.0,
+     "ouverture": 0.4,
+     "paume": 1.0
+    },
+    "duree": 0.7,
+    "courbe": "doux"
+   }
+  ]
+ }
+}

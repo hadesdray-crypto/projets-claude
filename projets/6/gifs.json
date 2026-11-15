@@ -12,7 +12,17 @@
   "etiquettes": {
    "avant": "avant",
    "apres": "après"
-  }
+  },
+  "apercu": [
+   0,
+   11,
+   22,
+   33,
+   45,
+   56,
+   67,
+   78
+  ]
  },
  {
   "numero": 2,
@@ -53,6 +63,90 @@
    36,
    38,
    42
+  ]
+ },
+ {
+  "numero": 4,
+  "fichier": "4-saisie.gif",
+  "duree": 3.0,
+  "avant": {
+   "sequence": "g4_avant"
+  },
+  "apres": {
+   "sequence": "g4_apres"
+  },
+  "etiquettes": {
+   "avant": "avant",
+   "apres": "après"
+  },
+  "apercu": [
+   13,
+   17,
+   25,
+   30,
+   35,
+   45,
+   55,
+   62,
+   70,
+   80
+  ]
+ },
+ {
+  "numero": 5,
+  "fichier": "5-caresse.gif",
+  "duree": 3.0,
+  "avant": {
+   "sequence": "g5_avant"
+  },
+  "apres": {
+   "sequence": "g5_apres"
+  },
+  "etiquettes": {
+   "avant": "avant",
+   "apres": "après"
+  },
+  "apercu": [
+   0,
+   30,
+   32,
+   34,
+   36,
+   38,
+   42,
+   48,
+   58,
+   70,
+   80
+  ]
+ },
+ {
+  "numero": 6,
+  "fichier": "6-lisse-contre-sur2.gif",
+  "duree": 3.0,
+  "avant": {
+   "sequence": "g2_apres"
+  },
+  "apres": {
+   "sequence": "g2_apres",
+   "effets": "effets_sur2"
+  },
+  "etiquettes": {
+   "avant": "lisse 30 i/s",
+   "apres": "sur 2 : 15 poses/s"
+  },
+  "apercu": [
+   0,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   50,
+   70
   ]
  }
 ]
