@@ -1,0 +1,5 @@
+{
+  "nom": "avalement",
+  "description": "Il avale : bouche fermée, joues vides, menton qui descend, renflement qui descend dans le cou (0 → 1).",
+  "zones": {"machoire": -0.1, "joues": 0.0, "tete_rotation": 9.0, "tete_y": 1.2, "cou_deglutition": 1.0}
+}

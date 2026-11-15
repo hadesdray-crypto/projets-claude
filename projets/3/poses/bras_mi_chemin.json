@@ -1,0 +1,8 @@
+{
+  "nom": "bras_mi_chemin",
+  "description": "Bras à mi-chemin : le poids passe vers l'avant, la main descend vers le morceau.",
+  "squelette": {"epaule": 1.72, "coude": 12.15, "poignet": 25.15, "main_fermeture": 0.0},
+  "corps": {"inclinaison": 6.0, "x": 2.0, "y": 0.5, "epaules": 0.0, "poitrine": 0.0},
+  "zones": {"tete_rotation": 8.0, "tete_x": 2.5, "tete_y": 0.5, "machoire": 0.0, "joues": 0.0, "paupieres": 0.0, "cou_deglutition": 0.0, "oeil_pendant_regard": -20.0},
+  "attaches": {"prise_main": [16.0, 2.0]}
+}

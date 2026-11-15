@@ -1,0 +1,8 @@
+{
+  "nom": "bras_leve",
+  "description": "Le morceau remonte : le buste se redresse, le coude se plie, le poignet tourne.",
+  "squelette": {"epaule": 21.51, "coude": -16.89, "poignet": -23.61, "main_fermeture": 1.0},
+  "corps": {"inclinaison": 4.0, "x": 1.5, "y": 0.0, "epaules": -0.5, "poitrine": 0.0},
+  "zones": {"tete_rotation": 6.0, "tete_x": 2.0, "tete_y": 0.0, "machoire": 0.0, "joues": 0.0, "paupieres": 0.0, "cou_deglutition": 0.0, "oeil_pendant_regard": -10.0},
+  "attaches": {"prise_main": [16.0, 2.0]}
+}

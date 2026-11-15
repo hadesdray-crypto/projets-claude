@@ -1,0 +1,13 @@
+{
+  "nom": "repos_vivant",
+  "description": "Vie au repos, ajoutée par-dessus les poses : respiration, balancement du poids, tête qui suit, clignements, mâchoire molle. Périodes qui divisent 13 s (boucle continue).",
+  "couches": [
+    {"parametre": "corps.poitrine", "amplitude": 0.85, "duree": 4.3333, "courbe": "sinus", "phase": 0.0},
+    {"parametre": "corps.x", "amplitude": 0.7, "duree": 6.5, "courbe": "sinus", "phase": 0.0},
+    {"parametre": "corps.inclinaison", "amplitude": 0.4, "duree": 6.5, "courbe": "sinus", "phase": 0.05},
+    {"parametre": "zones.tete_rotation", "amplitude": 1.1, "duree": 6.5, "courbe": "sinus", "phase": 0.17},
+    {"parametre": "zones.tete_y", "amplitude": 0.4, "duree": 4.3333, "courbe": "sinus", "phase": 0.25},
+    {"parametre": "zones.machoire", "amplitude": 0.06, "duree": 4.3333, "courbe": "sinus_positif", "phase": 0.1},
+    {"zone": "oeil_gauche", "effet": "paupiere", "amplitude": 1.0, "duree": 4.3333, "courbe": "clignement", "phase": 0.78}
+  ]
+}

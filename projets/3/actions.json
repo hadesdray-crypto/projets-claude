@@ -1,0 +1,7 @@
+{
+  "donner_de_la_chair": {
+    "objet": "thomas", "zone_touchee": "main",
+    "sequence": "thomas_mange",
+    "recettes": {"thomas": ["repos_vivant"]}
+  }
+}

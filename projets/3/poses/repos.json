@@ -1,0 +1,8 @@
+{
+  "nom": "repos",
+  "description": "Pose de repos de l'image d'origine : bras le long du corps, main vide à demi fermée.",
+  "squelette": {"epaule": 0.0, "coude": 0.0, "poignet": 0.0, "main_fermeture": 0.55},
+  "corps": {"inclinaison": 0.0, "x": 0.0, "y": 0.0, "epaules": 0.0, "poitrine": 0.0},
+  "zones": {"tete_rotation": 0.0, "tete_x": 0.0, "tete_y": 0.0, "machoire": 0.0, "joues": 0.0, "paupieres": 0.0, "cou_deglutition": 0.0, "oeil_pendant_regard": 0.0},
+  "attaches": {"prise_main": [16.0, 2.0]}
+}

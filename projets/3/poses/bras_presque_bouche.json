@@ -1,0 +1,8 @@
+{
+  "nom": "bras_presque_bouche",
+  "description": "Bras presque à la bouche : coude plié contre le corps, le morceau à hauteur du menton.",
+  "squelette": {"epaule": -2.02, "coude": -46.24, "poignet": -48.25, "main_fermeture": 1.0},
+  "corps": {"inclinaison": 1.5, "x": 0.5, "y": 0.0, "epaules": 0.0, "poitrine": 0.0},
+  "zones": {"tete_rotation": 6.0, "tete_x": 2.0, "tete_y": 0.5, "machoire": 0.0, "joues": 0.0, "paupieres": 0.0, "cou_deglutition": 0.0, "oeil_pendant_regard": 0.0},
+  "attaches": {"prise_main": [16.0, 2.0]}
+}

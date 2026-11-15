@@ -1,0 +1,8 @@
+{
+  "nom": "soulagement",
+  "description": "Long soupir : la poitrine se vide, les épaules retombent, la tête s'affaisse, la main pend, détendue.",
+  "squelette": {"epaule": 1.0, "coude": 4.0, "poignet": 12.0, "main_fermeture": 0.45},
+  "corps": {"inclinaison": 0.8, "x": 0.5, "y": 0.0, "epaules": 2.6, "poitrine": -1.3},
+  "zones": {"tete_rotation": 3.0, "tete_x": 0.0, "tete_y": 1.2, "machoire": 0.25, "joues": 0.0, "paupieres": 0.5, "cou_deglutition": 0.0, "oeil_pendant_regard": 0.0},
+  "attaches": {"prise_main": [16.0, 2.0]}
+}

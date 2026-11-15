@@ -1,0 +1,8 @@
+{
+  "nom": "menton",
+  "description": "Main vide restée sous le menton pendant qu'il mâche.",
+  "squelette": {"epaule": 12.38, "coude": -50.22, "poignet": -48.17, "main_fermeture": 0.8},
+  "corps": {"inclinaison": 1.0, "x": 0.0, "y": 0.0, "epaules": 0.0, "poitrine": 0.0},
+  "zones": {"tete_rotation": 6.0, "tete_x": 2.0, "tete_y": 0.0, "machoire": 0.0, "joues": 0.0, "paupieres": 0.0, "cou_deglutition": 0.0, "oeil_pendant_regard": 0.0},
+  "attaches": {"prise_main": [16.0, 2.0]}
+}

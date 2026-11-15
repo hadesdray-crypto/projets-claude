@@ -1,0 +1,8 @@
+{
+  "nom": "main_bouche",
+  "description": "Main à la bouche (d'après la pose « repas » de la planche) : le morceau juste devant la bouche.",
+  "squelette": {"epaule": -21.81, "coude": -43.65, "poignet": -55.54, "main_fermeture": 1.0},
+  "corps": {"inclinaison": 1.0, "x": 0.0, "y": 0.0, "epaules": 0.0, "poitrine": 0.0},
+  "zones": {"tete_rotation": 7.0, "tete_x": 2.5, "tete_y": 0.5, "machoire": 0.0, "joues": 0.0, "paupieres": 0.0, "cou_deglutition": 0.0, "oeil_pendant_regard": 10.0},
+  "attaches": {"prise_main": [16.0, 2.0]}
+}

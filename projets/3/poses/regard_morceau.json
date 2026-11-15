@@ -1,0 +1,8 @@
+{
+  "nom": "regard_morceau",
+  "description": "La tête suit le morceau qui tombe et se baisse vers lui ; le buste se penche un peu.",
+  "squelette": {"epaule": 0.0, "coude": 0.0, "poignet": 0.0, "main_fermeture": 0.55},
+  "corps": {"inclinaison": 1.5, "x": 0.0, "y": 0.0, "epaules": 0.0, "poitrine": 0.0},
+  "zones": {"tete_rotation": 7.0, "tete_x": 2.5, "tete_y": 1.0, "machoire": 0.0, "joues": 0.0, "paupieres": 0.0, "cou_deglutition": 0.0, "oeil_pendant_regard": -20.0},
+  "attaches": {"prise_main": [16.0, 2.0]}
+}

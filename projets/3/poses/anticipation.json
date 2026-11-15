@@ -1,0 +1,8 @@
+{
+  "nom": "anticipation",
+  "description": "Tension avant le geste : léger recul du buste, épaules qui montent, inspiration, main qui s'ouvre.",
+  "squelette": {"epaule": -8.0, "coude": -12.0, "poignet": -12.0, "main_fermeture": 0.05},
+  "corps": {"inclinaison": -2.0, "x": -1.5, "y": 0.0, "epaules": -1.5, "poitrine": 0.8},
+  "zones": {"tete_rotation": 5.0, "tete_x": 1.5, "tete_y": 0.0, "machoire": 0.0, "joues": 0.0, "paupieres": 0.0, "cou_deglutition": 0.0, "oeil_pendant_regard": -20.0},
+  "attaches": {"prise_main": [16.0, 2.0]}
+}

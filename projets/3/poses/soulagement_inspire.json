@@ -1,0 +1,8 @@
+{
+  "nom": "soulagement_inspire",
+  "description": "Satisfait, il inspire longuement : poitrine gonflée, épaules hautes, tête en arrière, yeux mi-clos ; le bras redescend.",
+  "squelette": {"epaule": 12.08, "coude": -14.03, "poignet": 18.45, "main_fermeture": 0.6},
+  "corps": {"inclinaison": -1.5, "x": -1.0, "y": 0.0, "epaules": -1.6, "poitrine": 1.9},
+  "zones": {"tete_rotation": -3.5, "tete_x": 0.0, "tete_y": -0.5, "machoire": 0.15, "joues": 0.0, "paupieres": 0.45, "cou_deglutition": 0.0, "oeil_pendant_regard": 0.0},
+  "attaches": {"prise_main": [16.0, 2.0]}
+}

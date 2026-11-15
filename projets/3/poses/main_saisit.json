@@ -1,0 +1,8 @@
+{
+  "nom": "main_saisit",
+  "description": "La main ouverte arrive sur le morceau posé sur le bord du cercueil ; buste penché, bras presque tendu.",
+  "squelette": {"epaule": -7.54, "coude": 28.72, "poignet": 28.36, "main_fermeture": 0.0},
+  "corps": {"inclinaison": 8.5, "x": 3.0, "y": 1.5, "epaules": 0.5, "poitrine": 0.0},
+  "zones": {"tete_rotation": 9.0, "tete_x": 3.0, "tete_y": 1.0, "machoire": 0.0, "joues": 0.0, "paupieres": 0.0, "cou_deglutition": 0.0, "oeil_pendant_regard": -25.0},
+  "attaches": {"prise_main": [16.0, 2.0]}
+}

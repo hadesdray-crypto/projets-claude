@@ -1,0 +1,6344 @@
+{
+ "images": 312,
+ "images_par_seconde": 24,
+ "duree_s": 13.0,
+ "prechauffage_ressorts_s": 0.31,
+ "temps_ms": {
+  "moyenne": 46.4,
+  "mediane": 45.6,
+  "pire": 59.6,
+  "meilleur": 42.5
+ },
+ "pixels_decor_modifies_hors_zones": {
+  "total": 0,
+  "max_par_image": 0
+ },
+ "jonction_boucle_ecart_max_niveau": 0.0,
+ "saut_max_par_image_px": 39.407,
+ "saut_max_par_passage": {
+  "repos -> regard_gant": {
+   "max": 24.932,
+   "point": "gant",
+   "images": 59
+  },
+  "regard_gant -> regard_morceau": {
+   "max": 31.013,
+   "point": "gant",
+   "images": 18
+  },
+  "regard_morceau -> anticipation": {
+   "max": 39.407,
+   "point": "gant",
+   "images": 8
+  },
+  "anticipation -> bras_part": {
+   "max": 10.161,
+   "point": "bout_des_doigts",
+   "images": 9
+  },
+  "bras_part -> bras_mi_chemin": {
+   "max": 3.948,
+   "point": "sommets_du_bras",
+   "images": 8
+  },
+  "bras_mi_chemin -> main_saisit": {
+   "max": 4.328,
+   "point": "sommets_du_bras",
+   "images": 7
+  },
+  "main_saisit -> main_fermee": {
+   "max": 1.292,
+   "point": "oeil_pendant",
+   "images": 5
+  },
+  "main_fermee -> bras_leve": {
+   "max": 8.844,
+   "point": "bout_des_doigts",
+   "images": 10
+  },
+  "bras_leve -> bras_presque_bouche": {
+   "max": 10.493,
+   "point": "bout_des_doigts",
+   "images": 8
+  },
+  "bras_presque_bouche -> main_bouche": {
+   "max": 5.663,
+   "point": "sommets_du_bras",
+   "images": 7
+  },
+  "main_bouche -> bouche_ouverte": {
+   "max": 5.695,
+   "point": "pixels_du_corps",
+   "images": 11
+  },
+  "bouche_ouverte -> morsure": {
+   "max": 8.027,
+   "point": "pixels_du_corps",
+   "images": 10
+  },
+  "morsure -> bras_presque_bouche": {
+   "max": 8.337,
+   "point": "sommets_du_bras",
+   "images": 6
+  },
+  "bras_presque_bouche -> mastication_1": {
+   "max": 4.208,
+   "point": "pixels_du_corps",
+   "images": 4
+  },
+  "mastication_1 -> mastication_2": {
+   "max": 5.702,
+   "point": "pixels_du_corps",
+   "images": 16
+  },
+  "mastication_2 -> mastication_3": {
+   "max": 4.4,
+   "point": "pixels_du_corps",
+   "images": 8
+  },
+  "mastication_3 -> mastication_2": {
+   "max": 4.619,
+   "point": "pixels_du_corps",
+   "images": 9
+  },
+  "mastication_2 -> mastication_1": {
+   "max": 5.672,
+   "point": "pixels_du_corps",
+   "images": 8
+  },
+  "mastication_2 -> avalement": {
+   "max": 1.996,
+   "point": "pixels_du_corps",
+   "images": 23
+  },
+  "avalement -> main_bouche": {
+   "max": 7.872,
+   "point": "sommets_du_bras",
+   "images": 7
+  },
+  "morsure -> menton": {
+   "max": 9.531,
+   "point": "sommets_du_bras",
+   "images": 8
+  },
+  "menton -> mastication_1": {
+   "max": 4.56,
+   "point": "pixels_du_corps",
+   "images": 4
+  },
+  "avalement -> soulagement_inspire": {
+   "max": 7.903,
+   "point": "bout_des_doigts",
+   "images": 16
+  },
+  "soulagement_inspire -> soulagement": {
+   "max": 3.162,
+   "point": "pixels_du_corps",
+   "images": 24
+  },
+  "soulagement -> repos": {
+   "max": 1.732,
+   "point": "bout_des_doigts",
+   "images": 19
+  }
+ },
+ "sauts_par_image": [
+  {
+   "image": 1,
+   "t": 0.042,
+   "max": 0.167,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.08,
+    "coude": 0.07,
+    "poignet": 0.06,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.17,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.09,
+    "pixels_du_corps": 0.17
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 2,
+   "t": 0.083,
+   "max": 0.271,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.08,
+    "coude": 0.07,
+    "poignet": 0.06,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.27,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.09,
+    "pixels_du_corps": 0.16
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 3,
+   "t": 0.125,
+   "max": 0.341,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.08,
+    "coude": 0.07,
+    "poignet": 0.06,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.34,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.09,
+    "pixels_du_corps": 0.16
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 4,
+   "t": 0.167,
+   "max": 0.397,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.08,
+    "coude": 0.07,
+    "poignet": 0.06,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.4,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.09,
+    "pixels_du_corps": 0.15
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 5,
+   "t": 0.208,
+   "max": 0.439,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.08,
+    "coude": 0.07,
+    "poignet": 0.06,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.44,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.08,
+    "pixels_du_corps": 0.14
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 6,
+   "t": 0.25,
+   "max": 0.449,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.08,
+    "coude": 0.06,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.45,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.08,
+    "pixels_du_corps": 0.14
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 7,
+   "t": 0.292,
+   "max": 0.443,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.06,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.44,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.08,
+    "pixels_du_corps": 0.13
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 8,
+   "t": 0.333,
+   "max": 0.426,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.06,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.43,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.08,
+    "pixels_du_corps": 0.13
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 9,
+   "t": 0.375,
+   "max": 0.384,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.06,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.38,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.08,
+    "pixels_du_corps": 0.12
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 10,
+   "t": 0.417,
+   "max": 0.334,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.06,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.33,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.08,
+    "pixels_du_corps": 0.12
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 11,
+   "t": 0.458,
+   "max": 0.283,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.06,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.28,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.11
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 12,
+   "t": 0.5,
+   "max": 0.213,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.05,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.21,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.1
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 13,
+   "t": 0.542,
+   "max": 0.15,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.05,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.15,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.1
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 14,
+   "t": 0.583,
+   "max": 0.108,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.05,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.11,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 0.1
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 15,
+   "t": 0.625,
+   "max": 0.091,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.05,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.04,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 0.09
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 16,
+   "t": 0.667,
+   "max": 0.086,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.04,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.05,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 0.09
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 17,
+   "t": 0.708,
+   "max": 0.1,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.04,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.03,
+    "oeil_pendant": 0.1,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.05,
+    "pixels_du_corps": 0.08
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 18,
+   "t": 0.75,
+   "max": 0.113,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.04,
+    "poignet": 0.03,
+    "bout_des_doigts": 0.03,
+    "oeil_pendant": 0.11,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.05,
+    "pixels_du_corps": 0.08
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 19,
+   "t": 0.792,
+   "max": 0.139,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.04,
+    "coude": 0.04,
+    "poignet": 0.03,
+    "bout_des_doigts": 0.03,
+    "oeil_pendant": 0.14,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.05,
+    "pixels_du_corps": 0.07
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 20,
+   "t": 0.833,
+   "max": 0.159,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.04,
+    "coude": 0.03,
+    "poignet": 0.03,
+    "bout_des_doigts": 0.03,
+    "oeil_pendant": 0.16,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.04,
+    "pixels_du_corps": 0.06
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 21,
+   "t": 0.875,
+   "max": 0.154,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.04,
+    "coude": 0.03,
+    "poignet": 0.03,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 0.15,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.04,
+    "pixels_du_corps": 0.06
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 22,
+   "t": 0.917,
+   "max": 0.152,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.03,
+    "coude": 0.03,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 0.15,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.03,
+    "pixels_du_corps": 0.06
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 23,
+   "t": 0.958,
+   "max": 0.145,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.03,
+    "coude": 0.02,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 0.15,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.03,
+    "pixels_du_corps": 0.06
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 24,
+   "t": 1.0,
+   "max": 0.119,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.03,
+    "coude": 0.02,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 0.12,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.03,
+    "pixels_du_corps": 0.06
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 25,
+   "t": 1.042,
+   "max": 0.102,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.02,
+    "coude": 0.02,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 0.1,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.02,
+    "pixels_du_corps": 0.07
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 26,
+   "t": 1.083,
+   "max": 0.084,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.02,
+    "coude": 0.02,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 0.08,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.02,
+    "pixels_du_corps": 0.07
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 27,
+   "t": 1.125,
+   "max": 0.07,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.02,
+    "coude": 0.02,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 0.05,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.02,
+    "pixels_du_corps": 0.07
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 28,
+   "t": 1.167,
+   "max": 0.073,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.02,
+    "coude": 0.02,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 0.05,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.02,
+    "pixels_du_corps": 0.07
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 29,
+   "t": 1.208,
+   "max": 0.076,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.02,
+    "coude": 0.02,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 0.05,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.02,
+    "pixels_du_corps": 0.08
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 30,
+   "t": 1.25,
+   "max": 0.08,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.02,
+    "coude": 0.02,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 0.04,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.02,
+    "pixels_du_corps": 0.08
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 31,
+   "t": 1.292,
+   "max": 0.085,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.02,
+    "coude": 0.02,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 0.06,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.02,
+    "pixels_du_corps": 0.08
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 32,
+   "t": 1.333,
+   "max": 0.09,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.02,
+    "coude": 0.02,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 0.07,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.03,
+    "pixels_du_corps": 0.09
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 33,
+   "t": 1.375,
+   "max": 0.095,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.03,
+    "coude": 0.03,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 0.07,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.03,
+    "pixels_du_corps": 0.1
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 34,
+   "t": 1.417,
+   "max": 0.101,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.03,
+    "coude": 0.03,
+    "poignet": 0.03,
+    "bout_des_doigts": 0.03,
+    "oeil_pendant": 0.08,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.03,
+    "pixels_du_corps": 0.1
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 35,
+   "t": 1.458,
+   "max": 0.107,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.03,
+    "coude": 0.03,
+    "poignet": 0.03,
+    "bout_des_doigts": 0.03,
+    "oeil_pendant": 0.08,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.04,
+    "pixels_du_corps": 0.11
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 36,
+   "t": 1.5,
+   "max": 0.114,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.03,
+    "coude": 0.03,
+    "poignet": 0.03,
+    "bout_des_doigts": 0.03,
+    "oeil_pendant": 0.07,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.04,
+    "pixels_du_corps": 0.11
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 37,
+   "t": 1.542,
+   "max": 0.12,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.04,
+    "coude": 0.04,
+    "poignet": 0.03,
+    "bout_des_doigts": 0.03,
+    "oeil_pendant": 0.06,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.04,
+    "pixels_du_corps": 0.12
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 38,
+   "t": 1.583,
+   "max": 0.126,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.04,
+    "coude": 0.04,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.03,
+    "oeil_pendant": 0.05,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.05,
+    "pixels_du_corps": 0.13
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 39,
+   "t": 1.625,
+   "max": 0.132,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.04,
+    "coude": 0.04,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.03,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.05,
+    "pixels_du_corps": 0.13
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 40,
+   "t": 1.667,
+   "max": 0.138,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.04,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.02,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.05,
+    "pixels_du_corps": 0.14
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 41,
+   "t": 1.708,
+   "max": 0.144,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.05,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.02,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 0.14
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 42,
+   "t": 1.75,
+   "max": 0.15,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.05,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.03,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 0.15
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 43,
+   "t": 1.792,
+   "max": 0.156,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.05,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.05,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 0.16
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 44,
+   "t": 1.833,
+   "max": 0.162,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.05,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.06,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 0.16
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 45,
+   "t": 1.875,
+   "max": 0.168,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.06,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.08,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.17
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 46,
+   "t": 1.917,
+   "max": 0.173,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.06,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.09,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.17
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 47,
+   "t": 1.958,
+   "max": 0.178,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.06,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.1,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.18
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 48,
+   "t": 2.0,
+   "max": 0.183,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.06,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.1,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.18
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 49,
+   "t": 2.042,
+   "max": 3.082,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.06,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.11,
+    "morceau": 3.08,
+    "gant": 3.08,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.19
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 50,
+   "t": 2.083,
+   "max": 8.693,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.06,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.11,
+    "morceau": 8.69,
+    "gant": 8.69,
+    "sommets_du_bras": 0.08,
+    "pixels_du_corps": 0.19
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 51,
+   "t": 2.125,
+   "max": 13.474,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.06,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.12,
+    "morceau": 13.47,
+    "gant": 13.47,
+    "sommets_du_bras": 0.08,
+    "pixels_du_corps": 0.26
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 52,
+   "t": 2.167,
+   "max": 17.425,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.04,
+    "poignet": 0.03,
+    "bout_des_doigts": 0.03,
+    "oeil_pendant": 0.61,
+    "morceau": 17.42,
+    "gant": 17.42,
+    "sommets_du_bras": 0.05,
+    "pixels_du_corps": 1.18
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 53,
+   "t": 2.208,
+   "max": 20.546,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.04,
+    "coude": 0.03,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 1.45,
+    "morceau": 20.54,
+    "gant": 20.55,
+    "sommets_du_bras": 0.05,
+    "pixels_du_corps": 2.81
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 54,
+   "t": 2.25,
+   "max": 22.838,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.06,
+    "poignet": 0.07,
+    "bout_des_doigts": 0.08,
+    "oeil_pendant": 1.73,
+    "morceau": 22.83,
+    "gant": 22.84,
+    "sommets_du_bras": 0.08,
+    "pixels_du_corps": 4.22
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 55,
+   "t": 2.292,
+   "max": 24.3,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.09,
+    "coude": 0.08,
+    "poignet": 0.09,
+    "bout_des_doigts": 0.1,
+    "oeil_pendant": 1.72,
+    "morceau": 24.29,
+    "gant": 24.3,
+    "sommets_du_bras": 0.1,
+    "pixels_du_corps": 4.83
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 56,
+   "t": 2.333,
+   "max": 24.932,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.08,
+    "coude": 0.07,
+    "poignet": 0.08,
+    "bout_des_doigts": 0.09,
+    "oeil_pendant": 1.51,
+    "morceau": 24.92,
+    "gant": 24.93,
+    "sommets_du_bras": 0.09,
+    "pixels_du_corps": 4.42
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 57,
+   "t": 2.375,
+   "max": 24.734,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.04,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.06,
+    "oeil_pendant": 0.84,
+    "morceau": 24.72,
+    "gant": 24.73,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 3.14
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 58,
+   "t": 2.417,
+   "max": 23.707,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.03,
+    "poignet": 0.03,
+    "bout_des_doigts": 0.03,
+    "oeil_pendant": 0.54,
+    "morceau": 23.69,
+    "gant": 23.71,
+    "sommets_du_bras": 0.05,
+    "pixels_du_corps": 1.49
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 59,
+   "t": 2.458,
+   "max": 21.851,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.06,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.61,
+    "morceau": 21.84,
+    "gant": 21.85,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.36
+   },
+   "passage": "repos -> regard_gant"
+  },
+  {
+   "image": 60,
+   "t": 2.5,
+   "max": 19.165,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.06,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.66,
+    "morceau": 19.15,
+    "gant": 19.17,
+    "sommets_du_bras": 0.08,
+    "pixels_du_corps": 0.22
+   },
+   "passage": "regard_gant -> regard_morceau"
+  },
+  {
+   "image": 61,
+   "t": 2.542,
+   "max": 15.651,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.06,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.67,
+    "morceau": 15.64,
+    "gant": 15.65,
+    "sommets_du_bras": 0.08,
+    "pixels_du_corps": 0.22
+   },
+   "passage": "regard_gant -> regard_morceau"
+  },
+  {
+   "image": 62,
+   "t": 2.583,
+   "max": 13.113,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.06,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.66,
+    "morceau": 13.1,
+    "gant": 13.11,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.22
+   },
+   "passage": "regard_gant -> regard_morceau"
+  },
+  {
+   "image": 63,
+   "t": 2.625,
+   "max": 13.39,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.05,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.62,
+    "morceau": 13.37,
+    "gant": 13.39,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.22
+   },
+   "passage": "regard_gant -> regard_morceau"
+  },
+  {
+   "image": 64,
+   "t": 2.667,
+   "max": 12.815,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.05,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.56,
+    "morceau": 12.8,
+    "gant": 12.82,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.22
+   },
+   "passage": "regard_gant -> regard_morceau"
+  },
+  {
+   "image": 65,
+   "t": 2.708,
+   "max": 11.275,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.05,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.48,
+    "morceau": 11.26,
+    "gant": 11.28,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.21
+   },
+   "passage": "regard_gant -> regard_morceau"
+  },
+  {
+   "image": 66,
+   "t": 2.75,
+   "max": 8.77,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.05,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.39,
+    "morceau": 8.75,
+    "gant": 8.77,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.21
+   },
+   "passage": "regard_gant -> regard_morceau"
+  },
+  {
+   "image": 67,
+   "t": 2.792,
+   "max": 5.298,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.05,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.29,
+    "morceau": 5.29,
+    "gant": 5.3,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.21
+   },
+   "passage": "regard_gant -> regard_morceau"
+  },
+  {
+   "image": 68,
+   "t": 2.833,
+   "max": 1.127,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.05,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.2,
+    "morceau": 1.12,
+    "gant": 1.13,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.21
+   },
+   "passage": "regard_gant -> regard_morceau"
+  },
+  {
+   "image": 69,
+   "t": 2.875,
+   "max": 0.204,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.05,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.11,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.2
+   },
+   "passage": "regard_gant -> regard_morceau"
+  },
+  {
+   "image": 70,
+   "t": 2.917,
+   "max": 0.129,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.04,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.05,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 0.13
+   },
+   "passage": "regard_gant -> regard_morceau"
+  },
+  {
+   "image": 71,
+   "t": 2.958,
+   "max": 2.577,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.13,
+    "coude": 0.11,
+    "poignet": 0.17,
+    "bout_des_doigts": 0.19,
+    "oeil_pendant": 1.42,
+    "morceau": 0.05,
+    "gant": 0.0,
+    "sommets_du_bras": 0.2,
+    "pixels_du_corps": 2.58
+   },
+   "passage": "regard_gant -> regard_morceau"
+  },
+  {
+   "image": 72,
+   "t": 3.0,
+   "max": 8.079,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.45,
+    "coude": 0.31,
+    "poignet": 0.51,
+    "bout_des_doigts": 0.59,
+    "oeil_pendant": 3.86,
+    "morceau": 1.86,
+    "gant": 0.01,
+    "sommets_du_bras": 0.66,
+    "pixels_du_corps": 8.08
+   },
+   "passage": "regard_gant -> regard_morceau"
+  },
+  {
+   "image": 73,
+   "t": 3.042,
+   "max": 12.423,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.71,
+    "coude": 0.48,
+    "poignet": 0.79,
+    "bout_des_doigts": 0.91,
+    "oeil_pendant": 4.51,
+    "morceau": 4.51,
+    "gant": 1.7,
+    "sommets_du_bras": 1.02,
+    "pixels_du_corps": 12.42
+   },
+   "passage": "regard_gant -> regard_morceau"
+  },
+  {
+   "image": 74,
+   "t": 3.083,
+   "max": 13.243,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.75,
+    "coude": 0.51,
+    "poignet": 0.84,
+    "bout_des_doigts": 0.97,
+    "oeil_pendant": 3.77,
+    "morceau": 7.16,
+    "gant": 7.29,
+    "sommets_du_bras": 1.09,
+    "pixels_du_corps": 13.24
+   },
+   "passage": "regard_gant -> regard_morceau"
+  },
+  {
+   "image": 75,
+   "t": 3.125,
+   "max": 15.158,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.57,
+    "coude": 0.38,
+    "poignet": 0.64,
+    "bout_des_doigts": 0.74,
+    "oeil_pendant": 3.16,
+    "morceau": 9.81,
+    "gant": 15.16,
+    "sommets_du_bras": 0.82,
+    "pixels_du_corps": 10.14
+   },
+   "passage": "regard_gant -> regard_morceau"
+  },
+  {
+   "image": 76,
+   "t": 3.167,
+   "max": 23.535,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.24,
+    "coude": 0.17,
+    "poignet": 0.28,
+    "bout_des_doigts": 0.33,
+    "oeil_pendant": 2.36,
+    "morceau": 12.46,
+    "gant": 23.54,
+    "sommets_du_bras": 0.36,
+    "pixels_du_corps": 4.7
+   },
+   "passage": "regard_gant -> regard_morceau"
+  },
+  {
+   "image": 77,
+   "t": 3.208,
+   "max": 31.013,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.03,
+    "coude": 0.03,
+    "poignet": 0.03,
+    "bout_des_doigts": 0.03,
+    "oeil_pendant": 2.73,
+    "morceau": 15.11,
+    "gant": 31.01,
+    "sommets_du_bras": 0.03,
+    "pixels_du_corps": 0.45
+   },
+   "passage": "regard_gant -> regard_morceau"
+  },
+  {
+   "image": 78,
+   "t": 3.25,
+   "max": 36.536,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.27,
+    "coude": 0.16,
+    "poignet": 0.69,
+    "bout_des_doigts": 1.02,
+    "oeil_pendant": 2.86,
+    "morceau": 0.66,
+    "gant": 36.54,
+    "sommets_du_bras": 0.89,
+    "pixels_du_corps": 0.79
+   },
+   "passage": "regard_morceau -> anticipation"
+  },
+  {
+   "image": 79,
+   "t": 3.292,
+   "max": 39.407,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.91,
+    "coude": 0.67,
+    "poignet": 2.74,
+    "bout_des_doigts": 4.05,
+    "oeil_pendant": 3.09,
+    "morceau": 0.0,
+    "gant": 39.41,
+    "sommets_du_bras": 3.41,
+    "pixels_du_corps": 2.7
+   },
+   "passage": "regard_morceau -> anticipation"
+  },
+  {
+   "image": 80,
+   "t": 3.333,
+   "max": 39.285,
+   "point": "gant",
+   "detail": {
+    "epaule": 1.61,
+    "coude": 1.25,
+    "poignet": 4.95,
+    "bout_des_doigts": 7.31,
+    "oeil_pendant": 4.08,
+    "morceau": 0.0,
+    "gant": 39.29,
+    "sommets_du_bras": 6.11,
+    "pixels_du_corps": 4.76
+   },
+   "passage": "regard_morceau -> anticipation"
+  },
+  {
+   "image": 81,
+   "t": 3.375,
+   "max": 36.184,
+   "point": "gant",
+   "detail": {
+    "epaule": 2.03,
+    "coude": 1.66,
+    "poignet": 6.33,
+    "bout_des_doigts": 9.32,
+    "oeil_pendant": 3.53,
+    "morceau": 0.0,
+    "gant": 36.18,
+    "sommets_du_bras": 7.73,
+    "pixels_du_corps": 6.01
+   },
+   "passage": "regard_morceau -> anticipation"
+  },
+  {
+   "image": 82,
+   "t": 3.417,
+   "max": 30.475,
+   "point": "gant",
+   "detail": {
+    "epaule": 2.03,
+    "coude": 1.74,
+    "poignet": 6.35,
+    "bout_des_doigts": 9.33,
+    "oeil_pendant": 3.41,
+    "morceau": 0.0,
+    "gant": 30.47,
+    "sommets_du_bras": 7.73,
+    "pixels_du_corps": 6.0
+   },
+   "passage": "regard_morceau -> anticipation"
+  },
+  {
+   "image": 83,
+   "t": 3.458,
+   "max": 22.882,
+   "point": "gant",
+   "detail": {
+    "epaule": 1.6,
+    "coude": 1.41,
+    "poignet": 5.0,
+    "bout_des_doigts": 7.32,
+    "oeil_pendant": 2.78,
+    "morceau": 0.0,
+    "gant": 22.88,
+    "sommets_du_bras": 6.11,
+    "pixels_du_corps": 4.73
+   },
+   "passage": "regard_morceau -> anticipation"
+  },
+  {
+   "image": 84,
+   "t": 3.5,
+   "max": 14.489,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.91,
+    "coude": 0.81,
+    "poignet": 2.79,
+    "bout_des_doigts": 4.07,
+    "oeil_pendant": 0.55,
+    "morceau": 0.0,
+    "gant": 14.49,
+    "sommets_du_bras": 3.41,
+    "pixels_du_corps": 2.67
+   },
+   "passage": "regard_morceau -> anticipation"
+  },
+  {
+   "image": 85,
+   "t": 3.542,
+   "max": 6.733,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.27,
+    "coude": 0.22,
+    "poignet": 0.74,
+    "bout_des_doigts": 1.06,
+    "oeil_pendant": 0.4,
+    "morceau": 0.0,
+    "gant": 6.73,
+    "sommets_du_bras": 0.88,
+    "pixels_du_corps": 0.76
+   },
+   "passage": "regard_morceau -> anticipation"
+  },
+  {
+   "image": 86,
+   "t": 3.583,
+   "max": 1.409,
+   "point": "gant",
+   "detail": {
+    "epaule": 0.2,
+    "coude": 0.58,
+    "poignet": 0.95,
+    "bout_des_doigts": 1.34,
+    "oeil_pendant": 1.14,
+    "morceau": 0.0,
+    "gant": 1.41,
+    "sommets_du_bras": 1.25,
+    "pixels_du_corps": 0.56
+   },
+   "passage": "anticipation -> bras_part"
+  },
+  {
+   "image": 87,
+   "t": 3.625,
+   "max": 5.054,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.89,
+    "coude": 2.05,
+    "poignet": 3.56,
+    "bout_des_doigts": 5.05,
+    "oeil_pendant": 2.66,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 4.65,
+    "pixels_du_corps": 2.42
+   },
+   "passage": "anticipation -> bras_part"
+  },
+  {
+   "image": 88,
+   "t": 3.667,
+   "max": 7.815,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 1.43,
+    "coude": 3.05,
+    "poignet": 5.43,
+    "bout_des_doigts": 7.81,
+    "oeil_pendant": 2.95,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 7.09,
+    "pixels_du_corps": 3.87
+   },
+   "passage": "anticipation -> bras_part"
+  },
+  {
+   "image": 89,
+   "t": 3.708,
+   "max": 9.518,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 1.8,
+    "coude": 3.54,
+    "poignet": 6.49,
+    "bout_des_doigts": 9.52,
+    "oeil_pendant": 2.62,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 8.49,
+    "pixels_du_corps": 4.86
+   },
+   "passage": "anticipation -> bras_part"
+  },
+  {
+   "image": 90,
+   "t": 3.75,
+   "max": 10.161,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 1.99,
+    "coude": 3.56,
+    "poignet": 6.77,
+    "bout_des_doigts": 10.16,
+    "oeil_pendant": 3.19,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 8.89,
+    "pixels_du_corps": 5.4
+   },
+   "passage": "anticipation -> bras_part"
+  },
+  {
+   "image": 91,
+   "t": 3.792,
+   "max": 9.756,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 2.01,
+    "coude": 3.16,
+    "poignet": 6.33,
+    "bout_des_doigts": 9.76,
+    "oeil_pendant": 2.41,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 8.33,
+    "pixels_du_corps": 5.49
+   },
+   "passage": "anticipation -> bras_part"
+  },
+  {
+   "image": 92,
+   "t": 3.833,
+   "max": 8.324,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 1.85,
+    "coude": 2.37,
+    "poignet": 5.22,
+    "bout_des_doigts": 8.32,
+    "oeil_pendant": 1.43,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 6.87,
+    "pixels_du_corps": 5.12
+   },
+   "passage": "anticipation -> bras_part"
+  },
+  {
+   "image": 93,
+   "t": 3.875,
+   "max": 5.902,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 1.51,
+    "coude": 1.21,
+    "poignet": 3.49,
+    "bout_des_doigts": 5.9,
+    "oeil_pendant": 1.44,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 4.55,
+    "pixels_du_corps": 4.29
+   },
+   "passage": "anticipation -> bras_part"
+  },
+  {
+   "image": 94,
+   "t": 3.917,
+   "max": 3.114,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 1.05,
+    "coude": 0.28,
+    "poignet": 1.57,
+    "bout_des_doigts": 2.92,
+    "oeil_pendant": 0.43,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 2.4,
+    "pixels_du_corps": 3.11
+   },
+   "passage": "anticipation -> bras_part"
+  },
+  {
+   "image": 95,
+   "t": 3.958,
+   "max": 2.651,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.88,
+    "coude": 1.16,
+    "poignet": 1.69,
+    "bout_des_doigts": 2.46,
+    "oeil_pendant": 0.63,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 2.6,
+    "pixels_du_corps": 2.65
+   },
+   "passage": "bras_part -> bras_mi_chemin"
+  },
+  {
+   "image": 96,
+   "t": 4.0,
+   "max": 3.15,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.81,
+    "coude": 1.76,
+    "poignet": 2.16,
+    "bout_des_doigts": 2.69,
+    "oeil_pendant": 1.57,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 3.15,
+    "pixels_du_corps": 2.45
+   },
+   "passage": "bras_part -> bras_mi_chemin"
+  },
+  {
+   "image": 97,
+   "t": 4.042,
+   "max": 3.567,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.75,
+    "coude": 2.2,
+    "poignet": 2.52,
+    "bout_des_doigts": 2.86,
+    "oeil_pendant": 1.71,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 3.57,
+    "pixels_du_corps": 2.31
+   },
+   "passage": "bras_part -> bras_mi_chemin"
+  },
+  {
+   "image": 98,
+   "t": 4.083,
+   "max": 3.833,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.72,
+    "coude": 2.49,
+    "poignet": 2.75,
+    "bout_des_doigts": 2.94,
+    "oeil_pendant": 2.13,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 3.83,
+    "pixels_du_corps": 2.21
+   },
+   "passage": "bras_part -> bras_mi_chemin"
+  },
+  {
+   "image": 99,
+   "t": 4.125,
+   "max": 3.948,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.7,
+    "coude": 2.63,
+    "poignet": 2.83,
+    "bout_des_doigts": 2.92,
+    "oeil_pendant": 2.66,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 3.95,
+    "pixels_du_corps": 2.16
+   },
+   "passage": "bras_part -> bras_mi_chemin"
+  },
+  {
+   "image": 100,
+   "t": 4.167,
+   "max": 3.917,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.7,
+    "coude": 2.61,
+    "poignet": 2.77,
+    "bout_des_doigts": 2.8,
+    "oeil_pendant": 2.71,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 3.92,
+    "pixels_du_corps": 2.17
+   },
+   "passage": "bras_part -> bras_mi_chemin"
+  },
+  {
+   "image": 101,
+   "t": 4.208,
+   "max": 3.75,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.72,
+    "coude": 2.43,
+    "poignet": 2.59,
+    "bout_des_doigts": 2.6,
+    "oeil_pendant": 2.87,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 3.75,
+    "pixels_du_corps": 2.22
+   },
+   "passage": "bras_part -> bras_mi_chemin"
+  },
+  {
+   "image": 102,
+   "t": 4.25,
+   "max": 3.465,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.75,
+    "coude": 2.11,
+    "poignet": 2.29,
+    "bout_des_doigts": 2.34,
+    "oeil_pendant": 3.08,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 3.47,
+    "pixels_du_corps": 2.33
+   },
+   "passage": "bras_part -> bras_mi_chemin"
+  },
+  {
+   "image": 103,
+   "t": 4.292,
+   "max": 3.688,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.89,
+    "coude": 2.07,
+    "poignet": 2.36,
+    "bout_des_doigts": 2.46,
+    "oeil_pendant": 2.92,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 3.69,
+    "pixels_du_corps": 2.72
+   },
+   "passage": "bras_mi_chemin -> main_saisit"
+  },
+  {
+   "image": 104,
+   "t": 4.333,
+   "max": 4.208,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 1.07,
+    "coude": 2.31,
+    "poignet": 2.66,
+    "bout_des_doigts": 2.79,
+    "oeil_pendant": 2.96,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 4.21,
+    "pixels_du_corps": 3.16
+   },
+   "passage": "bras_mi_chemin -> main_saisit"
+  },
+  {
+   "image": 105,
+   "t": 4.375,
+   "max": 4.328,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 1.13,
+    "coude": 2.34,
+    "poignet": 2.71,
+    "bout_des_doigts": 2.83,
+    "oeil_pendant": 3.01,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 4.33,
+    "pixels_du_corps": 3.31
+   },
+   "passage": "bras_mi_chemin -> main_saisit"
+  },
+  {
+   "image": 106,
+   "t": 4.417,
+   "max": 4.063,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 1.09,
+    "coude": 2.19,
+    "poignet": 2.51,
+    "bout_des_doigts": 2.61,
+    "oeil_pendant": 2.53,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 4.06,
+    "pixels_du_corps": 3.16
+   },
+   "passage": "bras_mi_chemin -> main_saisit"
+  },
+  {
+   "image": 107,
+   "t": 4.458,
+   "max": 3.428,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.93,
+    "coude": 1.84,
+    "poignet": 2.09,
+    "bout_des_doigts": 2.17,
+    "oeil_pendant": 2.34,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 3.43,
+    "pixels_du_corps": 2.72
+   },
+   "passage": "bras_mi_chemin -> main_saisit"
+  },
+  {
+   "image": 108,
+   "t": 4.5,
+   "max": 2.435,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.66,
+    "coude": 1.31,
+    "poignet": 1.47,
+    "bout_des_doigts": 1.51,
+    "oeil_pendant": 2.05,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 2.43,
+    "pixels_du_corps": 1.98
+   },
+   "passage": "bras_mi_chemin -> main_saisit"
+  },
+  {
+   "image": 109,
+   "t": 4.542,
+   "max": 1.574,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.29,
+    "coude": 0.59,
+    "poignet": 0.64,
+    "bout_des_doigts": 0.65,
+    "oeil_pendant": 1.57,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 1.09,
+    "pixels_du_corps": 0.94
+   },
+   "passage": "bras_mi_chemin -> main_saisit"
+  },
+  {
+   "image": 110,
+   "t": 4.583,
+   "max": 1.292,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.06,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 1.29,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 0.11
+   },
+   "passage": "main_saisit -> main_fermee"
+  },
+  {
+   "image": 111,
+   "t": 4.625,
+   "max": 0.966,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.06,
+    "poignet": 0.06,
+    "bout_des_doigts": 0.06,
+    "oeil_pendant": 0.97,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.11
+   },
+   "passage": "main_saisit -> main_fermee"
+  },
+  {
+   "image": 112,
+   "t": 4.667,
+   "max": 0.6,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.06,
+    "poignet": 0.06,
+    "bout_des_doigts": 0.06,
+    "oeil_pendant": 0.6,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.11
+   },
+   "passage": "main_saisit -> main_fermee"
+  },
+  {
+   "image": 113,
+   "t": 4.708,
+   "max": 0.284,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.06,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.28,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 0.11
+   },
+   "passage": "main_saisit -> main_fermee"
+  },
+  {
+   "image": 114,
+   "t": 4.75,
+   "max": 0.244,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.05,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.24,
+    "morceau": 0.0,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 0.12
+   },
+   "passage": "main_saisit -> main_fermee"
+  },
+  {
+   "image": 115,
+   "t": 4.792,
+   "max": 1.216,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.3,
+    "coude": 1.04,
+    "poignet": 0.98,
+    "bout_des_doigts": 0.73,
+    "oeil_pendant": 0.93,
+    "morceau": 0.9,
+    "gant": 0.0,
+    "sommets_du_bras": 1.22,
+    "pixels_du_corps": 0.82
+   },
+   "passage": "main_fermee -> bras_leve"
+  },
+  {
+   "image": 116,
+   "t": 4.833,
+   "max": 3.26,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.76,
+    "coude": 2.8,
+    "poignet": 2.65,
+    "bout_des_doigts": 2.05,
+    "oeil_pendant": 1.99,
+    "morceau": 2.46,
+    "gant": 0.0,
+    "sommets_du_bras": 3.26,
+    "pixels_du_corps": 2.37
+   },
+   "passage": "main_fermee -> bras_leve"
+  },
+  {
+   "image": 117,
+   "t": 4.875,
+   "max": 4.98,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 1.12,
+    "coude": 4.13,
+    "poignet": 3.94,
+    "bout_des_doigts": 3.43,
+    "oeil_pendant": 2.0,
+    "morceau": 3.9,
+    "gant": 0.0,
+    "sommets_du_bras": 4.98,
+    "pixels_du_corps": 3.56
+   },
+   "passage": "main_fermee -> bras_leve"
+  },
+  {
+   "image": 118,
+   "t": 4.917,
+   "max": 6.374,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 1.37,
+    "coude": 5.04,
+    "poignet": 4.9,
+    "bout_des_doigts": 4.89,
+    "oeil_pendant": 2.64,
+    "morceau": 5.27,
+    "gant": 0.0,
+    "sommets_du_bras": 6.37,
+    "pixels_du_corps": 4.4
+   },
+   "passage": "main_fermee -> bras_leve"
+  },
+  {
+   "image": 119,
+   "t": 4.958,
+   "max": 7.43,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 1.53,
+    "coude": 5.49,
+    "poignet": 5.54,
+    "bout_des_doigts": 6.35,
+    "oeil_pendant": 3.1,
+    "morceau": 6.47,
+    "gant": 0.0,
+    "sommets_du_bras": 7.43,
+    "pixels_du_corps": 4.88
+   },
+   "passage": "main_fermee -> bras_leve"
+  },
+  {
+   "image": 120,
+   "t": 5.0,
+   "max": 8.121,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 1.59,
+    "coude": 5.48,
+    "poignet": 5.84,
+    "bout_des_doigts": 7.63,
+    "oeil_pendant": 2.76,
+    "morceau": 7.63,
+    "gant": 0.0,
+    "sommets_du_bras": 8.12,
+    "pixels_du_corps": 5.0
+   },
+   "passage": "main_fermee -> bras_leve"
+  },
+  {
+   "image": 121,
+   "t": 5.042,
+   "max": 8.516,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 1.54,
+    "coude": 4.99,
+    "poignet": 5.82,
+    "bout_des_doigts": 8.52,
+    "oeil_pendant": 2.95,
+    "morceau": 8.52,
+    "gant": 0.0,
+    "sommets_du_bras": 8.42,
+    "pixels_du_corps": 4.76
+   },
+   "passage": "main_fermee -> bras_leve"
+  },
+  {
+   "image": 122,
+   "t": 5.083,
+   "max": 8.844,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 1.4,
+    "coude": 4.02,
+    "poignet": 5.51,
+    "bout_des_doigts": 8.84,
+    "oeil_pendant": 2.91,
+    "morceau": 8.84,
+    "gant": 0.0,
+    "sommets_du_bras": 8.29,
+    "pixels_du_corps": 4.16
+   },
+   "passage": "main_fermee -> bras_leve"
+  },
+  {
+   "image": 123,
+   "t": 5.125,
+   "max": 8.54,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 1.17,
+    "coude": 2.57,
+    "poignet": 4.97,
+    "bout_des_doigts": 8.54,
+    "oeil_pendant": 2.48,
+    "morceau": 8.54,
+    "gant": 0.0,
+    "sommets_du_bras": 7.74,
+    "pixels_du_corps": 3.22
+   },
+   "passage": "main_fermee -> bras_leve"
+  },
+  {
+   "image": 124,
+   "t": 5.167,
+   "max": 7.937,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.87,
+    "coude": 0.71,
+    "poignet": 4.59,
+    "bout_des_doigts": 7.94,
+    "oeil_pendant": 2.42,
+    "morceau": 7.94,
+    "gant": 0.0,
+    "sommets_du_bras": 6.99,
+    "pixels_du_corps": 2.22
+   },
+   "passage": "main_fermee -> bras_leve"
+  },
+  {
+   "image": 125,
+   "t": 5.208,
+   "max": 9.131,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.81,
+    "coude": 0.73,
+    "poignet": 5.6,
+    "bout_des_doigts": 9.13,
+    "oeil_pendant": 2.45,
+    "morceau": 9.13,
+    "gant": 0.0,
+    "sommets_du_bras": 7.87,
+    "pixels_du_corps": 2.07
+   },
+   "passage": "bras_leve -> bras_presque_bouche"
+  },
+  {
+   "image": 126,
+   "t": 5.25,
+   "max": 10.175,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.79,
+    "coude": 1.8,
+    "poignet": 6.54,
+    "bout_des_doigts": 10.17,
+    "oeil_pendant": 2.31,
+    "morceau": 10.17,
+    "gant": 0.0,
+    "sommets_du_bras": 8.82,
+    "pixels_du_corps": 2.04
+   },
+   "passage": "bras_leve -> bras_presque_bouche"
+  },
+  {
+   "image": 127,
+   "t": 5.292,
+   "max": 10.493,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.76,
+    "coude": 2.62,
+    "poignet": 6.96,
+    "bout_des_doigts": 10.49,
+    "oeil_pendant": 1.82,
+    "morceau": 10.49,
+    "gant": 0.0,
+    "sommets_du_bras": 9.72,
+    "pixels_du_corps": 1.96
+   },
+   "passage": "bras_leve -> bras_presque_bouche"
+  },
+  {
+   "image": 128,
+   "t": 5.333,
+   "max": 10.146,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.71,
+    "coude": 3.2,
+    "poignet": 6.91,
+    "bout_des_doigts": 10.15,
+    "oeil_pendant": 1.07,
+    "morceau": 10.15,
+    "gant": 0.0,
+    "sommets_du_bras": 9.92,
+    "pixels_du_corps": 1.83
+   },
+   "passage": "bras_leve -> bras_presque_bouche"
+  },
+  {
+   "image": 129,
+   "t": 5.375,
+   "max": 9.481,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.64,
+    "coude": 3.53,
+    "poignet": 6.41,
+    "bout_des_doigts": 9.22,
+    "oeil_pendant": 2.41,
+    "morceau": 9.22,
+    "gant": 0.0,
+    "sommets_du_bras": 9.48,
+    "pixels_du_corps": 1.65
+   },
+   "passage": "bras_leve -> bras_presque_bouche"
+  },
+  {
+   "image": 130,
+   "t": 5.417,
+   "max": 8.459,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.55,
+    "coude": 3.62,
+    "poignet": 5.55,
+    "bout_des_doigts": 7.79,
+    "oeil_pendant": 2.46,
+    "morceau": 7.79,
+    "gant": 0.0,
+    "sommets_du_bras": 8.46,
+    "pixels_du_corps": 1.41
+   },
+   "passage": "bras_leve -> bras_presque_bouche"
+  },
+  {
+   "image": 131,
+   "t": 5.458,
+   "max": 6.919,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.45,
+    "coude": 3.46,
+    "poignet": 4.39,
+    "bout_des_doigts": 5.93,
+    "oeil_pendant": 1.53,
+    "morceau": 5.93,
+    "gant": 0.0,
+    "sommets_du_bras": 6.92,
+    "pixels_du_corps": 1.13
+   },
+   "passage": "bras_leve -> bras_presque_bouche"
+  },
+  {
+   "image": 132,
+   "t": 5.5,
+   "max": 5.09,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.32,
+    "coude": 3.06,
+    "poignet": 3.03,
+    "bout_des_doigts": 3.72,
+    "oeil_pendant": 0.83,
+    "morceau": 3.72,
+    "gant": 0.0,
+    "sommets_du_bras": 5.09,
+    "pixels_du_corps": 0.79
+   },
+   "passage": "bras_leve -> bras_presque_bouche"
+  },
+  {
+   "image": 133,
+   "t": 5.542,
+   "max": 4.867,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.25,
+    "coude": 3.12,
+    "poignet": 2.59,
+    "bout_des_doigts": 2.62,
+    "oeil_pendant": 0.97,
+    "morceau": 2.62,
+    "gant": 0.0,
+    "sommets_du_bras": 4.87,
+    "pixels_du_corps": 0.59
+   },
+   "passage": "bras_presque_bouche -> main_bouche"
+  },
+  {
+   "image": 134,
+   "t": 5.583,
+   "max": 5.503,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.24,
+    "coude": 3.58,
+    "poignet": 2.9,
+    "bout_des_doigts": 2.7,
+    "oeil_pendant": 0.83,
+    "morceau": 2.7,
+    "gant": 0.0,
+    "sommets_du_bras": 5.5,
+    "pixels_du_corps": 0.54
+   },
+   "passage": "bras_presque_bouche -> main_bouche"
+  },
+  {
+   "image": 135,
+   "t": 5.625,
+   "max": 5.663,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.22,
+    "coude": 3.72,
+    "poignet": 2.99,
+    "bout_des_doigts": 2.63,
+    "oeil_pendant": 0.88,
+    "morceau": 2.63,
+    "gant": 0.0,
+    "sommets_du_bras": 5.66,
+    "pixels_du_corps": 0.48
+   },
+   "passage": "bras_presque_bouche -> main_bouche"
+  },
+  {
+   "image": 136,
+   "t": 5.667,
+   "max": 5.345,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.18,
+    "coude": 3.53,
+    "poignet": 2.83,
+    "bout_des_doigts": 2.41,
+    "oeil_pendant": 1.37,
+    "morceau": 2.41,
+    "gant": 0.0,
+    "sommets_du_bras": 5.34,
+    "pixels_du_corps": 0.5
+   },
+   "passage": "bras_presque_bouche -> main_bouche"
+  },
+  {
+   "image": 137,
+   "t": 5.708,
+   "max": 4.547,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.13,
+    "coude": 3.02,
+    "poignet": 2.42,
+    "bout_des_doigts": 2.0,
+    "oeil_pendant": 1.8,
+    "morceau": 2.0,
+    "gant": 0.0,
+    "sommets_du_bras": 4.55,
+    "pixels_du_corps": 0.55
+   },
+   "passage": "bras_presque_bouche -> main_bouche"
+  },
+  {
+   "image": 138,
+   "t": 5.75,
+   "max": 3.267,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 2.18,
+    "poignet": 1.73,
+    "bout_des_doigts": 1.4,
+    "oeil_pendant": 1.77,
+    "morceau": 1.4,
+    "gant": 0.0,
+    "sommets_du_bras": 3.27,
+    "pixels_du_corps": 0.51
+   },
+   "passage": "bras_presque_bouche -> main_bouche"
+  },
+  {
+   "image": 139,
+   "t": 5.792,
+   "max": 1.946,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.03,
+    "coude": 1.01,
+    "poignet": 0.78,
+    "bout_des_doigts": 0.6,
+    "oeil_pendant": 1.95,
+    "morceau": 0.6,
+    "gant": 0.0,
+    "sommets_du_bras": 1.51,
+    "pixels_du_corps": 0.37
+   },
+   "passage": "bras_presque_bouche -> main_bouche"
+  },
+  {
+   "image": 140,
+   "t": 5.833,
+   "max": 1.942,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.04,
+    "coude": 0.04,
+    "poignet": 0.08,
+    "bout_des_doigts": 0.08,
+    "oeil_pendant": 1.94,
+    "morceau": 0.08,
+    "gant": 0.0,
+    "sommets_du_bras": 0.15,
+    "pixels_du_corps": 0.29
+   },
+   "passage": "main_bouche -> bouche_ouverte"
+  },
+  {
+   "image": 141,
+   "t": 5.875,
+   "max": 2.275,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.14,
+    "coude": 0.21,
+    "poignet": 0.99,
+    "bout_des_doigts": 0.98,
+    "oeil_pendant": 2.28,
+    "morceau": 0.98,
+    "gant": 0.0,
+    "sommets_du_bras": 1.32,
+    "pixels_du_corps": 1.9
+   },
+   "passage": "main_bouche -> bouche_ouverte"
+  },
+  {
+   "image": 142,
+   "t": 5.917,
+   "max": 3.748,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.32,
+    "coude": 0.44,
+    "poignet": 1.95,
+    "bout_des_doigts": 1.95,
+    "oeil_pendant": 3.18,
+    "morceau": 1.95,
+    "gant": 0.0,
+    "sommets_du_bras": 2.57,
+    "pixels_du_corps": 3.75
+   },
+   "passage": "main_bouche -> bouche_ouverte"
+  },
+  {
+   "image": 143,
+   "t": 5.958,
+   "max": 4.124,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.35,
+    "coude": 0.49,
+    "poignet": 2.14,
+    "bout_des_doigts": 2.14,
+    "oeil_pendant": 1.87,
+    "morceau": 2.14,
+    "gant": 0.0,
+    "sommets_du_bras": 2.81,
+    "pixels_du_corps": 4.12
+   },
+   "passage": "main_bouche -> bouche_ouverte"
+  },
+  {
+   "image": 144,
+   "t": 6.0,
+   "max": 2.717,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.21,
+    "coude": 0.31,
+    "poignet": 1.43,
+    "bout_des_doigts": 1.42,
+    "oeil_pendant": 1.62,
+    "morceau": 1.42,
+    "gant": 0.0,
+    "sommets_du_bras": 1.88,
+    "pixels_du_corps": 2.72
+   },
+   "passage": "main_bouche -> bouche_ouverte"
+  },
+  {
+   "image": 145,
+   "t": 6.042,
+   "max": 1.274,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.0,
+    "coude": 0.06,
+    "poignet": 0.35,
+    "bout_des_doigts": 0.35,
+    "oeil_pendant": 1.27,
+    "morceau": 0.35,
+    "gant": 0.0,
+    "sommets_du_bras": 0.51,
+    "pixels_du_corps": 0.79
+   },
+   "passage": "main_bouche -> bouche_ouverte"
+  },
+  {
+   "image": 146,
+   "t": 6.083,
+   "max": 1.556,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.17,
+    "coude": 0.31,
+    "poignet": 0.33,
+    "bout_des_doigts": 0.33,
+    "oeil_pendant": 1.56,
+    "morceau": 0.33,
+    "gant": 0.0,
+    "sommets_du_bras": 0.38,
+    "pixels_du_corps": 0.96
+   },
+   "passage": "bouche_ouverte -> morsure"
+  },
+  {
+   "image": 147,
+   "t": 6.125,
+   "max": 5.173,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.64,
+    "coude": 1.93,
+    "poignet": 2.2,
+    "bout_des_doigts": 2.19,
+    "oeil_pendant": 2.66,
+    "morceau": 2.19,
+    "gant": 0.0,
+    "sommets_du_bras": 2.58,
+    "pixels_du_corps": 5.17
+   },
+   "passage": "bouche_ouverte -> morsure"
+  },
+  {
+   "image": 148,
+   "t": 6.167,
+   "max": 8.027,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.96,
+    "coude": 2.99,
+    "poignet": 3.47,
+    "bout_des_doigts": 3.47,
+    "oeil_pendant": 3.42,
+    "morceau": 3.47,
+    "gant": 0.0,
+    "sommets_du_bras": 4.05,
+    "pixels_du_corps": 8.03
+   },
+   "passage": "bouche_ouverte -> morsure"
+  },
+  {
+   "image": 149,
+   "t": 6.208,
+   "max": 6.044,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.74,
+    "coude": 2.2,
+    "poignet": 2.58,
+    "bout_des_doigts": 2.57,
+    "oeil_pendant": 1.46,
+    "morceau": 2.57,
+    "gant": 0.0,
+    "sommets_du_bras": 2.99,
+    "pixels_du_corps": 6.04
+   },
+   "passage": "bouche_ouverte -> morsure"
+  },
+  {
+   "image": 150,
+   "t": 6.25,
+   "max": 1.558,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.24,
+    "coude": 0.51,
+    "poignet": 0.58,
+    "bout_des_doigts": 0.58,
+    "oeil_pendant": 1.31,
+    "morceau": 0.58,
+    "gant": 0.0,
+    "sommets_du_bras": 0.67,
+    "pixels_du_corps": 1.56
+   },
+   "passage": "bouche_ouverte -> morsure"
+  },
+  {
+   "image": 151,
+   "t": 6.292,
+   "max": 1.509,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.1,
+    "coude": 0.39,
+    "poignet": 0.7,
+    "bout_des_doigts": 0.91,
+    "oeil_pendant": 1.51,
+    "morceau": 0.91,
+    "gant": 0.0,
+    "sommets_du_bras": 1.05,
+    "pixels_du_corps": 0.16
+   },
+   "passage": "morsure -> bras_presque_bouche"
+  },
+  {
+   "image": 152,
+   "t": 6.333,
+   "max": 4.812,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.16,
+    "coude": 1.95,
+    "poignet": 3.1,
+    "bout_des_doigts": 4.16,
+    "oeil_pendant": 1.73,
+    "morceau": 4.16,
+    "gant": 0.0,
+    "sommets_du_bras": 4.81,
+    "pixels_du_corps": 0.96
+   },
+   "passage": "morsure -> bras_presque_bouche"
+  },
+  {
+   "image": 153,
+   "t": 6.375,
+   "max": 8.112,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.22,
+    "coude": 3.24,
+    "poignet": 5.26,
+    "bout_des_doigts": 6.97,
+    "oeil_pendant": 2.48,
+    "morceau": 6.97,
+    "gant": 0.0,
+    "sommets_du_bras": 8.11,
+    "pixels_du_corps": 1.75
+   },
+   "passage": "morsure -> bras_presque_bouche"
+  },
+  {
+   "image": 154,
+   "t": 6.417,
+   "max": 8.337,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.22,
+    "coude": 3.23,
+    "poignet": 5.47,
+    "bout_des_doigts": 7.14,
+    "oeil_pendant": 2.01,
+    "morceau": 7.14,
+    "gant": 0.0,
+    "sommets_du_bras": 8.34,
+    "pixels_du_corps": 1.75
+   },
+   "passage": "morsure -> bras_presque_bouche"
+  },
+  {
+   "image": 155,
+   "t": 6.458,
+   "max": 5.16,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.16,
+    "coude": 1.93,
+    "poignet": 3.43,
+    "bout_des_doigts": 4.42,
+    "oeil_pendant": 1.9,
+    "morceau": 4.42,
+    "gant": 0.0,
+    "sommets_du_bras": 5.16,
+    "pixels_du_corps": 0.97
+   },
+   "passage": "morsure -> bras_presque_bouche"
+  },
+  {
+   "image": 156,
+   "t": 6.5,
+   "max": 1.796,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.11,
+    "coude": 0.38,
+    "poignet": 0.79,
+    "bout_des_doigts": 0.99,
+    "oeil_pendant": 1.8,
+    "morceau": 0.99,
+    "gant": 0.0,
+    "sommets_du_bras": 1.14,
+    "pixels_du_corps": 0.16
+   },
+   "passage": "morsure -> bras_presque_bouche"
+  },
+  {
+   "image": 157,
+   "t": 6.542,
+   "max": 1.741,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.1,
+    "coude": 0.09,
+    "poignet": 0.1,
+    "bout_des_doigts": 0.11,
+    "oeil_pendant": 1.74,
+    "morceau": 0.11,
+    "gant": 0.0,
+    "sommets_du_bras": 0.11,
+    "pixels_du_corps": 1.1
+   },
+   "passage": "bras_presque_bouche -> mastication_1"
+  },
+  {
+   "image": 158,
+   "t": 6.583,
+   "max": 4.063,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.09,
+    "coude": 0.09,
+    "poignet": 0.1,
+    "bout_des_doigts": 0.1,
+    "oeil_pendant": 1.82,
+    "morceau": 0.1,
+    "gant": 0.0,
+    "sommets_du_bras": 0.11,
+    "pixels_du_corps": 4.06
+   },
+   "passage": "bras_presque_bouche -> mastication_1"
+  },
+  {
+   "image": 159,
+   "t": 6.625,
+   "max": 4.208,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.09,
+    "coude": 0.09,
+    "poignet": 0.1,
+    "bout_des_doigts": 0.1,
+    "oeil_pendant": 1.01,
+    "morceau": 0.1,
+    "gant": 0.0,
+    "sommets_du_bras": 0.11,
+    "pixels_du_corps": 4.21
+   },
+   "passage": "bras_presque_bouche -> mastication_1"
+  },
+  {
+   "image": 160,
+   "t": 6.667,
+   "max": 1.304,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.09,
+    "coude": 0.09,
+    "poignet": 0.1,
+    "bout_des_doigts": 0.1,
+    "oeil_pendant": 0.59,
+    "morceau": 0.1,
+    "gant": 0.0,
+    "sommets_du_bras": 0.11,
+    "pixels_du_corps": 1.3
+   },
+   "passage": "bras_presque_bouche -> mastication_1"
+  },
+  {
+   "image": 161,
+   "t": 6.708,
+   "max": 0.963,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.09,
+    "coude": 0.08,
+    "poignet": 0.1,
+    "bout_des_doigts": 0.1,
+    "oeil_pendant": 0.42,
+    "morceau": 0.1,
+    "gant": 0.0,
+    "sommets_du_bras": 0.1,
+    "pixels_du_corps": 0.96
+   },
+   "passage": "mastication_1 -> mastication_2"
+  },
+  {
+   "image": 162,
+   "t": 6.75,
+   "max": 4.654,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.09,
+    "coude": 0.08,
+    "poignet": 0.1,
+    "bout_des_doigts": 0.1,
+    "oeil_pendant": 1.8,
+    "morceau": 0.1,
+    "gant": 0.0,
+    "sommets_du_bras": 0.1,
+    "pixels_du_corps": 4.65
+   },
+   "passage": "mastication_1 -> mastication_2"
+  },
+  {
+   "image": 163,
+   "t": 6.792,
+   "max": 5.272,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.09,
+    "coude": 0.08,
+    "poignet": 0.09,
+    "bout_des_doigts": 0.1,
+    "oeil_pendant": 1.49,
+    "morceau": 0.1,
+    "gant": 0.0,
+    "sommets_du_bras": 0.1,
+    "pixels_du_corps": 5.27
+   },
+   "passage": "mastication_1 -> mastication_2"
+  },
+  {
+   "image": 164,
+   "t": 6.833,
+   "max": 1.787,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.09,
+    "coude": 0.08,
+    "poignet": 0.09,
+    "bout_des_doigts": 0.09,
+    "oeil_pendant": 0.94,
+    "morceau": 0.09,
+    "gant": 0.0,
+    "sommets_du_bras": 0.1,
+    "pixels_du_corps": 1.79
+   },
+   "passage": "mastication_1 -> mastication_2"
+  },
+  {
+   "image": 165,
+   "t": 6.875,
+   "max": 0.756,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.08,
+    "coude": 0.08,
+    "poignet": 0.09,
+    "bout_des_doigts": 0.09,
+    "oeil_pendant": 0.76,
+    "morceau": 0.09,
+    "gant": 0.0,
+    "sommets_du_bras": 0.1,
+    "pixels_du_corps": 0.71
+   },
+   "passage": "mastication_2 -> mastication_3"
+  },
+  {
+   "image": 166,
+   "t": 6.917,
+   "max": 3.602,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.08,
+    "coude": 0.07,
+    "poignet": 0.09,
+    "bout_des_doigts": 0.09,
+    "oeil_pendant": 0.9,
+    "morceau": 0.09,
+    "gant": 0.0,
+    "sommets_du_bras": 0.09,
+    "pixels_du_corps": 3.6
+   },
+   "passage": "mastication_2 -> mastication_3"
+  },
+  {
+   "image": 167,
+   "t": 6.958,
+   "max": 4.346,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.08,
+    "coude": 0.07,
+    "poignet": 0.08,
+    "bout_des_doigts": 0.09,
+    "oeil_pendant": 1.87,
+    "morceau": 0.09,
+    "gant": 0.0,
+    "sommets_du_bras": 0.09,
+    "pixels_du_corps": 4.35
+   },
+   "passage": "mastication_2 -> mastication_3"
+  },
+  {
+   "image": 168,
+   "t": 7.0,
+   "max": 1.729,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.07,
+    "poignet": 0.08,
+    "bout_des_doigts": 0.08,
+    "oeil_pendant": 0.77,
+    "morceau": 0.08,
+    "gant": 0.0,
+    "sommets_du_bras": 0.09,
+    "pixels_du_corps": 1.73
+   },
+   "passage": "mastication_2 -> mastication_3"
+  },
+  {
+   "image": 169,
+   "t": 7.042,
+   "max": 0.955,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.07,
+    "poignet": 0.08,
+    "bout_des_doigts": 0.08,
+    "oeil_pendant": 0.95,
+    "morceau": 0.08,
+    "gant": 0.0,
+    "sommets_du_bras": 0.08,
+    "pixels_du_corps": 0.45
+   },
+   "passage": "mastication_3 -> mastication_2"
+  },
+  {
+   "image": 170,
+   "t": 7.083,
+   "max": 3.337,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.06,
+    "poignet": 0.07,
+    "bout_des_doigts": 0.08,
+    "oeil_pendant": 0.57,
+    "morceau": 0.08,
+    "gant": 0.0,
+    "sommets_du_bras": 0.08,
+    "pixels_du_corps": 3.34
+   },
+   "passage": "mastication_3 -> mastication_2"
+  },
+  {
+   "image": 171,
+   "t": 7.125,
+   "max": 4.455,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.06,
+    "poignet": 0.07,
+    "bout_des_doigts": 0.07,
+    "oeil_pendant": 1.44,
+    "morceau": 0.07,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 4.46
+   },
+   "passage": "mastication_3 -> mastication_2"
+  },
+  {
+   "image": 172,
+   "t": 7.167,
+   "max": 1.963,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.06,
+    "poignet": 0.06,
+    "bout_des_doigts": 0.07,
+    "oeil_pendant": 0.37,
+    "morceau": 0.07,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 1.96
+   },
+   "passage": "mastication_3 -> mastication_2"
+  },
+  {
+   "image": 173,
+   "t": 7.208,
+   "max": 1.304,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.05,
+    "poignet": 0.06,
+    "bout_des_doigts": 0.06,
+    "oeil_pendant": 1.3,
+    "morceau": 0.06,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.45
+   },
+   "passage": "mastication_2 -> mastication_1"
+  },
+  {
+   "image": 174,
+   "t": 7.25,
+   "max": 3.947,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.05,
+    "poignet": 0.06,
+    "bout_des_doigts": 0.06,
+    "oeil_pendant": 0.72,
+    "morceau": 0.06,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 3.95
+   },
+   "passage": "mastication_2 -> mastication_1"
+  },
+  {
+   "image": 175,
+   "t": 7.292,
+   "max": 5.672,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.04,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 1.85,
+    "morceau": 0.05,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 5.67
+   },
+   "passage": "mastication_2 -> mastication_1"
+  },
+  {
+   "image": 176,
+   "t": 7.333,
+   "max": 2.802,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.04,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.67,
+    "morceau": 0.05,
+    "gant": 0.0,
+    "sommets_du_bras": 0.05,
+    "pixels_du_corps": 2.8
+   },
+   "passage": "mastication_2 -> mastication_1"
+  },
+  {
+   "image": 177,
+   "t": 7.375,
+   "max": 1.39,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.04,
+    "coude": 0.04,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 1.39,
+    "morceau": 0.04,
+    "gant": 0.0,
+    "sommets_du_bras": 0.05,
+    "pixels_du_corps": 0.22
+   },
+   "passage": "mastication_1 -> mastication_2"
+  },
+  {
+   "image": 178,
+   "t": 7.417,
+   "max": 3.592,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.04,
+    "coude": 0.03,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.78,
+    "morceau": 0.04,
+    "gant": 0.0,
+    "sommets_du_bras": 0.04,
+    "pixels_du_corps": 3.59
+   },
+   "passage": "mastication_1 -> mastication_2"
+  },
+  {
+   "image": 179,
+   "t": 7.458,
+   "max": 5.702,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.03,
+    "coude": 0.03,
+    "poignet": 0.03,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 1.66,
+    "morceau": 0.04,
+    "gant": 0.0,
+    "sommets_du_bras": 0.04,
+    "pixels_du_corps": 5.7
+   },
+   "passage": "mastication_1 -> mastication_2"
+  },
+  {
+   "image": 180,
+   "t": 7.5,
+   "max": 3.14,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.03,
+    "coude": 0.02,
+    "poignet": 0.03,
+    "bout_des_doigts": 0.03,
+    "oeil_pendant": 1.08,
+    "morceau": 0.03,
+    "gant": 0.0,
+    "sommets_du_bras": 0.03,
+    "pixels_du_corps": 3.14
+   },
+   "passage": "mastication_1 -> mastication_2"
+  },
+  {
+   "image": 181,
+   "t": 7.542,
+   "max": 1.403,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.02,
+    "coude": 0.02,
+    "poignet": 0.03,
+    "bout_des_doigts": 0.03,
+    "oeil_pendant": 1.4,
+    "morceau": 0.03,
+    "gant": 0.0,
+    "sommets_du_bras": 0.03,
+    "pixels_du_corps": 0.18
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 182,
+   "t": 7.583,
+   "max": 0.556,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.02,
+    "coude": 0.02,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 0.56,
+    "morceau": 0.02,
+    "gant": 0.0,
+    "sommets_du_bras": 0.02,
+    "pixels_du_corps": 0.19
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 183,
+   "t": 7.625,
+   "max": 0.612,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.02,
+    "coude": 0.02,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 0.41,
+    "morceau": 0.02,
+    "gant": 0.0,
+    "sommets_du_bras": 0.02,
+    "pixels_du_corps": 0.61
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 184,
+   "t": 7.667,
+   "max": 1.794,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.02,
+    "coude": 0.01,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 1.79,
+    "morceau": 0.02,
+    "gant": 0.0,
+    "sommets_du_bras": 0.02,
+    "pixels_du_corps": 1.1
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 185,
+   "t": 7.708,
+   "max": 1.624,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.02,
+    "coude": 0.02,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 0.3,
+    "morceau": 0.02,
+    "gant": 0.0,
+    "sommets_du_bras": 0.02,
+    "pixels_du_corps": 1.62
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 186,
+   "t": 7.75,
+   "max": 1.996,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.02,
+    "coude": 0.02,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 0.49,
+    "morceau": 0.02,
+    "gant": 0.0,
+    "sommets_du_bras": 0.02,
+    "pixels_du_corps": 2.0
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 187,
+   "t": 7.792,
+   "max": 1.941,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.02,
+    "coude": 0.02,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 1.81,
+    "morceau": 0.02,
+    "gant": 0.0,
+    "sommets_du_bras": 0.02,
+    "pixels_du_corps": 1.94
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 188,
+   "t": 7.833,
+   "max": 1.833,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.02,
+    "coude": 0.02,
+    "poignet": 0.02,
+    "bout_des_doigts": 0.02,
+    "oeil_pendant": 0.13,
+    "morceau": 0.02,
+    "gant": 0.0,
+    "sommets_du_bras": 0.03,
+    "pixels_du_corps": 1.83
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 189,
+   "t": 7.875,
+   "max": 1.274,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.03,
+    "coude": 0.03,
+    "poignet": 0.03,
+    "bout_des_doigts": 0.03,
+    "oeil_pendant": 0.24,
+    "morceau": 0.03,
+    "gant": 0.0,
+    "sommets_du_bras": 0.03,
+    "pixels_du_corps": 1.27
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 190,
+   "t": 7.917,
+   "max": 1.04,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.03,
+    "coude": 0.03,
+    "poignet": 0.03,
+    "bout_des_doigts": 0.03,
+    "oeil_pendant": 1.04,
+    "morceau": 0.03,
+    "gant": 0.0,
+    "sommets_du_bras": 0.03,
+    "pixels_du_corps": 0.78
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 191,
+   "t": 7.958,
+   "max": 0.579,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.03,
+    "coude": 0.03,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.58,
+    "morceau": 0.04,
+    "gant": 0.0,
+    "sommets_du_bras": 0.04,
+    "pixels_du_corps": 0.28
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 192,
+   "t": 8.0,
+   "max": 0.225,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.04,
+    "coude": 0.04,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.04,
+    "oeil_pendant": 0.22,
+    "morceau": 0.04,
+    "gant": 0.0,
+    "sommets_du_bras": 0.04,
+    "pixels_du_corps": 0.08
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 193,
+   "t": 8.042,
+   "max": 0.66,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.44,
+    "poignet": 0.38,
+    "bout_des_doigts": 0.36,
+    "oeil_pendant": 0.47,
+    "morceau": 0.36,
+    "gant": 0.0,
+    "sommets_du_bras": 0.66,
+    "pixels_du_corps": 0.36
+   },
+   "passage": "avalement -> main_bouche"
+  },
+  {
+   "image": 194,
+   "t": 8.083,
+   "max": 3.469,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.18,
+    "coude": 2.27,
+    "poignet": 1.86,
+    "bout_des_doigts": 1.72,
+    "oeil_pendant": 1.31,
+    "morceau": 1.72,
+    "gant": 0.0,
+    "sommets_du_bras": 3.47,
+    "pixels_du_corps": 1.32
+   },
+   "passage": "avalement -> main_bouche"
+  },
+  {
+   "image": 195,
+   "t": 8.125,
+   "max": 6.479,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.33,
+    "coude": 4.24,
+    "poignet": 3.48,
+    "bout_des_doigts": 3.18,
+    "oeil_pendant": 1.25,
+    "morceau": 3.18,
+    "gant": 0.0,
+    "sommets_du_bras": 6.48,
+    "pixels_du_corps": 2.34
+   },
+   "passage": "avalement -> main_bouche"
+  },
+  {
+   "image": 196,
+   "t": 8.167,
+   "max": 7.872,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.39,
+    "coude": 5.16,
+    "poignet": 4.29,
+    "bout_des_doigts": 3.86,
+    "oeil_pendant": 0.57,
+    "morceau": 3.86,
+    "gant": 0.0,
+    "sommets_du_bras": 7.87,
+    "pixels_du_corps": 2.81
+   },
+   "passage": "avalement -> main_bouche"
+  },
+  {
+   "image": 197,
+   "t": 8.208,
+   "max": 6.956,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.35,
+    "coude": 4.57,
+    "poignet": 3.86,
+    "bout_des_doigts": 3.41,
+    "oeil_pendant": 1.43,
+    "morceau": 3.41,
+    "gant": 0.0,
+    "sommets_du_bras": 6.96,
+    "pixels_du_corps": 2.5
+   },
+   "passage": "avalement -> main_bouche"
+  },
+  {
+   "image": 198,
+   "t": 8.25,
+   "max": 4.168,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.23,
+    "coude": 2.75,
+    "poignet": 2.36,
+    "bout_des_doigts": 2.07,
+    "oeil_pendant": 0.6,
+    "morceau": 2.07,
+    "gant": 0.0,
+    "sommets_du_bras": 4.17,
+    "pixels_du_corps": 1.57
+   },
+   "passage": "avalement -> main_bouche"
+  },
+  {
+   "image": 199,
+   "t": 8.292,
+   "max": 1.104,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.1,
+    "coude": 0.74,
+    "poignet": 0.67,
+    "bout_des_doigts": 0.59,
+    "oeil_pendant": 0.69,
+    "morceau": 0.59,
+    "gant": 0.0,
+    "sommets_du_bras": 1.1,
+    "pixels_du_corps": 0.55
+   },
+   "passage": "avalement -> main_bouche"
+  },
+  {
+   "image": 200,
+   "t": 8.333,
+   "max": 1.107,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.12,
+    "coude": 0.12,
+    "poignet": 0.31,
+    "bout_des_doigts": 0.32,
+    "oeil_pendant": 1.11,
+    "morceau": 0.32,
+    "gant": 0.0,
+    "sommets_du_bras": 0.37,
+    "pixels_du_corps": 0.72
+   },
+   "passage": "main_bouche -> bouche_ouverte"
+  },
+  {
+   "image": 201,
+   "t": 8.375,
+   "max": 3.684,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.41,
+    "coude": 0.48,
+    "poignet": 1.82,
+    "bout_des_doigts": 1.82,
+    "oeil_pendant": 2.6,
+    "morceau": 1.82,
+    "gant": 0.0,
+    "sommets_du_bras": 2.3,
+    "pixels_du_corps": 3.68
+   },
+   "passage": "main_bouche -> bouche_ouverte"
+  },
+  {
+   "image": 202,
+   "t": 8.417,
+   "max": 5.695,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.61,
+    "coude": 0.74,
+    "poignet": 2.84,
+    "bout_des_doigts": 2.84,
+    "oeil_pendant": 2.84,
+    "morceau": 2.84,
+    "gant": 0.0,
+    "sommets_du_bras": 3.61,
+    "pixels_du_corps": 5.7
+   },
+   "passage": "main_bouche -> bouche_ouverte"
+  },
+  {
+   "image": 203,
+   "t": 8.458,
+   "max": 4.308,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.48,
+    "coude": 0.57,
+    "poignet": 2.13,
+    "bout_des_doigts": 2.13,
+    "oeil_pendant": 1.52,
+    "morceau": 2.13,
+    "gant": 0.0,
+    "sommets_du_bras": 2.69,
+    "pixels_du_corps": 4.31
+   },
+   "passage": "main_bouche -> bouche_ouverte"
+  },
+  {
+   "image": 204,
+   "t": 8.5,
+   "max": 1.162,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.17,
+    "coude": 0.18,
+    "poignet": 0.53,
+    "bout_des_doigts": 0.54,
+    "oeil_pendant": 1.0,
+    "morceau": 0.54,
+    "gant": 0.0,
+    "sommets_du_bras": 0.63,
+    "pixels_du_corps": 1.16
+   },
+   "passage": "main_bouche -> bouche_ouverte"
+  },
+  {
+   "image": 205,
+   "t": 8.542,
+   "max": 1.146,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.09,
+    "coude": 0.49,
+    "poignet": 0.59,
+    "bout_des_doigts": 0.59,
+    "oeil_pendant": 1.15,
+    "morceau": 0.59,
+    "gant": 0.0,
+    "sommets_du_bras": 0.69,
+    "pixels_du_corps": 1.1
+   },
+   "passage": "bouche_ouverte -> morsure"
+  },
+  {
+   "image": 206,
+   "t": 8.583,
+   "max": 5.581,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.58,
+    "coude": 2.21,
+    "poignet": 2.59,
+    "bout_des_doigts": 2.6,
+    "oeil_pendant": 3.14,
+    "morceau": 2.6,
+    "gant": 0.0,
+    "sommets_du_bras": 3.03,
+    "pixels_du_corps": 5.58
+   },
+   "passage": "bouche_ouverte -> morsure"
+  },
+  {
+   "image": 207,
+   "t": 8.625,
+   "max": 7.556,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.81,
+    "coude": 2.94,
+    "poignet": 3.48,
+    "bout_des_doigts": 3.48,
+    "oeil_pendant": 3.93,
+    "morceau": 3.48,
+    "gant": 0.0,
+    "sommets_du_bras": 4.05,
+    "pixels_du_corps": 7.56
+   },
+   "passage": "bouche_ouverte -> morsure"
+  },
+  {
+   "image": 208,
+   "t": 8.667,
+   "max": 4.697,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.48,
+    "coude": 1.84,
+    "poignet": 2.21,
+    "bout_des_doigts": 2.21,
+    "oeil_pendant": 0.1,
+    "morceau": 2.21,
+    "gant": 0.0,
+    "sommets_du_bras": 2.55,
+    "pixels_du_corps": 4.7
+   },
+   "passage": "bouche_ouverte -> morsure"
+  },
+  {
+   "image": 209,
+   "t": 8.708,
+   "max": 0.95,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.03,
+    "coude": 0.27,
+    "poignet": 0.34,
+    "bout_des_doigts": 0.34,
+    "oeil_pendant": 0.95,
+    "gant": 0.0,
+    "sommets_du_bras": 0.38,
+    "pixels_du_corps": 0.55
+   },
+   "passage": "bouche_ouverte -> morsure"
+  },
+  {
+   "image": 210,
+   "t": 8.75,
+   "max": 1.015,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.1,
+    "coude": 0.64,
+    "poignet": 0.35,
+    "bout_des_doigts": 0.46,
+    "oeil_pendant": 0.95,
+    "gant": 0.0,
+    "sommets_du_bras": 1.02,
+    "pixels_du_corps": 0.48
+   },
+   "passage": "morsure -> menton"
+  },
+  {
+   "image": 211,
+   "t": 8.792,
+   "max": 4.086,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.16,
+    "coude": 2.54,
+    "poignet": 1.71,
+    "bout_des_doigts": 2.09,
+    "oeil_pendant": 1.23,
+    "gant": 0.0,
+    "sommets_du_bras": 4.09,
+    "pixels_du_corps": 1.18
+   },
+   "passage": "morsure -> menton"
+  },
+  {
+   "image": 212,
+   "t": 8.833,
+   "max": 7.413,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.23,
+    "coude": 4.59,
+    "poignet": 3.27,
+    "bout_des_doigts": 3.92,
+    "oeil_pendant": 1.71,
+    "gant": 0.0,
+    "sommets_du_bras": 7.41,
+    "pixels_du_corps": 1.93
+   },
+   "passage": "morsure -> menton"
+  },
+  {
+   "image": 213,
+   "t": 8.875,
+   "max": 9.488,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.28,
+    "coude": 5.86,
+    "poignet": 4.42,
+    "bout_des_doigts": 5.19,
+    "oeil_pendant": 0.81,
+    "gant": 0.0,
+    "sommets_du_bras": 9.49,
+    "pixels_du_corps": 2.39
+   },
+   "passage": "morsure -> menton"
+  },
+  {
+   "image": 214,
+   "t": 8.917,
+   "max": 9.531,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.28,
+    "coude": 5.88,
+    "poignet": 4.67,
+    "bout_des_doigts": 5.38,
+    "oeil_pendant": 1.62,
+    "gant": 0.0,
+    "sommets_du_bras": 9.53,
+    "pixels_du_corps": 2.4
+   },
+   "passage": "morsure -> menton"
+  },
+  {
+   "image": 215,
+   "t": 8.958,
+   "max": 7.513,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.24,
+    "coude": 4.63,
+    "poignet": 3.82,
+    "bout_des_doigts": 4.35,
+    "oeil_pendant": 1.31,
+    "gant": 0.0,
+    "sommets_du_bras": 7.51,
+    "pixels_du_corps": 1.94
+   },
+   "passage": "morsure -> menton"
+  },
+  {
+   "image": 216,
+   "t": 9.0,
+   "max": 4.18,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.17,
+    "coude": 2.58,
+    "poignet": 2.15,
+    "bout_des_doigts": 2.42,
+    "oeil_pendant": 0.72,
+    "gant": 0.0,
+    "sommets_du_bras": 4.18,
+    "pixels_du_corps": 1.19
+   },
+   "passage": "morsure -> menton"
+  },
+  {
+   "image": 217,
+   "t": 9.042,
+   "max": 1.069,
+   "point": "sommets_du_bras",
+   "detail": {
+    "epaule": 0.1,
+    "coude": 0.68,
+    "poignet": 0.5,
+    "bout_des_doigts": 0.54,
+    "oeil_pendant": 0.67,
+    "gant": 0.0,
+    "sommets_du_bras": 1.07,
+    "pixels_du_corps": 0.49
+   },
+   "passage": "morsure -> menton"
+  },
+  {
+   "image": 218,
+   "t": 9.083,
+   "max": 0.521,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.08,
+    "coude": 0.07,
+    "poignet": 0.08,
+    "bout_des_doigts": 0.09,
+    "oeil_pendant": 0.22,
+    "gant": 0.0,
+    "sommets_du_bras": 0.1,
+    "pixels_du_corps": 0.52
+   },
+   "passage": "menton -> mastication_1"
+  },
+  {
+   "image": 219,
+   "t": 9.125,
+   "max": 3.571,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.08,
+    "coude": 0.07,
+    "poignet": 0.09,
+    "bout_des_doigts": 0.09,
+    "oeil_pendant": 1.87,
+    "gant": 0.0,
+    "sommets_du_bras": 0.1,
+    "pixels_du_corps": 3.57
+   },
+   "passage": "menton -> mastication_1"
+  },
+  {
+   "image": 220,
+   "t": 9.167,
+   "max": 4.56,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.08,
+    "coude": 0.07,
+    "poignet": 0.08,
+    "bout_des_doigts": 0.09,
+    "oeil_pendant": 0.77,
+    "gant": 0.0,
+    "sommets_du_bras": 0.09,
+    "pixels_du_corps": 4.56
+   },
+   "passage": "menton -> mastication_1"
+  },
+  {
+   "image": 221,
+   "t": 9.208,
+   "max": 1.865,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.08,
+    "coude": 0.07,
+    "poignet": 0.08,
+    "bout_des_doigts": 0.09,
+    "oeil_pendant": 0.74,
+    "gant": 0.0,
+    "sommets_du_bras": 0.09,
+    "pixels_du_corps": 1.87
+   },
+   "passage": "menton -> mastication_1"
+  },
+  {
+   "image": 222,
+   "t": 9.25,
+   "max": 0.579,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.08,
+    "coude": 0.07,
+    "poignet": 0.08,
+    "bout_des_doigts": 0.09,
+    "oeil_pendant": 0.42,
+    "gant": 0.0,
+    "sommets_du_bras": 0.09,
+    "pixels_du_corps": 0.58
+   },
+   "passage": "mastication_1 -> mastication_2"
+  },
+  {
+   "image": 223,
+   "t": 9.292,
+   "max": 4.112,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.08,
+    "coude": 0.06,
+    "poignet": 0.08,
+    "bout_des_doigts": 0.08,
+    "oeil_pendant": 1.72,
+    "gant": 0.0,
+    "sommets_du_bras": 0.09,
+    "pixels_du_corps": 4.11
+   },
+   "passage": "mastication_1 -> mastication_2"
+  },
+  {
+   "image": 224,
+   "t": 9.333,
+   "max": 5.69,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.06,
+    "poignet": 0.08,
+    "bout_des_doigts": 0.08,
+    "oeil_pendant": 2.48,
+    "gant": 0.0,
+    "sommets_du_bras": 0.09,
+    "pixels_du_corps": 5.69
+   },
+   "passage": "mastication_1 -> mastication_2"
+  },
+  {
+   "image": 225,
+   "t": 9.375,
+   "max": 2.713,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.06,
+    "poignet": 0.07,
+    "bout_des_doigts": 0.08,
+    "oeil_pendant": 0.86,
+    "gant": 0.0,
+    "sommets_du_bras": 0.09,
+    "pixels_du_corps": 2.71
+   },
+   "passage": "mastication_1 -> mastication_2"
+  },
+  {
+   "image": 226,
+   "t": 9.417,
+   "max": 0.751,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.06,
+    "poignet": 0.07,
+    "bout_des_doigts": 0.08,
+    "oeil_pendant": 0.75,
+    "gant": 0.0,
+    "sommets_du_bras": 0.08,
+    "pixels_du_corps": 0.2
+   },
+   "passage": "mastication_2 -> mastication_3"
+  },
+  {
+   "image": 227,
+   "t": 9.458,
+   "max": 2.909,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.05,
+    "poignet": 0.07,
+    "bout_des_doigts": 0.08,
+    "oeil_pendant": 0.72,
+    "gant": 0.0,
+    "sommets_du_bras": 0.08,
+    "pixels_du_corps": 2.91
+   },
+   "passage": "mastication_2 -> mastication_3"
+  },
+  {
+   "image": 228,
+   "t": 9.5,
+   "max": 4.4,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.05,
+    "poignet": 0.07,
+    "bout_des_doigts": 0.07,
+    "oeil_pendant": 1.76,
+    "gant": 0.0,
+    "sommets_du_bras": 0.08,
+    "pixels_du_corps": 4.4
+   },
+   "passage": "mastication_2 -> mastication_3"
+  },
+  {
+   "image": 229,
+   "t": 9.542,
+   "max": 2.255,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.05,
+    "poignet": 0.07,
+    "bout_des_doigts": 0.07,
+    "oeil_pendant": 0.37,
+    "gant": 0.0,
+    "sommets_du_bras": 0.08,
+    "pixels_du_corps": 2.26
+   },
+   "passage": "mastication_2 -> mastication_3"
+  },
+  {
+   "image": 230,
+   "t": 9.583,
+   "max": 1.329,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.05,
+    "poignet": 0.06,
+    "bout_des_doigts": 0.07,
+    "oeil_pendant": 1.33,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.24
+   },
+   "passage": "mastication_3 -> mastication_2"
+  },
+  {
+   "image": 231,
+   "t": 9.625,
+   "max": 2.798,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.05,
+    "poignet": 0.06,
+    "bout_des_doigts": 0.07,
+    "oeil_pendant": 0.28,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 2.8
+   },
+   "passage": "mastication_3 -> mastication_2"
+  },
+  {
+   "image": 232,
+   "t": 9.667,
+   "max": 4.619,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.04,
+    "poignet": 0.06,
+    "bout_des_doigts": 0.06,
+    "oeil_pendant": 1.25,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 4.62
+   },
+   "passage": "mastication_3 -> mastication_2"
+  },
+  {
+   "image": 233,
+   "t": 9.708,
+   "max": 2.68,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.04,
+    "poignet": 0.06,
+    "bout_des_doigts": 0.06,
+    "oeil_pendant": 0.99,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 2.68
+   },
+   "passage": "mastication_3 -> mastication_2"
+  },
+  {
+   "image": 234,
+   "t": 9.75,
+   "max": 1.337,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.04,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.06,
+    "oeil_pendant": 1.34,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.15
+   },
+   "passage": "mastication_3 -> mastication_2"
+  },
+  {
+   "image": 235,
+   "t": 9.792,
+   "max": 3.106,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.04,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.06,
+    "oeil_pendant": 0.63,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 3.11
+   },
+   "passage": "mastication_2 -> mastication_1"
+  },
+  {
+   "image": 236,
+   "t": 9.833,
+   "max": 5.672,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.04,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.06,
+    "oeil_pendant": 1.35,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 5.67
+   },
+   "passage": "mastication_2 -> mastication_1"
+  },
+  {
+   "image": 237,
+   "t": 9.875,
+   "max": 3.576,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.04,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 1.33,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 3.58
+   },
+   "passage": "mastication_2 -> mastication_1"
+  },
+  {
+   "image": 238,
+   "t": 9.917,
+   "max": 1.413,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.04,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 1.41,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 0.23
+   },
+   "passage": "mastication_2 -> mastication_1"
+  },
+  {
+   "image": 239,
+   "t": 9.958,
+   "max": 2.788,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.04,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 1.04,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 2.79
+   },
+   "passage": "mastication_1 -> mastication_2"
+  },
+  {
+   "image": 240,
+   "t": 10.0,
+   "max": 5.645,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.04,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 1.19,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 5.65
+   },
+   "passage": "mastication_1 -> mastication_2"
+  },
+  {
+   "image": 241,
+   "t": 10.042,
+   "max": 3.916,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.04,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 1.59,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 3.92
+   },
+   "passage": "mastication_1 -> mastication_2"
+  },
+  {
+   "image": 242,
+   "t": 10.083,
+   "max": 1.057,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.04,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 1.06,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 0.46
+   },
+   "passage": "mastication_1 -> mastication_2"
+  },
+  {
+   "image": 243,
+   "t": 10.125,
+   "max": 0.27,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.04,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.27,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 0.1
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 244,
+   "t": 10.167,
+   "max": 0.744,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.05,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.74,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 0.47
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 245,
+   "t": 10.208,
+   "max": 1.617,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.05,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 1.62,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 0.98
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 246,
+   "t": 10.25,
+   "max": 1.441,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.05,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.78,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 1.44
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 247,
+   "t": 10.292,
+   "max": 1.9,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.05,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.17,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 1.9
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 248,
+   "t": 10.333,
+   "max": 1.934,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.05,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 1.84,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 1.93
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 249,
+   "t": 10.375,
+   "max": 1.954,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.06,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.06,
+    "oeil_pendant": 0.67,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 1.95
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 250,
+   "t": 10.417,
+   "max": 1.443,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.06,
+    "poignet": 0.05,
+    "bout_des_doigts": 0.06,
+    "oeil_pendant": 0.16,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 1.44
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 251,
+   "t": 10.458,
+   "max": 1.214,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.06,
+    "poignet": 0.06,
+    "bout_des_doigts": 0.06,
+    "oeil_pendant": 1.21,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.99
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 252,
+   "t": 10.5,
+   "max": 0.506,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.06,
+    "poignet": 0.06,
+    "bout_des_doigts": 0.06,
+    "oeil_pendant": 0.11,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.51
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 253,
+   "t": 10.542,
+   "max": 0.493,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.06,
+    "poignet": 0.06,
+    "bout_des_doigts": 0.06,
+    "oeil_pendant": 0.49,
+    "gant": 0.0,
+    "sommets_du_bras": 0.07,
+    "pixels_du_corps": 0.15
+   },
+   "passage": "mastication_2 -> avalement"
+  },
+  {
+   "image": 254,
+   "t": 10.583,
+   "max": 0.75,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.06,
+    "coude": 0.06,
+    "poignet": 0.08,
+    "bout_des_doigts": 0.09,
+    "oeil_pendant": 0.75,
+    "gant": 0.0,
+    "sommets_du_bras": 0.09,
+    "pixels_du_corps": 0.11
+   },
+   "passage": "avalement -> soulagement_inspire"
+  },
+  {
+   "image": 255,
+   "t": 10.625,
+   "max": 0.727,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.09,
+    "coude": 0.05,
+    "poignet": 0.34,
+    "bout_des_doigts": 0.73,
+    "oeil_pendant": 0.63,
+    "gant": 0.0,
+    "sommets_du_bras": 0.49,
+    "pixels_du_corps": 0.65
+   },
+   "passage": "avalement -> soulagement_inspire"
+  },
+  {
+   "image": 256,
+   "t": 10.667,
+   "max": 1.926,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.23,
+    "coude": 0.14,
+    "poignet": 0.85,
+    "bout_des_doigts": 1.93,
+    "oeil_pendant": 1.38,
+    "gant": 0.0,
+    "sommets_du_bras": 1.33,
+    "pixels_du_corps": 1.73
+   },
+   "passage": "avalement -> soulagement_inspire"
+  },
+  {
+   "image": 257,
+   "t": 10.708,
+   "max": 3.398,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.4,
+    "coude": 0.27,
+    "poignet": 1.47,
+    "bout_des_doigts": 3.4,
+    "oeil_pendant": 0.84,
+    "gant": 0.0,
+    "sommets_du_bras": 2.35,
+    "pixels_du_corps": 3.04
+   },
+   "passage": "avalement -> soulagement_inspire"
+  },
+  {
+   "image": 258,
+   "t": 10.75,
+   "max": 4.906,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.58,
+    "coude": 0.41,
+    "poignet": 2.08,
+    "bout_des_doigts": 4.91,
+    "oeil_pendant": 2.35,
+    "gant": 0.0,
+    "sommets_du_bras": 3.35,
+    "pixels_du_corps": 4.36
+   },
+   "passage": "avalement -> soulagement_inspire"
+  },
+  {
+   "image": 259,
+   "t": 10.792,
+   "max": 6.255,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.74,
+    "coude": 0.52,
+    "poignet": 2.62,
+    "bout_des_doigts": 6.25,
+    "oeil_pendant": 2.87,
+    "gant": 0.0,
+    "sommets_du_bras": 4.22,
+    "pixels_du_corps": 5.51
+   },
+   "passage": "avalement -> soulagement_inspire"
+  },
+  {
+   "image": 260,
+   "t": 10.833,
+   "max": 7.278,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.85,
+    "coude": 0.61,
+    "poignet": 3.02,
+    "bout_des_doigts": 7.28,
+    "oeil_pendant": 2.3,
+    "gant": 0.0,
+    "sommets_du_bras": 4.83,
+    "pixels_du_corps": 6.34
+   },
+   "passage": "avalement -> soulagement_inspire"
+  },
+  {
+   "image": 261,
+   "t": 10.875,
+   "max": 7.852,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.91,
+    "coude": 0.65,
+    "poignet": 3.23,
+    "bout_des_doigts": 7.85,
+    "oeil_pendant": 3.33,
+    "gant": 0.0,
+    "sommets_du_bras": 5.14,
+    "pixels_du_corps": 6.78
+   },
+   "passage": "avalement -> soulagement_inspire"
+  },
+  {
+   "image": 262,
+   "t": 10.917,
+   "max": 7.903,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.91,
+    "coude": 0.65,
+    "poignet": 3.24,
+    "bout_des_doigts": 7.9,
+    "oeil_pendant": 3.23,
+    "gant": 0.0,
+    "sommets_du_bras": 5.11,
+    "pixels_du_corps": 6.77
+   },
+   "passage": "avalement -> soulagement_inspire"
+  },
+  {
+   "image": 263,
+   "t": 10.958,
+   "max": 7.417,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.84,
+    "coude": 0.61,
+    "poignet": 3.04,
+    "bout_des_doigts": 7.42,
+    "oeil_pendant": 2.42,
+    "gant": 0.0,
+    "sommets_du_bras": 4.76,
+    "pixels_du_corps": 6.32
+   },
+   "passage": "avalement -> soulagement_inspire"
+  },
+  {
+   "image": 264,
+   "t": 11.0,
+   "max": 6.451,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.73,
+    "coude": 0.52,
+    "poignet": 2.66,
+    "bout_des_doigts": 6.45,
+    "oeil_pendant": 2.87,
+    "gant": 0.0,
+    "sommets_du_bras": 4.12,
+    "pixels_du_corps": 5.46
+   },
+   "passage": "avalement -> soulagement_inspire"
+  },
+  {
+   "image": 265,
+   "t": 11.042,
+   "max": 5.118,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.57,
+    "coude": 0.4,
+    "poignet": 2.13,
+    "bout_des_doigts": 5.12,
+    "oeil_pendant": 2.47,
+    "gant": 0.0,
+    "sommets_du_bras": 3.27,
+    "pixels_du_corps": 4.3
+   },
+   "passage": "avalement -> soulagement_inspire"
+  },
+  {
+   "image": 266,
+   "t": 11.083,
+   "max": 3.588,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.39,
+    "coude": 0.27,
+    "poignet": 1.52,
+    "bout_des_doigts": 3.59,
+    "oeil_pendant": 2.12,
+    "gant": 0.0,
+    "sommets_du_bras": 2.29,
+    "pixels_du_corps": 2.96
+   },
+   "passage": "avalement -> soulagement_inspire"
+  },
+  {
+   "image": 267,
+   "t": 11.125,
+   "max": 2.28,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.21,
+    "coude": 0.13,
+    "poignet": 0.89,
+    "bout_des_doigts": 2.07,
+    "oeil_pendant": 2.28,
+    "gant": 0.0,
+    "sommets_du_bras": 1.33,
+    "pixels_du_corps": 1.63
+   },
+   "passage": "avalement -> soulagement_inspire"
+  },
+  {
+   "image": 268,
+   "t": 11.167,
+   "max": 2.22,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.04,
+    "poignet": 0.38,
+    "bout_des_doigts": 0.82,
+    "oeil_pendant": 2.22,
+    "gant": 0.0,
+    "sommets_du_bras": 0.53,
+    "pixels_du_corps": 0.53
+   },
+   "passage": "avalement -> soulagement_inspire"
+  },
+  {
+   "image": 269,
+   "t": 11.208,
+   "max": 2.163,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.05,
+    "poignet": 0.1,
+    "bout_des_doigts": 0.14,
+    "oeil_pendant": 2.16,
+    "gant": 0.0,
+    "sommets_du_bras": 0.1,
+    "pixels_du_corps": 0.1
+   },
+   "passage": "avalement -> soulagement_inspire"
+  },
+  {
+   "image": 270,
+   "t": 11.25,
+   "max": 1.918,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.07,
+    "poignet": 0.08,
+    "bout_des_doigts": 0.09,
+    "oeil_pendant": 1.92,
+    "gant": 0.0,
+    "sommets_du_bras": 0.09,
+    "pixels_du_corps": 0.21
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 271,
+   "t": 11.292,
+   "max": 1.669,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.12,
+    "coude": 0.14,
+    "poignet": 0.19,
+    "bout_des_doigts": 0.19,
+    "oeil_pendant": 1.67,
+    "gant": 0.0,
+    "sommets_du_bras": 0.22,
+    "pixels_du_corps": 0.38
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 272,
+   "t": 11.333,
+   "max": 1.488,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.19,
+    "coude": 0.26,
+    "poignet": 0.36,
+    "bout_des_doigts": 0.37,
+    "oeil_pendant": 1.49,
+    "gant": 0.0,
+    "sommets_du_bras": 0.43,
+    "pixels_du_corps": 0.65
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 273,
+   "t": 11.375,
+   "max": 0.984,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.29,
+    "coude": 0.42,
+    "poignet": 0.58,
+    "bout_des_doigts": 0.59,
+    "oeil_pendant": 0.95,
+    "gant": 0.0,
+    "sommets_du_bras": 0.71,
+    "pixels_du_corps": 0.98
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 274,
+   "t": 11.417,
+   "max": 1.355,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.4,
+    "coude": 0.6,
+    "poignet": 0.82,
+    "bout_des_doigts": 0.84,
+    "oeil_pendant": 0.9,
+    "gant": 0.0,
+    "sommets_du_bras": 1.01,
+    "pixels_du_corps": 1.36
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 275,
+   "t": 11.458,
+   "max": 1.736,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.51,
+    "coude": 0.78,
+    "poignet": 1.06,
+    "bout_des_doigts": 1.09,
+    "oeil_pendant": 1.14,
+    "gant": 0.0,
+    "sommets_du_bras": 1.32,
+    "pixels_du_corps": 1.74
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 276,
+   "t": 11.5,
+   "max": 2.103,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.62,
+    "coude": 0.95,
+    "poignet": 1.3,
+    "bout_des_doigts": 1.33,
+    "oeil_pendant": 0.81,
+    "gant": 0.0,
+    "sommets_du_bras": 1.62,
+    "pixels_du_corps": 2.1
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 277,
+   "t": 11.542,
+   "max": 2.437,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.71,
+    "coude": 1.11,
+    "poignet": 1.51,
+    "bout_des_doigts": 1.54,
+    "oeil_pendant": 1.42,
+    "gant": 0.0,
+    "sommets_du_bras": 1.89,
+    "pixels_du_corps": 2.44
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 278,
+   "t": 11.583,
+   "max": 2.721,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.8,
+    "coude": 1.24,
+    "poignet": 1.68,
+    "bout_des_doigts": 1.72,
+    "oeil_pendant": 1.83,
+    "gant": 0.0,
+    "sommets_du_bras": 2.11,
+    "pixels_du_corps": 2.72
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 279,
+   "t": 11.625,
+   "max": 2.943,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.86,
+    "coude": 1.34,
+    "poignet": 1.81,
+    "bout_des_doigts": 1.85,
+    "oeil_pendant": 1.81,
+    "gant": 0.0,
+    "sommets_du_bras": 2.29,
+    "pixels_du_corps": 2.94
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 280,
+   "t": 11.667,
+   "max": 3.092,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.9,
+    "coude": 1.4,
+    "poignet": 1.89,
+    "bout_des_doigts": 1.94,
+    "oeil_pendant": 2.27,
+    "gant": 0.0,
+    "sommets_du_bras": 2.4,
+    "pixels_du_corps": 3.09
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 281,
+   "t": 11.708,
+   "max": 3.162,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.92,
+    "coude": 1.43,
+    "poignet": 1.92,
+    "bout_des_doigts": 1.97,
+    "oeil_pendant": 2.5,
+    "gant": 0.0,
+    "sommets_du_bras": 2.44,
+    "pixels_du_corps": 3.16
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 282,
+   "t": 11.75,
+   "max": 3.15,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.91,
+    "coude": 1.41,
+    "poignet": 1.9,
+    "bout_des_doigts": 1.94,
+    "oeil_pendant": 2.42,
+    "gant": 0.0,
+    "sommets_du_bras": 2.42,
+    "pixels_du_corps": 3.15
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 283,
+   "t": 11.792,
+   "max": 3.057,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.88,
+    "coude": 1.36,
+    "poignet": 1.82,
+    "bout_des_doigts": 1.87,
+    "oeil_pendant": 2.65,
+    "gant": 0.0,
+    "sommets_du_bras": 2.34,
+    "pixels_du_corps": 3.06
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 284,
+   "t": 11.833,
+   "max": 2.887,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.83,
+    "coude": 1.28,
+    "poignet": 1.7,
+    "bout_des_doigts": 1.74,
+    "oeil_pendant": 2.63,
+    "gant": 0.0,
+    "sommets_du_bras": 2.19,
+    "pixels_du_corps": 2.89
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 285,
+   "t": 11.875,
+   "max": 2.645,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.76,
+    "coude": 1.16,
+    "poignet": 1.54,
+    "bout_des_doigts": 1.58,
+    "oeil_pendant": 2.41,
+    "gant": 0.0,
+    "sommets_du_bras": 1.99,
+    "pixels_du_corps": 2.65
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 286,
+   "t": 11.917,
+   "max": 2.4,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.66,
+    "coude": 1.01,
+    "poignet": 1.34,
+    "bout_des_doigts": 1.37,
+    "oeil_pendant": 2.4,
+    "gant": 0.0,
+    "sommets_du_bras": 1.74,
+    "pixels_du_corps": 2.34
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 287,
+   "t": 11.958,
+   "max": 2.172,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.56,
+    "coude": 0.85,
+    "poignet": 1.12,
+    "bout_des_doigts": 1.15,
+    "oeil_pendant": 2.17,
+    "gant": 0.0,
+    "sommets_du_bras": 1.46,
+    "pixels_du_corps": 2.0
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 288,
+   "t": 12.0,
+   "max": 1.841,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.44,
+    "coude": 0.67,
+    "poignet": 0.89,
+    "bout_des_doigts": 0.91,
+    "oeil_pendant": 1.84,
+    "gant": 0.0,
+    "sommets_du_bras": 1.16,
+    "pixels_du_corps": 1.63
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 289,
+   "t": 12.042,
+   "max": 1.652,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.33,
+    "coude": 0.5,
+    "poignet": 0.65,
+    "bout_des_doigts": 0.67,
+    "oeil_pendant": 1.65,
+    "gant": 0.0,
+    "sommets_du_bras": 0.86,
+    "pixels_du_corps": 1.25
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 290,
+   "t": 12.083,
+   "max": 1.32,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.22,
+    "coude": 0.33,
+    "poignet": 0.43,
+    "bout_des_doigts": 0.44,
+    "oeil_pendant": 1.32,
+    "gant": 0.0,
+    "sommets_du_bras": 0.57,
+    "pixels_du_corps": 0.89
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 291,
+   "t": 12.125,
+   "max": 0.985,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.13,
+    "coude": 0.19,
+    "poignet": 0.24,
+    "bout_des_doigts": 0.25,
+    "oeil_pendant": 0.98,
+    "gant": 0.0,
+    "sommets_du_bras": 0.32,
+    "pixels_du_corps": 0.58
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 292,
+   "t": 12.167,
+   "max": 0.716,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.07,
+    "coude": 0.08,
+    "poignet": 0.1,
+    "bout_des_doigts": 0.1,
+    "oeil_pendant": 0.72,
+    "gant": 0.0,
+    "sommets_du_bras": 0.14,
+    "pixels_du_corps": 0.35
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 293,
+   "t": 12.208,
+   "max": 0.403,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.04,
+    "poignet": 0.03,
+    "bout_des_doigts": 0.03,
+    "oeil_pendant": 0.4,
+    "gant": 0.0,
+    "sommets_du_bras": 0.05,
+    "pixels_du_corps": 0.23
+   },
+   "passage": "soulagement_inspire -> soulagement"
+  },
+  {
+   "image": 294,
+   "t": 12.25,
+   "max": 0.185,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.05,
+    "coude": 0.04,
+    "poignet": 0.04,
+    "bout_des_doigts": 0.05,
+    "oeil_pendant": 0.13,
+    "gant": 0.0,
+    "sommets_du_bras": 0.06,
+    "pixels_du_corps": 0.19
+   },
+   "passage": "soulagement -> repos"
+  },
+  {
+   "image": 295,
+   "t": 12.292,
+   "max": 0.189,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.08,
+    "coude": 0.08,
+    "poignet": 0.12,
+    "bout_des_doigts": 0.19,
+    "oeil_pendant": 0.14,
+    "gant": 0.0,
+    "sommets_du_bras": 0.13,
+    "pixels_du_corps": 0.12
+   },
+   "passage": "soulagement -> repos"
+  },
+  {
+   "image": 296,
+   "t": 12.333,
+   "max": 0.441,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.14,
+    "coude": 0.14,
+    "poignet": 0.26,
+    "bout_des_doigts": 0.41,
+    "oeil_pendant": 0.44,
+    "gant": 0.0,
+    "sommets_du_bras": 0.28,
+    "pixels_du_corps": 0.24
+   },
+   "passage": "soulagement -> repos"
+  },
+  {
+   "image": 297,
+   "t": 12.375,
+   "max": 0.72,
+   "point": "oeil_pendant",
+   "detail": {
+    "epaule": 0.21,
+    "coude": 0.22,
+    "poignet": 0.42,
+    "bout_des_doigts": 0.67,
+    "oeil_pendant": 0.72,
+    "gant": 0.0,
+    "sommets_du_bras": 0.47,
+    "pixels_du_corps": 0.45
+   },
+   "passage": "soulagement -> repos"
+  },
+  {
+   "image": 298,
+   "t": 12.417,
+   "max": 0.942,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.29,
+    "coude": 0.3,
+    "poignet": 0.58,
+    "bout_des_doigts": 0.94,
+    "oeil_pendant": 0.84,
+    "gant": 0.0,
+    "sommets_du_bras": 0.67,
+    "pixels_du_corps": 0.71
+   },
+   "passage": "soulagement -> repos"
+  },
+  {
+   "image": 299,
+   "t": 12.458,
+   "max": 1.2,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.37,
+    "coude": 0.37,
+    "poignet": 0.74,
+    "bout_des_doigts": 1.2,
+    "oeil_pendant": 1.07,
+    "gant": 0.0,
+    "sommets_du_bras": 0.86,
+    "pixels_du_corps": 0.95
+   },
+   "passage": "soulagement -> repos"
+  },
+  {
+   "image": 300,
+   "t": 12.5,
+   "max": 1.422,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.44,
+    "coude": 0.44,
+    "poignet": 0.88,
+    "bout_des_doigts": 1.42,
+    "oeil_pendant": 1.22,
+    "gant": 0.0,
+    "sommets_du_bras": 1.02,
+    "pixels_du_corps": 1.17
+   },
+   "passage": "soulagement -> repos"
+  },
+  {
+   "image": 301,
+   "t": 12.542,
+   "max": 1.592,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.49,
+    "coude": 0.49,
+    "poignet": 0.98,
+    "bout_des_doigts": 1.59,
+    "oeil_pendant": 1.21,
+    "gant": 0.0,
+    "sommets_du_bras": 1.14,
+    "pixels_du_corps": 1.33
+   },
+   "passage": "soulagement -> repos"
+  },
+  {
+   "image": 302,
+   "t": 12.583,
+   "max": 1.698,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.52,
+    "coude": 0.52,
+    "poignet": 1.04,
+    "bout_des_doigts": 1.7,
+    "oeil_pendant": 1.31,
+    "gant": 0.0,
+    "sommets_du_bras": 1.21,
+    "pixels_du_corps": 1.43
+   },
+   "passage": "soulagement -> repos"
+  },
+  {
+   "image": 303,
+   "t": 12.625,
+   "max": 1.732,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.53,
+    "coude": 0.53,
+    "poignet": 1.07,
+    "bout_des_doigts": 1.73,
+    "oeil_pendant": 1.29,
+    "gant": 0.0,
+    "sommets_du_bras": 1.23,
+    "pixels_du_corps": 1.46
+   },
+   "passage": "soulagement -> repos"
+  },
+  {
+   "image": 304,
+   "t": 12.667,
+   "max": 1.693,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.52,
+    "coude": 0.52,
+    "poignet": 1.04,
+    "bout_des_doigts": 1.69,
+    "oeil_pendant": 1.14,
+    "gant": 0.0,
+    "sommets_du_bras": 1.2,
+    "pixels_du_corps": 1.42
+   },
+   "passage": "soulagement -> repos"
+  },
+  {
+   "image": 305,
+   "t": 12.708,
+   "max": 1.581,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.49,
+    "coude": 0.49,
+    "poignet": 0.97,
+    "bout_des_doigts": 1.58,
+    "oeil_pendant": 1.11,
+    "gant": 0.0,
+    "sommets_du_bras": 1.12,
+    "pixels_du_corps": 1.32
+   },
+   "passage": "soulagement -> repos"
+  },
+  {
+   "image": 306,
+   "t": 12.75,
+   "max": 1.406,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.44,
+    "coude": 0.44,
+    "poignet": 0.87,
+    "bout_des_doigts": 1.41,
+    "oeil_pendant": 0.96,
+    "gant": 0.0,
+    "sommets_du_bras": 0.99,
+    "pixels_du_corps": 1.16
+   },
+   "passage": "soulagement -> repos"
+  },
+  {
+   "image": 307,
+   "t": 12.792,
+   "max": 1.179,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.37,
+    "coude": 0.38,
+    "poignet": 0.73,
+    "bout_des_doigts": 1.18,
+    "oeil_pendant": 0.73,
+    "gant": 0.0,
+    "sommets_du_bras": 0.83,
+    "pixels_du_corps": 0.95
+   },
+   "passage": "soulagement -> repos"
+  },
+  {
+   "image": 308,
+   "t": 12.833,
+   "max": 0.919,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.3,
+    "coude": 0.3,
+    "poignet": 0.57,
+    "bout_des_doigts": 0.92,
+    "oeil_pendant": 0.61,
+    "gant": 0.0,
+    "sommets_du_bras": 0.64,
+    "pixels_du_corps": 0.71
+   },
+   "passage": "soulagement -> repos"
+  },
+  {
+   "image": 309,
+   "t": 12.875,
+   "max": 0.647,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.22,
+    "coude": 0.23,
+    "poignet": 0.41,
+    "bout_des_doigts": 0.65,
+    "oeil_pendant": 0.42,
+    "gant": 0.0,
+    "sommets_du_bras": 0.45,
+    "pixels_du_corps": 0.46
+   },
+   "passage": "soulagement -> repos"
+  },
+  {
+   "image": 310,
+   "t": 12.917,
+   "max": 0.391,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.15,
+    "coude": 0.16,
+    "poignet": 0.26,
+    "bout_des_doigts": 0.39,
+    "oeil_pendant": 0.21,
+    "gant": 0.0,
+    "sommets_du_bras": 0.28,
+    "pixels_du_corps": 0.25
+   },
+   "passage": "soulagement -> repos"
+  },
+  {
+   "image": 311,
+   "t": 12.958,
+   "max": 0.185,
+   "point": "bout_des_doigts",
+   "detail": {
+    "epaule": 0.1,
+    "coude": 0.1,
+    "poignet": 0.13,
+    "bout_des_doigts": 0.19,
+    "oeil_pendant": 0.1,
+    "gant": 0.0,
+    "sommets_du_bras": 0.14,
+    "pixels_du_corps": 0.16
+   },
+   "passage": "soulagement -> repos"
+  },
+  {
+   "image": 312,
+   "t": 13.0,
+   "max": 0.157,
+   "point": "pixels_du_corps",
+   "detail": {
+    "epaule": 0.08,
+    "coude": 0.07,
+    "poignet": 0.07,
+    "bout_des_doigts": 0.07,
+    "oeil_pendant": 0.06,
+    "gant": 0.0,
+    "sommets_du_bras": 0.09,
+    "pixels_du_corps": 0.16
+   },
+   "passage": "soulagement -> repos"
+  }
+ ],
+ "contact_bouche_pixels": [
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.5,
+  5.4,
+  11.2,
+  13.9,
+  14.5,
+  17.5,
+  20.8,
+  20.0,
+  19.2,
+  19.3,
+  21.6,
+  46.9,
+  96.3,
+  88.2,
+  76.7,
+  67.3,
+  20.5,
+  1.7,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.1,
+  0.1,
+  0.4,
+  0.8,
+  4.1,
+  11.1,
+  13.7,
+  14.4,
+  17.8,
+  33.7,
+  25.7,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0
+ ],
+ "yeux_par_image": [
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  2,
+  2,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "gif": {
+  "couleurs": 256,
+  "octets": 6408883
+ },
+ "mp4": {
+  "octets": 905089
+ },
+ "repli_precalcul": {
+  "rectangle": [
+   270,
+   310
+  ],
+  "images": 312,
+  "octets_rgba_brut": 104457600,
+  "octets_palette_256_brut": 26114400,
+  "octets_png_256_couleurs_mesure": 15876921
+ },
+ "cles": [
+  {
+   "fichier": "cle-1.png",
+   "t": 0.5,
+   "image": 12,
+   "montre": "repos"
+  },
+  {
+   "fichier": "cle-2.png",
+   "t": 2.96,
+   "image": 71,
+   "montre": "le gant dépose le morceau"
+  },
+  {
+   "fichier": "cle-3.png",
+   "t": 4.75,
+   "image": 114,
+   "montre": "la main saisit le morceau"
+  },
+  {
+   "fichier": "cle-4.png",
+   "t": 6.17,
+   "image": 148,
+   "montre": "le morceau à la bouche (morsure)"
+  },
+  {
+   "fichier": "cle-5.png",
+   "t": 6.04,
+   "image": 145,
+   "montre": "mâchoire ouverte"
+  },
+  {
+   "fichier": "cle-6.png",
+   "t": 10.25,
+   "image": 246,
+   "montre": "avalé (renflement dans le cou, plus rien dans la main)"
+  }
+ ]
+}

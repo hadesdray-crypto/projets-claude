@@ -1,0 +1,73 @@
+{
+  "nom": "thomas_mange",
+  "description": "Un gant de laboratoire apporte un morceau de chair crue, Thomas le saisit, en mange deux bouchées, soupire et revient au repos. 13 s, boucle continue.",
+  "duree": 13.0,
+  "boucle": true,
+  "recettes": {"thomas": ["repos_vivant"]},
+  "pistes": {
+    "thomas": [
+      {"pose": "repos", "tenir": 2.1},
+      {"pose": "regard_gant", "duree": 0.35, "courbe": "doux", "tenir": 0.45},
+      {"pose": "regard_morceau", "duree": 0.3, "courbe": "doux"},
+      {"pose": "anticipation", "duree": 0.35, "courbe": "doux"},
+      {"pose": "bras_part", "duree": 0.35, "courbe": "spline"},
+      {"pose": "bras_mi_chemin", "duree": 0.35, "courbe": "spline"},
+      {"pose": "main_saisit", "duree": 0.3, "courbe": "spline"},
+      {"pose": "main_fermee", "duree": 0.2, "courbe": "doux"},
+      {"pose": "bras_leve", "duree": 0.4, "courbe": "spline"},
+      {"pose": "bras_presque_bouche", "duree": 0.35, "courbe": "spline"},
+      {"pose": "main_bouche", "duree": 0.3, "courbe": "spline"},
+      {"pose": "bouche_ouverte", "duree": 0.25, "courbe": "doux"},
+      {"pose": "morsure", "duree": 0.2, "courbe": "doux"},
+      {"pose": "bras_presque_bouche", "duree": 0.25, "courbe": "doux"},
+      {"pose": "mastication_1", "duree": 0.17, "courbe": "doux"},
+      {"pose": "mastication_2", "duree": 0.17, "courbe": "doux"},
+      {"pose": "mastication_3", "duree": 0.17, "courbe": "doux"},
+      {"pose": "mastication_2", "duree": 0.17, "courbe": "doux"},
+      {"pose": "mastication_1", "duree": 0.17, "courbe": "doux"},
+      {"pose": "mastication_2", "duree": 0.17, "courbe": "doux"},
+      {"pose": "avalement", "duree": 0.48, "courbe": "doux"},
+      {"pose": "main_bouche", "duree": 0.3, "courbe": "doux", "valeurs": {"zones": {"cou_deglutition": 1.0}}},
+      {"pose": "bouche_ouverte", "duree": 0.2, "courbe": "doux", "valeurs": {"zones": {"cou_deglutition": 1.0}}},
+      {"pose": "morsure", "duree": 0.2, "courbe": "doux", "valeurs": {"zones": {"cou_deglutition": 1.0}}},
+      {"pose": "menton", "duree": 0.35, "courbe": "doux", "valeurs": {"zones": {"cou_deglutition": 1.0}}},
+      {"pose": "mastication_1", "duree": 0.17, "courbe": "doux"},
+      {"pose": "mastication_2", "duree": 0.17, "courbe": "doux"},
+      {"pose": "mastication_3", "duree": 0.17, "courbe": "doux"},
+      {"pose": "mastication_2", "duree": 0.17, "courbe": "doux"},
+      {"pose": "mastication_1", "duree": 0.17, "courbe": "doux"},
+      {"pose": "mastication_2", "duree": 0.17, "courbe": "doux"},
+      {"pose": "avalement", "duree": 0.48, "courbe": "doux", "valeurs": {"zones": {"cou_deglutition": 2.0}}},
+      {"pose": "soulagement_inspire", "duree": 0.65, "courbe": "doux", "valeurs": {"zones": {"cou_deglutition": 2.0}}},
+      {"pose": "soulagement", "duree": 1.0, "courbe": "doux", "valeurs": {"zones": {"cou_deglutition": 2.0}}},
+      {"pose": "repos", "duree": 0.8, "courbe": "doux", "valeurs": {"zones": {"cou_deglutition": 2.0}}}
+    ],
+    "gant": [
+      {"valeurs": {"x": 392.0, "y": -36.0, "angle": 10.0, "ouverture": 0.0}, "tenir": 2.0},
+      {"valeurs": {"x": 334.0, "y": 200.0, "angle": 4.0, "ouverture": 0.0}, "duree": 0.55, "courbe": "spline"},
+      {"valeurs": {"x": 322.0, "y": 262.0, "angle": 0.0, "ouverture": 0.0}, "duree": 0.27, "courbe": "spline", "tenir": 0.05},
+      {"valeurs": {"ouverture": 1.0}, "duree": 0.12, "courbe": "doux"},
+      {"valeurs": {"x": 392.0, "y": -36.0, "angle": 10.0, "ouverture": 0.0}, "duree": 0.6, "courbe": "doux"}
+    ],
+    "morceau": [
+      {"valeurs": {"visible": 1, "attache": "gant", "decalage": [0.0, 9.0], "x": 322.0, "y": 271.0, "angle": 0.0, "angle_main": -48.0, "ecrasement": 0.0, "bouchees": 0.0}, "tenir": 2.95},
+      {"valeurs": {"attache": "libre", "x": 322.0, "y": 271.0, "angle": 0.0}, "duree": 0.0},
+      {"valeurs": {"x": 303.0, "y": 319.0, "angle": 10.0}, "duree": 0.26, "courbe": "chute"},
+      {"valeurs": {"ecrasement": 0.32}, "duree": 0.04, "courbe": "sortie"},
+      {"valeurs": {"ecrasement": 0.0}, "duree": 0.25, "courbe": "doux", "tenir": 1.25},
+      {"valeurs": {"attache": "main"}, "duree": 0.0},
+      {"valeurs": {"angle_main": 120.0}, "duree": 1.05, "courbe": "doux", "tenir": 0.31},
+      {"valeurs": {"bouchees": 1.0}, "duree": 0.14, "courbe": "doux", "tenir": 2.31},
+      {"valeurs": {"bouchees": 2.0}, "duree": 0.14, "courbe": "doux"},
+      {"valeurs": {"visible": 0}, "duree": 0.0}
+    ],
+    "mouches": [
+      {"valeurs": {"agitation": 0.0, "attraction": 0.0}, "tenir": 2.2},
+      {"valeurs": {"agitation": 0.6}, "duree": 0.4, "courbe": "doux"},
+      {"valeurs": {"agitation": 1.0, "attraction": 0.0}, "duree": 0.6, "courbe": "doux"},
+      {"valeurs": {"agitation": 0.35, "attraction": 0.85}, "duree": 1.3, "courbe": "doux", "tenir": 3.3},
+      {"valeurs": {"agitation": 0.8, "attraction": 0.0}, "duree": 1.4, "courbe": "doux"},
+      {"valeurs": {"agitation": 0.0}, "duree": 2.0, "courbe": "doux"}
+    ]
+  }
+}
