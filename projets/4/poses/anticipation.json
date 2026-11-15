@@ -1,0 +1,10 @@
+{
+  "nom": "anticipation",
+  "description": "Tension avant le geste : recul du bassin, genoux qui plient un peu, épaules qui montent, inspiration, main qui s'ouvre.",
+  "squelette": {"racine": 0.0, "racine_x": -2.5, "racine_y": 2.0, "tronc": -1.0, "cou": 0.0, "epaule": -8.0, "coude": -12.0, "poignet": -12.0, "main_fermeture": 0.05, "epaule2": -5.0, "coude2": 0.0, "pied_g_x": 0.0, "pied_g_y": 0.0, "pied_g": 0.0, "pied_d_x": 0.0, "pied_d_y": 0.0, "pied_d": 0.0},
+  "corps": {"inclinaison": -1.5, "x": 0.0, "y": 0.0, "epaules": -1.5, "poitrine": 0.8},
+  "zones": {"tete_rotation": 5.0, "tete_x": 1.5, "tete_y": 0.0, "machoire": 0.35, "joues": 0.0, "sourire": 0.0, "paupieres": 0.0, "cou_deglutition": 0.0, "oeil_pendant_regard": -20.0},
+  "vie": {"eveil": 1.0, "sommeil": 0.0, "frisson": 0.0},
+  "physique": {"sol_oeil": 2000.0},
+  "attaches": {"prise_main": [15.0, 2.0]}
+}
