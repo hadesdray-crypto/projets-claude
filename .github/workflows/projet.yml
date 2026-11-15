@@ -1,0 +1,56 @@
+name: Projet Claude
+on:
+  issues:
+    types: [opened]
+  issue_comment:
+    types: [created]
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  id-token: write
+jobs:
+  projet:
+    if: github.event_name == 'issues' || (github.event_name == 'issue_comment' && !github.event.issue.pull_request && contains(github.event.comment.body, '@claude'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    concurrency:
+      group: projet-${{ github.event.issue.number }}
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Choix du modele
+        id: m
+        env:
+          TEXTE: ${{ github.event.issue.body }}
+        run: |
+          M=$(printf '%s' "$TEXTE" | grep -oiE 'mod.{1,2}le *: *(fable|opus|sonnet|haiku)' | head -1 | grep -oiE 'fable|opus|sonnet|haiku' | tr 'A-Z' 'a-z' || true)
+          case "$M" in
+            fable) ID=claude-fable-5-2;;
+            opus) ID=claude-opus-5-5;;
+            haiku) ID=claude-haiku-5-5;;
+            *) ID=claude-sonnet-5-5;;
+          esac
+          echo "id=$ID" >> "$GITHUB_OUTPUT"
+      - uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          claude_args: >-
+            --model ${{ steps.m.outputs.id }}
+            --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch"
+          prompt: |
+            Tu travailles pour le propriétaire de ce dépôt. Réponds et écris toujours en français, sans mots anglais inutiles.
+            Projet : demande n°${{ github.event.issue.number }} — « ${{ github.event.issue.title }} ».
+            Lis la demande complète (et ses commentaires) avec : gh issue view ${{ github.event.issue.number }} --comments
+
+            Règles :
+            1. Réalise exactement la demande, sans rien ajouter qu'il n'a pas demandé. Tout finalisé, vérifié une fois au bon endroit.
+            2. Range tout dans le dossier projets/${{ github.event.issue.number }}/ (crée-le).
+            3. IA gratuites sans compte, en cascade (si l'une échoue, la suivante) :
+               - images : curl -fL -o fichier.jpg "https://image.pollinations.ai/prompt/<texte encodé>?width=1024&height=1024&nologo=true" ; si échec, dessine l'image en SVG par le code.
+               - musique, voix, vidéo : cherche une voie gratuite sans compte qui fonctionne vraiment ; sinon produis-la par le code (synthèse audio, animation) et dis-le.
+               Pas de solution payante. Aucune information personnelle dans les fichiers.
+            4. Vérifie le résultat (ouvre/lis les fichiers produits), puis : git add, git commit, git push sur la branche principale.
+            5. Termine par un commentaire sur la demande (gh issue comment ${{ github.event.issue.number }} --body ...) : ce qui a été fait en phrases courtes, liens directs vers les fichiers (https://github.com/${{ github.repository }}/tree/main/projets/${{ github.event.issue.number }}), limites honnêtes. Pas de supposition : ce qui n'est pas vérifié est écrit « non vérifié ».
