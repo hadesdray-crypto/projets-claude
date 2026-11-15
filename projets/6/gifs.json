@@ -1,4 +1,32 @@
 [
- {"numero": 1, "fichier": "1-repos-vivant.gif", "duree": 3.0,
-  "avant": {"sequence": "g1_avant"}, "apres": {"sequence": "g1_apres"}, "etiquettes": {"avant": "avant", "apres": "après"}}
+ {
+  "numero": 1,
+  "fichier": "1-repos-vivant.gif",
+  "duree": 3.0,
+  "avant": {
+   "sequence": "g1_avant"
+  },
+  "apres": {
+   "sequence": "g1_apres"
+  },
+  "etiquettes": {
+   "avant": "avant",
+   "apres": "après"
+  }
+ },
+ {
+  "numero": 2,
+  "fichier": "2-joie.gif",
+  "duree": 3.0,
+  "avant": {
+   "sequence": "g2_avant"
+  },
+  "apres": {
+   "sequence": "g2_apres"
+  },
+  "etiquettes": {
+   "avant": "avant",
+   "apres": "après"
+  }
+ }
 ]

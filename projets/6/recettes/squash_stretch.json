@@ -1,0 +1,11 @@
+{
+  "nom": "squash_stretch",
+  "description": "Écrasement (valeur > 0) et étirement (valeur < 0) du corps, pilotés par le paramètre de pose « anim.ecrasement » (0 = neutre). Le bassin descend et le haut du corps s'élargit à l'écrasement ; l'inverse à l'étirement (le volume apparent est à peu près conservé : plus bas = plus large, plus haut = plus fin). Chaque couche a une « amplitude » (px ou unités du moteur par unité de valeur).",
+  "couches": [
+    {"parametre": "squelette.racine_y", "amplitude": 4.5, "courbe": "constante", "module": "anim.ecrasement", "module_defaut": 0.0},
+    {"parametre": "corps.epaules", "amplitude": 1.6, "courbe": "constante", "module": "anim.ecrasement", "module_defaut": 0.0},
+    {"parametre": "corps.poitrine", "amplitude": 1.4, "courbe": "constante", "module": "anim.ecrasement", "module_defaut": 0.0},
+    {"parametre": "zones.tete_echelle", "amplitude": 2.5, "courbe": "constante", "module": "anim.ecrasement", "module_defaut": 0.0},
+    {"parametre": "zones.tete_y", "amplitude": 1.2, "courbe": "constante", "module": "anim.ecrasement", "module_defaut": 0.0}
+  ]
+}

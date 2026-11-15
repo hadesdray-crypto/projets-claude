@@ -1,0 +1,13 @@
+{"nom": "g2_avant", "duree": 3.0, "boucle": true, "description": "Joie actuelle (poses de projets/5, durées raccourcies à 3 s) : pas d'anticipation marquée, ni écrasement ni étirement.",
+ "recettes": {"thomas": ["vie_avant_3s"]},
+ "pistes": {"thomas": [
+  {"pose": "repos", "tenir": 0.3, "valeurs": {"physique": {"tige_devant": 1.0}}},
+  {"pose": "joie_elan", "duree": 0.4, "courbe": "doux"},
+  {"pose": "joie_saut", "duree": 0.4, "courbe": "spline"},
+  {"pose": "joie_bras_hauts", "duree": 0.3, "courbe": "spline"},
+  {"pose": "joie_creux", "duree": 0.3, "courbe": "spline"},
+  {"pose": "joie_petit_saut", "duree": 0.3, "courbe": "spline"},
+  {"pose": "joie_bras_hauts", "duree": 0.3, "courbe": "spline"},
+  {"pose": "joie_bras_milieu", "duree": 0.3, "courbe": "doux"},
+  {"pose": "repos", "duree": 0.4, "courbe": "doux"}
+ ]}}

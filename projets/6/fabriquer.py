@@ -19,7 +19,7 @@ FPS = 30
 RECADRE = (0, 20, 400, 450)      # zone de la scène gardée (Thomas, gant, morceau)
 ECHELLE = 0.8
 BANDEAU = 26
-LIMITE = 2.5 * 1024 * 1024
+LIMITE = 2_400_000                 # sous 2,5 Mo même en mégaoctets décimaux
 
 
 def police(taille):

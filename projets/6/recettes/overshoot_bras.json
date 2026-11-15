@@ -1,0 +1,11 @@
+{
+  "nom": "overshoot_bras",
+  "description": "Dépassement des bras : à chaque instant listé, les bras dépassent leur pose puis reviennent en oscillant (ressort amorti). Paramètres par couche : instants (s dans la période), frequence (Hz), amortissement (1/s), amplitude (degrés ; le signe donne le sens du dépassement). Couche « haut » = bras qui montent, couche « bas » = bras qui retombent.",
+  "couches": [
+    {"parametre": "squelette.epaule", "amplitude": -16.0, "duree": 3.0, "courbe": "ressort", "frequence": 3.2, "amortissement": 5.5, "instants": [0.83, 1.52]},
+    {"parametre": "squelette.epaule2", "amplitude": 14.0, "duree": 3.0, "courbe": "ressort", "frequence": 3.2, "amortissement": 5.5, "instants": [0.83, 1.52]},
+    {"parametre": "squelette.epaule", "amplitude": 10.0, "duree": 3.0, "courbe": "ressort", "frequence": 3.2, "amortissement": 5.5, "instants": [1.19, 1.9]},
+    {"parametre": "squelette.epaule2", "amplitude": -9.0, "duree": 3.0, "courbe": "ressort", "frequence": 3.2, "amortissement": 5.5, "instants": [1.19, 1.9]},
+    {"parametre": "squelette.coude", "amplitude": 8.0, "duree": 3.0, "courbe": "ressort", "frequence": 4.0, "amortissement": 6.0, "phase": 0.02, "instants": [0.83, 1.19, 1.52, 1.9]}
+  ]
+}

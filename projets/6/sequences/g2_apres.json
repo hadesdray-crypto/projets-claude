@@ -1,0 +1,14 @@
+{"nom": "g2_apres", "duree": 3.0, "boucle": true, "description": "Joie avec anticipation (accroupi écrasé), étirement au saut (snap), écrasement à l'atterrissage, dépassement des bras (recette overshoot_bras), micro-vie.",
+ "recettes": {"thomas": ["micro_vie", "squash_stretch", "overshoot_bras"]},
+ "pistes": {"thomas": [
+  {"pose": "repos", "tenir": 0.25, "valeurs": {"physique": {"tige_devant": 1.0}, "anim": {"ecrasement": 0.0}}},
+  {"pose": "joie_elan", "duree": 0.3, "courbe": "doux", "tenir": 0.1, "valeurs": {"anim": {"ecrasement": 1.0}}},
+  {"pose": "joie_saut", "duree": 0.2, "courbe": "sortie", "tenir": 0.12, "valeurs": {"anim": {"ecrasement": -1.0}}},
+  {"pose": "joie_creux", "duree": 0.22, "courbe": "chute", "tenir": 0.08, "valeurs": {"anim": {"ecrasement": 1.5}}},
+  {"pose": "joie_petit_saut", "duree": 0.25, "courbe": "sortie", "valeurs": {"anim": {"ecrasement": -0.6}}},
+  {"pose": "joie_bras_hauts", "duree": 0.25, "courbe": "doux", "valeurs": {"anim": {"ecrasement": 0.0}}},
+  {"pose": "joie_creux", "duree": 0.23, "courbe": "chute", "valeurs": {"anim": {"ecrasement": 1.0}}},
+  {"pose": "joie_bras_milieu", "duree": 0.35, "courbe": "doux", "valeurs": {"anim": {"ecrasement": 0.0}}},
+  {"pose": "joie_calme", "duree": 0.35, "courbe": "doux"},
+  {"pose": "repos", "duree": 0.7, "courbe": "doux"}
+ ]}}
