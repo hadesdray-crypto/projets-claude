@@ -1,0 +1,40 @@
+{
+ "toits_orange": {
+  "n": 102,
+  "decalage_est_moy_m": -1.028156745914414,
+  "decalage_nord_moy_m": 0.09714487470908695,
+  "decalage_median_m": 1.57377353000274,
+  "decalage_p90_m": 2.6225321462966917,
+  "iou_median": 0.5888866532528504
+ },
+ "hauteur_lidar_moins_bdtopo": {
+  "n": 266,
+  "mediane_m": 0.6761027574539185,
+  "ecart_abs_median_m": 0.7629929780960083,
+  "ecart_abs_p90_m": 3.433932304382324
+ },
+ "hauteurs": {
+  "batiments": 519,
+  "avec_hauteur": 504,
+  "valeur_par_defaut_3m": 15,
+  "min": 1,
+  "mediane": 3.6,
+  "max": 14.2
+ },
+ "arbres": {
+  "n": 3453,
+  "h_mediane": 6.9,
+  "h_max": 22.0,
+  "h_p90": 15.6
+ },
+ "relief_camping_MNT_m": {
+  "min": 4.612523078918457,
+  "max": 6.559763431549072,
+  "p5": 4.876009941101074,
+  "p95": 5.709632873535156
+ },
+ "relief_zone_MNT_m": {
+  "min": -6.720851421356201,
+  "max": 16.962310791015625
+ }
+}

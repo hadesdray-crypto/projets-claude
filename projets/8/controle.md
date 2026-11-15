@@ -1,0 +1,15 @@
+# Contrôle des captures (1280×720, Chrome du poste d'exécution, rendu logiciel)
+
+Les captures sont dans `captures/`. Pour chacune : ce qui a été regardé réellement.
+
+| Capture | Constat | État |
+|---|---|---|
+| `1-vue-ensemble.png` | Sol bleu uni, bâtiments en blocs bleus, arbres verts translucides, routes claires, étiquettes camping et plage lisibles. Les blocs sont petits à cette échelle. | réussi |
+| `2-gros-plan-camping.png` | Blocs translucides avec arêtes, hauteurs plausibles (maisons de 1 à 2 étages), arbres posés au sol, contour orange du camping, étiquettes « piscine », « accueil ». Étiquettes un peu serrées. | réussi |
+| `3a-trajet-gros-plan.png` | Tracé orange le long des voies du camping, pion orange et jaune posé juste au-dessus du sol (hauteur mesurée 0,3 à 0,4 m), panneau avec distances, temps, voiture. | réussi |
+| `3b-trajet-plage.png` | Le trajet descend par la route puis le chemin de dune jusqu'à la plage ; le dernier raccord (jaune) traverse du sable en ligne droite (128 m). Que le chemin de dune soit réellement praticable : non vérifié. | moyen |
+| `4-editeur-bloc-deplace.png` | Le mobil-home d'exemple a été glissé à la souris de (195 ; 423) à (181 ; 412,5), pas de 0,5 m, puis tourné de −15° ; annuler et rétablir contrôlés (valeurs lues dans la page) ; sauvegarde locale présente. Le panneau couvre une partie de la vue. Essai tactile réel : non vérifié (souris seulement). | réussi (souris) |
+| `5-photo-superposee.png` | Photo aérienne sous les blocs : les blocs coïncident avec les toits des maisons, décalage de 1 à 2 m visible sur certains (bascule des toits) ; la halle bleue de la piscine coïncide avec son bloc. Voir `precision.md`. | réussi |
+| `6-mesure.png` | Deux points placés à 50 m l'un de l'autre : la page affiche « 50,0 m ». | réussi |
+
+Non vérifié : fonctionnement sur un vrai téléphone (fluidité, gestes), rendu sur carte graphique réelle, import d'un fichier JSON, export (téléchargement), fonctionnement dans d'autres navigateurs.

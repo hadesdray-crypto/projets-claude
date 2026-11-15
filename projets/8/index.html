@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Maquette 3D — Camping Amitié &amp; Nature</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;overflow:hidden;font-family:system-ui,Arial,sans-serif;background:#b9caf7;touch-action:none}
+#cv{position:fixed;inset:0;width:100%;height:100%;display:block;touch-action:none}
+button,select{font:inherit;font-size:16px;border:0;border-radius:12px;padding:12px 14px;background:#fff;color:#1d3f9e;box-shadow:0 1px 4px #0004;min-height:46px}
+button.actif{background:#FE8D4F;color:#fff}
+button:disabled{opacity:.4}
+#barre{position:fixed;left:0;right:0;bottom:0;display:flex;gap:8px;padding:8px;flex-wrap:wrap;justify-content:center;background:#789CF2cc}
+#haut{position:fixed;left:8px;top:8px;background:#fffd;padding:6px 10px;border-radius:10px;font-weight:700;color:#1d3f9e;font-size:15px}
+.panneau{position:fixed;background:#fffe;border-radius:14px;padding:10px;box-shadow:0 2px 8px #0005;color:#1d3f9e;font-size:15px}
+#calques{right:8px;top:8px;display:flex;flex-direction:column;gap:10px}
+#calques label{font-size:17px;display:flex;align-items:center;gap:8px}
+#calques input{width:22px;height:22px}
+#trajetPanneau{left:8px;top:48px;max-width:min(480px,calc(100% - 16px));line-height:1.5}
+#editPanneau{right:8px;top:8px;display:flex;flex-direction:column;gap:6px;max-width:300px;max-height:calc(100% - 90px);overflow:auto}
+#editPanneau .ligne{display:flex;gap:6px;flex-wrap:wrap}
+#editPanneau .ligne button{flex:1;padding:10px 6px}
+#mesureTxt{position:fixed;transform:translateX(-50%);background:#FE8D4F;color:#fff;font-weight:700;padding:6px 10px;border-radius:10px;pointer-events:none}
+#regle{position:fixed;left:10px;bottom:84px;color:#1d3f9e;font-weight:700;font-size:14px}
+#regleBarre{height:8px;border:3px solid #1d3f9e;border-top:0;margin-top:3px}
+[hidden]{display:none!important}
+</style></head><body>
+<canvas id="cv"></canvas>
+<div id="haut">Camping Amitié &amp; Nature — maquette</div>
+<div id="regle"><span id="regleTxt"></span><div id="regleBarre"></div></div>
+<div id="mesureTxt" hidden></div>
+<div class="panneau" id="aideMesure" hidden style="left:8px;top:48px">Touchez deux points au sol : la distance s'affiche.</div>
+<div class="panneau" id="calques" hidden></div>
+<div class="panneau" id="trajetPanneau" hidden><div id="trajetInfo"></div></div>
+<div class="panneau" id="editPanneau" hidden>
+  <div class="ligne"><button id="bAnnuler">↶ Annuler</button><button id="bRetablir">↷ Rétablir</button></div>
+  <div id="selVide">Touchez un bloc, puis glissez-le.</div>
+  <div id="selInfo" hidden><div id="selTxt"></div></div>
+  <select id="selType"></select>
+  <div class="ligne"><button id="bRotG">⟲ Tourner</button><button id="bRotD">⟳ Tourner</button></div>
+  <div class="ligne"><button id="bLarg1">Plus large</button><button id="bLarg0">Moins large</button></div>
+  <div class="ligne"><button id="bLong1">Plus long</button><button id="bLong0">Moins long</button></div>
+  <div class="ligne"><button id="bHaut1">Plus haut</button><button id="bHaut0">Moins haut</button></div>
+  <div class="ligne"><button id="bAjout">+ Ajouter</button><button id="bSuppr">Supprimer</button></div>
+  <div class="ligne"><button id="bExport">Exporter</button><button onclick="document.getElementById('fImport').click()">Importer</button></div>
+  <input type="file" id="fImport" accept="application/json" hidden>
+  <small>Enregistré automatiquement sur cet appareil.</small>
+</div>
+<div id="barre">
+  <button id="bEnsemble">Ensemble</button><button id="bCamping">Camping</button>
+  <button id="bTrajet">Trajet</button><button id="bVitesse" title="Vitesse du pion">×10</button>
+  <button id="bMesure">Mesurer</button><button id="bModifier">Modifier</button><button id="bCalques">Calques</button>
+</div>
+<script src="donnees/donnees.js"></script>
+<script src="app.js"></script>
+</body></html>
