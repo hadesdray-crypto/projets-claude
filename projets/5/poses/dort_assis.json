@@ -1,0 +1,55 @@
+{
+ "nom": "dort_assis",
+ "description": "Il s'assoit par terre : les jambes glissent devant, le tronc se penche en arrière.",
+ "squelette": {
+  "racine": -28.0,
+  "racine_x": -10.0,
+  "racine_y": 82.0,
+  "tronc": 2.0,
+  "cou": 0.0,
+  "epaule": 8.0,
+  "coude": 40.0,
+  "poignet": 0.0,
+  "main_fermeture": 0.5,
+  "epaule2": 5.0,
+  "coude2": 20.0,
+  "pied_g_x": 60.0,
+  "pied_g_y": 8.0,
+  "pied_g": 0.0,
+  "pied_d_x": 75.0,
+  "pied_d_y": 8.0,
+  "pied_d": 0.0
+ },
+ "corps": {
+  "inclinaison": 0.0,
+  "x": 0.0,
+  "y": 0.0,
+  "epaules": 2.6,
+  "poitrine": -0.6
+ },
+ "zones": {
+  "tete_rotation": 10.0,
+  "tete_x": 0.0,
+  "tete_y": 3.0,
+  "machoire": 0.2,
+  "joues": 0.0,
+  "sourire": 0.0,
+  "paupieres": 0.72,
+  "cou_deglutition": 0.0,
+  "oeil_pendant_regard": -4.0
+ },
+ "vie": {
+  "eveil": 0.3,
+  "sommeil": 0.0,
+  "frisson": 0.0
+ },
+ "physique": {
+  "sol_oeil": 2000.0
+ },
+ "attaches": {
+  "prise_main": [
+   15.0,
+   2.0
+  ]
+ }
+}

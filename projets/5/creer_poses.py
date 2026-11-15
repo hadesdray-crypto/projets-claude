@@ -110,6 +110,47 @@ def joie():
         'recettes': {'thomas': ['vie']}, 'pistes': {'thomas': T}})
 
 
+def dort():
+    pose('dort_baille_debut', "Il sent la fatigue : la tête part en arrière, la bouche s'entrouvre, la poitrine se gonfle, les bras commencent à monter.",
+         sq={'epaule': -25.0, 'coude': 14.0, 'epaule2': 30.0, 'coude2': 6.0, 'tronc': -3.0, 'racine_x': -1.0, 'main_fermeture': 0.3},
+         corps={'epaules': -1.5, 'poitrine': 1.6}, zones={'tete_rotation': -8.0, 'tete_y': -2.0, 'machoire': 0.5, 'paupieres': 0.4, OEIL: 10.0})
+    pose('dort_baille', "Plein bâillement : bouche grande ouverte, yeux presque fermés, bras étirés, poitrine très gonflée.",
+         sq={'epaule': -55.0, 'coude': 38.0, 'epaule2': 62.0, 'coude2': 12.0, 'tronc': -5.0, 'racine_x': -2.0, 'racine_y': -1.5, 'main_fermeture': 0.0},
+         corps={'epaules': -2.4, 'poitrine': 2.4}, zones={'tete_rotation': -13.0, 'tete_y': -3.0, 'machoire': 1.0, 'joues': 0.6, 'paupieres': 0.75, OEIL: 16.0})
+    pose('dort_baille_fin', "La bouche se referme, les bras retombent, la tête revient en avant, lourde.",
+         sq={'epaule': -10.0, 'coude': 8.0, 'epaule2': 12.0, 'coude2': 4.0, 'tronc': 3.0, 'racine_y': 1.0, 'main_fermeture': 0.4},
+         corps={'epaules': 2.6, 'poitrine': -0.8}, zones={'tete_rotation': 7.0, 'tete_y': 3.0, 'machoire': 0.15, 'paupieres': 0.55, OEIL: -6.0})
+    pose('dort_accroupi', "Il plie les genoux et s'accroupit, le dos rond, les bras pendants.",
+         sq={'racine': 8.0, 'racine_x': -8.0, 'racine_y': 48.0, 'tronc': 10.0, 'epaule': -22.0, 'coude': 30.0, 'epaule2': 10.0, 'coude2': 14.0, 'main_fermeture': 0.5},
+         corps={'epaules': 2.4, 'poitrine': -0.6}, zones={'tete_rotation': 8.0, 'tete_y': 3.0, 'machoire': 0.18, 'paupieres': 0.62, OEIL: -8.0},
+         vie={'eveil': 0.6})
+    pose('dort_assis', "Il s'assoit par terre : les jambes glissent devant, le tronc se penche en arrière.",
+         sq={'racine': -28.0, 'racine_x': -10.0, 'racine_y': 82.0, 'pied_g_x': 60.0, 'pied_g_y': 8.0, 'pied_d_x': 75.0, 'pied_d_y': 8.0, 'tronc': 2.0,
+             'epaule': 8.0, 'coude': 40.0, 'epaule2': 5.0, 'coude2': 20.0, 'main_fermeture': 0.5},
+         corps={'epaules': 2.6, 'poitrine': -0.6}, zones={'tete_rotation': 10.0, 'tete_y': 3.0, 'machoire': 0.2, 'paupieres': 0.72, OEIL: -4.0},
+         vie={'eveil': 0.3})
+    pose('dort_allonge', "Il se laisse aller en arrière, le dos presque au sol, les jambes qui s'étendent.",
+         sq={'racine': -62.0, 'racine_x': 52.0, 'racine_y': 84.0, 'pied_g_x': 140.0, 'pied_g_y': 12.0, 'pied_d_x': 110.0, 'pied_d_y': 4.0, 'tronc': 0.0,
+             'epaule': 14.0, 'coude': 55.0, 'epaule2': 8.0, 'coude2': 40.0, 'main_fermeture': 0.5},
+         corps={'epaules': 2.6, 'poitrine': -0.6}, zones={'tete_rotation': 6.0, 'tete_y': 2.0, 'machoire': 0.2, 'paupieres': 0.92, OEIL: 0.0},
+         vie={'eveil': 0.1, 'sommeil': 0.6}, phys={'sol_oeil': 520.0})
+    pose('dort_couche', "Couché sur le dos, endormi : yeux clos, bouche entrouverte, bras le long du corps, souffle lent.",
+         sq={'racine': -90.0, 'racine_x': 88.0, 'racine_y': 85.0, 'pied_g_x': 200.0, 'pied_g_y': 14.0, 'pied_d_x': 142.0, 'pied_d_y': -2.0,
+             'pied_g': -90.0, 'pied_d': -90.0, 'tronc': 0.0, 'epaule': 4.0, 'coude': 62.0, 'epaule2': 2.0, 'coude2': 60.0, 'main_fermeture': 0.35},
+         corps={'epaules': 2.0, 'poitrine': 0.0}, zones={'tete_rotation': 4.0, 'tete_y': 1.0, 'machoire': 0.2, 'paupieres': 1.0, OEIL: 0.0},
+         vie={'eveil': 0.0, 'sommeil': 1.0}, phys={'sol_oeil': 398.0})
+
+    plan = [('dort_baille_debut', 1.0, 'doux', 0.0), ('dort_baille', 0.9, 'doux', 0.5), ('dort_baille_fin', 0.7, 'doux', 0.0),
+            ('dort_accroupi', 1.1, 'doux', 0.0), ('dort_assis', 1.0, 'doux', 0.0), ('dort_allonge', 0.9, 'doux', 0.0),
+            ('dort_couche', 1.1, 'doux', 4.3)]
+    T = [{'pose': 'repos', 'tenir': 0.5}] + [dict(pose=p, duree=d, courbe=c, **({'tenir': h} if h else {})) for p, d, c, h in plan]
+    B = [{'valeurs': {'taille': 0.0, 'dx': 24.0, 'dy': -22.0}, 'tenir': 7.7},
+         {'valeurs': {'taille': 1.0}, 'duree': 1.6, 'courbe': 'doux', 'tenir': 2.7}]
+    sequence('dort', {'nom': 'dort', 'duree': 12.0, 'boucle': False,
+        'description': "Thomas bâille, s'accroupit, s'assoit puis s'allonge au sol ; il s'endort, respiration lente, bulle Zzz. 12 s, sans boucle : il finit couché (le début de « reveil »).",
+        'recettes': {'thomas': ['vie']}, 'pistes': {'thomas': T, 'bulle': B}})
+
+
 if __name__ == '__main__':
     for n in (sys.argv[1:] or ['caresse', 'joie', 'dort', 'reveil']):
         globals()[n]()

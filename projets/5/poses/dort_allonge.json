@@ -1,0 +1,55 @@
+{
+ "nom": "dort_allonge",
+ "description": "Il se laisse aller en arrière, le dos presque au sol, les jambes qui s'étendent.",
+ "squelette": {
+  "racine": -62.0,
+  "racine_x": 52.0,
+  "racine_y": 84.0,
+  "tronc": 0.0,
+  "cou": 0.0,
+  "epaule": 14.0,
+  "coude": 55.0,
+  "poignet": 0.0,
+  "main_fermeture": 0.5,
+  "epaule2": 8.0,
+  "coude2": 40.0,
+  "pied_g_x": 140.0,
+  "pied_g_y": 12.0,
+  "pied_g": 0.0,
+  "pied_d_x": 110.0,
+  "pied_d_y": 4.0,
+  "pied_d": 0.0
+ },
+ "corps": {
+  "inclinaison": 0.0,
+  "x": 0.0,
+  "y": 0.0,
+  "epaules": 2.6,
+  "poitrine": -0.6
+ },
+ "zones": {
+  "tete_rotation": 6.0,
+  "tete_x": 0.0,
+  "tete_y": 2.0,
+  "machoire": 0.2,
+  "joues": 0.0,
+  "sourire": 0.0,
+  "paupieres": 0.92,
+  "cou_deglutition": 0.0,
+  "oeil_pendant_regard": 0.0
+ },
+ "vie": {
+  "eveil": 0.1,
+  "sommeil": 0.6,
+  "frisson": 0.0
+ },
+ "physique": {
+  "sol_oeil": 520.0
+ },
+ "attaches": {
+  "prise_main": [
+   15.0,
+   2.0
+  ]
+ }
+}

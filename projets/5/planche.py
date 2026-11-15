@@ -6,7 +6,7 @@ out = sys.argv[3] if len(sys.argv) > 3 else '/tmp/planche.png'
 c = 4 if len(idx) > 4 else len(idx); l = (len(idx) + c - 1) // c
 w = Image.new('RGB', (480 * c, 360 * l))
 for k, i in enumerate(idx):
-    im = Image.open('/tmp/rendu/%s/i%04d.png' % (nom, i)).convert('RGB').crop((40, 20, 520, 380))
+    im = Image.open('/tmp/rendu/%s/i%04d.png' % (nom, i)).convert('RGB').crop((0, 60, 560, 480)).resize((480, 360))
     ImageDraw.Draw(im).text((6, 4), 'image %d' % i, fill=(255, 255, 0))
     w.paste(im, (480 * (k % c), 360 * (k // c)))
 w.save(out)

@@ -26,3 +26,16 @@ Images ouvertes (rendu final) : 20, 34, 45, 60, 100, 130, 200, 225, plus les 3 i
 - 225 : retour au repos, bras le long du corps.
 - Clés 1 à 3 : conformes à leur légende.
 Constat : mouvement fluide, deux yeux sur toutes les images sauf pendant les clignements. Défaut visible (moyen) : sur le bras avant levé, la manche forme un petit bloc brun mal raccordé sous le menton ; le bras avant se lève très près du visage (l'épaule du dessin d'origine est sous la mâchoire). Pour garder l'œil pendant visible, il est dessiné devant le bras (paramètre `physique.tige_devant`, ajouté au moteur).
+
+## dort (12 s, 360 images, sans boucle : il finit couché)
+Images ouvertes (rendu final) : 0, 30, 60, 100, 150, 200, 250, 350, une image agrandie de la tête (350) et les 3 images clés (60, 138, 330).
+- 0 : debout, repos, deux yeux.
+- 30 : tête qui part en arrière, bouche qui s'entrouvre, paupière qui descend.
+- 60 : bâillement, bouche grande ouverte, bras avant tendu, bras arrière écarté. Deux yeux (paupière mi-close).
+- 100 : bouche refermée, bras qui retombent, tête lourde.
+- 150 : accroupi, dos rond, genoux pliés vers l'avant, pieds restés au sol : le squelette (hanches, genoux, tronc, tête) fonctionne.
+- 200 : assis puis penché en arrière, tronc et tête qui basculent ensemble, sans déchirure.
+- 250 : couché sur le dos, tête à gauche, jambes à droite, œil pendant retombé sur la joue.
+- 350 : endormi, œil de la tête fermé (fente verticale car la tête est couchée), petite bulle « Z » au-dessus de la tête.
+- Agrandissement (350) : un liseré bleu clair entourait le corps sur le sol sombre ; je l'ai retiré (`nettoyer_calques.py`) ; il en reste un fil très fin sous le torse.
+Constat : la descente (bâillement, accroupi, assis, couché) est continue, longueurs d'os constantes (mesuré 0), déplacement maximal 14 px par image. MOYEN : couché, la pose manque de naturel (le torse paraît court et l'œil pendant repose sur la bouche), la bulle Zzz est petite (la même que dans `projets/4`, un seul « Z » visible à certains instants). Dès que la paupière se ferme (images 278 à 359), le détecteur compte 1 œil : l'œil de la tête est fermé, pas absent.
