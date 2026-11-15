@@ -1,0 +1,15 @@
+{
+  "nom": "micro_vie",
+  "description": "Micro-vie irrégulière sur 3 s (boucle). Respiration à deux rythmes superposés (amplitude qui varie d'un souffle à l'autre), clignements à des instants irréguliers (dont un double), léger regard qui dérive. Le déplacement du poids est dans la séquence (poses tenues puis passage rapide). Pour allonger : changer « duree » et les « instants » (en secondes, dans la période).",
+  "couches": [
+    {"parametre": "corps.poitrine", "amplitude": 0.8, "duree": 1.5, "courbe": "souffle", "inspire": 0.38},
+    {"parametre": "corps.poitrine", "amplitude": 0.45, "duree": 3.0, "courbe": "bruit", "phase": 0.2},
+    {"parametre": "corps.epaules", "amplitude": -0.6, "duree": 1.5, "courbe": "souffle", "inspire": 0.38, "phase": -0.04},
+    {"parametre": "corps.epaules", "amplitude": -0.35, "duree": 3.0, "courbe": "bruit", "phase": 0.2},
+    {"parametre": "zones.tete_y", "amplitude": -0.45, "duree": 1.5, "courbe": "souffle", "inspire": 0.38, "phase": -0.09},
+    {"parametre": "zones.tete_rotation", "amplitude": 0.9, "duree": 3.0, "courbe": "bruit", "phase": 0.55},
+    {"parametre": "zones.oeil_pendant_regard", "amplitude": 3.0, "duree": 3.0, "courbe": "bruit", "phase": 0.1},
+    {"parametre": "zones.machoire", "amplitude": 0.05, "duree": 3.0, "courbe": "sinus_positif", "phase": 0.3},
+    {"zone": "oeil_gauche", "effet": "paupiere", "amplitude": 1.0, "duree": 3.0, "courbe": "clignement", "largeur": 0.16, "instants": [0.4, 1.9, 2.15]}
+  ]
+}

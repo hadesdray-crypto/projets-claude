@@ -1,0 +1,45 @@
+{
+ "1": {
+  "fichier": "1-repos-vivant.gif",
+  "images": 90,
+  "images_par_seconde": 30,
+  "duree_s": 3.0,
+  "dimensions": [
+   644,
+   370
+  ],
+  "octets": 2246067,
+  "couleurs": 200,
+  "methode": "pixels inchangés transparents",
+  "jonction_fin_debut_ecart_moyen_niveau": 0.492,
+  "effets_globaux": {
+   "gel": [],
+   "flash": [],
+   "secousse": [],
+   "miettes": []
+  },
+  "avant": {
+   "yeux_images_a_2": 87,
+   "yeux_images_pas_2": [
+    44,
+    45,
+    46
+   ],
+   "decor_modifie_hors_zones_px_max": 0,
+   "images_sans_effet_global_comptees": 90
+  },
+  "apres": {
+   "yeux_images_a_2": 84,
+   "yeux_images_pas_2": [
+    14,
+    15,
+    59,
+    60,
+    66,
+    67
+   ],
+   "decor_modifie_hors_zones_px_max": 0,
+   "images_sans_effet_global_comptees": 90
+  }
+ }
+}

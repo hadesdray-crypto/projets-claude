@@ -1,0 +1,7 @@
+{"nom": "g1_apres", "duree": 3.0, "boucle": true, "description": "Repos vivant : poids qui passe sur la jambe droite (poses tenues, passage rapide, retour lent), micro-vie irrégulière.",
+ "recettes": {"thomas": ["micro_vie"]},
+ "pistes": {"thomas": [
+   {"pose": "repos", "tenir": 0.85},
+   {"pose": "repos", "duree": 0.3, "courbe": "sortie", "valeurs": {"squelette": {"racine_x": 7.0, "tronc": -2.6, "racine_y": 1.2, "pied_g_y": -2.0}, "corps": {"inclinaison": 1.0}, "zones": {"tete_rotation": -1.5}}, "tenir": 0.85},
+   {"pose": "repos", "duree": 0.7, "courbe": "doux", "valeurs": {"squelette": {"racine_x": 0.0, "tronc": 0.0, "racine_y": 0.0, "pied_g_y": 0.0}, "corps": {"inclinaison": 0.0}, "zones": {"tete_rotation": 0.0}}, "tenir": 0.1}
+ ]}}

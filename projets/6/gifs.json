@@ -1,0 +1,4 @@
+[
+ {"numero": 1, "fichier": "1-repos-vivant.gif", "duree": 3.0,
+  "avant": {"sequence": "g1_avant"}, "apres": {"sequence": "g1_apres"}, "etiquettes": {"avant": "avant", "apres": "après"}}
+]

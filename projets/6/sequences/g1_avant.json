@@ -1,0 +1,3 @@
+{"nom": "g1_avant", "duree": 3.0, "boucle": true, "description": "Repos actuel : pose de repos tenue, vie régulière (recette vie_avant_3s).",
+ "recettes": {"thomas": ["vie_avant_3s"]},
+ "pistes": {"thomas": [{"pose": "repos", "tenir": 1.5}, {"pose": "repos", "duree": 1.5}]}}

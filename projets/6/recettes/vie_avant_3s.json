@@ -1,0 +1,15 @@
+{
+  "nom": "vie_avant_3s",
+  "description": "Version ACTUELLE de la vie de Thomas (recette « vie » de projets/5), recalée sur une boucle de 3 s pour le GIF : respiration régulière, balancement régulier en sinus, un clignement à intervalle fixe.",
+  "couches": [
+    {"parametre": "corps.poitrine", "amplitude": 0.9, "duree": 3.0, "courbe": "souffle", "inspire": 0.42},
+    {"parametre": "corps.epaules", "amplitude": -0.7, "duree": 3.0, "courbe": "souffle", "inspire": 0.42, "phase": -0.04},
+    {"parametre": "zones.tete_y", "amplitude": -0.5, "duree": 3.0, "courbe": "souffle", "inspire": 0.42, "phase": -0.09},
+    {"parametre": "squelette.racine_x", "amplitude": 1.6, "duree": 3.0, "courbe": "sinus"},
+    {"parametre": "squelette.racine_y", "amplitude": 0.7, "duree": 1.5, "courbe": "sinus_positif", "phase": 0.25},
+    {"parametre": "squelette.tronc", "amplitude": -0.7, "duree": 3.0, "courbe": "sinus", "phase": 0.06},
+    {"parametre": "zones.tete_rotation", "amplitude": 1.2, "duree": 3.0, "courbe": "sinus", "phase": 0.17},
+    {"parametre": "zones.machoire", "amplitude": 0.06, "duree": 3.0, "courbe": "sinus_positif", "phase": 0.1},
+    {"zone": "oeil_gauche", "effet": "paupiere", "amplitude": 1.0, "duree": 3.0, "courbe": "clignement", "largeur": 0.2, "instants": [1.4]}
+  ]
+}
