@@ -204,6 +204,7 @@ class Thomas7(moteur.Thomas):
         super().__init__(objet, palette)
         self.cfg = CFG
         self.dernier_bras = {}
+        self.exclure = set()            # mesures : bras à ne pas dessiner ('avant', 'arriere')
 
     # ------------------------------------------------ géométrie des bras
     def articulations(self, etat, cle):
@@ -316,8 +317,10 @@ class Thomas7(moteur.Thomas):
                     rects.append(self._tige(cadre, ressorts, p))
             elif nom == 'bras7':
                 self.dernier_bras = {}
-                rects.append(self.dessiner_bras(cadre, p, etat, 'arriere', None, info))
-                rects.append(self.dessiner_bras(cadre, p, etat, 'avant', morceau, info))
+                if 'arriere' not in self.exclure:
+                    rects.append(self.dessiner_bras(cadre, p, etat, 'arriere', None, info))
+                if 'avant' not in self.exclure:
+                    rects.append(self.dessiner_bras(cadre, p, etat, 'avant', morceau, info))
         if tige_devant:
             rects.append(self._tige(cadre, ressorts, p))
         return moteur.union(rects), info
