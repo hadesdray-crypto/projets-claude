@@ -12,4 +12,10 @@ Les captures sont dans `captures/`. Pour chacune : ce qui a été regardé réel
 | `5-photo-superposee.png` | Photo aérienne sous les blocs : les blocs coïncident avec les toits des maisons, décalage de 1 à 2 m visible sur certains (bascule des toits) ; la halle bleue de la piscine coïncide avec son bloc. Voir `precision.md`. | réussi |
 | `6-mesure.png` | Deux points placés à 50 m l'un de l'autre : la page affiche « 50,0 m ». | réussi |
 
+| `7-toits-et-numeros.png` | Toits à deux et quatre pans visibles sur l'accueil (3) et les bâtiments voisins, annexes et petits blocs plats, couleurs par usage (jaune commerces, violet mobil-home, gris annexes, bleu piscine), numéros lisibles au-dessus des éléments. Pentes réelles non vérifiées. | réussi |
+| `8-obstacles.png` | Clôture et muret bruns, ronds-points sans crans après ajout de disques aux jonctions de routes. | réussi |
+| `9-legende.png` | Légende avec les 15 couleurs, les numéros renvoient à la liste. | réussi |
+| `10-liste-numerotee.png` | Liste numérotée (pastille de couleur, numéro, nom) ; la ligne 1 amène sur la piscine. | réussi |
+| `11-fiche-mesures.png` | Touche sur l'accueil : « n° 3 · 15,2 m × 14,0 m · murs 3,7 m · faîte 7,9 m (quatre pans) » ; touche par un clic de souris, pas au doigt. | réussi (souris) |
+
 Non vérifié : fonctionnement sur un vrai téléphone (fluidité, gestes), rendu sur carte graphique réelle, import d'un fichier JSON, export (téléchargement), fonctionnement dans d'autres navigateurs.
