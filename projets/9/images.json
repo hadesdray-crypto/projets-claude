@@ -1,0 +1,9 @@
+{
+  "_aide": "Pour mettre une photo : copiez-la dans le dossier images/ puis écrivez son nom dans « fichier » (ex. \"piscine.jpg\") et décrivez-la dans « alt ». Laissez « fichier » vide pour garder l'illustration.",
+  "accueil":    { "fichier": "", "illustration": "images/vagues.svg", "alt": "Photo de l'entrée du camping" },
+  "piscine":    { "fichier": "", "illustration": "images/vagues.svg", "alt": "Photo de la piscine couverte" },
+  "emplacements": { "fichier": "", "illustration": "images/tente.svg", "alt": "Photo d'emplacements arborés" },
+  "mobilhomes": { "fichier": "", "illustration": "images/soleil.svg", "alt": "Photo d'un mobil-home avec sa terrasse" },
+  "activites":  { "fichier": "", "illustration": "images/soleil.svg", "alt": "Photo d'une animation sur le camping" },
+  "alentours":  { "fichier": "", "illustration": "images/pin.svg", "alt": "Photo de la plage des Dunes" }
+}

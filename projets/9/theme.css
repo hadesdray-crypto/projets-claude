@@ -1,0 +1,24 @@
+/* Thème partagé avec l'application : ne pas renommer les variables. */
+:root {
+  --bleu: #789CF2;
+  --bleu-fonce: #1d3f9e;
+  --orange: #FE8D4F;
+  --gris: #E6E6E6;
+  --rouge: #C02B0A;
+  --violet: #3D2F81;
+  --ardoise: #607382;
+  --jaune: #E6DB55;
+
+  --police-titre: "Changa One", "Arial Rounded MT Bold", Arial, sans-serif;
+  --police-texte: "Open Sans", Arial, sans-serif;
+}
+@font-face {
+  font-family: "Changa One";
+  src: url("polices/ChangaOne.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("polices/OpenSans.woff2") format("woff2");
+  font-weight: 300 800; font-style: normal; font-display: swap;
+}
