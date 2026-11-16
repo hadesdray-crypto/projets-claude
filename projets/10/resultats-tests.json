@@ -1,0 +1,177 @@
+[
+ {
+  "nom": "Polices du thème chargées",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Aujourd'hui : affiches du jour dessinées",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Lien du plan vers ../8/",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "La maquette ../8/ répond",
+  "ok": true,
+  "detail": "code 200"
+ },
+ {
+  "nom": "Code faux refusé",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Bouton « Gaufre » créé",
+  "ok": true,
+  "detail": "Glace, 2,00 € | Boisson, 1,50 € | Crêpe, 2,50 € | Pizza, 9,00 € | Gaufre, 3,00 €"
+ },
+ {
+  "nom": "Trois ventes : total du jour 8,00 €",
+  "ok": true,
+  "detail": "avant 0,00 €, après 8,00 €, 3 ventes"
+ },
+ {
+  "nom": "Annuler la dernière vente : 5,00 €",
+  "ok": true,
+  "detail": "5,00 €"
+ },
+ {
+  "nom": "Régler un bouton existant (prix de la glace)",
+  "ok": true,
+  "detail": "Glace, 2,50 € / 5,00 € / http://localhost:8710/projets/10/index.html#gerant/caisse"
+ },
+ {
+  "nom": "Ventes conservées après rechargement",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Message « Publié »",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Photo réduite et enregistrée",
+  "ok": true,
+  "detail": "data:image/jpeg;base64,"
+ },
+ {
+  "nom": "Événement visible côté campeurs (programme d'aujourd'hui)",
+  "ok": true,
+  "detail": "15 h Concours de pétanque Animation16 h Spectacle de magie Spectacle21 h Soirée guinguette Soirée"
+ },
+ {
+  "nom": "Affiche ajoutée (3 affiches du jour)",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Événement modifiable",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Gérant : 5 accès",
+  "ok": true,
+  "detail": "evenements,caisse,arrivees,plan,reglages"
+ },
+ {
+  "nom": "Gérant voit les arrivées",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Animateur : événements seulement",
+  "ok": true,
+  "detail": "evenements"
+ },
+ {
+  "nom": "Animateur : arrivées refusées",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Animateur : caisse refusée",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Vendeur : caisse seulement",
+  "ok": true,
+  "detail": "caisse"
+ },
+ {
+  "nom": "Vendeur : pas de réglage des boutons",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Vendeur : création de bouton refusée",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Vendeur : arrivées refusées",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Réception : événements, caisse, arrivées, plan",
+  "ok": true,
+  "detail": "evenements,caisse,arrivees,plan"
+ },
+ {
+  "nom": "Réception : codes refusés",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Ancien code vendeur refusé",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Nouveau code vendeur accepté",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Import JSON : ventes restaurées",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Service worker actif et contrôlant la page",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Chrome : aucune erreur d'installabilité",
+  "ok": true,
+  "detail": "[]"
+ },
+ {
+  "nom": "Hors réseau : la page se recharge avec ses affiches",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Hors réseau : polices disponibles",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Hors réseau : nouvel onglet sur ./",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "nom": "Aucune erreur JavaScript",
+  "ok": true,
+  "detail": ""
+ }
+]

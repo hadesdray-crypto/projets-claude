@@ -1,0 +1,53 @@
+/* Thème du site — couleurs, polices, formes communes */
+@font-face { font-family: 'Changa One'; src: url(polices/changa-one.woff2) format('woff2'); font-display: swap; }
+@font-face { font-family: 'Open Sans'; src: url(polices/open-sans.woff2) format('woff2'); font-weight: 300 800; font-display: swap; }
+
+:root {
+  --bleu: #789CF2;
+  --bleu-fonce: #1d3f9e;
+  --orange: #FE8D4F;
+  --gris: #E6E6E6;
+  --rouge: #C02B0A;
+  --violet: #3D2F81;
+  --ardoise: #607382;
+  --jaune: #E6DB55;
+  --texte: #1c1c28;
+  --fond: #f6f6f8;
+  --blanc: #fff;
+  --rayon: 18px;
+  --ombre: 0 4px 14px rgba(29, 63, 158, .14);
+  --titres: 'Changa One', 'Arial Black', sans-serif;
+  --corps: 'Open Sans', Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { font-family: var(--corps); font-size: 18px; line-height: 1.45; color: var(--texte); background: var(--fond); }
+h1, h2, h3 { font-family: var(--titres); font-weight: 400; color: var(--violet); margin: .3em 0 .4em; line-height: 1.15; }
+h1 { font-size: 1.9rem; } h2 { font-size: 1.5rem; } h3 { font-size: 1.2rem; }
+a { color: var(--bleu-fonce); }
+
+.carte { background: var(--blanc); border-radius: var(--rayon); box-shadow: var(--ombre); padding: 16px; margin: 0 0 16px; }
+
+.bouton {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 56px; padding: 10px 22px; border: 0; border-radius: 999px;
+  font-family: var(--titres); font-size: 1.15rem; text-decoration: none; cursor: pointer;
+  background: var(--bleu-fonce); color: #fff; box-shadow: var(--ombre);
+}
+.bouton.orange { background: var(--orange); color: var(--violet); }
+.bouton.violet { background: var(--violet); color: #fff; }
+.bouton.rouge { background: var(--rouge); color: #fff; }
+.bouton.clair { background: var(--gris); color: var(--texte); }
+.bouton.large { width: 100%; }
+.bouton:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 4px solid var(--orange); outline-offset: 2px; }
+
+input, select, textarea { font: inherit; font-size: 1.05rem; width: 100%; min-height: 52px; padding: 10px 14px; border: 2px solid var(--ardoise); border-radius: 12px; background: #fff; color: var(--texte); }
+textarea { min-height: 90px; }
+label { display: block; font-weight: 700; margin: 12px 0 4px; }
+
+/* Barre de navigation basse (téléphone) */
+.barre-basse { position: fixed; left: 0; right: 0; bottom: 0; display: flex; background: var(--violet); box-shadow: 0 -4px 14px rgba(0,0,0,.18); z-index: 20; padding-bottom: env(safe-area-inset-bottom); }
+.barre-basse a, .barre-basse button { flex: 1; min-height: 64px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-decoration: none; font-family: var(--titres); font-size: 1.05rem; background: none; border: 0; cursor: pointer; }
+.barre-basse .reserver { background: var(--orange); color: var(--violet); }
+.barre-basse svg { width: 26px; height: 26px; fill: currentColor; }

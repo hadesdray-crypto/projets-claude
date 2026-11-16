@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Icône de l'application (dessinée par le code, pas le logo du camping) -->
+  <rect width="512" height="512" fill="#3D2F81"/>
+  <circle cx="370" cy="150" r="56" fill="#E6DB55"/>
+  <path d="M0 400c90-30 170-30 256 0s170 30 256 0v112H0z" fill="#789CF2"/>
+  <path d="M256 120 120 380h272z" fill="#FE8D4F"/>
+  <path d="M256 220 210 380h92z" fill="#3D2F81"/>
+  <rect x="246" y="96" width="20" height="40" fill="#FE8D4F"/>
+</svg>

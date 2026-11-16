@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768" width="768" height="768">
+  <!-- Image de démonstration dessinée par le code (remplaçable) : scène de spectacle -->
+  <rect width="768" height="768" fill="#3D2F81"/>
+  <circle cx="620" cy="130" r="60" fill="#E6DB55"/>
+  <g fill="#E6DB55"><circle cx="90" cy="90" r="5"/><circle cx="220" cy="60" r="4"/><circle cx="360" cy="110" r="5"/><circle cx="470" cy="50" r="4"/><circle cx="160" cy="200" r="3"/></g>
+  <path d="M0 0h768v90C640 140 560 60 384 120 208 60 128 140 0 90z" fill="#C02B0A"/>
+  <path d="M0 0h120v768H0zM648 0h120v768H648z" fill="#C02B0A"/>
+  <path d="M120 90c40 120 20 300 0 678h-0zM648 90c-40 120-20 300 0 678z" fill="#9c2208"/>
+  <polygon points="384,250 250,640 518,640" fill="#E6DB55" opacity=".25"/>
+  <rect x="120" y="610" width="528" height="158" fill="#FE8D4F"/>
+  <rect x="120" y="600" width="528" height="20" fill="#d9703a"/>
+  <!-- chapeau et baguette -->
+  <rect x="320" y="470" width="128" height="120" rx="6" fill="#1c1c28"/>
+  <rect x="290" y="580" width="188" height="24" rx="12" fill="#1c1c28"/>
+  <rect x="320" y="530" width="128" height="16" fill="#C02B0A"/>
+  <rect x="440" y="380" width="14" height="150" rx="5" transform="rotate(25 447 455)" fill="#1c1c28"/>
+  <rect x="440" y="380" width="14" height="30" rx="5" transform="rotate(25 447 455)" fill="#fff"/>
+  <g fill="#fff"><path d="M384 330l10 28 30 2-24 18 9 29-25-17-25 17 9-29-24-18 30-2z"/><path d="M300 400l6 16 17 1-13 10 5 17-15-10-14 10 5-17-13-10 17-1z"/><path d="M480 300l6 16 17 1-13 10 5 17-15-10-14 10 5-17-13-10 17-1z"/></g>
+</svg>
