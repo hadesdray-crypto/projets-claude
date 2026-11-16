@@ -69,4 +69,6 @@ Dans les captures « page entière », les barres fixes (haut et bas) sont plac�
 - Téléchargement réel des fichiers exportés (JSON et CSV) : non vérifié (l'import a été vérifié).
 - Lecture par un lecteur d'écran : non vérifiée. Contrastes choisis pour être lisibles (texte foncé sur orange, jaune et bleu clair ; texte blanc sur bleu foncé, violet, rouge), non mesurés par un outil.
 - Utilisation par un enfant de 10 ans : non testée avec un enfant.
-- Fonctionnement une fois publié sur GitHub Pages : non vérifié au moment de l'écriture.
+
+## Sur GitHub Pages (après publication)
+Chrome sans écran sur https://hadesdray-crypto.github.io/projets-claude/projets/10/ : 2 affiches du jour, service worker actif, aucune erreur d'installabilité, rechargement **hors réseau** réussi (« Aujourd'hui » et ses affiches). Les autres parcours n'ont été refaits qu'en local.
