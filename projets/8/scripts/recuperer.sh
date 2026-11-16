@@ -12,6 +12,8 @@ for L in MNH MNT; do
   curl -sf -o brut_raster/$L.tif "https://data.geopf.fr/wms-r?$R&LAYERS=IGNF_LIDAR-HD_${L}_ELEVATION.ELEVATIONGRIDCOVERAGE.LAMB93&FORMAT=image/geotiff"
 done
 curl -sf -o donnees/orthophoto.jpg "https://data.geopf.fr/wms-r?$R&LAYERS=ORTHOIMAGERY.ORTHOPHOTOS&FORMAT=image/jpeg"
+# orthophoto haute résolution (10 px/m) limitée au camping et à ses abords : repère local x 20..290, y 290..520
+curl -sf -o brut_raster/ortho_camping.jpg "https://data.geopf.fr/wms-r?BBOX=329120,6622990,329390,6623220&WIDTH=2700&HEIGHT=2300&CRS=EPSG:2154&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&STYLES=&LAYERS=ORTHOIMAGERY.ORTHOPHOTOS&FORMAT=image/jpeg"
 BX="(46.596,-1.8545,46.608,-1.842)"
 ov() { curl -sf -m 80 -H "User-Agent: maquette-camping/1.0" -H "Accept: */*" --data-urlencode "data=$1" https://overpass-api.de/api/interpreter -o "$2"; }
 ov "[out:json][timeout:40];(nwr[\"tourism\"~\"camp_site|camp_pitch\"]$BX;nwr[\"natural\"=\"tree\"]$BX;nwr[\"leisure\"=\"swimming_pool\"]$BX;nwr[\"amenity\"~\"toilets|waste_basket|waste_disposal|bar|restaurant\"]$BX;);out geom;" donnees/brut_osm.json

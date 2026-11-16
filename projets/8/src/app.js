@@ -8,21 +8,25 @@ const TOITS = ['deux pans', 'quatre pans', 'plat'];
 // couleurs par usage (légende)
 const CATS = {
   residentiel: { nom: 'Bâtiments résidentiels', c: 0x6f8fe8 },
-  commerce: { nom: 'Commerces et services (accueil, bar, sanitaires)', c: 0xf2c230 },
+  accueil: { nom: 'Accueil', c: 0xe8504a },
+  commerce: { nom: 'Commerces et services (bar, autres)', c: 0xf2c230 },
+  sanitaires: { nom: 'Sanitaires, douches', c: 0x22b8a5 },
   sport: { nom: 'Sport (terrains, salles)', c: 0xe86fb0 },
-  eau: { nom: 'Eau (piscines)', c: 0x2f6fe0 },
+  eau: { nom: 'Piscines', c: 0x2f6fe0 },
   annexe: { nom: 'Annexes (garages, locaux techniques)', c: 0x8d8d9d },
   hebergement: { nom: 'Hébergements (mobil-homes)', c: 0xa879e6 },
   autre: { nom: 'Autres bâtiments (usage non précisé)', c: 0xc9b99a },
 };
 const COULEURS_AUTRES = [
-  ['Zones boisées', 0x2f9e55], ['Arbres', 0x4FB86A], ['Routes', 0xfff3c4], ['Chemins et sentiers', 0xf0dca0],
+  ['Piscine couverte (voûte vitrée)', 0x7fd3ff], ['Parking (aire de gravier)', 0xe3cf9a], ['Zone des mobil-homes', 0xff9a3c], ['Zones boisées', 0x2f9e55], ['Arbres', 0x4FB86A], ['Routes', 0xfff3c4], ['Chemins et sentiers', 0xf0dca0],
   ['Clôtures, murets, portails', 0x8a5a3c], ['Haies', 0x3b7d3b], ['Limite du camping', 0xFE8D4F], ['Élément sélectionné', 0xFE8D4F],
 ];
 function categorie(b) {
   const t = b.type;
   if (t === 'mobil-home' || t === 'emplacement') return 'hebergement';
-  if (t === 'accueil' || t === 'bar' || t === 'sanitaires' || t === 'douches') return 'commerce';
+  if (t === 'accueil') return 'accueil';
+  if (t === 'sanitaires' || t === 'douches') return 'sanitaires';
+  if (t === 'bar') return 'commerce';
   if (t === 'piscine') return 'eau';
   if (t === 'local technique' || t === 'poubelles') return 'annexe';
   const u = b.usage;
@@ -60,10 +64,10 @@ const sol = new THREE.Mesh(new THREE.PlaneGeometry(12000, 12000),
 sol.rotation.x = -Math.PI / 2; sol.position.set(cx, 0, -cy); scene.add(sol);
 
 // ---------- calques
-const calques = { batiments: new THREE.Group(), arbres: new THREE.Group(), routes: new THREE.Group(), obstacles: new THREE.Group(), zones: new THREE.Group(), etiquettes: new THREE.Group(), photo: new THREE.Group() };
+const calques = { batiments: new THREE.Group(), arbres: new THREE.Group(), routes: new THREE.Group(), obstacles: new THREE.Group(), zones: new THREE.Group(), vegetation: new THREE.Group(), reperes: new THREE.Group(), etiquettes: new THREE.Group(), photo: new THREE.Group() };
 for (const g of Object.values(calques)) scene.add(g);
 calques.photo.visible = false;
-const NOMS = { batiments: 'Bâtiments', arbres: 'Arbres', routes: 'Routes et chemins', obstacles: 'Clôtures et murets', zones: 'Zones (eau, sport, bois)', etiquettes: 'Numéros', photo: 'Photo aérienne (vérification)' };
+const NOMS = { batiments: 'Bâtiments', arbres: 'Arbres', routes: 'Routes et chemins', obstacles: 'Clôtures et murets', zones: 'Zones (eau, sport, parking, mobil-homes)', vegetation: 'Zones boisées', reperes: 'Repères (piscine, accueil, entrée…)', etiquettes: 'Numéros', photo: 'Photo aérienne (vérification)' };
 
 function ruban(paires, largeur, couleur, y, opacite = 1, ordre = 0) {
   // paires : [[x1,y1,x2,y2],...] -> bandes plates au sol
@@ -121,27 +125,34 @@ function contour(pts, h, couleur) {
   const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(v, 3));
   return new THREE.LineSegments(g, new THREE.LineBasicMaterial({ color: couleur }));
 }
+const R = window.REPERES;
+const centreZ = (z) => z.pts.reduce((a, p) => [a[0] + p[0] / z.pts.length, a[1] + p[1] / z.pts.length], [0, 0]);
+let zonePiscineCouverte = null;
 const pickables = [];     // mailles touchables (piscines, terrains de sport)
 const ELEMENTS = [];     // éléments numérotés qui ne sont pas des blocs : { num, nom, cat, pts, h, lieu }
 for (const z of D.zones) {
-  if (z.type === 'piscine') {
+  if (z.type === 'piscine' && R && Math.hypot(centreZ(z)[0] - R.piscine.zone_centre[0], centreZ(z)[1] - R.piscine.zone_centre[1]) < 8) {
+    z.nom = 'Piscine couverte'; z.voute = true; z.maille = null; zonePiscineCouverte = z;
+  } else if (z.type === 'piscine') {
     const m = new THREE.Mesh(formeExtrudee(z.pts, z.h), new THREE.MeshLambertMaterial({ color: CATS.eau.c, transparent: true, opacity: 0.6, depthWrite: false, side: THREE.DoubleSide }));
     calques.zones.add(m, contour(z.pts, z.h, 0x1d3f9e), contour(z.pts, 0.02, 0x1d3f9e));
     z.maille = m; pickables.push(m);
   } else if (z.type === 'vegetation') {
-    calques.zones.add(aplat(z.pts, 0x2f9e55, 0.3, 0.03), contour(z.pts, 0.04, 0x2f9e55));
+    calques.vegetation.add(aplat(z.pts, 0x2f9e55, 0.3, 0.03), contour(z.pts, 0.04, 0x2f9e55));
   } else if (z.type === 'sport') {
     const m = aplat(z.pts, CATS.sport.c, 0.5, 0.04); calques.zones.add(m, contour(z.pts, 0.05, 0xb43c80)); z.maille = m; pickables.push(m);
   }
 }
 
+let matCime, matTronc;
 // ---------- arbres : tronc brun + houppier vert translucides (maxima de canopée LiDAR HD), posés au sol
 {
   const mat = new THREE.Matrix4(), q = new THREE.Quaternion(), p = new THREE.Vector3(), s = new THREE.Vector3();
-  const cime = new THREE.InstancedMesh(new THREE.SphereGeometry(1, 7, 5), new THREE.MeshLambertMaterial({ color: 0x4FB86A, transparent: true, opacity: 0.5, depthWrite: false }), D.arbres.length);
-  const tronc = new THREE.InstancedMesh(new THREE.CylinderGeometry(1, 1, 1, 6), new THREE.MeshLambertMaterial({ color: 0x8a5a3c, transparent: true, opacity: 0.6, depthWrite: false }), D.arbres.length);
+  matCime = new THREE.MeshLambertMaterial({ color: 0x4FB86A, transparent: true, opacity: 0.28, depthWrite: false }); matTronc = new THREE.MeshLambertMaterial({ color: 0x8a5a3c, transparent: true, opacity: 0.35, depthWrite: false });
+  const cime = new THREE.InstancedMesh(new THREE.SphereGeometry(1, 7, 5), matCime, D.arbres.length);
+  const tronc = new THREE.InstancedMesh(new THREE.CylinderGeometry(1, 1, 1, 6), matTronc, D.arbres.length);
   D.arbres.forEach(([x, y, h], i) => {
-    const r = Math.min(Math.max(h * 0.22, 1), 3.2), ht = h * 0.3;
+    const r = Math.min(Math.max(h * 0.22, 1), 3.2) * 0.75, ht = h * 0.3;
     p.set(x, ht / 2, -y); s.set(Math.min(0.3, r / 4), ht / 2, Math.min(0.3, r / 4)); tronc.setMatrixAt(i, mat.compose(p, q, s));
     p.set(x, ht + (h - ht) / 2, -y); s.set(r, (h - ht) / 2, r); cime.setMatrixAt(i, mat.compose(p, q, s));   // de 0,3 h à h : jamais en l'air
   });
@@ -170,7 +181,7 @@ for (const z of D.zones) {
 let blocs = JSON.parse(JSON.stringify(D.blocs));
 let triVersBloc = [];
 const maillageBlocs = new THREE.Mesh(new THREE.BufferGeometry(), matBloc);
-const aretesBlocs = new THREE.LineSegments(new THREE.BufferGeometry(), new THREE.LineBasicMaterial({ color: 0x2d4fa8, transparent: true, opacity: 0.8 }));
+const aretesBlocs = new THREE.LineSegments(new THREE.BufferGeometry(), new THREE.LineBasicMaterial({ color: 0x14246b }));
 const maillageSel = new THREE.Mesh(new THREE.BufferGeometry(), new THREE.MeshLambertMaterial({ color: ORANGE, transparent: true, opacity: 0.6, depthWrite: false, side: THREE.DoubleSide }));
 const aretesSel = new THREE.LineSegments(new THREE.BufferGeometry(), new THREE.LineBasicMaterial({ color: 0xc25a12 }));
 calques.batiments.add(maillageBlocs, aretesBlocs, maillageSel, aretesSel);
@@ -264,7 +275,7 @@ const NUM = {}, NUMEROTES = [];      // NUM : id de bloc -> numéro ; NUMEROTES 
   const cand = [];
   for (const z of D.zones) {
     const c = z.pts.reduce((a, p) => [a[0] + p[0] / z.pts.length, a[1] + p[1] / z.pts.length], [0, 0]);
-    if (z.type === 'piscine' && z.dans_camping) cand.push([0, c[0], z, 'zone', 'piscine', 'eau', c]);
+    if (z.type === 'piscine' && z.dans_camping) cand.push([0, c[0], z, 'zone', z.nom || 'piscine', 'eau', c]);
     if (z.type === 'sport' && distCamping(c) < 300) cand.push([7, c[0], z, 'zone', z.nom || 'terrain de sport', 'sport', c]);
   }
   for (const b of D.blocs) {
@@ -286,6 +297,77 @@ const NUM = {}, NUMEROTES = [];      // NUM : id de bloc -> numéro ; NUMEROTES 
   for (const e of NUMEROTES) { const s2 = sprite(String(e.num), e.genre === 'lieu' ? '#c25a12' : '#1d3f9e'); s2.scale.multiplyScalar(1.3); s2.position.copy(W3(e.x, e.y, e.haut)); labelFixes.push(s2); }
 }
 labelFixes.forEach(s => groupeEtiq.add(s));
+
+// ---------- repères et éléments posés d'après l'orthophoto (positions à confirmer)
+const REPS = [], zonesRep = [], K_ECRAN = 1 / Math.tan(THREE.MathUtils.degToRad(camera.fov / 2));   // un sprite sans atténuation de taille : hauteur en pixels = échelle × K/2 × hauteur d'écran
+function icone(x, type, cx0, cy0, r) {
+  x.save(); x.translate(cx0, cy0); x.fillStyle = '#fff'; x.strokeStyle = '#fff'; x.lineWidth = 5; x.lineCap = 'round'; x.lineJoin = 'round';
+  if (type === 'piscine') { for (const dy of [-8, 8]) { x.beginPath(); for (let t = -r * 0.6; t <= r * 0.6; t += 2) { const yy = dy + Math.sin(t / 5) * 4; t === -r * 0.6 ? x.moveTo(t, yy) : x.lineTo(t, yy); } x.stroke(); } }
+  else if (type === 'accueil') { x.beginPath(); x.moveTo(-r * 0.6, -2); x.lineTo(0, -r * 0.6); x.lineTo(r * 0.6, -2); x.closePath(); x.fill(); x.fillRect(-r * 0.4, -2, r * 0.8, r * 0.55); }
+  else if (type === 'entree') { x.rotate(-0.4); x.fillRect(-r * 0.7, -6, r * 1.4, 12); x.fillStyle = '#222'; for (let i = -3; i < 3; i++) x.fillRect(-r * 0.7 + (i + 3) * r * 0.24 + 4, -6, r * 0.11, 12); }
+  else if (type === 'parking') { x.font = 'bold 46px sans-serif'; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText('P', 0, 3); }
+  else { x.beginPath(); x.moveTo(-r * 0.62, 4); x.lineTo(-r * 0.4, -r * 0.35); x.lineTo(r * 0.4, -r * 0.35); x.lineTo(r * 0.62, 4); x.closePath(); x.fill(); x.fillRect(-r * 0.62, 4, r * 1.24, r * 0.3); }
+  x.restore();
+}
+function reperSprite(nom, sous, type, couleur, ancre) {
+  const c = document.createElement('canvas'), x = c.getContext('2d'), H = 100, r = 36;
+  x.font = 'bold 44px sans-serif'; const w1 = x.measureText(nom).width; x.font = '26px sans-serif'; const w2 = sous ? x.measureText(sous).width : 0;
+  const w = Math.ceil(Math.max(w1, w2)) + 2 * r + 36; c.width = w; c.height = H;
+  x.fillStyle = 'rgba(255,255,255,0.93)'; x.beginPath(); x.roundRect(2, 2, w - 4, H - 4, 22); x.fill(); x.strokeStyle = couleur; x.lineWidth = 5; x.stroke();
+  x.fillStyle = couleur; x.beginPath(); x.arc(14 + r, H / 2, r, 0, 7); x.fill(); icone(x, type, 14 + r, H / 2, r);
+  x.textAlign = 'left'; x.textBaseline = 'middle'; x.fillStyle = '#14246b'; x.font = 'bold 44px sans-serif'; x.fillText(nom, 2 * r + 26, sous ? 36 : 52);
+  if (sous) { x.fillStyle = '#5a5a6a'; x.font = '26px sans-serif'; x.fillText(sous, 2 * r + 26, 76); }
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace;
+  const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: t, depthTest: false, sizeAttenuation: false }));
+  sp.scale.set(w / H * 0.04, 0.04, 1); sp.center.set(...ancre); sp.renderOrder = 12; return sp;
+}
+function ajouterRepere(nom, sous, type, couleur, x, y, haut, fiche, ancre = [0.5, 0]) {
+  const s = reperSprite(nom, sous, type, couleur, ancre); s.position.copy(W3(x, y, haut)); calques.reperes.add(s);
+  const g = new THREE.BufferGeometry().setFromPoints([W3(x, y, 0.1), W3(x, y, haut)]);
+  calques.reperes.add(new THREE.Line(g, new THREE.LineBasicMaterial({ color: new THREE.Color(couleur) })));
+  const pt = new THREE.Mesh(new THREE.CylinderGeometry(1.6, 1.6, 0.3, 16), new THREE.MeshBasicMaterial({ color: new THREE.Color(couleur) })); pt.position.copy(W3(x, y, 0.3)); calques.reperes.add(pt);
+  REPS.push({ nom, x, y, haut, fiche, ancre: [...ancre], ancre0: ancre, sprite: s, ratio: s.scale.x / s.scale.y });
+}
+const A_CONFIRMER = 'position à confirmer sur place (relevée sur l\'orthophoto IGN)';
+function zonePlate(pts, couleur, op, opPhoto, y, bord, fiche) {
+  const m = aplat(pts, couleur, op, y); m.userData.fiche = fiche; calques.zones.add(m, contour(pts, y + 0.01, bord)); pickables.push(m); zonesRep.push({ mat: m.material, op, opPhoto });
+}
+if (R) {
+  // piscine couverte : voûte vitrée (demi-ellipse extrudée), bleu clair très distinct
+  const P = R.piscine, ang = P.angle * Math.PI / 180, ca = Math.cos(ang), sa = Math.sin(ang), N = 14;
+  const pos = [], idx = [], ar = [];
+  const pt = (u, v, h) => [P.x + v * ca - u * sa, h, -(P.y + v * sa + u * ca)];           // u : travers, v : long
+  for (const v of [-P.L / 2, P.L / 2]) for (let i = 0; i <= N; i++) { const f = Math.PI * i / N; pos.push(...pt(-P.l / 2 * Math.cos(f), v, P.h * Math.sin(f))); }
+  const w = N + 1;
+  for (let i = 0; i < N; i++) { idx.push(i, i + 1, w + i, i + 1, w + i + 1, w + i); }
+  const cA = pos.length / 3; pos.push(...pt(0, -P.L / 2, 0), ...pt(0, P.L / 2, 0));    // centres des deux pignons
+  for (let i = 0; i < N; i++) { idx.push(cA, i + 1, i, cA + 1, w + i, w + i + 1); }
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3)); g.setIndex(idx); g.computeVertexNormals();
+  const voute = new THREE.Mesh(g, new THREE.MeshLambertMaterial({ color: 0x7fd3ff, transparent: true, opacity: 0.5, depthWrite: false, side: THREE.DoubleSide }));
+  voute.userData.fiche = () => zonePiscineCouverte ? texteElement(NUMEROTES.find(e => e.ref === zonePiscineCouverte)) : '';
+  for (let k = 0; k <= 8; k++) { const v = -P.L / 2 + P.L * k / 8; for (let i = 0; i < N; i++) { const f1 = Math.PI * i / N, f2 = Math.PI * (i + 1) / N; ar.push(...pt(-P.l / 2 * Math.cos(f1), v, P.h * Math.sin(f1)), ...pt(-P.l / 2 * Math.cos(f2), v, P.h * Math.sin(f2))); } }
+  for (const [u, h] of [[-P.l / 2, 0], [P.l / 2, 0], [0, P.h]]) ar.push(...pt(u, -P.L / 2, h), ...pt(u, P.L / 2, h));
+  const ag = new THREE.BufferGeometry(); ag.setAttribute('position', new THREE.Float32BufferAttribute(ar, 3));
+  calques.zones.add(voute, new THREE.LineSegments(ag, new THREE.LineBasicMaterial({ color: 0x1b5fa0 })));
+  pickables.push(voute); if (zonePiscineCouverte) zonePiscineCouverte.maille = voute;
+  ajouterRepere('Piscine couverte', 'à confirmer', 'piscine', '#1f78d1', P.x, P.y, P.h + 12, () => `Piscine couverte<br>voûte vitrée d'environ ${fmt(P.L)} × ${fmt(P.l)} m, ${fmt(P.h)} m de haut<br>${A_CONFIRMER}`, [1, 0]);
+  const a = R.accueil;
+  ajouterRepere('Accueil', 'à confirmer', 'accueil', '#d63a32', a.x, a.y, 4, () => `Accueil<br>bâtiment à toit orange sous la piscine, probable accueil et bar<br>${A_CONFIRMER}`, [1, 1]);
+  const e = R.entree;
+  ajouterRepere('Entrée', 'à confirmer', 'entree', '#b07d00', e.x, e.y, 46, () => `Entrée<br>barrière jaune et noire sur la route qui longe le côté est<br>${A_CONFIRMER}`, [1, 0]);
+  { // barrière : lattes jaunes et noires en travers de la voie
+    const dx = e.b[0] - e.a[0], dy = e.b[1] - e.a[1], L = Math.hypot(dx, dy), n = 6;
+    for (let i = 0; i < n; i++) { const m = new THREE.Mesh(new THREE.BoxGeometry(L / n, 1.1, 0.5), new THREE.MeshLambertMaterial({ color: i % 2 ? 0x222222 : 0xf5c800 })); m.position.copy(W3(e.a[0] + dx * (i + .5) / n, e.a[1] + dy * (i + .5) / n, 1.2)); m.rotation.y = Math.atan2(dy, dx); calques.reperes.add(m); }
+  }
+  const pk = R.parking, cen = (pts) => pts.reduce((q, p) => [q[0] + p[0] / pts.length, q[1] + p[1] / pts.length], [0, 0]);
+  const aire = (pts) => airePoly(pts);
+  const fPk = () => `Parking (aire de gravier)<br>environ ${Math.round(aire(pk.pts) + aire(pk.pts2))} m² · ${A_CONFIRMER}`;
+  zonePlate(pk.pts, 0xe3cf9a, 0.8, 0.22, 0.08, 0xb09a5c, fPk); zonePlate(pk.pts2, 0xe3cf9a, 0.8, 0.22, 0.08, 0xb09a5c, fPk);
+  const cp = cen(pk.pts); ajouterRepere('Parking', 'à confirmer', 'parking', '#3b5bb5', cp[0], cp[1], 8, fPk, [0, 0]);
+  const mh = R.mobilhomes;
+  zonePlate(mh.pts, 0xff9a3c, 0.2, 0.08, 0.07, 0xe0802a, () => `Mobil-homes<br>zone boisée, environ ${Math.round(aire(mh.pts))} m² · mobil-homes à placer un par un par le gérant<br>${A_CONFIRMER}`);
+  const cm = cen(mh.pts); ajouterRepere('Mobil-homes', 'à placer un par un par le gérant', 'mobil', '#d9731a', cm[0], cm[1], 16, () => `Mobil-homes<br>zone boisée : mobil-homes à placer un par un par le gérant<br>${A_CONFIRMER}`);
+}
 const numBloc = (b) => b.num ?? NUM[b.id];
 let etiqBlocs = [];
 function majEtiquettes() {
@@ -302,6 +384,15 @@ function majEtiquettes() {
 let photoChargee = false;
 function chargerPhoto() {
   if (photoChargee) return; photoChargee = true;
+  const sc2 = document.createElement('script'); sc2.src = 'donnees/orthophoto_camping.js';
+  sc2.onload = () => {
+    const C = window.ORTHO_CAMPING;
+    new THREE.TextureLoader().load(C.img, (t) => {
+      t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8;
+      const p = new THREE.Mesh(new THREE.PlaneGeometry(C.x1 - C.x0, C.y1 - C.y0), new THREE.MeshBasicMaterial({ map: t }));
+      p.rotation.x = -Math.PI / 2; p.position.set((C.x0 + C.x1) / 2, 0.04, -(C.y0 + C.y1) / 2); calques.photo.add(p); window.__photoCampPrete = true;
+    });
+  }; document.head.appendChild(sc2);
   const sc = document.createElement('script'); sc.src = 'donnees/orthophoto.js';
   sc.onload = () => {
     new THREE.TextureLoader().load(window.ORTHO, (t) => {
@@ -450,11 +541,29 @@ function majRegle() {
 function vueSur(x, y, dist, incl = 1.0, az = 0) {
   controls.target.set(x, 0, -y);
   camera.position.set(x + Math.sin(az) * dist * Math.cos(incl) , Math.sin(incl) * dist, -y + Math.cos(az) * dist * Math.cos(incl));
-  controls.update();
+  controls.update(); camera.updateMatrixWorld();
 }
 const ctrCamp = (() => { const c = D.camping; return [c.reduce((a, p) => a + p[0], 0) / c.length, c.reduce((a, p) => a + p[1], 0) / c.length]; })();
 const vueEnsemble = () => vueSur(cx - 60, cy - 120, 1150, 0.95);
-const vueCamping = () => vueSur(ctrCamp[0], ctrCamp[1], 330, 0.8);
+// vue de départ : centrée sur le camping, inclinée à 45°, la plus proche possible (≥ 150 m) qui garde tout le contour dans la zone libre de l'écran (hors barre de boutons)
+function vueCamping() {
+  const W = canvas.clientWidth, H = canvas.clientHeight, incl = Math.PI / 4;
+  const yHaut = 1 - 2 * 50 / H, yBas = -1 + 2 * ($('#barre').offsetHeight + 10) / H, xm = 1 - 2 * 10 / W, yc = (yHaut + yBas) / 2, yh = (yHaut - yBas) / 2;
+  const xs = D.camping.map(p => p[0]), ys = D.camping.map(p => p[1]);
+  let tx = (Math.min(...xs) + Math.max(...xs)) / 2, ty = (Math.min(...ys) + Math.max(...ys)) / 2, d = 150;
+  const sol_ = (nx, ny) => { ray.setFromCamera(new THREE.Vector2(nx, ny), camera); const o = new THREE.Vector3(); return ray.ray.intersectPlane(sol0, o) ? o : null; };
+  for (d = 150; d < 2600; d *= 1.02) {
+    let b;
+    for (let k = 0; k < 4; k++) {
+      vueSur(tx, ty, d, incl);
+      b = [1e9, -1e9, 1e9, -1e9]; for (const p of D.camping) { const v = W3(p[0], p[1], 0).project(camera); b = [Math.min(b[0], v.x), Math.max(b[1], v.x), Math.min(b[2], v.y), Math.max(b[3], v.y)]; }
+      const p1 = sol_((b[0] + b[1]) / 2, (b[2] + b[3]) / 2), p2 = sol_(0, yc); if (!p1 || !p2) break;
+      tx += p1.x - p2.x; ty += -(p1.z - p2.z);
+    }
+    vueSur(tx, ty, d, incl); b = [1e9, -1e9, 1e9, -1e9]; for (const p of D.camping) { const v = W3(p[0], p[1], 0).project(camera); b = [Math.min(b[0], v.x), Math.max(b[1], v.x), Math.min(b[2], v.y), Math.max(b[3], v.y)]; }
+    if ((b[1] - b[0]) / 2 <= xm && (b[3] - b[2]) / 2 <= yh) break;
+  }
+}
 
 // ---------- éditeur
 let modeEdition = false, historique = [], futur = [], glisse = null;
@@ -477,7 +586,7 @@ function texteBloc(b) {
 function texteElement(e) {
   if (e.genre === 'lieu') return `n° ${e.num} · ${e.nom}<br>lieu repère (position seulement, pas de mesure)`;
   const ob = rectOriente(e.ref.pts);
-  return `n° ${e.num} · ${e.nom}<br>longueur ${fmt(ob.L)} m × largeur ${fmt(ob.l)} m (rectangle englobant) · surface ${Math.round(airePoly(e.ref.pts))} m²` + (e.ref.type === 'piscine' ? `<br>bloc de ${fmt(e.ref.h)} m de haut (représentation ; profondeur inconnue)` : '');
+  return `n° ${e.num} · ${e.nom}<br>longueur ${fmt(ob.L)} m × largeur ${fmt(ob.l)} m (rectangle englobant) · surface ${Math.round(airePoly(e.ref.pts))} m²` + (e.ref.voute ? `<br>voûte vitrée de ${fmt(R.piscine.h)} m de haut (représentation) · position à confirmer (calée sur l'orthophoto IGN)` : e.ref.type === 'piscine' ? `<br>bloc de ${fmt(e.ref.h)} m de haut (représentation ; profondeur inconnue)` : '');
 }
 function montrerFiche(html) { $('#ficheTxt').innerHTML = html; $('#fiche').hidden = false; }
 function majPanneauSelection() {
@@ -502,10 +611,20 @@ function pickBloc(ev) {
 function toucher(ev) {
   const r = canvas.getBoundingClientRect(); ptr.set(((ev.clientX - r.left) / r.width) * 2 - 1, -((ev.clientY - r.top) / r.height) * 2 + 1);
   ray.setFromCamera(ptr, camera);
+  if (calques.reperes.visible) {
+    const r2 = canvas.getBoundingClientRect(); let best = null;
+    for (const q of REPS) {
+      const v = W3(q.x, q.y, q.haut).project(camera); if (v.z > 1) continue;
+      const hs = 0.04 * K_ECRAN * r2.height / 2, ws = hs * q.ratio, ex = (v.x + 1) / 2 * r2.width + r2.left + (0.5 - q.ancre[0]) * ws, ey = (1 - v.y) / 2 * r2.height + r2.top - (0.5 - q.ancre[1]) * hs;   // centre du cartouche
+      const d = Math.hypot(ev.clientX - ex, ev.clientY - ey); if (Math.abs(ev.clientX - ex) < ws / 2 + 4 && Math.abs(ev.clientY - ey) < hs / 2 + 4 && (!best || d < best[0])) best = [d, q];
+    }
+    if (best) { montrerFiche(best[1].fiche()); return; }
+  }
   const cibles = [maillageBlocs, ...pickables.filter(m => m.visible && m.parent && m.parent.visible)];
   const h = ray.intersectObjects(cibles, false)[0];
   if (!h) { $('#fiche').hidden = true; return; }
   if (h.object === maillageBlocs) { const b = blocs[indexSansSel[triVersBloc[h.faceIndex]]]; if (b) montrerFiche(texteBloc(b)); }
+  else if (h.object.userData.fiche && !D.zones.find(z => z.maille === h.object)) montrerFiche(h.object.userData.fiche());
   else { const z = D.zones.find(z => z.maille === h.object), e = NUMEROTES.find(e => e.ref === z); if (e) montrerFiche(texteElement(e)); else montrerFiche(`${z.type}<br>surface ${Math.round(airePoly(z.pts))} m²`); }
 }
 canvas.addEventListener('pointerdown', (ev) => {
@@ -545,7 +664,7 @@ const hex = (c) => '#' + c.toString(16).padStart(6, '0');
   let h = '<b>Légende</b>';
   for (const k of Object.keys(CATS)) h += `<div class="lg"><i style="background:${hex(CATS[k].c)}"></i>${CATS[k].nom}</div>`;
   for (const [n, c] of COULEURS_AUTRES) h += `<div class="lg"><i style="background:${hex(c)}"></i>${n}</div>`;
-  h += '<small>Toits : deux ou quatre pans (pente ≈ 30°), plats pour les petites annexes. Les chiffres renvoient à la liste.</small>';
+  h += '<small>Piscine couverte, accueil, entrée, parking et zone des mobil-homes : positions relevées sur l\'orthophoto IGN, à confirmer sur place. Toits : deux ou quatre pans (pente ≈ 30°), plats pour les petites annexes. Les chiffres renvoient à la liste.</small>';
   $('#legende').innerHTML = h;
 }
 function majListe() {
@@ -561,16 +680,30 @@ function majListe() {
     z.append(d);
   }
 }
+function setCalque(k, v) {
+  calques[k].visible = v; const c = $('#cal_' + k); if (c) c.checked = v;
+  if (k === 'photo') { if (v) chargerPhoto(); sol.visible = !v; }
+}
+// « Photo / Maquette » : la photo IGN nette sous des blocs très transparents, sans routes ni zones boisées coloriées ni arbres qui la cachent
+let modePhoto = false;
+function basculerPhoto(on) {
+  modePhoto = on; $('#bPhoto').classList.toggle('actif', on);
+  setCalque('photo', on); setCalque('routes', !on); setCalque('vegetation', !on);
+  matBloc.opacity = on ? 0.2 : 0.5; matCime.opacity = on ? 0.1 : 0.28; matTronc.opacity = on ? 0.1 : 0.35;
+  zonesRep.forEach(z => { z.mat.opacity = on ? z.opPhoto : z.op; });
+}
 function creerCalques() {
   const z = $('#calques'); z.innerHTML = '';
   for (const [k, nom] of Object.entries(NOMS)) {
     const l = document.createElement('label'); const c = document.createElement('input'); c.type = 'checkbox'; c.checked = calques[k].visible; c.id = 'cal_' + k;
-    c.onchange = () => { calques[k].visible = c.checked; if (k === 'photo') { if (c.checked) chargerPhoto(); sol.visible = !c.checked; } };
+    c.onchange = () => setCalque(k, c.checked);
     l.append(c, ' ' + nom); z.append(l);
   }
 }
 creerCalques();
 TYPES.forEach(t => { const o = document.createElement('option'); o.value = o.textContent = t; $('#selType').append(o); });
+$('#bPhoto').onclick = () => basculerPhoto(!modePhoto); $('#bReperes').onclick = () => { setCalque('reperes', !calques.reperes.visible); $('#bReperes').classList.toggle('actif', calques.reperes.visible); };
+$('#bReperes').classList.add('actif');
 $('#bEnsemble').onclick = vueEnsemble; $('#bCamping').onclick = vueCamping;
 $('#bCalques').onclick = () => ouvrirDroite('#calques', '#bCalques'); $('#bLegende').onclick = () => ouvrirDroite('#legende', '#bLegende'); $('#bListe').onclick = () => ouvrirDroite('#liste', '#bListe'); $('#bFermerFiche').onclick = () => { $('#fiche').hidden = true; };
 $('#bToit').onclick = () => modif(b => { b.toit = TOITS[(TOITS.indexOf(b.toit) + 1) % TOITS.length]; });
@@ -607,16 +740,24 @@ $('#fImport').onchange = async (e) => {
 try { const s = localStorage.getItem(CLE); if (s) blocs = JSON.parse(s); } catch (e) { }
 reconstruireBlocs(); majBoutonsHisto(); majBoutonsHisto();
 basculerTrajet(false); groupeTrajet.visible = false;
-vueEnsemble();
 function redim_() { const w = canvas.clientWidth, h = canvas.clientHeight; renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); }
 addEventListener('resize', redim_); redim_();
+vueCamping();
 let tPrec = performance.now();
 renderer.setAnimationLoop((t) => {
   const dt = Math.min((t - tPrec) / 1000, 0.1); tPrec = t;
   if (trajetActif && parcours) { tPion += dt * VITESSE_MARCHE * vit; if (tPion > parcours.total + 30) tPion = 0; placerPion(tPion); }
+  { // les cartouches des repères restent entièrement dans l'écran (ancre ajustée)
+    const W = canvas.clientWidth, H = canvas.clientHeight;
+    for (const q of REPS) {
+      const sp = q.sprite, v = W3(q.x, q.y, q.haut).project(camera), wn = sp.scale.x * K_ECRAN * H / W; let ax = q.ancre0[0];
+      if (v.x - ax * wn < -0.97) ax = (v.x + 0.97) / wn; if (v.x + (1 - ax) * wn > 0.97) ax = 1 - (0.97 - v.x) / wn;
+      sp.center.x = q.ancre[0] = Math.min(Math.max(ax, 0), 1);
+    }
+  }
   etiqBlocs.forEach(e => { e.visible = camera.position.distanceTo(controls.target) < 650; }); controls.update(); majRegle(); majMarquesMesure();
   renderer.render(scene, camera);
 });
 
 // accès pour les contrôles automatiques (captures)
-window.__maquette = { versEcran: (x, y, h = 0) => { const v = W3(x, y, h).project(camera); return [(v.x + 1) / 2 * canvas.clientWidth, (1 - v.y) / 2 * canvas.clientHeight]; }, vueSur, vueEnsemble, vueCamping, basculerTrajet, calques, chargerPhoto, camera, controls, get blocs() { return blocs; }, setTPion: (t) => { tPion = t; }, get parcours() { return parcours; }, pion, NUMEROTES, texteBloc, categorie, rectOriente, anneau, blocsInfo: () => ({ n: blocs.length, sel: selection }) };
+window.__maquette = { basculerPhoto, setCalque, REPS, versEcran: (x, y, h = 0) => { const v = W3(x, y, h).project(camera); return [(v.x + 1) / 2 * canvas.clientWidth, (1 - v.y) / 2 * canvas.clientHeight]; }, vueSur, vueEnsemble, vueCamping, basculerTrajet, calques, chargerPhoto, camera, controls, get blocs() { return blocs; }, setTPion: (t) => { tPion = t; }, get parcours() { return parcours; }, pion, NUMEROTES, texteBloc, categorie, rectOriente, anneau, blocsInfo: () => ({ n: blocs.length, sel: selection }) };

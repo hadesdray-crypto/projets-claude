@@ -26,6 +26,8 @@ button:disabled{opacity:.4}
 #mesureTxt{position:fixed;transform:translateX(-50%);background:#FE8D4F;color:#fff;font-weight:700;padding:6px 10px;border-radius:10px;pointer-events:none}
 #regle{position:fixed;left:10px;bottom:84px;color:#1d3f9e;font-weight:700;font-size:14px}
 #regleBarre{height:8px;border:3px solid #1d3f9e;border-top:0;margin-top:3px}
+#bPhoto{flex:1 1 100%;min-height:52px;font-size:19px;font-weight:700;border:3px solid #1d3f9e}
+@media (max-width:520px){#barre button{padding:6px 9px;min-height:40px;font-size:15px}#barre{gap:6px}#bPhoto{min-height:46px;font-size:17px}}
 [hidden]{display:none!important}
 </style></head><body>
 <canvas id="cv"></canvas>
@@ -54,11 +56,13 @@ button:disabled{opacity:.4}
   <small>Enregistré automatiquement sur cet appareil.</small>
 </div>
 <div id="barre">
-  <button id="bEnsemble">Ensemble</button><button id="bCamping">Camping</button>
+  <button id="bPhoto">Photo / Maquette</button>
+  <button id="bEnsemble">Ensemble</button><button id="bCamping">Camping</button><button id="bReperes">Repères</button>
   <button id="bTrajet">Trajet</button><button id="bVitesse" title="Vitesse du pion">×10</button>
   <button id="bMesure">Mesurer</button><button id="bModifier">Modifier</button><button id="bListe">Liste</button><button id="bLegende">Légende</button><button id="bCalques">Calques</button>
 </div>
 <script src="donnees/donnees.js"></script>
 <script src="donnees/obstacles.js"></script>
+<script src="donnees/reperes.js"></script>
 <script src="app.js"></script>
 </body></html>

@@ -18,4 +18,16 @@ Les captures sont dans `captures/`. Pour chacune : ce qui a été regardé réel
 | `10-liste-numerotee.png` | Liste numérotée (pastille de couleur, numéro, nom) ; la ligne 1 amène sur la piscine. | réussi |
 | `11-fiche-mesures.png` | Touche sur l'accueil : « n° 3 · 15,2 m × 14,0 m · murs 3,7 m · faîte 7,9 m (quatre pans) » ; touche par un clic de souris, pas au doigt. | réussi (souris) |
 
+## Correction n°1 (captures 390×800 « telephone » et 1024×768 « tablette »)
+| Capture | Constat | État |
+|---|---|---|
+| `21-depart-*.png` | Au démarrage, le camping est centré et entier dans l'écran ; les cinq repères sont lisibles ; sur téléphone les cartouches sont serrés (Parking et Entrée proches) et le camping reste petit (577 m de distance). | tablette réussi, téléphone moyen |
+| `22-photo-*.png` | Bouton « Photo / Maquette » actif : photo IGN nette sous des blocs très transparents, routes et zones boisées coloriées masquées. | réussi |
+| `23-piscine-photo-*.png` | Voûte bleu clair de 5 m posée sur la halle vitrée de l'orthophoto ; léger décalage visible avec la halle (vue oblique ; valeur non mesurée, position à confirmer). | moyen |
+| `24-piscine-maquette-*.png` | Voûte bleu clair, parking sable et pastille « 1 » ; contour du bloc de 1 m disparu. | réussi |
+| `25-fiche-repere-*.png` | Toucher le repère Accueil : fiche « position à confirmer sur place ». | réussi |
+| `26-reperes-caches-*.png` | Bouton « Repères » : repères cachés (contrôlé dans la page). | réussi |
+
+Contrôles refaits avec `scripts/captures.js` : mesure 50,0 m, déplacement, rotation, annuler, rétablir, sauvegarde locale, trajet : sans erreur de page. Souris seulement, rendu logiciel.
+
 Non vérifié : fonctionnement sur un vrai téléphone (fluidité, gestes), rendu sur carte graphique réelle, import d'un fichier JSON, export (téléchargement), fonctionnement dans d'autres navigateurs.
