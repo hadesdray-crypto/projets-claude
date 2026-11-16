@@ -9,7 +9,7 @@ Double-cliquez sur `index.html` (aucune connexion nécessaire : Three.js est inc
 - **Doigt** : un doigt tourne la vue, deux doigts déplacent et zooment. Souris : clic gauche tourne, clic droit déplace, molette zoome.
 - **Au démarrage** : la carte s'ouvre sur le camping, inclinée à 45°, le contour entier dans l'écran (hors barre de boutons). **Camping** recentre de la même façon ; **Ensemble** montre tout le secteur.
 - **Repères** : Piscine couverte, Accueil, Entrée, Parking, Mobil-homes (icône et nom court). Touchez un repère pour sa fiche. Le bouton « Repères » les cache ou les montre. Ces cinq positions sont relevées sur l'orthophoto IGN : **à confirmer sur place**.
-- **Photo / Maquette** (gros bouton) : affiche la photo aérienne IGN nette (zoom 20 environ) sous des blocs plus transparents, sans routes ni zones boisées coloriées ; un second appui revient à la maquette.
+- **Photo / Maquette** (gros bouton) : affiche la photo aérienne IGN plus nette (8 pixels par mètre ; niveau de zoom exact non vérifié) sous des blocs plus transparents, sans routes ni zones boisées coloriées ; un second appui revient à la maquette.
 - **Trajet** : itinéraire à pied mobil-home → piscine → accueil → plage, avec distance, temps (1,3 m/s) et possibilité en voiture. Le pion le parcourt (bouton « ×10 » : vitesse du pion ×1, ×10, ×30).
 - **Mesurer** : touchez deux points au sol, la distance s'affiche. La règle d'échelle est en bas à gauche.
 - **Modifier** : touchez un bloc puis glissez-le (pas de 0,5 m). Boutons : tourner (15°), plus/moins large, long, haut (0,5 m), changer le type, ajouter, supprimer, annuler, rétablir. Enregistrement automatique sur l'appareil ; Exporter / Importer un fichier JSON.
